@@ -1,0 +1,148 @@
+\chapter{Gedetailleerde resultaten}
+\label{details}
+
+\section{Pakketstroom tijdens gesimuleerde handover met conventionele AP's}
+\label{details-pakketstroom}
+
+\npar Zoals vermeld in \ref{resultaten-simulatie-ap}, laten de simulaties in ns-click toe om pakketten te sturen van en naar een AP zonder dat het station met dit AP geassocieerd is.  In tabel \ref{handoverdump} is een oplijsting te vinden van de pakketten die gecapteerd werden tijdens een dergelijke gesimuleerde handover.  De adressen stemmen overeen met deze in \ref{resultaten-simulatie-ap}.
+
+%\begin{table}[ht]
+	\begin{center}
+		\begin{longtable}{|llllll|}
+		\caption{Pakketten tijdens een handover.\label{handoverdump}} \\
+			\hline
+				\multicolumn{1}{|c|}{\textbf{No.}} & \multicolumn{1}{|c|}{\textbf{Time (s)}}	& \multicolumn{1}{|c|}{\textbf{Src}}	& \multicolumn{1}{|c|}{\textbf{Dst}}	&	\multicolumn{1}{|c|}{\textbf{Protocol}}	& \multicolumn{1}{|c|}{\textbf{Info}} \endhead
+			\hline
+   		1808	& 03.995077	& 192.168.1.1	& 192.168.1.2	& UDP & \\
+    	 &	\multicolumn{5}{l|}{Destination address: 00:00:00:00:00:01} \\
+    	 &	\multicolumn{5}{l|}{BSS Id: 00:00:00:a0:00:e0} \\
+    	 &	\multicolumn{5}{l|}{Source address: 00:00:5e:00:00:01} \\
+			\hline
+			1809	& 03.995556	& 192.168.1.2	& 192.168.1.1	& UDP & \\
+    	&	\multicolumn{5}{l|}{BSS Id: 00:00:00:a0:00:e0} \\
+    	& \multicolumn{5}{l|}{Source address: 00:00:00:00:00:01} \\
+    	& \multicolumn{5}{l|}{Destination address: 00:00:5e:00:00:01} \\
+			\hline
+			1810	& 03.996980 	& 192.168.1.1 & 192.168.1.2 & UDP & \\
+			& \multicolumn{5}{l|}{Destination address: 00:00:00:00:00:01} \\
+    	&	\multicolumn{5}{l|}{BSS Id: 00:00:00:a0:00:e0} \\
+    	& \multicolumn{5}{l|}{Source address: 00:00:5e:00:00:01} \\
+			\hline
+			1811  & 03.997778  & 192.168.1.2 & 192.168.1.1 & UDP & \\
+    	&	\multicolumn{5}{l|}{BSS Id: 00:00:00:a0:00:e0} \\
+    	& \multicolumn{5}{l|}{Source address: 00:00:00:00:00:01} \\
+      & \multicolumn{5}{l|}{Destination address: 00:00:5e:00:00:01} \\
+			\hline
+   1812  & 03.999622  & 192.168.1.1 & 192.168.1.2 & UDP & \\
+      & \multicolumn{5}{l|}{Destination address: 00:00:00:00:00:01} \\
+    	&	\multicolumn{5}{l|}{BSS Id: 00:00:00:a0:00:e0} \\
+    	& \multicolumn{5}{l|}{Source address: 00:00:5e:00:00:01} \\
+			\hline
+   1813  & 03.1000000  & 192.168.1.2 & 192.168.1.1 & UDP & \\
+    	&	\multicolumn{5}{l|}{BSS Id: 00:00:00:a0:00:e0} \\
+    	& \multicolumn{5}{l|}{Source address: 00:00:00:00:00:01} \\
+      & \multicolumn{5}{l|}{Destination address: 00:00:5e:00:00:01} \\
+			\hline
+   1814  & 04.003347	& 00:00:00:a1:00:e0	& Broadcast & IEEE 802.11 & Beacon frame \\
+      & \multicolumn{5}{l|}{Destination address: Broadcast (ff:ff:ff:ff:ff:ff)}\\
+    	& \multicolumn{5}{l|}{Source address: 00:00:00:a1:00:e0} \\
+    	&	\multicolumn{5}{l|}{BSS Id: 00:00:00:a1:00:e0} \\
+			\hline
+   1815  & 04.093686	& 00:00:00:00:00:01	& 00:00:00:a1:00:e0 & IEEE 802.11 & Authentication \\
+      & \multicolumn{5}{l|}{Destination address: 00:00:00:a1:00:e0} \\
+    	& \multicolumn{5}{l|}{Source address: 00:00:00:00:00:01} \\
+    	&	\multicolumn{5}{l|}{BSS Id: 00:00:00:a1:00:e0} \\
+			\hline
+   1816  & 04.095153 & 192.168.1.2 & 192.168.1.1 & UDP & \\
+    	&	\multicolumn{5}{l|}{BSS Id: 00:00:00:a1:00:e0} \\
+    	& \multicolumn{5}{l|}{Source address: 00:00:00:00:00:01} \\
+      & \multicolumn{5}{l|}{Destination address: 00:00:5e:00:00:01} \\
+			\hline
+   1817  & 04.096973 & 192.168.1.2 & 192.168.1.1 & UDP & \\
+    	&	\multicolumn{5}{l|}{BSS Id: 00:00:00:a1:00:e0} \\
+    	& \multicolumn{5}{l|}{Source address: 00:00:00:00:00:01} \\
+      & \multicolumn{5}{l|}{Destination address: 00:00:5e:00:00:01} \\
+			\hline
+   1818  & 04.098376 & 00:00:00:a1:00:e0 & 00:00:00:00:00:01 & IEEE 802.11 & Authentication \\
+      & \multicolumn{5}{l|}{Destination address: 00:00:00:00:00:01} \\
+    	& \multicolumn{5}{l|}{Source address: 00:00:00:a1:00:e0} \\
+    	&	\multicolumn{5}{l|}{BSS Id: 00:00:00:a1:00:e0} \\
+			\hline
+   1819  & 04.098773  & 192.168.1.2 & 192.168.1.1 & UDP & \\
+    	&	\multicolumn{5}{l|}{BSS Id: 00:00:00:a1:00:e0} \\
+    	& \multicolumn{5}{l|}{Source address: 00:00:00:00:00:01} \\
+      & \multicolumn{5}{l|}{Destination address: 00:00:5e:00:00:01} \\
+			\hline
+   1820  & 04.100732  & 192.168.1.2 & 192.168.1.1 & UDP & \\
+    	&	\multicolumn{5}{l|}{BSS Id: 00:00:00:a1:00:e0} \\
+    	& \multicolumn{5}{l|}{Source address: 00:00:00:00:00:01} \\
+      & \multicolumn{5}{l|}{Destination address: 00:00:5e:00:00:01} \\
+			\hline
+   1821  & 04.102847	& 00:00:00:a1:00:e0 & Broadcast & IEEE 802.11 & Beacon frame \\
+      & \multicolumn{5}{l|}{Destination address: Broadcast (ff:ff:ff:ff:ff:ff)} \\
+    	& \multicolumn{5}{l|}{Source address: 00:00:00:a1:00:e0} \\
+    	&	\multicolumn{5}{l|}{BSS Id: 00:00:00:a1:00:e0} \\
+			\hline
+   1822  & 04.103047	& 00:00:00:00:00:01 & 00:00:00:a1:00:e0 & IEEE 802.11 & Association Request \\
+      & \multicolumn{5}{l|}{Destination address: 00:00:00:a1:00:e0} \\
+    	& \multicolumn{5}{l|}{Source address: 00:00:00:00:00:01} \\
+    	&	\multicolumn{5}{l|}{BSS Id: 00:00:00:a1:00:e0} \\
+			\hline
+   1823  & 04.104976  & 192.168.1.2 & 192.168.1.1 & UDP & \\
+    	&	\multicolumn{5}{l|}{BSS Id: 00:00:00:a1:00:e0} \\
+    	& \multicolumn{5}{l|}{Source address: 00:00:00:00:00:01} \\
+      & \multicolumn{5}{l|}{Destination address: 00:00:5e:00:00:01} \\
+			\hline
+   1824  & 04.107136  & 192.168.1.2 & 192.168.1.1 & UDP & \\
+    	&	\multicolumn{5}{l|}{BSS Id: 00:00:00:a1:00:e0} \\
+    	& \multicolumn{5}{l|}{Source address: 00:00:00:00:00:01} \\
+      & \multicolumn{5}{l|}{Destination address: 00:00:5e:00:00:01} \\
+			\hline
+   1825  & 04.107332  & 192.168.1.1 & 192.168.1.2 & UDP & \\
+      & \multicolumn{5}{l|}{Destination address: 00:00:00:00:00:01} \\
+    	&	\multicolumn{5}{l|}{BSS Id: 00:00:00:a1:00:e0} \\
+    	& \multicolumn{5}{l|}{Source address: 00:00:5e:00:00:01} \\
+			\hline
+   1826  & 04.109051  & 192.168.1.1 & 192.168.1.2 & UDP  & \\
+      & \multicolumn{5}{l|}{Destination address: 00:00:00:00:00:01} \\
+    	&	\multicolumn{5}{l|}{BSS Id: 00:00:00:a1:00:e0} \\
+    	& \multicolumn{5}{l|}{Source address: 00:00:5e:00:00:01} \\
+			\hline
+   1827  & 04.109255  & 192.168.1.2 & 192.168.1.1 & UDP & \\
+    	&	\multicolumn{5}{l|}{BSS Id: 00:00:00:a1:00:e0} \\
+    	& \multicolumn{5}{l|}{Source address: 00:00:00:00:00:01} \\
+      & \multicolumn{5}{l|}{Destination address: 00:00:5e:00:00:01} \\
+			\hline
+   1828  & 04.110539	& 00:00:00:a1:00:e0 & 00:00:00:00:00:01 &  IEEE 802.11 & Association Response \\
+      & \multicolumn{5}{l|}{Destination address: 00:00:00:00:00:01} \\
+    	& \multicolumn{5}{l|}{Source address: 00:00:00:a1:00:e0} \\
+    	&	\multicolumn{5}{l|}{BSS Id: 00:00:00:a1:00:e0} \\
+			\hline
+   1829  & 04.111015  & 192.168.1.2 & 192.168.1.1 & UDP & \\
+    	&	\multicolumn{5}{l|}{BSS Id: 00:00:00:a1:00:e0} \\
+    	& \multicolumn{5}{l|}{Source address: 00:00:00:00:00:01} \\
+      & \multicolumn{5}{l|}{Destination address: 00:00:5e:00:00:01} \\
+			\hline
+   1830  & 04.112590  & 192.168.1.1 & 192.168.1.2 & UDP & \\
+      & \multicolumn{5}{l|}{Destination address: 00:00:00:00:00:01} \\
+    	&	\multicolumn{5}{l|}{BSS Id: 00:00:00:a1:00:e0} \\
+    	& \multicolumn{5}{l|}{Source address: 00:00:5e:00:00:01} \\
+			\hline
+   1831  & 04.112654  & 192.168.1.2 & 192.168.1.1 & UDP & \\
+    	&	\multicolumn{5}{l|}{BSS Id: 00:00:00:a1:00:e0} \\
+    	& \multicolumn{5}{l|}{Source address: 00:00:00:00:00:01} \\
+      & \multicolumn{5}{l|}{Destination address: 00:00:5e:00:00:01} \\
+			\hline
+   1832  & 04.114570  & 192.168.1.1 & 192.168.1.2 & UDP & \\
+      & \multicolumn{5}{l|}{Destination address: 00:00:00:00:00:01} \\
+    	&	\multicolumn{5}{l|}{BSS Id: 00:00:00:a1:00:e0} \\
+    	& \multicolumn{5}{l|}{Source address: 00:00:5e:00:00:01} \\
+			\hline
+   1833  & 04.114834  & 192.168.1.2 & 192.168.1.1 & UDP & \\
+    	&	\multicolumn{5}{l|}{BSS Id: 00:00:00:a1:00:e0} \\
+    	& \multicolumn{5}{l|}{Source address: 00:00:00:00:00:01} \\
+      & \multicolumn{5}{l|}{Destination address: 00:00:5e:00:00:01} \\
+			\hline
+		\end{longtable}
+	\end{center}
+%\end{table}

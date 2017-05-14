@@ -1,0 +1,204 @@
+This is pdfTeX, Version 3.14159-1.10b (Web2C 7.4.5) (format=pdflatex 2006.5.5)  2 JUN 2006 01:37
+**abstract.tex
+(./abstract.tex{/usr/share/texmf/pdftex/config/pdftex.cfg}
+LaTeX2e <2001/06/01>
+Babel <v3.7h> and hyphenation patterns for american, french, german, ngerman, d
+utch, nohyphenation, loaded.
+(./phdsymp.cls
+Document Style `phdsymp' <01-August-2000>.
+Upgraded to `phdsymp.cls' <01-August-2000> !PN
+Rev. <01-August-2000> !PN
+(/usr/share/texmf/tex/latex/tools/rawfonts.sty
+Package: rawfonts 1994/05/08 Low-level LaTeX 2.09 font compatibility
+
+(/usr/share/texmf/tex/latex/tools/somedefs.sty
+Package: somedefs 1994/06/01 Toolkit for optional definitions
+)
+LaTeX Font Info:    Try loading font information for U+lasy on input line 44.
+
+(/usr/share/texmf/tex/latex/base/ulasy.fd
+File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
+))
+(/usr/share/texmf/tex/latex/base/oldlfont.sty
+Package: oldlfont 1994/11/29 v2.2k Standard LaTeX package
+
+(/usr/share/texmf/tex/latex/base/tracefnt.sty
+Package: tracefnt 1997/05/29 v3.0j Standard LaTeX package (font tracing)
+\tracingfonts=\count79
+LaTeX Info: Redefining \selectfont on input line 96.
+)
+\symbold=\mathgroup4
+\symsans=\mathgroup5
+\symtypewriter=\mathgroup6
+\symitalic=\mathgroup7
+\symsmallcaps=\mathgroup8
+\symslanted=\mathgroup9
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 66.
+LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 67.
+LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 68.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 74.
+LaTeX Info: Redefining \em on input line 84.
+
+(/usr/share/texmf/tex/latex/base/latexsym.sty
+Package: latexsym 1998/08/17 v2.2e Standard LaTeX package (lasy symbols)
+\symlasy=\mathgroup10
+LaTeX Font Info:    Overwriting symbol font `lasy' in version `bold'
+(Font)                  U/lasy/m/n --> U/lasy/b/n on input line 42.
+))
+-- This is a 10 point document
+\tmpitemindent=\dimen102
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\captionindent=\skip41
+\c@figure=\count84
+\c@table=\count85
+) (/usr/share/texmf/tex/generic/babel/babel.sty
+Package: babel 2001/03/01 v3.7h The Babel package
+
+(/usr/share/texmf/tex/generic/babel/english.ldf
+Language: english 2001/04/15 v3.3l English support from the babel system
+
+(/usr/share/texmf/tex/generic/babel/babel.def
+File: babel.def 2001/03/01 v3.7h Babel common definitions
+\babel@savecnt=\count86
+\U@D=\dimen103
+)
+\l@canadian = a dialect from \language\l@english 
+))
+(/usr/share/texmf/tex/latex/graphics/graphicx.sty
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texmf/tex/latex/graphics/keyval.sty
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+\KV@toks@=\toks14
+)
+(/usr/share/texmf/tex/latex/graphics/graphics.sty
+Package: graphics 2001/07/07 v1.0n Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texmf/tex/latex/graphics/trig.sty
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+(/usr/share/texmf/tex/latex/config/graphics.cfg
+File: graphics.cfg 2001/08/31 v1.1 graphics configuration of teTeX/TeXLive
+)
+Package graphics Info: Driver file: pdftex.def on input line 80.
+
+(/usr/share/texmf/tex/latex/graphics/pdftex.def
+File: pdftex.def 2002/06/19 v0.03k graphics/color for pdftex
+\Gread@gobject=\count87
+))
+\Gin@req@height=\dimen104
+\Gin@req@width=\dimen105
+)
+(/usr/share/texmf/tex/latex/psnfss/times.sty
+Package: times 2002/09/08 PSNFSS-v9.0a (SPQR) 
+)
+\c@theorem=\count88
+ (./abstract.aux)
+\openout1 = `abstract.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Try loading font information for OT1+ptm on input line 32.
+
+(/usr/share/texmf/tex/latex/psnfss/ot1ptm.fd
+File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
+)
+(/usr/share/texmf/tex/context/base/supp-pdf.tex
+(/usr/share/texmf/tex/context/base/supp-mis.tex
+loading : Context Support Macros / Missing
+\protectiondepth=\count89
+\scratchcounter=\count90
+\scratchtoks=\toks15
+\scratchdimen=\dimen106
+\scratchskip=\skip42
+\scratchmuskip=\muskip10
+\scratchbox=\box26
+\scratchread=\read1
+\scratchwrite=\write3
+\zeropoint=\dimen107
+\minusone=\count91
+\thousandpoint=\dimen108
+\emptytoks=\toks16
+\nextbox=\box27
+\nextdepth=\dimen109
+\everyline=\toks17
+\!!counta=\count92
+\!!countb=\count93
+\recursecounter=\count94
+)
+loading : Context Support Macros / PDF
+\nofMPsegments=\count95
+\nofMParguments=\count96
+\everyMPtoPDFconversion=\toks18
+)
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 42.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 42.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 42.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 42.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <8> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 43.
+\tmpht=\dimen110
+ [1{/usr/share/texmf/dvips/config/pdftex.map}
+
+
+]
+<figuren/referentie-detail.png, id=16, 659.46375pt x 196.735pt>
+File: figuren/referentie-detail.png Graphic file (type png)
+
+<use figuren/referentie-detail.png>
+<figuren/resultaten-1t2bs.png, id=17, 769.87625pt x 186.6975pt>
+File: figuren/resultaten-1t2bs.png Graphic file (type png)
+
+<use figuren/resultaten-1t2bs.png>
+<figuren/RoF-1t2rau-centrale.png, id=18, 863.225pt x 250.9375pt>
+File: figuren/RoF-1t2rau-centrale.png Graphic file (type png)
+
+<use figuren/RoF-1t2rau-centrale.png>
+<figuren/2trein3rau.png, id=19, 991.705pt x 234.8775pt>
+File: figuren/2trein3rau.png Graphic file (type png)
+
+<use figuren/2trein3rau.png>
+Underfull \hbox (badness 10000) in paragraph at lines 158--161
+[]/ptmr7t@8.0pt/Michael Neufeld, Ashish Jain, Dirk Grun-wald,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 158--161
+/ptmri7t@8.0pt/Nsclick:: bridg-ing net-work sim-u-la-tion and de-ploy-ment/ptmr
+7t@8.0pt/,
+ []
+
+[2 <./figuren/referentie-detail.png> <./figuren/resultaten-1t2bs.png> <./figure
+n/RoF-1t2rau-centrale.png> <./figuren/2trein3rau.png>] (./abstract.aux) ) 
+Here is how much of TeX's memory you used:
+ 1495 strings out of 95392
+ 17974 string characters out of 1189556
+ 69672 words of memory out of 1000001
+ 4462 multiletter control sequences out of 10000+50000
+ 38187 words of font info for 108 fonts, out of 500000 for 1000
+ 59 hyphenation exceptions out of 1000
+ 30i,5n,24p,798b,408s stack positions out of 1500i,500n,5000p,200000b,5000s
+ 22 PDF objects out of 300000
+ 0 named destinations out of 131072
+ 20 words of extra memory for PDF output out of 65536
+{/usr/
+share/texmf/dvips/tetex/f7b6d320.enc}</usr/share/texmf/fonts/type1/bluesky/cm/c
+mr10.pfb>{/usr/share/texmf/dvips/psnfss/8r.enc}
+Output written on abstract.pdf (2 pages, 32521 bytes).

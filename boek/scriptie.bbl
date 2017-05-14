@@ -1,0 +1,149 @@
+\begin{thebibliography}{}
+
+\bibitem[Ba et~al., 2015]{ba_predicting_2015}
+Ba, J., Swersky, K., Fidler, S., and Salakhutdinov, R. (2015).
+\newblock Predicting {Deep} {Zero}-{Shot} {Convolutional} {Neural} {Networks}
+  using {Textual} {Descriptions}.
+\newblock {\em arXiv:1506.00511 [cs]}.
+\newblock arXiv: 1506.00511.
+
+\bibitem[Braun et~al., 2009]{braun_motor_2009}
+Braun, D.~A., Aertsen, A., Wolpert, D.~M., and Mehring, C. (2009).
+\newblock Motor {Task} {Variation} {Induces} {Structural} {Learning}.
+\newblock {\em Current Biology}, 19(4):352--357.
+
+\bibitem[Caelles et~al., 2016]{caelles_one-shot_2016}
+Caelles, S., Maninis, K.-K., Pont-Tuset, J., Leal-Taixé, L., Cremers, D., and
+  Van~Gool, L. (2016).
+\newblock One-{Shot} {Video} {Object} {Segmentation}.
+\newblock {\em arXiv:1611.05198 [cs]}.
+\newblock arXiv: 1611.05198.
+
+\bibitem[Carbonell et~al., 1983]{machine_overview}
+Carbonell, J.~G., Michalski, R.~S., and Mitchell, T.~M. (1983).
+\newblock An {Overview} of {Machine} {Learning}.
+\newblock In Michalski, R.~S., Carbonell, J.~G., and Mitchell, T.~M., editors,
+  {\em Machine {Learning}}, Symbolic {Computation}, pages 3--23. Springer
+  Berlin Heidelberg.
+\newblock DOI: 10.1007/978-3-662-12405-5\_1.
+
+\bibitem[Ciresan et~al., 2012]{ciresan_transfer_2012}
+Ciresan, D.~C., Meier, U., and Schmidhuber, J. (2012).
+\newblock Transfer learning for {Latin} and {Chinese} characters with deep
+  neural networks.
+\newblock In {\em The 2012 {International} {Joint} {Conference} on {Neural}
+  {Networks} ({IJCNN})}, pages 1--6. IEEE.
+
+\bibitem[Cooper et~al., 2012]{cooper_sign_2012}
+Cooper, H., Ong, E.-J., Pugeault, N., and Bowden, R. (2012).
+\newblock Sign language recognition using sub-units.
+\newblock {\em Journal of Machine Learning Research}, 13(Jul):2205--2231.
+
+\bibitem[Hoffman et~al., 2013]{hoffman_one-shot_2013}
+Hoffman, J., Tzeng, E., Donahue, J., Jia, Y., Saenko, K., and Darrell, T.
+  (2013).
+\newblock One-{Shot} {Adaptation} of {Supervised} {Deep} {Convolutional}
+  {Models}.
+\newblock {\em arXiv:1312.6204 [cs]}.
+\newblock arXiv: 1312.6204.
+
+\bibitem[Ji et~al., 2013]{ji_3d_2013}
+Ji, S., Xu, W., Yang, M., and Yu, K. (2013).
+\newblock 3d convolutional neural networks for human action recognition.
+\newblock {\em IEEE transactions on pattern analysis and machine intelligence},
+  35(1):221--231.
+
+\bibitem[Kadrev et~al., 2016]{kadrev_expansion_2016}
+Kadrev, G., Kostadinov, G., and Ruskov, P. (2016).
+\newblock Expansion of a {CNN}-based image classifier's scope using transfer
+  learning and k-{NN}. {Technical} report.
+\newblock In {\em 2016 {IEEE} 8th {International} {Conference} on {Intelligent}
+  {Systems} ({IS})}, pages 764--770.
+
+\bibitem[Karpathy et~al., 2014]{karpathy_large-scale_2014}
+Karpathy, A., Toderici, G., Shetty, S., Leung, T., Sukthankar, R., and Fei-Fei,
+  L. (2014).
+\newblock Large-scale video classification with convolutional neural networks.
+\newblock In {\em Proceedings of the {IEEE} conference on {Computer} {Vision}
+  and {Pattern} {Recognition}}, pages 1725--1732.
+
+\bibitem[Lake et~al., 2015]{lake_human-level_2015}
+Lake, B.~M., Salakhutdinov, R., and Tenenbaum, J.~B. (2015).
+\newblock Human-level concept learning through probabilistic program induction.
+\newblock {\em Science}, 350(6266):1332--1338.
+
+\bibitem[Lima et~al., 2017]{lima_learning_2017}
+Lima, E., Sun, X., Dong, J., Wang, H., Yang, Y., and Liu, L. (2017).
+\newblock Learning and {Transferring} {Convolutional} {Neural} {Network}
+  {Knowledge} to {Ocean} {Front} {Recognition}.
+\newblock {\em IEEE Geoscience and Remote Sensing Letters}, 14(3):354--358.
+
+\bibitem[Michalski et~al., 2013]{ml_ai_approach}
+Michalski, R.~S., Carbonell, J.~G., and Mitchell, T.~M. (2013).
+\newblock {\em Machine {Learning}: {An} {Artificial} {Intelligence}
+  {Approach}}.
+\newblock Springer Science \& Business Media.
+
+\bibitem[Oquab et~al., 2014]{oquab_learning_2014}
+Oquab, M., Bottou, L., Laptev, I., and Sivic, J. (2014).
+\newblock Learning and transferring mid-level image representations using
+  convolutional neural networks.
+\newblock In {\em Proceedings of the {IEEE} conference on computer vision and
+  pattern recognition}, pages 1717--1724.
+
+\bibitem[Pan and Yang, 2010]{pan_survey_2010}
+Pan, S.~J. and Yang, Q. (2010).
+\newblock A {Survey} on {Transfer} {Learning}.
+\newblock {\em IEEE Transactions on Knowledge and Data Engineering},
+  22(10):1345--1359.
+
+\bibitem[Pigou, ]{pigou_gebarentaalherkenning_nodate}
+Pigou, L.
+\newblock Gebarentaalherkenning met convolutionele neurale.
+
+\bibitem[Samuel, 1959]{samuel_studies_1959}
+Samuel, A.~L. (1959).
+\newblock Some {Studies} in {Machine} {Learning} {Using} the {Game} of
+  {Checkers}.
+\newblock {\em IBM Journal of Research and Development}, 3(3):210--229.
+
+\bibitem[Santoro et~al., 2016]{santoro_one-shot_2016}
+Santoro, A., Bartunov, S., Botvinick, M., Wierstra, D., and Lillicrap, T.
+  (2016).
+\newblock One-shot {Learning} with {Memory}-{Augmented} {Neural} {Networks}.
+\newblock {\em arXiv preprint arXiv:1605.06065}.
+
+\bibitem[Wu et~al., 2016]{wu_deep_2016}
+Wu, D., Pigou, L., Kindermans, P.-J., Nam, L.~E., Shao, L., Dambre, J., and
+  Odobez, J.-M. (2016).
+\newblock Deep {Dynamic} {Neural} {Networks} for {Multimodal} {Gesture}
+  {Segmentation} and {Recognition}.
+
+\bibitem[Wu and Shao, 2014]{wu_deep_2014}
+Wu, D. and Shao, L. (2014).
+\newblock Deep dynamic neural networks for gesture segmentation and
+  recognition.
+\newblock In {\em Workshop at the {European} {Conference} on {Computer}
+  {Vision}}, pages 552--571. Springer.
+
+\bibitem[Wu et~al., 2012]{wu_one_2012}
+Wu, D., Zhu, F., and Shao, L. (2012).
+\newblock One shot learning gesture recognition from {RGBD} images.
+\newblock In {\em 2012 {IEEE} {Computer} {Society} {Conference} on {Computer}
+  {Vision} and {Pattern} {Recognition} {Workshops}}, pages 7--12.
+
+\bibitem[Zaki and Shaheen, 2011]{zaki_sign_2011}
+Zaki, M.~M. and Shaheen, S.~I. (2011).
+\newblock Sign language recognition using a combination of new vision based
+  features.
+\newblock {\em Pattern Recognition Letters}, 32(4):572--577.
+
+\bibitem[Zeiler and Fergus, 2014]{zeiler_visualizing_2014}
+Zeiler, M.~D. and Fergus, R. (2014).
+\newblock Visualizing and {Understanding} {Convolutional} {Networks}.
+\newblock In Fleet, D., Pajdla, T., Schiele, B., and Tuytelaars, T., editors,
+  {\em Computer {Vision} - {ECCV} 2014}, Lecture {Notes} in {Computer}
+  {Science}, pages 818--833. Springer International Publishing.
+\newblock DOI: 10.1007/978-3-319-10590-1\_53.
+
+\end{thebibliography}
