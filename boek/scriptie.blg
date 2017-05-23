@@ -1,57 +1,54 @@
 This is BibTeX, Version 0.99d (TeX Live 2016)
 Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
 The top-level auxiliary file: scriptie.aux
-The style file: apalike.bst
+The style file: enapalike.bst
 A level-1 auxiliary file: s-overzicht.aux
+A level-1 auxiliary file: s-inleiding.aux
 A level-1 auxiliary file: s-technische-aspecten.aux
-Multiple inclusions of entire database
----line 46 of file scriptie.aux
- : \citation{*
- :            }
-I'm skipping whatever remains of this command
 Database file #1: bibliodatabase.bib
+Warning--I didn't find a database entry for "bron"
 Warning--empty year in pigou_gebarentaalherkenning_nodate
 Warning--empty journal in pigou_gebarentaalherkenning_nodate
 Warning--empty journal in wu_deep_2016
-You've used 23 entries,
+You've used 32 entries,
             1935 wiz_defined-function locations,
-            612 strings with 8630 characters,
-and the built_in function-call counts, 10798 in all, are:
-= -- 1058
-> -- 512
-< -- 14
-+ -- 179
-- -- 175
-* -- 909
-:= -- 1825
-add.period$ -- 76
-call.type$ -- 23
-change.case$ -- 198
-chr.to.int$ -- 23
-cite$ -- 26
-duplicate$ -- 412
-empty$ -- 720
-format.name$ -- 206
-if$ -- 2153
+            665 strings with 10132 characters,
+and the built_in function-call counts, 14600 in all, are:
+= -- 1443
+> -- 652
+< -- 23
++ -- 227
+- -- 221
+* -- 1227
+:= -- 2463
+add.period$ -- 105
+call.type$ -- 32
+change.case$ -- 266
+chr.to.int$ -- 32
+cite$ -- 35
+duplicate$ -- 564
+empty$ -- 991
+format.name$ -- 267
+if$ -- 2914
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 24
-newline$ -- 121
-num.names$ -- 73
-pop$ -- 205
+missing$ -- 33
+newline$ -- 167
+num.names$ -- 100
+pop$ -- 264
 preamble$ -- 1
-purify$ -- 199
+purify$ -- 267
 quote$ -- 0
-skip$ -- 312
+skip$ -- 429
 stack$ -- 0
-substring$ -- 728
-swap$ -- 85
-text.length$ -- 8
+substring$ -- 1009
+swap$ -- 114
+text.length$ -- 12
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 136
+type$ -- 190
 warning$ -- 3
-while$ -- 88
+while$ -- 123
 width$ -- 0
-write$ -- 305
-(There was 1 error message)
+write$ -- 425
+(There were 4 warnings)
