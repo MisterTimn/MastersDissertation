@@ -30,7 +30,7 @@ f(x,\theta) = y,\quad\forall(x,y) \in T
 \end{equation}
 zodat we na deze schatting vanuit $f$ en $\theta$ voorspellingen kunnen maken op basis van nieuwe data: $f(x_{nieuw},\theta)=y', \quad y' \in\{0,1,...C\}$
 
-\npar Figuur \ref{alg-class-model} geeft een schematische weergave van de opbouw van een classificatiemodel. Het schatten van $f$ en $\theta$ wordt uitgevoerd door een techniek uit de machine learning en geeft ons het uiteindelijke predictief model $f(x,\theta) = y$. De samples worden meestal verwerkt voor ze als input worden doorgegeven aan het model. In het geval van classificatie van video en afbeeldingen worden er technieken uit de beeldverwerking gebruikt om relevante informatie uit het beeld te halen. Welke specifieke techniek er gebruikt wordt is een keuze die erg bewust moet gemaakt worden en een grote invloed heeft op de performantie van het classificatiemodel. Deze informatie wordt gebundeld in een featurevector ($x$) en aan het ML algoritme gegeven. Vanuit de verkregen featurevectoren en de kennis van het correcte klasselabel wordt het predictief model dan geoptimaliseerd.
+\npar Figuur \ref{fig:alg-class-model} geeft een schematische weergave van de opbouw van een classificatiemodel. Het schatten van $f$ en $\theta$ wordt uitgevoerd door een techniek uit de machine learning en geeft ons het uiteindelijke predictief model $f(x,\theta) = y$. De samples worden meestal verwerkt voor ze als input worden doorgegeven aan het model. In het geval van classificatie van video en afbeeldingen worden er technieken uit de beeldverwerking gebruikt om relevante informatie uit het beeld te halen. Welke specifieke techniek er gebruikt wordt is een keuze die erg bewust moet gemaakt worden en een grote invloed heeft op de performantie van het classificatiemodel. Deze informatie wordt gebundeld in een featurevector ($x$) en aan het ML algoritme gegeven. Vanuit de verkregen featurevectoren en de kennis van het correcte klasselabel wordt het predictief model dan geoptimaliseerd.
 \npar Eenmaal het model voldoende geleerd heeft kan het predictief model gebruikt worden in een productieomgeving om nieuwe voorbeelden, al dan niet correct, te classificeren.
 \npar Het model dat in dit onderzoek gebruikt wordt is dat van het artificieel neuraal netwerk, een veel gebruikt predictief model voor classificatie. In sectie \ref{sec:ann} wordt deze techniek dan ook verder besproken.
 \begin{figure}
@@ -38,20 +38,40 @@ zodat we na deze schatting vanuit $f$ en $\theta$ voorspellingen kunnen maken op
 	\def\svgscale{0.85}
 %	\def\svgwidth{\columnwidth}
 	\input{figuren/figuur-classificatieML.pdf_tex}
-	\singlespace \caption{Schematische weergave van het opstellen van een predictief model met behulp van machine learning technieken \label{alg-class-model}}
+	\caption{Schematische weergave van het opstellen van een predictief model met behulp van machine learning technieken \label{fig:alg-class-model}}
 \end{figure}
 
 \subsection{Overfitting}
+\npar Stel dat je naar een symfonisch orkest gaat luisteren in een schouwburg en je wilt het meest klare en pure geluid mogelijk ervaren. Je koopt een hooggevoelige microfoon en hoorapparaat en probeert zo alle geluiden op te nemen in het auditorium. Nu hoor je naast het geluid van het symfonisch orkest ook alle ruis. Je hoort de mensen schuiven in hun stoelen, de muzikanten die hun muziekpapier omslaan en het gezwiep van de dirigent zijn baton. Dit fenomeen wordt overfitting genoemd. Als je op een concert bent is er zowel de symfonie als de willekeurige ruis. Een perfect en algemeen model luistert enkel naar de symfonie. Overfitting is wanneer je meer ruis hoort dan noodzakelijk, of erger, als je de ruis boven de symfonie hoort.
+
+\npar Bij overfitting beschrijft het predictief model de ruis en fouten in het signaal in plaats van de gewenste onderliggende patronen en kenmerken van de gegeven taak. Het komt voor wanneer het model complex is en vele parameters heeft in vergelijking met het aantal trainingsvoorbeelden. Een model dat ``overfit'' is heeft een laag voorspellend vermogen op ongeziene data. Het model is niet algemeen of gegeneraliseerd en  \textit{memoriseert} de data. 
+
+\begin{figure}
+	\centering
+	\def\svgscale{0.7}
+	%	\def\svgwidth{\columnwidth}
+	\input{figuren/overfitting.pdf_tex}
+	\caption{Plot van trainings- en validatiefout ter illustratie van overfitting en de early stopping techniek.}
+	\label{fig:overfitting}
+\end{figure}
+
+\npar Het risico op overfitten komt uit het feit dat de prestatiemaat voor de training van het model niet correct de effectiviteit van het model weergeeft. De training van een model gebeurt doorgaans via optimalisatie van zijn prestatie op een training set. De werkelijke performantie wordt echter gegeven door prestatie op ongeziene data. Net om deze reden wordt de dataset opgesplitst in drie delen: training-, validatie- en testset.
+\npar Om een zo goed mogelijk predictief model te maken wordt een evaluatiescore op de validatieset geminimaliseerd of gemaximaliseerd. Deze data is nog onbekend voor het model en geeft dus een betere aanduiding van zijn performantie. Figuur \ref{fig:overfitting} geeft de validatie- en trainingsfout weer tijdens het trainen van een predictief model. Wanneer de trainingsfout blijft dalen maar de validatiefout stagneert of stijgt is er sprake van overfitting. Nu kan er gekozen worden om de training vroegtijdig te stoppen teneinde geen generalisatie te verliezen. Deze techniek wordt \textit{early stopping} genoemd.
+
+\npar Om na afloop een finale evaluatie van het model te maken wordt zijn prestatie op de testset gemeten. De testset mag nooit gebruikt worden om aanpassingen aan het model te maken maar dient enkel voor een eindevaluatie.
 
 
-\cite{dropout}
+
+
+
+
 
 \section{Artificieel neuraal netwerk}\label{sec:ann}
 
 \begin{figure}[ht]
 	\begin{center}
 		\includegraphics[width=8cm,keepaspectratio]{figuren/activatiefuncties.pdf}
-		\singlespacing\caption{Weergave van de drie meest populaire activatiefuncties voor classificatie doeleinden \label{class-functies}}
+		\caption{Weergave van de drie meest populaire activatiefuncties voor classificatie doeleinden \label{class-functies}}
 	\end{center}
 \end{figure}
 
@@ -90,6 +110,19 @@ zodat we na deze schatting vanuit $f$ en $\theta$ voorspellingen kunnen maken op
 De vloek van de dimensionaliteit: 
 \subsection{Tweedimensionale convolutie}
 \subsection{Maximum pooling}
+\begin{figure}
+	\centering
+%	\def\svgscale{0.85}
+	%	\def\svgwidth{\columnwidth}
+	\input{figuren/max-pooling.pdf_tex}
+	\caption{Maximum pooling: uit elk vak in de invoer afbeelding wordt het maximum bepaald en overgenomen in de bijhorende pixel in het uitvoerbeeld.}
+	\label{max-poolingl}
+\end{figure}
+
 \section{Hyperparameters}
 \subsection{Momentum}
-\subsection{Dropout}
+\subsection{Dropout}\label{sec:dropout}
+
+
+\cite{dropout}
+\subsection{Data-augmentatie}\label{sec:data-augm}

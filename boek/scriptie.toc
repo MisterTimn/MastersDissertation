@@ -19,25 +19,27 @@
 \contentsline {subsection}{\numberline {2.1.1}Inleiding}{8}{subsection.2.1.1}
 \contentsline {subsection}{\numberline {2.1.2}Gesuperviseerde classificatie}{9}{subsection.2.1.2}
 \contentsline {subsection}{\numberline {2.1.3}Overfitting}{10}{subsection.2.1.3}
-\contentsline {section}{\numberline {2.2}Artificieel neuraal netwerk}{10}{section.2.2}
-\contentsline {section}{\numberline {2.3}Convolutioneel neuraal netwerk}{11}{section.2.3}
-\contentsline {subsection}{\numberline {2.3.1}Tweedimensionale convolutie}{11}{subsection.2.3.1}
-\contentsline {subsection}{\numberline {2.3.2}Pooling}{11}{subsection.2.3.2}
-\contentsline {section}{\numberline {2.4}Hyperparameters}{11}{section.2.4}
-\contentsline {subsection}{\numberline {2.4.1}momentum}{11}{subsection.2.4.1}
-\contentsline {subsection}{\numberline {2.4.2}dropout}{11}{subsection.2.4.2}
-\contentsline {chapter}{\numberline {3}Uitvoering \& architectuur}{13}{chapter.3}
-\contentsline {section}{\numberline {3.1}Gebruikte technologi\"en}{13}{section.3.1}
-\contentsline {section}{\numberline {3.2}Onderzoeksopzet}{13}{section.3.2}
-\contentsline {section}{\numberline {3.3}Eerste opstelling}{13}{section.3.3}
-\contentsline {section}{\numberline {3.4}Tweede opstelling}{13}{section.3.4}
-\contentsline {section}{\numberline {3.5}Dataset}{13}{section.3.5}
-\contentsline {chapter}{\numberline {4}Testen en resultaten}{14}{chapter.4}
-\contentsline {section}{\numberline {4.1}Eerste opstelling}{14}{section.4.1}
-\contentsline {section}{\numberline {4.2}Tweede opstelling}{14}{section.4.2}
-\contentsline {subsection}{\numberline {4.2.1}Invloed aantal samples}{14}{subsection.4.2.1}
-\contentsline {chapter}{\numberline {5}Conclusie}{15}{chapter.5}
-\contentsline {section}{\numberline {5.1}Besluit}{15}{section.5.1}
-\contentsline {section}{\numberline {5.2}Verder onderzoek}{15}{section.5.2}
-\contentsline {chapter}{Bibliografie}{16}{appendix*.11}
-\contentsline {chapter}{L"yst van figuren}{20}{appendix*.12}
+\contentsline {section}{\numberline {2.2}Artificieel neuraal netwerk}{12}{section.2.2}
+\contentsline {subsection}{\numberline {2.2.1}Gradient descent}{13}{subsection.2.2.1}
+\contentsline {section}{\numberline {2.3}Convolutioneel neuraal netwerk}{13}{section.2.3}
+\contentsline {subsection}{\numberline {2.3.1}Tweedimensionale convolutie}{13}{subsection.2.3.1}
+\contentsline {subsection}{\numberline {2.3.2}Maximum pooling}{13}{subsection.2.3.2}
+\contentsline {section}{\numberline {2.4}Hyperparameters}{13}{section.2.4}
+\contentsline {subsection}{\numberline {2.4.1}Momentum}{13}{subsection.2.4.1}
+\contentsline {subsection}{\numberline {2.4.2}Dropout}{13}{subsection.2.4.2}
+\contentsline {subsection}{\numberline {2.4.3}Data-augmentatie}{13}{subsection.2.4.3}
+\contentsline {chapter}{\numberline {3}Uitvoering \& architectuur}{15}{chapter.3}
+\contentsline {section}{\numberline {3.1}Gebruikte technologi\"en}{15}{section.3.1}
+\contentsline {section}{\numberline {3.2}Onderzoeksopzet}{15}{section.3.2}
+\contentsline {section}{\numberline {3.3}Eerste opstelling}{15}{section.3.3}
+\contentsline {section}{\numberline {3.4}Tweede opstelling}{15}{section.3.4}
+\contentsline {section}{\numberline {3.5}Dataset}{15}{section.3.5}
+\contentsline {chapter}{\numberline {4}Testen en resultaten}{16}{chapter.4}
+\contentsline {section}{\numberline {4.1}Eerste opstelling}{16}{section.4.1}
+\contentsline {section}{\numberline {4.2}Tweede opstelling}{16}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}Invloed aantal samples}{16}{subsection.4.2.1}
+\contentsline {chapter}{\numberline {5}Conclusie}{18}{chapter.5}
+\contentsline {section}{\numberline {5.1}Besluit}{18}{section.5.1}
+\contentsline {section}{\numberline {5.2}Verder onderzoek}{18}{section.5.2}
+\contentsline {chapter}{Bibliografie}{19}{appendix*.13}
+\contentsline {chapter}{L"yst van figuren}{23}{appendix*.14}
