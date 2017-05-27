@@ -5,3 +5,10 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Schematische weergave van het opstellen van een predictief model met behulp van machine learning technieken \relax }}{11}{figure.caption.7}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Weergave van de drie meest populaire activatiefuncties voor classificatie doeleinden \relax }}{12}{figure.caption.8}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Een ANN met een invoerlaag, twee verborgen lagen en een softmax uitvoerlaag.\relax }}{12}{figure.caption.9}
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Precision en recall van de classificatie van gebaar 15 na bijleren met vari\"erend aantal samples\relax }}{14}{figure.caption.10}
+\addvspace {10\p@ }

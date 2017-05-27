@@ -18,6 +18,11 @@ Braun, D.~A., Aertsen, A., Wolpert, D.~M., en Mehring, C. (2009).
 \newblock Motor {Task} {Variation} {Induces} {Structural} {Learning}.
 \newblock {\em Current Biology}, 19(4):352--357.
 
+\bibitem[Buyens, 2003]{buyens_gebarentaaltolken_2003}
+Buyens, M. (2003).
+\newblock {\em Gebarentaaltolken}.
+\newblock Garant.
+
 \bibitem[Caelles et~al., 2016]{oneshot-video-segm}
 Caelles, S., Maninis, K.-K., Pont-Tuset, J., Leal-Taixé, L., Cremers, D., en
   Van~Gool, L. (2016).
@@ -84,6 +89,12 @@ Karpathy, A., Toderici, G., Shetty, S., Leung, T., Sukthankar, R., en Fei-Fei,
 \newblock In {\em Proceedings of the {IEEE} conference on {Computer} {Vision}
   and {Pattern} {Recognition}}, pages 1725--1732.
 
+\bibitem[Krizhevsky et~al., 2012]{krizhevsky2012imagenet}
+Krizhevsky, A., Sutskever, I., en Hinton, G.~E. (2012).
+\newblock Imagenet classification with deep convolutional neural networks.
+\newblock In {\em Advances in neural information processing systems}, pages
+  1097--1105.
+
 \bibitem[Kuehne et~al., 2011]{hmdb-manual-segm}
 Kuehne, H., Jhuang, H., Garrote, E., Poggio, T., en Serre, T. (2011).
 \newblock Hmdb: a large video database for human motion recognition.
@@ -104,6 +115,11 @@ Lake, B.~M., Salakhutdinov, R., Gross, J., en Tenenbaum, J.~B. (2011).
 Lake, B.~M., Salakhutdinov, R., en Tenenbaum, J.~B. (2015).
 \newblock Human-level concept learning through probabilistic program induction.
 \newblock {\em Science}, 350(6266):1332--1338.
+
+\bibitem[LeCun et~al., 2001]{lecun-01a}
+LeCun, Y., Bottou, L., Bengio, Y., en Haffner, P. (2001).
+\newblock Gradient-based learning applied to document recognition.
+\newblock In {\em Intelligent Signal Processing}, pages 306--351. IEEE Press.
 
 \bibitem[Lima et~al., 2017]{lima_learning_2017}
 Lima, E., Sun, X., Dong, J., Wang, H., Yang, Y., en Liu, L. (2017).
@@ -145,6 +161,12 @@ Santoro, A., Bartunov, S., Botvinick, M., Wierstra, D., en Lillicrap, T.
   (2016).
 \newblock One-shot {Learning} with {Memory}-{Augmented} {Neural} {Networks}.
 \newblock {\em arXiv preprint arXiv:1605.06065}.
+
+\bibitem[Srivastava et~al., 2014]{dropout}
+Srivastava, N., Hinton, G.~E., Krizhevsky, A., Sutskever, I., en Salakhutdinov,
+  R. (2014).
+\newblock Dropout: a simple way to prevent neural networks from overfitting.
+\newblock {\em Journal of Machine Learning Research}, 15(1):1929--1958.
 
 \bibitem[Van~Herreweghe en Vermeerbergen, 2009]{VGT-standard}
 Van~Herreweghe, M. en Vermeerbergen, M. (2009).

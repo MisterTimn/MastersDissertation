@@ -1,11 +1,10 @@
-\documentclass[12pt,a4paper,oneside]{book}
+\documentclass[11pt,a4paper,oneside]{book}
 \usepackage{a4wide}                     % Iets meer tekst op een bladzijde
 \usepackage[dutch,english]{babel}       % Voor nederlandstalige hyphenatie (woordsplitsing)
 \usepackage{amsmath}                    % Uitgebreide wiskundige mogelijkheden
 \usepackage{amssymb}                    % Voor speciale symbolen zoals de verzameling Z, R...
 \usepackage{url}                        % Om url's te verwerken
 \usepackage{graphicx}                   % Om figuren te kunnen verwerken
-\usepackage[small,bf,hang]{caption2}    % Om de captions wat te verbeteren
 \usepackage{xspace}                     % Magische spaties na een commando
 \usepackage[latin1]{inputenc}           % Om niet ascii karakters rechtstreeks te kunnen typen
 \usepackage{float}                      % Om nieuwe float environments aan te maken. Ook optie H!
@@ -16,21 +15,21 @@
 \usepackage{fancyhdr}                   % Voor fancy headers en footers.
 \usepackage{graphics}			% Om figuren te verwerken.
 \usepackage[nottoc]{tocbibind} % Bibliografie in ToC; zie tocbibind.dvi
-%\usepackage{pstricks}
 \usepackage{longtable}
 \usepackage{pdfpages}  % pdf pagina's importeren
+\usepackage{subcaption}
+\usepackage{setspace}
 
 \newcommand{\npar}{\par \vspace{2.3ex plus 0.3ex minus 0.3ex} \noindent}	% Om witruimte te krijgen tussen paragrafen
 \graphicspath{{figuren/}}               % De plaats waar latex zijn figuren gaat halen.
-\usepackage[bf]{caption2}	% Mooiere captions
+\usepackage[font=small,labelfont=bf,skip=1pt]{caption}
+
 \usepackage[a4paper,plainpages=false]{hyperref}    % Om hyperlinks te hebben in het pdfdocument.
 \newcommand{\command}[1]{\lstinline[basicstyle=\tt]{#1}\xspace} %Voor commando's
-\hyphenation{he-den-daag-se ap-pa-ra-tuur Meet-re-sul-ta-ten hand-o-ver-tijd ho-ge-snel-heids-trein}
+\hyphenation{con-vo-lu-tio-neel}
 
 % Het bibliografisch opmaak bestand.
 \bibliographystyle{enapalike}
-%\bibliographystyle{bibliodutch}
-%\bibpunct{[}{]}{,}{n}{,}{,}
 
 \renewcommand{\chaptermark}[1]{\markright{\MakeUppercase{#1}}}
 \renewcommand{\sectionmark}[1]{\markright{\thesection~#1}}
@@ -71,11 +70,7 @@
 }
 
 \begin{document}
-\nocite{*}
 \selectlanguage{dutch}
-%\renewcommand\lstlistlistingname{Lijst van codefragmenten}
-%\renewcommand\lstlistingname{Codefragment}
-
 
 \frontmatter
 
@@ -113,7 +108,9 @@
 \mainmatter
 \include{s-inleiding}
 \include{s-technische-aspecten}
-
+\include{s-uitvoering}
+\include{s-resultaten}
+\include{s-conclusie}
 
 \appendix
 
@@ -121,8 +118,8 @@
 % De grafie en de index
 \bibliography{bibliodatabase}
 
-%\backmatter
-%\listoffigures
+\backmatter
+\listoffigures
 %\listoftables
 %\addcontentsline{toc}{chapter}{Lijst van codefragmenten}
 %\lstlistoflistings
