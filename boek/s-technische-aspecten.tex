@@ -67,43 +67,75 @@ zodat we na deze schatting vanuit $f$ en $\theta$ voorspellingen kunnen maken op
 
 
 \section{Artificieel neuraal netwerk}\label{sec:ann}
-
-\begin{figure}[ht]
-	\begin{center}
-		\includegraphics[width=8cm,keepaspectratio]{figuren/activatiefuncties.pdf}
-		\caption{Weergave van de drie meest populaire activatiefuncties voor classificatie doeleinden \label{class-functies}}
-	\end{center}
-\end{figure}
-
+\subsection{Inleiding}
 \begin{figure}
 	\centering
 	\begin{subfigure}{.5\textwidth}
 		\centering
 		\input{figuren/neuron.pdf_tex}
 		\caption{Artificieel neuron.}
-		\label{neuron}
+		\label{fig:neuron}
 	\end{subfigure}%
 	\begin{subfigure}{.5\textwidth}
 		\centering
 		\input{figuren/ANN-alg.pdf_tex}
 		\caption{Artificieel neuraal netwerk}
-		\label{fig:sub2}
+		\label{fig:ANN}
 	\end{subfigure}
-	\caption{Een ANN met een invoerlaag, twee verborgen lagen en een softmax uitvoerlaag.}
+	\caption{Een ANN met een invoerlaag, twee verborgen lagen en een softmax uitvoerlaag samen met zijn bouwsteen, het artificieel neuron.}
 	\label{fig:test}
 \end{figure}
+Een lange rekensom uitwerken is iets wat de mens liever overlaat aan een rekenmachine of computer. Alle bits van een rekensom zijn even belangrijk en bepalend voor zijn uitkomst. Op dit vlak is een computer veel effici\"enter en betrouwbaarder dan ons brein. Onze hersenen zijn veel bedrevener in andere taken zoals het indelen van objecten volgens gelijkenis of het herkennen van een persoon.
+\npar Het is deze gedachte die vele onderzoekers ertoe bracht een artificieel neuraal netwerk (ANN) uit te bouwen. Het menselijke brein is een erg complex neuraal netwerk bestaande uit meer dan 86 miljard neuronen. Dit zijn de bouwstenen van ons zenuwstelsel en ze staan in voor het verwerken en overdragen van informatie. In figuur \ref{fig:neuron} is een weergave te zien van een artificieel neuron, de bouwsteen van het ANN. De functionaliteit van dit neuron bootst deze van het biologisch neuron na en wordt als volgt gedefini\"eerd:
+\begin{equation}\label{eq:neuron}
+n = a\bigg(b+\sum_{i=1}^{D}w_ix_i\bigg)
+\end{equation}
+met $n$ de uitvoer van het neuron, $a$ de \textit{activatiefunctie}, $b$ de bias, $x_i$ de $i$-de invoer en $w_i$ de gewichten van zijn respectievelijke inkomende verbindingen.
+
+
+
+\npar Deze artifici\"ele neuronen worden gegroepeerd in lagen om een ANN te vormen zoals afgebeeld in figuur \ref{fig:ANN}. Alle lagen worden onderling volledig verbonden, elk neuron krijgt invoer van alle neuronen uit de voorgaande laag en geeft zijn uitvoer door aan alle neuronen van de volgende laag. Deze lagen worden dan ook vaak \textit{dense layers} genoemd vanwege hun verbindingsdichtheid.
+\npar Hier beschouwen we enkel \textit{feedforward neurale netwerken}. Aan het begin van het netwerk hebben we de invoerlaag met evenveel knopen als de dimensie van de featurevectoren. De invoer propageert zich van links naar rechts door het netwerk tot het bij de uitvoerlaag komt. Omdat de uitvoer van de binnenste lagen niet meteen zichtbaar is worden deze de verborgen lagen genoemd.
+\npar De uitvoer van de verschillende lagen uit het ANN in figuur \ref{fig:ANN} kunnen we als volgt beschrijven:
+\begin{equation}
+\begin{aligned}
+h^{(1)}_j\quad=&\quad a\bigg(\sum_{i=1}^{D}w^{(1)}_{i,j}x_i\bigg),\quad j=1,...,M_1\\
+h^{(2)}_j\quad=&\quad a\bigg(\sum_{i=1}^{M_1}w^{(2)}_{i,j}h^{(1)}_i\bigg),\quad j=1,...,M_2\\ 
+y_j\quad=&\quad a\bigg(\sum_{i=1}^{M_2}w^{(3)}_{i,j}h^{(2)}_i\bigg),\quad j=1,...,C 
+\end{aligned}
+\end{equation}
+met $D$ het aantal invoerparameters, $M_1$ het aantal verborgen knopen in de eerste laag, $M_2$ het aantal verborgen knopen in de tweede laag en $C$ het aantal te voorspellen klassen. $M_1$ en $M_2$ zijn hyperparameters van het model die geoptimaliseerd worden door de evaluatie van het model tegenover de validatieset.
+\npar Het is mogelijk en wenselijk om nog meer verborgen lagen toe te voegen. Het omkaderde gedeelte in figuur \ref{fig:ANN} kan een aantal keer herhaald worden om zo het model toe te laten een complexere structuur te modelleren.
+\begin{figure}[ht]
+	\begin{center}
+		\includegraphics[width=8cm,keepaspectratio]{figuren/activatiefuncties.pdf}
+		\caption{Weergave van de drie meest populaire activatiefuncties voor classificatie doeleinden \label{fig:activatie-fun}}
+	\end{center}
+\end{figure}
+\npar De activatiefunctie $a(x)$ uit (\ref{eq:neuron}) is van groot belang in een ANN aangezien ze zorgt voor een niet-lineariteit. Moest deze er niet zijn kan elk neuraal netwerk met een verborgen laag vervangen worden door een model zonder aangezien de samenstelling van lineaire transformaties zelf een lineaire transformatie is. Figuur \ref{fig:activatie-fun} geeft drie van de meeste gebruikte niet lineaire activatiefuncties weer. In dit onderzoek zal gebruik gemaakt worden van de rectifier activatiefunctie:
+\begin{equation}
+\quad a(x) = max(0,x)
+\end{equation}
+Een neuron wordt vaak vernoemd naar de activatiefunctie die ze gebruikt. In dit geval spreken we van een Rectified Linear Unit (ReLU). Het gebruik van ReLU's wordt gestaafd door vele onderzoekswerken omtrent gesuperviseerde \textit{deep learning} zoals \cite{ReLU} en \cite{lionel}. Een ReLU zal alle negatieve waarden afbeelden op 0 en alle positieve op zichzelf.
+
+
+
+
+ 
+
+\begin{equation}
+\begin{aligned}
+h^{(1)}_j\quad=&\quad a\bigg(\sum_{i=1}^{D}w^{(1)}_{i,j}x_i\bigg),\quad j=1,...,M_1\\
+h^{(2)}_j\quad=&\quad a\bigg(\sum_{i=1}^{M_1}w^{(2)}_{i,j}h^{(1)}_i\bigg),\quad j=1,...,M_2\\ 
+y_j\quad=&\quad a\bigg(\sum_{i=1}^{M_2}w^{(3)}_{i,j}h^{(2)}_i\bigg),\quad j=1,...,C 
+\end{aligned}
+\end{equation}
 
 \subsection{Gradient descent}
 
 
 
-\begin{equation}
-\begin{aligned}
-\textup{Sigmo\"ide unit:}\quad& a(x) = tanh(x)\\
-\textup{Tanh unit:}\quad& a(x) = \frac{1}{x+exp(-x)}\\
-\textup{Rectified Linear Unit (Relu):}\quad& a(x) = max(0,x)
-\end{aligned}
-\end{equation}
+
 
 \npar Samenstelling van lineaire transformaties is zelf een lineaire transformatie
 \section{Convolutioneel neuraal netwerk}

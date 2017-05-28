@@ -1,23 +1,5 @@
 \begin{thebibliography}{}
 
-\bibitem[Ba et~al., 2015]{ba_predicting_2015}
-Ba, J., Swersky, K., Fidler, S., en Salakhutdinov, R. (2015).
-\newblock Predicting {Deep} {Zero}-{Shot} {Convolutional} {Neural} {Networks}
-  using {Textual} {Descriptions}.
-\newblock {\em arXiv:1506.00511 [cs]}.
-\newblock arXiv: 1506.00511.
-
-\bibitem[Biederman, 1987]{recog-components}
-Biederman, I. (1987).
-\newblock Recognition-by-{Components}: {A} {Theory} of {Human} {Image}
-  {Understanding}.
-\newblock {\em Psychological Review}, 94(2):115--147.
-
-\bibitem[Braun et~al., 2009]{braun_motor_2009}
-Braun, D.~A., Aertsen, A., Wolpert, D.~M., en Mehring, C. (2009).
-\newblock Motor {Task} {Variation} {Induces} {Structural} {Learning}.
-\newblock {\em Current Biology}, 19(4):352--357.
-
 \bibitem[Buyens, 2003]{buyens_gebarentaaltolken_2003}
 Buyens, M. (2003).
 \newblock {\em Gebarentaaltolken}.
@@ -38,56 +20,21 @@ Carbonell, J.~G., Michalski, R.~S., en Mitchell, T.~M. (1983).
   Berlin Heidelberg.
 \newblock DOI: 10.1007/978-3-662-12405-5\_1.
 
-\bibitem[Ciresan et~al., 2012]{ciresan_transfer_2012}
-Ciresan, D.~C., Meier, U., en Schmidhuber, J. (2012).
-\newblock Transfer learning for {Latin} and {Chinese} characters with deep
-  neural networks.
-\newblock In {\em The 2012 {International} {Joint} {Conference} on {Neural}
-  {Networks} ({IJCNN})}, pages 1--6. IEEE.
-
-\bibitem[Cooper et~al., 2012]{cooper_sign_2012}
-Cooper, H., Ong, E.-J., Pugeault, N., en Bowden, R. (2012).
-\newblock Sign language recognition using sub-units.
-\newblock {\em Journal of Machine Learning Research}, 13(Jul):2205--2231.
-
 \bibitem[Fei-Fei et~al., 2006]{oneshot-object-cat}
 Fei-Fei, L., Fergus, R., en Perona, P. (2006).
 \newblock One-shot learning of object categories.
 \newblock {\em IEEE Transactions on Pattern Analysis and Machine Intelligence},
   28(4):594--611.
 
+\bibitem[Glorot et~al., 2011]{ReLU}
+Glorot, X., Bordes, A., en Bengio, Y. (2011).
+\newblock Deep {Sparse} {Rectifier} {Neural} {Networks}.
+\newblock In {\em Aistats}, volume~15, page 275.
+
 \bibitem[Guo en Yang, 2017]{gesture-FNN-HMM}
 Guo, X.-L. en Yang, T.-T. (2017).
 \newblock Gesture recognition based on {HMM}-{FNN} model using a {Kinect}.
 \newblock {\em Journal on Multimodal User Interfaces}, 11(1):1--7.
-
-\bibitem[Hoffman et~al., 2013]{hoffman_one-shot_2013}
-Hoffman, J., Tzeng, E., Donahue, J., Jia, Y., Saenko, K., en Darrell, T.
-  (2013).
-\newblock One-{Shot} {Adaptation} of {Supervised} {Deep} {Convolutional}
-  {Models}.
-\newblock {\em arXiv:1312.6204 [cs]}.
-\newblock arXiv: 1312.6204.
-
-\bibitem[Ji et~al., 2013]{ji_3d_2013}
-Ji, S., Xu, W., Yang, M., en Yu, K. (2013).
-\newblock 3d convolutional neural networks for human action recognition.
-\newblock {\em IEEE transactions on pattern analysis and machine intelligence},
-  35(1):221--231.
-
-\bibitem[Kadrev et~al., 2016]{kadrev_expansion_2016}
-Kadrev, G., Kostadinov, G., en Ruskov, P. (2016).
-\newblock Expansion of a {CNN}-based image classifier's scope using transfer
-  learning and k-{NN}. {Technical} report.
-\newblock In {\em 2016 {IEEE} 8th {International} {Conference} on {Intelligent}
-  {Systems} ({IS})}, pages 764--770.
-
-\bibitem[Karpathy et~al., 2014]{karpathy_large-scale_2014}
-Karpathy, A., Toderici, G., Shetty, S., Leung, T., Sukthankar, R., en Fei-Fei,
-  L. (2014).
-\newblock Large-scale video classification with convolutional neural networks.
-\newblock In {\em Proceedings of the {IEEE} conference on {Computer} {Vision}
-  and {Pattern} {Recognition}}, pages 1725--1732.
 
 \bibitem[Krizhevsky et~al., 2012]{krizhevsky2012imagenet}
 Krizhevsky, A., Sutskever, I., en Hinton, G.~E. (2012).
@@ -111,56 +58,9 @@ Lake, B.~M., Salakhutdinov, R., Gross, J., en Tenenbaum, J.~B. (2011).
 \newblock One shot learning of simple visual concepts.
 \newblock In {\em CogSci}, volume 172, page~2.
 
-\bibitem[Lake et~al., 2015]{lake_human-level_2015}
-Lake, B.~M., Salakhutdinov, R., en Tenenbaum, J.~B. (2015).
-\newblock Human-level concept learning through probabilistic program induction.
-\newblock {\em Science}, 350(6266):1332--1338.
-
-\bibitem[LeCun et~al., 2001]{lecun-01a}
-LeCun, Y., Bottou, L., Bengio, Y., en Haffner, P. (2001).
-\newblock Gradient-based learning applied to document recognition.
-\newblock In {\em Intelligent Signal Processing}, pages 306--351. IEEE Press.
-
-\bibitem[Lima et~al., 2017]{lima_learning_2017}
-Lima, E., Sun, X., Dong, J., Wang, H., Yang, Y., en Liu, L. (2017).
-\newblock Learning and {Transferring} {Convolutional} {Neural} {Network}
-  {Knowledge} to {Ocean} {Front} {Recognition}.
-\newblock {\em IEEE Geoscience and Remote Sensing Letters}, 14(3):354--358.
-
-\bibitem[Michalski et~al., 2013]{ml_ai_approach}
-Michalski, R.~S., Carbonell, J.~G., en Mitchell, T.~M. (2013).
-\newblock {\em Machine {Learning}: {An} {Artificial} {Intelligence}
-  {Approach}}.
-\newblock Springer Science \& Business Media.
-
-\bibitem[Oquab et~al., 2014]{oquab_learning_2014}
-Oquab, M., Bottou, L., Laptev, I., en Sivic, J. (2014).
-\newblock Learning and transferring mid-level image representations using
-  convolutional neural networks.
-\newblock In {\em Proceedings of the {IEEE} conference on computer vision and
-  pattern recognition}, pages 1717--1724.
-
-\bibitem[Pan en Yang, 2010]{pan_survey_2010}
-Pan, S.~J. en Yang, Q. (2010).
-\newblock A {Survey} on {Transfer} {Learning}.
-\newblock {\em IEEE Transactions on Knowledge and Data Engineering},
-  22(10):1345--1359.
-
-\bibitem[Pigou, ]{pigou_gebarentaalherkenning_nodate}
-Pigou, L.
+\bibitem[Pigou, 2014]{lionel}
+Pigou, L. (2014).
 \newblock Gebarentaalherkenning met convolutionele neurale.
-
-\bibitem[Samuel, 1959]{samuel_studies_1959}
-Samuel, A.~L. (1959).
-\newblock Some {Studies} in {Machine} {Learning} {Using} the {Game} of
-  {Checkers}.
-\newblock {\em IBM Journal of Research and Development}, 3(3):210--229.
-
-\bibitem[Santoro et~al., 2016]{memory-augmented-oneshot}
-Santoro, A., Bartunov, S., Botvinick, M., Wierstra, D., en Lillicrap, T.
-  (2016).
-\newblock One-shot {Learning} with {Memory}-{Augmented} {Neural} {Networks}.
-\newblock {\em arXiv preprint arXiv:1605.06065}.
 
 \bibitem[Srivastava et~al., 2014]{dropout}
 Srivastava, N., Hinton, G.~E., Krizhevsky, A., Sutskever, I., en Salakhutdinov,
@@ -172,25 +72,6 @@ Srivastava, N., Hinton, G.~E., Krizhevsky, A., Sutskever, I., en Salakhutdinov,
 Van~Herreweghe, M. en Vermeerbergen, M. (2009).
 \newblock Flemish {Sign} {Language} standardisation.
 \newblock {\em Current Issues in Language Planning}, 10(3):308--326.
-
-\bibitem[Woodward en Finn, 2017]{active-oneshot}
-Woodward, M. en Finn, C. (2017).
-\newblock Active {One}-shot {Learning}.
-\newblock {\em arXiv:1702.06559 [cs]}.
-\newblock arXiv: 1702.06559.
-
-\bibitem[Wu et~al., 2016]{wu_deep_2016}
-Wu, D., Pigou, L., Kindermans, P.-J., Nam, L.~E., Shao, L., Dambre, J., en
-  Odobez, J.-M. (2016).
-\newblock Deep {Dynamic} {Neural} {Networks} for {Multimodal} {Gesture}
-  {Segmentation} and {Recognition}.
-
-\bibitem[Wu en Shao, 2014]{wu_deep_2014}
-Wu, D. en Shao, L. (2014).
-\newblock Deep dynamic neural networks for gesture segmentation and
-  recognition.
-\newblock In {\em Workshop at the {European} {Conference} on {Computer}
-  {Vision}}, pages 552--571. Springer.
 
 \bibitem[Wu et~al., 2012]{oneshot-gesture-rgbd}
 Wu, D., Zhu, F., en Shao, L. (2012).
@@ -205,19 +86,5 @@ Yang, R., Sarkar, S., en Loeding, B. (2010).
   {Nested} {Dynamic} {Programming}.
 \newblock {\em IEEE Transactions on Pattern Analysis and Machine Intelligence},
   32(3):462--477.
-
-\bibitem[Zaki en Shaheen, 2011]{zaki_sign_2011}
-Zaki, M.~M. en Shaheen, S.~I. (2011).
-\newblock Sign language recognition using a combination of new vision based
-  features.
-\newblock {\em Pattern Recognition Letters}, 32(4):572--577.
-
-\bibitem[Zeiler en Fergus, 2014]{zeiler_visualizing_2014}
-Zeiler, M.~D. en Fergus, R. (2014).
-\newblock Visualizing and {Understanding} {Convolutional} {Networks}.
-\newblock In Fleet, D., Pajdla, T., Schiele, B., en Tuytelaars, T., editors,
-  {\em Computer {Vision} - {ECCV} 2014}, Lecture {Notes} in {Computer}
-  {Science}, pages 818--833. Springer International Publishing.
-\newblock DOI: 10.1007/978-3-319-10590-1\_53.
 
 \end{thebibliography}

@@ -14,7 +14,7 @@
    id="svg7390"
    version="1.1"
    inkscape:version="0.48.4 r9939"
-   sodipodi:docname="overfitting.svg">
+   sodipodi:docname="overfitting.pdf">
   <defs
      id="defs7392">
     <marker
@@ -105,7 +105,7 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="1.5738775"
-     inkscape:cx="427.43306"
+     inkscape:cx="439.46701"
      inkscape:cy="877.05114"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
@@ -123,7 +123,7 @@
        id="guide8916" />
     <sodipodi:guide
        orientation="1,0"
-       position="561.67015,919.38541"
+       position="604.24017,885.71062"
        id="guide8918" />
   </sodipodi:namedview>
   <metadata
@@ -162,12 +162,12 @@
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cc" />
     <rect
-       style="fill:none;stroke:#000000;stroke-width:0.69999999;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       style="fill:none;stroke:#000000;stroke-width:0.69491249;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
        id="rect8880"
-       width="344.34464"
-       height="245.46709"
-       x="204.05081"
-       y="23.016739" />
+       width="344.34973"
+       height="215.60962"
+       x="204.04826"
+       y="52.876747" />
     <path
        style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:4, 4;stroke-dashoffset:0"
        d="m 382.33463,183.90995 0,86.16538"
@@ -177,69 +177,74 @@
     <text
        xml:space="preserve"
        style="font-size:8px;font-style:normal;font-weight:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
-       x="380.98679"
-       y="177.17079"
+       x="381.62216"
+       y="173.35855"
        id="text8884"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan8886"
-         x="380.98679"
-         y="177.17079"
+         x="381.62216"
+         y="173.35855"
          style="font-size:11px">Early stopping</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:8px;font-style:normal;font-weight:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
-       x="471.74072"
-       y="43.960205"
+       style="font-size:8px;font-style:normal;font-weight:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="604.12201"
+       y="151.97369"
        id="text8888"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan8890"
-         x="471.74072"
-         y="43.960205"
+         x="604.12201"
+         y="151.97369"
          style="font-size:11px;text-align:start;text-anchor:start">Validatiefout</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:11px;font-style:normal;font-weight:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
-       x="471.74072"
-       y="62.605202"
+       x="604.24017"
+       y="182.3685"
        id="text8892"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan8894"
-         x="471.74072"
-         y="62.605202">Trainingfout</tspan></text>
+         x="604.24017"
+         y="182.3685">Trainingsfout</tspan></text>
     <path
        style="fill:#0f00ff;fill-opacity:1;stroke:#0800ff;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
-       d="m 427.57284,39.859375 39.53636,0"
+       d="m 559.73052,147.87286 39.53636,0"
        id="path8896"
        inkscape:connector-curvature="0" />
     <path
        style="fill:#0f00ff;fill-opacity:1;stroke:#ff0400;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
-       d="m 427.26232,59.570534 39.53636,0"
+       d="m 559.73052,179.33384 39.53636,0"
        id="path8896-9"
        inkscape:connector-curvature="0" />
     <text
        xml:space="preserve"
-       style="font-size:11px;font-style:normal;font-weight:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
-       x="333.57111"
-       y="281.65414"
+       style="font-size:11px;font-style:normal;font-weight:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="369.82214"
+       y="288.00787"
        id="text8920"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan8922"
-         x="333.57111"
-         y="281.65414">trainingsiteraties</tspan></text>
+         x="369.82214"
+         y="288.00787">Trainingsiteraties</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:11px;font-style:normal;font-weight:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
-       x="465.09338"
-       y="120.90468"
+       x="468.90564"
+       y="124.08154"
        id="text8930"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan8932"
-         x="465.09338"
-         y="120.90468">Overfitting</tspan></text>
+         x="468.90564"
+         y="124.08154">Overfitting</tspan></text>
+    <path
+       style="fill:none;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 288.45956,305.16298 c 157.57262,-1.27074 157.57262,-1.27074 157.57262,-1.27074"
+       id="path9027"
+       inkscape:connector-curvature="0" />
   </g>
 </svg>
