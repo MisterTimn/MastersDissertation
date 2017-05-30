@@ -11,6 +11,7 @@
 \contentsline {figure}{\numberline {2.4}{\ignorespaces Weergave van de drie meest populaire activatiefuncties voor classificatie doeleinden \relax }}{14}{figure.caption.10}
 \contentsline {figure}{\numberline {2.5}{\ignorespaces Maximum pooling: uit elk vak in de invoer afbeelding wordt het maximum bepaald en overgenomen in de bijhorende pixel in het uitvoerbeeld.\relax }}{15}{figure.caption.11}
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Eerste model\relax }}{18}{figure.caption.13}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Precision en recall van de classificatie van gebaar 15 na bijleren met vari\"erend aantal samples\relax }}{18}{figure.caption.12}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Precision en recall van de classificatie van gebaar 15 na bijleren met vari\"erend aantal samples\relax }}{20}{figure.caption.14}
 \addvspace {10\p@ }

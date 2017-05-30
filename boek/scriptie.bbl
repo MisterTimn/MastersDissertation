@@ -1,5 +1,15 @@
 \begin{thebibliography}{}
 
+\bibitem[tol, ]{tolkuren}
+Welzijn en werk in het {Nederlands}.
+\newblock Bezocht op: 29 mei 2017.
+
+\bibitem[Bergstra et~al., 2010]{theano}
+Bergstra, J., Breuleux, O., Bastien, F., Lamblin, P., Pascanu, R., Desjardins,
+  G., Turian, J., Warde-Farley, D., en Bengio, Y. (2010).
+\newblock Theano: {A} {CPU} and {GPU} math compiler in {Python}.
+\newblock In {\em Proc. 9th {Python} in {Science} {Conf}}, pages 1--7.
+
 \bibitem[Buyens, 2003]{buyens_gebarentaaltolken_2003}
 Buyens, M. (2003).
 \newblock {\em Gebarentaaltolken}.
@@ -20,11 +30,23 @@ Carbonell, J.~G., Michalski, R.~S., en Mitchell, T.~M. (1983).
   Berlin Heidelberg.
 \newblock DOI: 10.1007/978-3-662-12405-5\_1.
 
+\bibitem[Dieleman et~al., 2015]{lasagne}
+Dieleman, S., Schl{\"u}ter, J., Raffel, C., Olson, E., S{\o}nderby, S.~K.,
+  Nouri, D., Maturana, D., Thoma, M., Battenberg, E., Kelly, J., et~al. (2015).
+\newblock Lasagne: First release.
+\newblock {\em Zenodo: Geneva, Switzerland}.
+
 \bibitem[Fei-Fei et~al., 2006]{oneshot-object-cat}
 Fei-Fei, L., Fergus, R., en Perona, P. (2006).
 \newblock One-shot learning of object categories.
 \newblock {\em IEEE Transactions on Pattern Analysis and Machine Intelligence},
   28(4):594--611.
+
+\bibitem[Glorot en Bengio, 2010]{glorot-1}
+Glorot, X. en Bengio, Y. (2010).
+\newblock Understanding the difficulty of training deep feedforward neural
+  networks.
+\newblock In {\em Aistats}, volume~9, pages 249--256.
 
 \bibitem[Glorot et~al., 2011]{ReLU}
 Glorot, X., Bordes, A., en Bengio, Y. (2011).

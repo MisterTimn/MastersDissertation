@@ -9,46 +9,55 @@ A level-1 auxiliary file: s-uitvoering.aux
 A level-1 auxiliary file: s-resultaten.aux
 A level-1 auxiliary file: s-conclusie.aux
 Database file #1: bibliodatabase.bib
+Warning--entry type for "tolkuren" isn't style-file defined
+--line 20 of file bibliodatabase.bib
+I was expecting a `,' or a `}'---line 25 of file bibliodatabase.bib
+ :  
+ :  file = {Welzijn en werk in het Nederlands:/home/jasper/.mozilla/firefox/luuth0e7.default/zotero/storage/AV3V4X64/f_main.html:text/html}
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+Warning--to sort, need author or key in tolkuren
+Warning--empty year in tolkuren
 Warning--empty journal in lionel
-You've used 15 entries,
+You've used 19 entries,
             1935 wiz_defined-function locations,
-            571 strings with 6462 characters,
-and the built_in function-call counts, 6713 in all, are:
-= -- 661
-> -- 278
-< -- 14
-+ -- 97
-- -- 93
-* -- 546
-:= -- 1123
-add.period$ -- 48
-call.type$ -- 15
-change.case$ -- 119
-chr.to.int$ -- 15
-cite$ -- 16
-duplicate$ -- 279
-empty$ -- 472
-format.name$ -- 112
-if$ -- 1358
+            588 strings with 7206 characters,
+and the built_in function-call counts, 8681 in all, are:
+= -- 846
+> -- 397
+< -- 18
++ -- 141
+- -- 137
+* -- 714
+:= -- 1452
+add.period$ -- 59
+call.type$ -- 19
+change.case$ -- 160
+chr.to.int$ -- 19
+cite$ -- 23
+duplicate$ -- 352
+empty$ -- 588
+format.name$ -- 161
+if$ -- 1749
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 16
-newline$ -- 79
-num.names$ -- 47
-pop$ -- 128
+missing$ -- 19
+newline$ -- 98
+num.names$ -- 56
+pop$ -- 176
 preamble$ -- 1
-purify$ -- 120
+purify$ -- 161
 quote$ -- 0
-skip$ -- 210
+skip$ -- 265
 stack$ -- 0
-substring$ -- 445
-swap$ -- 63
-text.length$ -- 9
+substring$ -- 542
+swap$ -- 81
+text.length$ -- 12
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 88
-warning$ -- 1
-while$ -- 58
+type$ -- 112
+warning$ -- 3
+while$ -- 70
 width$ -- 0
-write$ -- 201
-(There was 1 warning)
+write$ -- 249
+(There was 1 error message)

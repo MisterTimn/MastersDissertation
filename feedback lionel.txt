@@ -1,0 +1,8 @@
+In de inleiding ontbreekt er een korte beschrijving van probleem en doel (een abstract) zodat de lezer ingeleid wordt waarover de thesis zal gaan (het woord one-shot komt pas op pagina 5).
+
+p.2: referentie naar 18 tolkuren ontbreekt
+p.4: referenties best voor je punt plaatsen (bvb. [Yang et l., 2010])
+p.5: ik zou zeker vóór 1.3.3. kort bespreken wat one-shot learning is (niet-technische uitleg)
+p.10: het voorbeeld voor het opnemen van een orkest is niet zo gepast, omdat je het niet veel met leren te maken heeft en ook zal je "train score" niet goed zijn in dit geval. Het punt is dat je leert op de training set en het slecht doet op een andere set. Een beter voorbeeld is als je examenvragen vanbuiten leert in plaats te generaliseren en op het examen een nieuwe vraag niet kan beantwoorden.
+p.12 De redenering voor een testset te gebruiken gaat verder dan enkel een eindscore te meten. Door model selection en hyperparameter optimalisatie op je validatie set kan je hier ook op overfitten.
+fig 2.3: leg ook in de caption uit waarom je een laag omkaderd hebt. Als je een figuur met de caption isoleert uit de context moet het nog begrijpbaar zijn

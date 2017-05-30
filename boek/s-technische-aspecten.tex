@@ -118,26 +118,18 @@ met $D$ het aantal invoerparameters, $M_1$ het aantal verborgen knopen in de eer
 \end{equation}
 Een neuron wordt vaak vernoemd naar de activatiefunctie die ze gebruikt. In dit geval spreken we van een Rectified Linear Unit (ReLU). Het gebruik van ReLU's wordt gestaafd door vele onderzoekswerken omtrent gesuperviseerde \textit{deep learning} zoals \cite{ReLU} en \cite{lionel}. Een ReLU zal alle negatieve waarden afbeelden op 0 en alle positieve op zichzelf.
 
+\subsection{Leren}
+%What has attracted the most interest in neural networks is the possibility of learning. Given a specific task to solve, and a class of functions F {\displaystyle \textstyle F} \textstyle F, learning means using a set of observations to find f ∗ ∈ F {\displaystyle \textstyle f^{*}\in F} \textstyle f^{*}\in F which solves the task in some optimal sense.
+%
+%This entails defining a cost function C : F → R {\displaystyle \textstyle C:F\rightarrow \mathbb {R} } \textstyle C:F\rightarrow \mathbb {R} such that, for the optimal solution f ∗ {\displaystyle \textstyle f^{*}} \textstyle f^{*}, C ( f ∗ ) ≤ C ( f ) {\displaystyle \textstyle C(f^{*})\leq C(f)} \textstyle C(f^{*})\leq C(f) ∀ f ∈ F {\displaystyle \textstyle \forall f\in F} \textstyle \forall f\in F – i.e., no solution has a cost less than the cost of the optimal solution (see mathematical optimization).
+%
+%The cost function C {\displaystyle \textstyle C} \textstyle C is an important concept in learning, as it is a measure of how far away a particular solution is from an optimal solution to the problem to be solved. Learning algorithms search through the solution space to find a function that has the smallest possible cost.
+%
+%For applications where the solution is dependent on some data, the cost must necessarily be a function of the observations, otherwise we would not be modelling anything related to the data. It is frequently defined as a statistic to which only approximations can be made. As a simple example, consider the problem of finding the model f {\displaystyle \textstyle f} \textstyle f, which minimizes C = E [ ( f ( x ) − y ) 2 ] {\displaystyle \textstyle C=E\left[(f(x)-y)^{2}\right]} \textstyle C=E\left[(f(x)-y)^{2}\right], for data pairs ( x , y ) {\displaystyle \textstyle (x,y)} \textstyle (x,y) drawn from some distribution D {\displaystyle \textstyle {\mathcal {D}}} \textstyle {\mathcal {D}}. In practical situations we would only have N {\displaystyle \textstyle N} \textstyle N samples from D {\displaystyle \textstyle {\mathcal {D}}} \textstyle {\mathcal {D}} and thus, for the above example, we would only minimize C ^ = 1 N ∑ i = 1 N ( f ( x i ) − y i ) 2 {\displaystyle \textstyle {\hat {C}}={\frac {1}{N}}\sum _{i=1}^{N}(f(x_{i})-y_{i})^{2}} \textstyle {\hat {C}}={\frac {1}{N}}\sum _{i=1}^{N}(f(x_{i})-y_{i})^{2}. Thus, the cost is minimized over a sample of the data rather than the entire distribution generating the data.
+%
+%When N → ∞ {\displaystyle \textstyle N\rightarrow \infty } \textstyle N\rightarrow \infty some form of online machine learning must be used, where the cost is partially minimized as each new example is seen. While online machine learning is often used when D {\displaystyle \textstyle {\mathcal {D}}} \textstyle {\mathcal {D}} is fixed, it is most useful in the case where the distribution changes slowly over time. In neural network methods, some form of online machine learning is frequently used for finite datasets.
+%\subsection{Gradient descent}
 
-
-
- 
-
-\begin{equation}
-\begin{aligned}
-h^{(1)}_j\quad=&\quad a\bigg(\sum_{i=1}^{D}w^{(1)}_{i,j}x_i\bigg),\quad j=1,...,M_1\\
-h^{(2)}_j\quad=&\quad a\bigg(\sum_{i=1}^{M_1}w^{(2)}_{i,j}h^{(1)}_i\bigg),\quad j=1,...,M_2\\ 
-y_j\quad=&\quad a\bigg(\sum_{i=1}^{M_2}w^{(3)}_{i,j}h^{(2)}_i\bigg),\quad j=1,...,C 
-\end{aligned}
-\end{equation}
-
-\subsection{Gradient descent}
-
-
-
-
-
-\npar Samenstelling van lineaire transformaties is zelf een lineaire transformatie
 \section{Convolutioneel neuraal netwerk}
 De vloek van de dimensionaliteit: 
 \subsection{Tweedimensionale convolutie}

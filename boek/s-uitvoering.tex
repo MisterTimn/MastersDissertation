@@ -1,6 +1,68 @@
 \chapter{Uitvoering \& architectuur}
 \section{Gebruikte technologi\"en}
-\section{Onderzoeksopzet}
-\section{Eerste opstelling}
-\section{Tweede opstelling}
+Alle programmatie werd uitgevoerd in Python, een dynamische \textit{high-level} programmeertaal. Python is ontwikkeld met het oog op leesbare en kernachtige code. Het is een van de meest gebruikte talen voor het uitvoeren van wetenschappelijke experimenten, mede dankzij de vele krachtige bibliotheken die beschikbaar zijn. In dit onderzoek worden de volgende Python-bibliotheken gebruikt:
+
+\begin{itemize}
+	\item NumPy: voegt ondersteuning toe voor grote, multi-dimensionale arrays en matrices samen met een groot assortiment aan wiskundige functies om deze arrays effici\"ent te  manipuleren. Deze bibliotheek is een onderdeel van de SciPy-stack (Scientific Python).
+	\item Theano \cite{theano}:  een bibliotheek die toelaat wiskundige expressies te defini\"eren, optimaliseren en evalueren. De twee belangrijkste troeven van Theano zijn de dynamische generatie van c-code en het transparante gebruik van GPU-acceleratie. Expressies worden symbolisch omgezet en gecompileerd voor een snelle en effici\"ente uitvoering en geoptimaliseerd worden voor gebruik van de GPU.  Hiernaast biedt de bibliotheek ook heel wat functies voor machine learning. 
+	\item Lasagne \cite{lasagne}: een lightweight bibliotheek voor het bouwen en trainen van neurale netwerken. Het biedt verschillende veelgebruikte kosten-, regularisatie-, activatie- en leerfuncties aan alsook vele soorten \textit{layers}. Zo gebruikt dit werk de \textit{DenseLayer} voor volledig verbonden lagen en de \textit{Conv2DLayer} voor de tweedimensionale convolutie. Deze bibliotheek bouwt verder op functionaliteit van Theano waardoor neurale netwerken gebouwd met Lasagne ook gebruik kunnen maken van GPU-acceleratie.
+	\item Scikit-learn: deze bibliotheek biedt heel wat machine learning functionaliteit aan maar hiervan wordt in dit onderzoek geen gebruik gemaakt. Het pakket binnen scikit-learn dat wel gebruikt wordt is \textit{metrics}. Deze wordt gebruikt voor de evaluatie van het model. Vanuit de voorspelde en ware labels kunnen we via diverse functies de kwaliteit van de classificatie beschouwen. Dit pakket wordt voornamelijk gebruikt voor het berekenen van de precision en recall en het opstellen van de confusion matrix.
+	\item Scikit-image: is een verzameling beeldverwerkingsalgoritmes. Deze bibliotheek wordt gebruikt voor de data-augmentatie.
+	
+\end{itemize}
 \section{Dataset}
+
+\section{Onderzoeksopzet}
+
+De experimenten worden uitgevoerd op computers van het Reservoir Lab aan van de vakgroep Elektronica- en Informatiesystemen (ELIS) van de Universiteit Gent. De gebruikte computers hebben een hexacore processor (Intel Core i7-3930K) met kloksnelheid van 3.2 GHz en een NVIDIA Tesla K40c grafische kaart.
+
+\npar In een eerste fase moet er een convolutioneel neuraal netwerk worden opgezet die een aanvaardbare nauwkeurigheid behaald op de gebruikte dataset. Vanuit deze architectuur kunnen dan later experimenten worden gestart rond one-shot learning.
+\section{Architectuur}
+\cite{glorot-1}
+\begin{table}
+	\label{tab:hyperparam}
+	\centering
+%	\vspace{5pt}
+	\renewcommand{\arraystretch}{0.7}% 
+	\begin{tabular}{ l l }
+		
+		\hline
+		\textit{Hyperparameter} & \textit{Waarde} \\
+		\hline
+		\textbf{Filters CNN:} & \\
+		\quad Laag 1 & 8x(5x5) \\
+		\quad Laag 2 & 16x(5x5) \\
+		\quad Laag 2 & 32x(4x4) \\
+		\hline
+		\textbf{Verborgen units ANN:} &\\
+		\quad Laag 1 & 800\\
+		\quad Laag 2 & 100\\
+		\hline
+		Learning rate & $10^{-4}$\\
+		Batch grootte & 32\\
+		$\ell1$-regularisatie & 0\\
+		$\ell2$-regularisatie & $10^{-4}$\\
+		Dropout kans & 0.5\\
+		Nesterov momentum & 0.9\\
+		\hline
+		\textbf{Initialisatie:} & \\
+		Gewichten CNN & Glorot initialisatie (uit uniforme verdeling $[-a,a]$)\\
+		Bias CNN & 0 \\
+		Gewichten ANN & Glorot initialisatie (uit uniforme verdeling $[-a,a]$)\\
+		Bias ANN & 0 \\
+		\hline
+		
+	\end{tabular}
+	\caption{Hyperparameters van het gebruikte netwerk}
+\end{table}
+
+\subsection{Eerste opstelling}
+\begin{figure}
+	\centering
+	%	\def\svgscale{0.85}
+		\def\svgwidth{\columnwidth}
+	\input{figuren/First-model.pdf_tex}
+	\caption{Eerste model}
+	\label{fig:model-1}
+\end{figure}
+\subsection{Tweede opstelling}

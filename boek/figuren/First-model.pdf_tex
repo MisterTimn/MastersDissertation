@@ -1,0 +1,63 @@
+%% Creator: Inkscape inkscape 0.48.4, www.inkscape.org
+%% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
+%% Accompanies image file 'First-model.pdf' (pdf, eps, ps)
+%%
+%% To include the image in your LaTeX document, write
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics{<filename>.pdf}
+%% To scale the image, write
+%%   \def\svgwidth{<desired width>}
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics[width=<desired width>]{<filename>.pdf}
+%%
+%% Images with a different path to the parent latex file can
+%% be accessed with the `import' package (which may need to be
+%% installed) using
+%%   \usepackage{import}
+%% in the preamble, and then including the image with
+%%   \import{<path to file>}{<filename>.pdf_tex}
+%% Alternatively, one can specify
+%%   \graphicspath{{<path to file>/}}
+%% 
+%% For more information, please see info/svg-inkscape on CTAN:
+%%   http://tug.ctan.org/tex-archive/info/svg-inkscape
+%%
+\begingroup%
+  \makeatletter%
+  \providecommand\color[2][]{%
+    \errmessage{(Inkscape) Color is used for the text in Inkscape, but the package 'color.sty' is not loaded}%
+    \renewcommand\color[2][]{}%
+  }%
+  \providecommand\transparent[1]{%
+    \errmessage{(Inkscape) Transparency is used (non-zero) for the text in Inkscape, but the package 'transparent.sty' is not loaded}%
+    \renewcommand\transparent[1]{}%
+  }%
+  \providecommand\rotatebox[2]{#2}%
+  \ifx\svgwidth\undefined%
+    \setlength{\unitlength}{828.40313446bp}%
+    \ifx\svgscale\undefined%
+      \relax%
+    \else%
+      \setlength{\unitlength}{\unitlength * \real{\svgscale}}%
+    \fi%
+  \else%
+    \setlength{\unitlength}{\svgwidth}%
+  \fi%
+  \global\let\svgwidth\undefined%
+  \global\let\svgscale\undefined%
+  \makeatother%
+  \begin{picture}(1,0.27967971)%
+    \put(0,0){\includegraphics[width=\unitlength]{First-model.pdf}}%
+    \put(0.32280017,0.24834522){\makebox(0,0)[lb]{\smash{CNN}}}%
+    \put(0.38277455,0.24834493){\makebox(0,0)[lb]{\smash{\tiny feature extractie}}}%
+    \put(0.72187321,0.24834541){\makebox(0,0)[lb]{\smash{ANN}}}%
+    \put(0.78147742,0.24834502){\makebox(0,0)[lb]{\smash{\tiny classificatie}}}%
+    \put(0.05507679,0.26647282){\makebox(0,0)[b]{\smash{\tiny Input}}}%
+    \put(0.05580783,0.24834493){\makebox(0,0)[b]{\smash{\tiny 12x64x64}}}%
+    \put(0.33097291,0.05276851){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{\tiny Max-pooling}}}%
+    \put(0.32724746,0.03786673){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{\tiny 2x2}}}%
+    \put(0.96500125,0.18300001){\color[rgb]{0,0,0}\rotatebox{-49.8517211}{\makebox(0,0)[b]{\smash{\tiny 0,1,...,18,19}}}}%
+  \end{picture}%
+\endgroup%

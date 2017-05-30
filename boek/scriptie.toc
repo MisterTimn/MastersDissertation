@@ -21,7 +21,7 @@
 \contentsline {subsection}{\numberline {2.1.3}Overfitting}{10}{subsection.2.1.3}
 \contentsline {section}{\numberline {2.2}Artificieel neuraal netwerk}{12}{section.2.2}
 \contentsline {subsection}{\numberline {2.2.1}Inleiding}{12}{subsection.2.2.1}
-\contentsline {subsection}{\numberline {2.2.2}Gradient descent}{14}{subsection.2.2.2}
+\contentsline {subsection}{\numberline {2.2.2}Leren}{15}{subsection.2.2.2}
 \contentsline {section}{\numberline {2.3}Convolutioneel neuraal netwerk}{15}{section.2.3}
 \contentsline {subsection}{\numberline {2.3.1}Tweedimensionale convolutie}{15}{subsection.2.3.1}
 \contentsline {subsection}{\numberline {2.3.2}Maximum pooling}{15}{subsection.2.3.2}
@@ -31,16 +31,17 @@
 \contentsline {subsection}{\numberline {2.4.3}Data-augmentatie}{15}{subsection.2.4.3}
 \contentsline {chapter}{\numberline {3}Uitvoering \& architectuur}{16}{chapter.3}
 \contentsline {section}{\numberline {3.1}Gebruikte technologi\"en}{16}{section.3.1}
-\contentsline {section}{\numberline {3.2}Onderzoeksopzet}{16}{section.3.2}
-\contentsline {section}{\numberline {3.3}Eerste opstelling}{16}{section.3.3}
-\contentsline {section}{\numberline {3.4}Tweede opstelling}{16}{section.3.4}
-\contentsline {section}{\numberline {3.5}Dataset}{16}{section.3.5}
-\contentsline {chapter}{\numberline {4}Testen en resultaten}{17}{chapter.4}
-\contentsline {section}{\numberline {4.1}Eerste opstelling}{17}{section.4.1}
-\contentsline {section}{\numberline {4.2}Tweede opstelling}{17}{section.4.2}
-\contentsline {subsection}{\numberline {4.2.1}Invloed aantal samples}{17}{subsection.4.2.1}
-\contentsline {chapter}{\numberline {5}Conclusie}{19}{chapter.5}
-\contentsline {section}{\numberline {5.1}Besluit}{19}{section.5.1}
-\contentsline {section}{\numberline {5.2}Verder onderzoek}{19}{section.5.2}
-\contentsline {chapter}{Bibliografie}{20}{appendix*.13}
-\contentsline {chapter}{L"yst van figuren}{22}{appendix*.14}
+\contentsline {section}{\numberline {3.2}Dataset}{17}{section.3.2}
+\contentsline {section}{\numberline {3.3}Onderzoeksopzet}{17}{section.3.3}
+\contentsline {section}{\numberline {3.4}Architectuur}{17}{section.3.4}
+\contentsline {subsection}{\numberline {3.4.1}Eerste opstelling}{17}{subsection.3.4.1}
+\contentsline {subsection}{\numberline {3.4.2}Tweede opstelling}{17}{subsection.3.4.2}
+\contentsline {chapter}{\numberline {4}Testen en resultaten}{19}{chapter.4}
+\contentsline {section}{\numberline {4.1}Eerste opstelling}{19}{section.4.1}
+\contentsline {section}{\numberline {4.2}Tweede opstelling}{19}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}Invloed aantal samples}{19}{subsection.4.2.1}
+\contentsline {chapter}{\numberline {5}Conclusie}{21}{chapter.5}
+\contentsline {section}{\numberline {5.1}Besluit}{21}{section.5.1}
+\contentsline {section}{\numberline {5.2}Verder onderzoek}{21}{section.5.2}
+\contentsline {chapter}{Bibliografie}{22}{appendix*.15}
+\contentsline {chapter}{L"yst van figuren}{24}{appendix*.16}
