@@ -2,22 +2,46 @@
 \providecommand\hyper@newdestlabel[2]{}
 \citation{theano}
 \citation{lasagne}
-\@writefile{toc}{\contentsline {chapter}{\numberline {3}Uitvoering \& architectuur}{16}{chapter.3}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {3}Uitvoering \& resultaten}{16}{chapter.3}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
 \@writefile{toc}{\contentsline {section}{\numberline {3.1}Gebruikte technologi\"en}{16}{section.3.1}}
-\citation{glorot-1}
+\citation{escalera_chalearn_2014}
+\citation{lionel}
 \@writefile{toc}{\contentsline {section}{\numberline {3.2}Dataset}{17}{section.3.2}}
-\@writefile{toc}{\contentsline {section}{\numberline {3.3}Onderzoeksopzet}{17}{section.3.3}}
-\@writefile{toc}{\contentsline {section}{\numberline {3.4}Architectuur}{17}{section.3.4}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.4.1}Eerste opstelling}{17}{subsection.3.4.1}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.4.2}Tweede opstelling}{17}{subsection.3.4.2}}
-\newlabel{tab:hyperparam}{{\caption@xref {tab:hyperparam}{ on input line 23}}{18}{Architectuur}{table.caption.12}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {3.1}{\ignorespaces Hyperparameters van het gebruikte netwerk\relax }}{18}{table.caption.12}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.1}{\ignorespaces Eerste model\relax }}{18}{figure.caption.13}}
-\newlabel{fig:model-1}{{3.1}{18}{Eerste model\relax }{figure.caption.13}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.3}Onderzoeksopzet}{18}{section.3.3}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.1}Precision, recall en confusion}{18}{subsection.3.3.1}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.4}Basismodel}{18}{section.3.4}}
+\newlabel{sec:basismodel}{{3.4}{18}{Basismodel}{section.3.4}{}}
+\citation{lionel}
+\citation{wu_deep_2014}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.4.1}Invoer}{19}{subsection.3.4.1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.4.2}Architectuur}{19}{subsection.3.4.2}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.1}{\ignorespaces Het basismodel bestaande uit een drielagig CNN voor feature-extractie en een drielagig ANN (met softmax uitvoerlaag) voor classificatie\relax }}{19}{figure.caption.12}}
+\newlabel{fig:model-1}{{3.1}{19}{Het basismodel bestaande uit een drielagig CNN voor feature-extractie en een drielagig ANN (met softmax uitvoerlaag) voor classificatie\relax }{figure.caption.12}{}}
+\citation{glorot-1}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.4.3}Training}{20}{subsection.3.4.3}}
+\@writefile{lot}{\contentsline {table}{\numberline {3.1}{\ignorespaces Hyperparameters van het basismodel\relax }}{21}{table.caption.13}}
+\newlabel{tab:hyperparam}{{3.1}{21}{Hyperparameters van het basismodel\relax }{table.caption.13}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.4.4}Baseline resultaten}{22}{subsection.3.4.4}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.5}Een gebaar bijleren}{22}{section.3.5}}
+\newlabel{sec:experimenten}{{3.5}{22}{Een gebaar bijleren}{section.3.5}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.2}{\ignorespaces Genormaliseerde confusion matrix van baseline voorspellingen van het basismodel, getraind op alle voorbeelden van alle gebaren \relax }}{23}{figure.caption.14}}
+\newlabel{fig:conf-allegebaren}{{3.2}{23}{Genormaliseerde confusion matrix van baseline voorspellingen van het basismodel, getraind op alle voorbeelden van alle gebaren \relax }{figure.caption.14}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {3.2}{\ignorespaces Precision en recall voor de voorspellingen van het basismodel getraind op alle voorbeelden van alle gebaren.\relax }}{23}{figure.caption.14}}
+\newlabel{tab:pr-alle-klassen}{{3.2}{23}{Precision en recall voor de voorspellingen van het basismodel getraind op alle voorbeelden van alle gebaren.\relax }{figure.caption.14}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.3}{\ignorespaces Precision en recall voor de classificatie van gebaar 15 in functie van het aantal gebruikte samples voor bijleren. De streepjeslijn geeft de baseline weer van het model getrained op alle voorbeelden.\relax }}{24}{figure.caption.15}}
+\newlabel{fig:naive-oneshot-gebaar15}{{3.3}{24}{Precision en recall voor de classificatie van gebaar 15 in functie van het aantal gebruikte samples voor bijleren. De streepjeslijn geeft de baseline weer van het model getrained op alle voorbeelden.\relax }{figure.caption.15}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.5.1}Softmax 20}{24}{subsection.3.5.1}}
+\@writefile{toc}{\contentsline {subsubsection}{Invloed aantal samples}{24}{section*.16}}
+\@writefile{toc}{\contentsline {subsubsection}{Invloed aantal lagen}{24}{section*.17}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.5.2}Softmax 19 + 1}{24}{subsection.3.5.2}}
+\@writefile{toc}{\contentsline {subsubsection}{Invloed aantal samples}{24}{section*.18}}
+\@writefile{toc}{\contentsline {subsubsection}{Invloed data-augmentatie}{24}{section*.19}}
+\newlabel{sec:19x1-augm}{{3.5.2}{24}{Invloed data-augmentatie}{section*.19}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.5.3}Softmax 18 + 2}{24}{subsection.3.5.3}}
 \@setckpt{s-uitvoering}{
-\setcounter{page}{19}
+\setcounter{page}{25}
 \setcounter{equation}{0}
 \setcounter{enumi}{0}
 \setcounter{enumii}{0}
@@ -27,13 +51,13 @@
 \setcounter{mpfootnote}{0}
 \setcounter{part}{0}
 \setcounter{chapter}{3}
-\setcounter{section}{4}
-\setcounter{subsection}{2}
+\setcounter{section}{5}
+\setcounter{subsection}{3}
 \setcounter{subsubsection}{0}
 \setcounter{paragraph}{0}
 \setcounter{subparagraph}{0}
-\setcounter{figure}{1}
-\setcounter{table}{1}
+\setcounter{figure}{3}
+\setcounter{table}{2}
 \setcounter{parentequation}{0}
 \setcounter{float@type}{8}
 \setcounter{lstnumber}{1}
@@ -45,7 +69,7 @@
 \setcounter{subtable}{0}
 \setcounter{Item}{0}
 \setcounter{Hfootnote}{0}
-\setcounter{bookmark@seq@number}{36}
+\setcounter{bookmark@seq@number}{43}
 \setcounter{lstlisting}{0}
 \setcounter{section@level}{2}
 }

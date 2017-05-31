@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.5.1)  30 MAY 2017 12:14
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.5.1)  31 MAY 2017 19:11
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -551,8 +551,7 @@ Package Fancyhdr Warning: \fancyhead's `E' option without twoside option is use
 less on input line 43.
 
 (./scriptie.aux (./s-overzicht.aux) (./s-inleiding.aux)
-(./s-technische-aspecten.aux) (./s-uitvoering.aux) (./s-resultaten.aux)
-(./s-conclusie.aux))
+(./s-technische-aspecten.aux) (./s-uitvoering.aux) (./s-conclusie.aux))
 \openout1 = `scriptie.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 72.
@@ -640,7 +639,7 @@ LaTeX Info: Redefining \nameref on input line 72.
 \openout3 = `scriptie.out'.
 
 
-<titelblad.pdf, id=184, 597.23125pt x 845.1575pt>
+<titelblad.pdf, id=196, 597.23125pt x 845.1575pt>
 File: titelblad.pdf Graphic file (type pdf)
  <use titelblad.pdf>
 Package pdftex.def Info: titelblad.pdf used on input line 84.
@@ -650,7 +649,7 @@ File: titelblad.pdf Graphic file (type pdf)
 <use titelblad.pdf>
 Package pdftex.def Info: titelblad.pdf used on input line 84.
 (pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
- <titelblad.pdf, id=187, page=1, 597.23125pt x 845.1575pt>
+ <titelblad.pdf, id=199, page=1, 597.23125pt x 845.1575pt>
 File: titelblad.pdf Graphic file (type pdf)
 
 <use titelblad.pdf, page 1>
@@ -899,11 +898,15 @@ Package babel Info: Redefining dutch shorthand "~
 
 
 ]
+Overfull \hbox (3.4567pt too wide) in paragraph at lines 15--18
+\OT1/cmr/m/n/10.95 ni-ca-tie As-sis-ten-tie Bu-reau voor Do-ven (CAB) om een to
+lk in te hu-ren. [[]]
+ []
+
 Package babel Info: Redefining dutch shorthand "|
 (babel)             in language  on input line 19.
 Package babel Info: Redefining dutch shorthand "~
 (babel)             in language  on input line 19.
-
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
@@ -1094,7 +1097,7 @@ Package babel Info: Redefining dutch shorthand "|
 Package babel Info: Redefining dutch shorthand "~
 (babel)             in language  on input line 30.
 [9] (./figuren/figuur-classificatieML.pdf_tex
-<figuren/figuur-classificatieML.pdf, id=353, 381.23193pt x 229.71085pt>
+<figuren/figuur-classificatieML.pdf, id=368, 381.23193pt x 229.71085pt>
 File: figuren/figuur-classificatieML.pdf Graphic file (type pdf)
 
 <use figuren/figuur-classificatieML.pdf>
@@ -1122,7 +1125,7 @@ Package babel Info: Redefining dutch shorthand "|
 Package babel Info: Redefining dutch shorthand "~
 (babel)             in language  on input line 48.
 [10] (./figuren/overfitting.pdf_tex
-<figuren/overfitting.pdf, id=361, 378.49762pt x 202.86327pt>
+<figuren/overfitting.pdf, id=376, 378.49762pt x 202.86327pt>
 File: figuren/overfitting.pdf Graphic file (type pdf)
 
 <use figuren/overfitting.pdf>
@@ -1157,13 +1160,13 @@ Package babel Info: Redefining dutch shorthand "|
 Package babel Info: Redefining dutch shorthand "~
 (babel)             in language  on input line 70.
  (./figuren/neuron.pdf_tex
-<figuren/neuron.pdf, id=372, 140.84085pt x 75.5897pt>
+<figuren/neuron.pdf, id=387, 140.84085pt x 75.5897pt>
 File: figuren/neuron.pdf Graphic file (type pdf)
  <use figuren/neuron.pdf>
 Package pdftex.def Info: figuren/neuron.pdf used on input line 52.
 (pdftex.def)             Requested size: 140.84084pt x 75.59526pt.
 ) (./figuren/ANN-alg.pdf_tex
-<figuren/ANN-alg.pdf, id=373, 268.8874pt x 140.17601pt>
+<figuren/ANN-alg.pdf, id=388, 268.8874pt x 140.17601pt>
 File: figuren/ANN-alg.pdf Graphic file (type pdf)
 
 <use figuren/ANN-alg.pdf>
@@ -1207,7 +1210,7 @@ Package babel Info: Redefining dutch shorthand "~
 
 pdfTeX warning: pdflatex (file ./figuren/ANN-alg.pdf): PDF inclusion: multiple 
 pdfs with page group included in a single page
->] <figuren/activatiefuncties.pdf, id=395, 255.8358pt x 198.7425pt>
+>] <figuren/activatiefuncties.pdf, id=410, 255.8358pt x 198.7425pt>
 File: figuren/activatiefuncties.pdf Graphic file (type pdf)
 
 <use figuren/activatiefuncties.pdf>
@@ -1246,7 +1249,7 @@ Package babel Info: Redefining dutch shorthand "|
 Package babel Info: Redefining dutch shorthand "~
 (babel)             in language  on input line 136.
  (./figuren/max-pooling.pdf_tex
-<figuren/max-pooling.pdf, id=430, 278.5908pt x 144.37633pt>
+<figuren/max-pooling.pdf, id=447, 278.5908pt x 144.37633pt>
 File: figuren/max-pooling.pdf Graphic file (type pdf)
 
 <use figuren/max-pooling.pdf>
@@ -1328,30 +1331,175 @@ Package babel Info: Redefining dutch shorthand "|
 (babel)             in language  on input line 13.
 Package babel Info: Redefining dutch shorthand "~
 (babel)             in language  on input line 13.
+
+
+LaTeX Warning: Reference `fig:gebaren' on page 17 undefined on input line 14.
+
+
+Overfull \hbox (42.61433pt too wide) in paragraph at lines 14--15
+\OT1/cmr/m/n/10.95 De ge-bruikte da-ta-set is die van de ``Cha-Learn Loo-king a
+t Pe-o-ple Chal-lenge 2014'' [[]].
+ []
+
+
+LaTeX Warning: Reference `fig:chalearn-data' on page 17 undefined on input line
+ 15.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
 Package babel Info: Redefining dutch shorthand "|
-(babel)             in language  on input line 15.
+(babel)             in language  on input line 21.
 Package babel Info: Redefining dutch shorthand "~
-(babel)             in language  on input line 15.
+(babel)             in language  on input line 21.
 Package babel Info: Redefining dutch shorthand "|
-(babel)             in language  on input line 20.
+(babel)             in language  on input line 21.
 Package babel Info: Redefining dutch shorthand "~
-(babel)             in language  on input line 20.
+(babel)             in language  on input line 21.
+[17]
 Package babel Info: Redefining dutch shorthand "|
-(babel)             in language  on input line 59.
+(babel)             in language  on input line 21.
 Package babel Info: Redefining dutch shorthand "~
-(babel)             in language  on input line 59.
- (./figuren/First-model.pdf_tex
-<figuren/First-model.pdf, id=455, 831.50964pt x 232.55638pt>
+(babel)             in language  on input line 21.
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 29.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 29.
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 31.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 31.
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 33.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 33.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 35.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 35.
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 35.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 35.
+[18]
+Overfull \hbox (13.9922pt too wide) in paragraph at lines 35--36
+\OT1/cmr/m/n/10.95 Er wordt en-kel ge-bruik ge-maakt van het diep-te-beeld, vol
+-gens [[]] en [[]]
+ []
+
+
+LaTeX Warning: Reference `fig:dataset-input' on page 19 undefined on input line
+ 36.
+
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 38.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 38.
+(./figuren/First-model.pdf_tex
+<figuren/First-model.pdf, id=487, 831.50964pt x 232.55638pt>
 File: figuren/First-model.pdf Graphic file (type pdf)
 
 <use figuren/First-model.pdf>
 Package pdftex.def Info: figuren/First-model.pdf used on input line 52.
 (pdftex.def)             Requested size: 442.65375pt x 123.80075pt.
 )
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
 Package babel Info: Redefining dutch shorthand "|
-(babel)             in language  on input line 68.
+(babel)             in language  on input line 88.
 Package babel Info: Redefining dutch shorthand "~
-(babel)             in language  on input line 68.
+(babel)             in language  on input line 88.
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 88.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 88.
+[19 <./figuren/First-model.pdf>]
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 90.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 90.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 100.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 100.
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 100.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 100.
+[20]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 100.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 100.
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 100.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 100.
+[21]
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 101.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 101.
+ <figuren/conf_alle_klassen.pdf, id=514, 625.13548pt x 492.88141pt>
+File: figuren/conf_alle_klassen.pdf Graphic file (type pdf)
+
+<use figuren/conf_alle_klassen.pdf>
+Package pdftex.def Info: figuren/conf_alle_klassen.pdf used on input line 108.
+(pdftex.def)             Requested size: 426.79134pt x 336.50113pt.
+
+
+LaTeX Warning: Float too large for page by 28.9535pt on input line 153.
+
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 156.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 156.
+<figuren/naive-oneshot-gebaar15.pdf, id=515, 398.2077pt x 255.8358pt>
+File: figuren/naive-oneshot-gebaar15.pdf Graphic file (type pdf)
+
+<use figuren/naive-oneshot-gebaar15.pdf>
+Package pdftex.def Info: figuren/naive-oneshot-gebaar15.pdf used on input line 
+163.
+(pdftex.def)             Requested size: 398.20673pt x 255.83517pt.
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 169.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 169.
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 173.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 173.
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 177.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 177.
 )
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1367,7 +1515,7 @@ Package babel Info: Redefining dutch shorthand "|
 (babel)             in language  on input line 111.
 Package babel Info: Redefining dutch shorthand "~
 (babel)             in language  on input line 111.
-[17]
+[22]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
@@ -1382,10 +1530,25 @@ Package babel Info: Redefining dutch shorthand "|
 (babel)             in language  on input line 111.
 Package babel Info: Redefining dutch shorthand "~
 (babel)             in language  on input line 111.
-[18 <./figuren/First-model.pdf>]
-\openout2 = `s-resultaten.aux'.
+[23 <./figuren/conf_alle_klassen.pdf>]
 
- (./s-resultaten.tex
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 111.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 111.
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 111.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 111.
+[24 <./figuren/naive-oneshot-gebaar15.pdf>]
+\openout2 = `s-conclusie.aux'.
+
+ (./s-conclusie.tex
 Hoofdstuk 4.
 Package babel Info: Redefining dutch shorthand "|
 (babel)             in language  on input line 1.
@@ -1399,16 +1562,6 @@ Package babel Info: Redefining dutch shorthand "|
 (babel)             in language  on input line 3.
 Package babel Info: Redefining dutch shorthand "~
 (babel)             in language  on input line 3.
-Package babel Info: Redefining dutch shorthand "|
-(babel)             in language  on input line 4.
-Package babel Info: Redefining dutch shorthand "~
-(babel)             in language  on input line 4.
-<figuren/oneshot-gebaar15.pdf, id=470, 398.2077pt x 255.8358pt>
-File: figuren/oneshot-gebaar15.pdf Graphic file (type pdf)
-
-<use figuren/oneshot-gebaar15.pdf>
-Package pdftex.def Info: figuren/oneshot-gebaar15.pdf used on input line 8.
-(pdftex.def)             Requested size: 398.20673pt x 255.83517pt.
 )
 
 Package Fancyhdr Warning: \fancyhead's `E' option without twoside option is use
@@ -1432,66 +1585,7 @@ Package babel Info: Redefining dutch shorthand "|
 (babel)             in language  on input line 112.
 Package babel Info: Redefining dutch shorthand "~
 (babel)             in language  on input line 112.
-[19
-
-
-
-]
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 13.59999pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-Package babel Info: Redefining dutch shorthand "|
-(babel)             in language  on input line 112.
-Package babel Info: Redefining dutch shorthand "~
-(babel)             in language  on input line 112.
-Package babel Info: Redefining dutch shorthand "|
-(babel)             in language  on input line 112.
-Package babel Info: Redefining dutch shorthand "~
-(babel)             in language  on input line 112.
-[20 <./figuren/oneshot-gebaar15.pdf>]
-\openout2 = `s-conclusie.aux'.
-
- (./s-conclusie.tex
-Hoofdstuk 5.
-Package babel Info: Redefining dutch shorthand "|
-(babel)             in language  on input line 1.
-Package babel Info: Redefining dutch shorthand "~
-(babel)             in language  on input line 1.
-Package babel Info: Redefining dutch shorthand "|
-(babel)             in language  on input line 2.
-Package babel Info: Redefining dutch shorthand "~
-(babel)             in language  on input line 2.
-Package babel Info: Redefining dutch shorthand "|
-(babel)             in language  on input line 3.
-Package babel Info: Redefining dutch shorthand "~
-(babel)             in language  on input line 3.
-)
-
-Package Fancyhdr Warning: \fancyhead's `E' option without twoside option is use
-less on input line 113.
-
-
-Package Fancyhdr Warning: \fancyhead's `E' option without twoside option is use
-less on input line 113.
-
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 13.59999pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-Package babel Info: Redefining dutch shorthand "|
-(babel)             in language  on input line 113.
-Package babel Info: Redefining dutch shorthand "~
-(babel)             in language  on input line 113.
-Package babel Info: Redefining dutch shorthand "|
-(babel)             in language  on input line 113.
-Package babel Info: Redefining dutch shorthand "~
-(babel)             in language  on input line 113.
-[21
+[25
 
 
 
@@ -1503,11 +1597,11 @@ Package babel Info: Redefining dutch shorthand "~
 
 
 Package Fancyhdr Warning: \fancyhead's `E' option without twoside option is use
-less on input line 56.
+less on input line 53.
 
 
 Package Fancyhdr Warning: \fancyhead's `E' option without twoside option is use
-less on input line 56.
+less on input line 53.
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1516,22 +1610,21 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 Package babel Info: Redefining dutch shorthand "|
-(babel)             in language  on input line 56.
+(babel)             in language  on input line 53.
 Package babel Info: Redefining dutch shorthand "~
-(babel)             in language  on input line 56.
+(babel)             in language  on input line 53.
 Package babel Info: Redefining dutch shorthand "|
-(babel)             in language  on input line 56.
+(babel)             in language  on input line 53.
 Package babel Info: Redefining dutch shorthand "~
-(babel)             in language  on input line 56.
-[22
+(babel)             in language  on input line 53.
+[26
 
 
 ]
-Underfull \hbox (badness 2042) in paragraph at lines 94--97
+Underfull \hbox (badness 2042) in paragraph at lines 102--105
 []\OT1/cmr/m/n/10.95 Van Her-re-weghe, M. en Ver-meer-ber-gen, M.
  []
 
-)
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
@@ -1539,31 +1632,46 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 Package babel Info: Redefining dutch shorthand "|
-(babel)             in language  on input line 121.
+(babel)             in language  on input line 111.
 Package babel Info: Redefining dutch shorthand "~
-(babel)             in language  on input line 121.
+(babel)             in language  on input line 111.
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 111.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 111.
+[27])
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 120.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 120.
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 120.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 120.
+[28]
 Package babel Info: Redefining dutch shorthand "|
 (babel)             in language  on input line 121.
 Package babel Info: Redefining dutch shorthand "~
 (babel)             in language  on input line 121.
-[23]
-Package babel Info: Redefining dutch shorthand "|
-(babel)             in language  on input line 122.
-Package babel Info: Redefining dutch shorthand "~
-(babel)             in language  on input line 122.
  (./scriptie.lof)
 \tf@lof=\write5
 \openout5 = `scriptie.lof'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 133.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 132.
 
 
 Package Fancyhdr Warning: \fancyhead's `E' option without twoside option is use
-less on input line 133.
+less on input line 132.
 
 
 Package Fancyhdr Warning: \fancyhead's `E' option without twoside option is use
-less on input line 133.
+less on input line 132.
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1572,32 +1680,35 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 Package babel Info: Redefining dutch shorthand "|
-(babel)             in language  on input line 133.
+(babel)             in language  on input line 132.
 Package babel Info: Redefining dutch shorthand "~
-(babel)             in language  on input line 133.
+(babel)             in language  on input line 132.
 Package babel Info: Redefining dutch shorthand "|
-(babel)             in language  on input line 133.
+(babel)             in language  on input line 132.
 Package babel Info: Redefining dutch shorthand "~
-(babel)             in language  on input line 133.
-[24
+(babel)             in language  on input line 132.
+[29
 
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 133.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 132.
  (./scriptie.aux (./s-overzicht.aux) (./s-inleiding.aux)
-(./s-technische-aspecten.aux) (./s-uitvoering.aux) (./s-resultaten.aux)
-(./s-conclusie.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 133.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 133.
+(./s-technische-aspecten.aux) (./s-uitvoering.aux) (./s-conclusie.aux))
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 132.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 132.
 Package rerunfilecheck Info: File `scriptie.out' has not changed.
-(rerunfilecheck)             Checksum: 11AA752827A02E821B26876BA2FEEA8B;2900.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 133.
+(rerunfilecheck)             Checksum: DCE65AB4D439935B45370E2C86FFEE1B;3105.
+
+
+LaTeX Warning: There were undefined references.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 132.
  ) 
 Here is how much of TeX's memory you used:
- 11565 strings out of 493013
- 169912 string characters out of 6133329
- 273643 words of memory out of 5000000
- 14731 multiletter control sequences out of 15000+600000
+ 11592 strings out of 493013
+ 170465 string characters out of 6133329
+ 274984 words of memory out of 5000000
+ 14748 multiletter control sequences out of 15000+600000
  13681 words of font info for 49 fonts, out of 8000000 for 9000
  1142 hyphenation exceptions out of 8191
  42i,18n,48p,1289b,506s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1620,10 +1731,10 @@ e/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/
 2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2
 016/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texli
 ve/2016/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb>
-Output written on scriptie.pdf (31 pages, 409146 bytes).
+Output written on scriptie.pdf (36 pages, 432174 bytes).
 PDF statistics:
- 605 PDF objects out of 1000 (max. 8388607)
- 529 compressed objects within 6 object streams
- 113 named destinations out of 1000 (max. 500000)
- 421 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 678 PDF objects out of 1000 (max. 8388607)
+ 594 compressed objects within 6 object streams
+ 129 named destinations out of 1000 (max. 500000)
+ 450 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -1,9 +1,5 @@
 \begin{thebibliography}{}
 
-\bibitem[tol, ]{tolkuren}
-Welzijn en werk in het {Nederlands}.
-\newblock Bezocht op: 29 mei 2017.
-
 \bibitem[Bergstra et~al., 2010]{theano}
 Bergstra, J., Breuleux, O., Bastien, F., Lamblin, P., Pascanu, R., Desjardins,
   G., Turian, J., Warde-Farley, D., en Bengio, Y. (2010).
@@ -14,6 +10,10 @@ Bergstra, J., Breuleux, O., Bastien, F., Lamblin, P., Pascanu, R., Desjardins,
 Buyens, M. (2003).
 \newblock {\em Gebarentaaltolken}.
 \newblock Garant.
+
+\bibitem[CAB-Vlaanderen, 2017]{tolkuren}
+CAB-Vlaanderen (2017).
+\newblock Welzijn en werk in het {Nederlands}.
 
 \bibitem[Caelles et~al., 2016]{oneshot-video-segm}
 Caelles, S., Maninis, K.-K., Pont-Tuset, J., Leal-Taixé, L., Cremers, D., en
@@ -35,6 +35,14 @@ Dieleman, S., Schl{\"u}ter, J., Raffel, C., Olson, E., S{\o}nderby, S.~K.,
   Nouri, D., Maturana, D., Thoma, M., Battenberg, E., Kelly, J., et~al. (2015).
 \newblock Lasagne: First release.
 \newblock {\em Zenodo: Geneva, Switzerland}.
+
+\bibitem[Escalera et~al., 2014]{escalera_chalearn_2014}
+Escalera, S., Baro, X., Gonzalez, J., Bautista, M.~A., Madadi, M., Reyes, M.,
+  Ponce-Lopez, V., Escalante, H.~J., Shotton, J., en Guyon, I. (2014).
+\newblock {ChaLearn} {Looking} at {People} {Challenge} 2014: {Dataset} and
+  {Results}.
+\newblock In {\em Computer {Vision} - {ECCV} 2014 {Workshops}}, pages 459--473.
+  Springer, Cham.
 
 \bibitem[Fei-Fei et~al., 2006]{oneshot-object-cat}
 Fei-Fei, L., Fergus, R., en Perona, P. (2006).
@@ -94,6 +102,19 @@ Srivastava, N., Hinton, G.~E., Krizhevsky, A., Sutskever, I., en Salakhutdinov,
 Van~Herreweghe, M. en Vermeerbergen, M. (2009).
 \newblock Flemish {Sign} {Language} standardisation.
 \newblock {\em Current Issues in Language Planning}, 10(3):308--326.
+
+\bibitem[Wu et~al., 2016]{wu_deep_2016}
+Wu, D., Pigou, L., Kindermans, P.-J., Nam, L.~E., Shao, L., Dambre, J., en
+  Odobez, J.-M. (2016).
+\newblock Deep {Dynamic} {Neural} {Networks} for {Multimodal} {Gesture}
+  {Segmentation} and {Recognition}.
+
+\bibitem[Wu en Shao, 2014]{wu_deep_2014}
+Wu, D. en Shao, L. (2014).
+\newblock Deep dynamic neural networks for gesture segmentation and
+  recognition.
+\newblock In {\em Workshop at the {European} {Conference} on {Computer}
+  {Vision}}, pages 552--571. Springer.
 
 \bibitem[Wu et~al., 2012]{oneshot-gesture-rgbd}
 Wu, D., Zhu, F., en Shao, L. (2012).

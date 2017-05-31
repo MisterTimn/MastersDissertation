@@ -29,19 +29,26 @@
 \contentsline {subsection}{\numberline {2.4.1}Momentum}{15}{subsection.2.4.1}
 \contentsline {subsection}{\numberline {2.4.2}Dropout}{15}{subsection.2.4.2}
 \contentsline {subsection}{\numberline {2.4.3}Data-augmentatie}{15}{subsection.2.4.3}
-\contentsline {chapter}{\numberline {3}Uitvoering \& architectuur}{16}{chapter.3}
+\contentsline {chapter}{\numberline {3}Uitvoering \& resultaten}{16}{chapter.3}
 \contentsline {section}{\numberline {3.1}Gebruikte technologi\"en}{16}{section.3.1}
 \contentsline {section}{\numberline {3.2}Dataset}{17}{section.3.2}
-\contentsline {section}{\numberline {3.3}Onderzoeksopzet}{17}{section.3.3}
-\contentsline {section}{\numberline {3.4}Architectuur}{17}{section.3.4}
-\contentsline {subsection}{\numberline {3.4.1}Eerste opstelling}{17}{subsection.3.4.1}
-\contentsline {subsection}{\numberline {3.4.2}Tweede opstelling}{17}{subsection.3.4.2}
-\contentsline {chapter}{\numberline {4}Testen en resultaten}{19}{chapter.4}
-\contentsline {section}{\numberline {4.1}Eerste opstelling}{19}{section.4.1}
-\contentsline {section}{\numberline {4.2}Tweede opstelling}{19}{section.4.2}
-\contentsline {subsection}{\numberline {4.2.1}Invloed aantal samples}{19}{subsection.4.2.1}
-\contentsline {chapter}{\numberline {5}Conclusie}{21}{chapter.5}
-\contentsline {section}{\numberline {5.1}Besluit}{21}{section.5.1}
-\contentsline {section}{\numberline {5.2}Verder onderzoek}{21}{section.5.2}
-\contentsline {chapter}{Bibliografie}{22}{appendix*.15}
-\contentsline {chapter}{L"yst van figuren}{24}{appendix*.16}
+\contentsline {section}{\numberline {3.3}Onderzoeksopzet}{18}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}Precision, recall en confusion}{18}{subsection.3.3.1}
+\contentsline {section}{\numberline {3.4}Basismodel}{18}{section.3.4}
+\contentsline {subsection}{\numberline {3.4.1}Invoer}{19}{subsection.3.4.1}
+\contentsline {subsection}{\numberline {3.4.2}Architectuur}{19}{subsection.3.4.2}
+\contentsline {subsection}{\numberline {3.4.3}Training}{20}{subsection.3.4.3}
+\contentsline {subsection}{\numberline {3.4.4}Baseline resultaten}{22}{subsection.3.4.4}
+\contentsline {section}{\numberline {3.5}Een gebaar bijleren}{22}{section.3.5}
+\contentsline {subsection}{\numberline {3.5.1}Softmax 20}{24}{subsection.3.5.1}
+\contentsline {subsubsection}{Invloed aantal samples}{24}{section*.16}
+\contentsline {subsubsection}{Invloed aantal lagen}{24}{section*.17}
+\contentsline {subsection}{\numberline {3.5.2}Softmax 19 + 1}{24}{subsection.3.5.2}
+\contentsline {subsubsection}{Invloed aantal samples}{24}{section*.18}
+\contentsline {subsubsection}{Invloed data-augmentatie}{24}{section*.19}
+\contentsline {subsection}{\numberline {3.5.3}Softmax 18 + 2}{24}{subsection.3.5.3}
+\contentsline {chapter}{\numberline {4}Conclusie}{25}{chapter.4}
+\contentsline {section}{\numberline {4.1}Besluit}{25}{section.4.1}
+\contentsline {section}{\numberline {4.2}Verder onderzoek}{25}{section.4.2}
+\contentsline {chapter}{Bibliografie}{26}{appendix*.20}
+\contentsline {chapter}{L"yst van figuren}{29}{appendix*.21}

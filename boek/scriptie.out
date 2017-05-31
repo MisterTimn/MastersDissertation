@@ -27,19 +27,22 @@
 \BOOKMARK [2][-]{subsection.2.4.1}{Momentum}{section.2.4}% 27
 \BOOKMARK [2][-]{subsection.2.4.2}{Dropout}{section.2.4}% 28
 \BOOKMARK [2][-]{subsection.2.4.3}{Data-augmentatie}{section.2.4}% 29
-\BOOKMARK [0][-]{chapter.3}{Uitvoering \046 architectuur}{}% 30
+\BOOKMARK [0][-]{chapter.3}{Uitvoering \046 resultaten}{}% 30
 \BOOKMARK [1][-]{section.3.1}{Gebruikte technologi\353n}{chapter.3}% 31
 \BOOKMARK [1][-]{section.3.2}{Dataset}{chapter.3}% 32
 \BOOKMARK [1][-]{section.3.3}{Onderzoeksopzet}{chapter.3}% 33
-\BOOKMARK [1][-]{section.3.4}{Architectuur}{chapter.3}% 34
-\BOOKMARK [2][-]{subsection.3.4.1}{Eerste opstelling}{section.3.4}% 35
-\BOOKMARK [2][-]{subsection.3.4.2}{Tweede opstelling}{section.3.4}% 36
-\BOOKMARK [0][-]{chapter.4}{Testen en resultaten}{}% 37
-\BOOKMARK [1][-]{section.4.1}{Eerste opstelling}{chapter.4}% 38
-\BOOKMARK [1][-]{section.4.2}{Tweede opstelling}{chapter.4}% 39
-\BOOKMARK [2][-]{subsection.4.2.1}{Invloed aantal samples}{section.4.2}% 40
-\BOOKMARK [0][-]{chapter.5}{Conclusie}{}% 41
-\BOOKMARK [1][-]{section.5.1}{Besluit}{chapter.5}% 42
-\BOOKMARK [1][-]{section.5.2}{Verder onderzoek}{chapter.5}% 43
-\BOOKMARK [0][-]{appendix*.15}{Bibliografie}{}% 44
-\BOOKMARK [0][-]{appendix*.16}{Lijst van figuren}{}% 45
+\BOOKMARK [2][-]{subsection.3.3.1}{Precision, recall en confusion}{section.3.3}% 34
+\BOOKMARK [1][-]{section.3.4}{Basismodel}{chapter.3}% 35
+\BOOKMARK [2][-]{subsection.3.4.1}{Invoer}{section.3.4}% 36
+\BOOKMARK [2][-]{subsection.3.4.2}{Architectuur}{section.3.4}% 37
+\BOOKMARK [2][-]{subsection.3.4.3}{Training}{section.3.4}% 38
+\BOOKMARK [2][-]{subsection.3.4.4}{Baseline resultaten}{section.3.4}% 39
+\BOOKMARK [1][-]{section.3.5}{Een gebaar bijleren}{chapter.3}% 40
+\BOOKMARK [2][-]{subsection.3.5.1}{Softmax 20}{section.3.5}% 41
+\BOOKMARK [2][-]{subsection.3.5.2}{Softmax 19 + 1}{section.3.5}% 42
+\BOOKMARK [2][-]{subsection.3.5.3}{Softmax 18 + 2}{section.3.5}% 43
+\BOOKMARK [0][-]{chapter.4}{Conclusie}{}% 44
+\BOOKMARK [1][-]{section.4.1}{Besluit}{chapter.4}% 45
+\BOOKMARK [1][-]{section.4.2}{Verder onderzoek}{chapter.4}% 46
+\BOOKMARK [0][-]{appendix*.20}{Bibliografie}{}% 47
+\BOOKMARK [0][-]{appendix*.21}{Lijst van figuren}{}% 48
