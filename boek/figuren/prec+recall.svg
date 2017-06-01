@@ -14,7 +14,7 @@
    id="svg6324"
    version="1.1"
    inkscape:version="0.48.4 r9939"
-   sodipodi:docname="prec+recall.pdf">
+   sodipodi:docname="prec+recall.svg">
   <defs
      id="defs6326" />
   <sodipodi:namedview
@@ -24,11 +24,11 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="2.1378426"
-     inkscape:cx="260.95657"
-     inkscape:cy="712.32038"
+     inkscape:zoom="1.0689213"
+     inkscape:cx="259.96129"
+     inkscape:cy="788.43124"
      inkscape:document-units="px"
-     inkscape:current-layer="g7342"
+     inkscape:current-layer="layer1"
      showgrid="false"
      showguides="true"
      inkscape:guide-bbox="true"
@@ -51,7 +51,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -364,18 +364,6 @@
     <text
        xml:space="preserve"
        style="font-size:8px;font-style:normal;font-weight:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
-       x="115.71429"
-       y="243.79076"
-       id="text7123"
-       sodipodi:linespacing="125%"><tspan
-         sodipodi:role="line"
-         id="tspan7125"
-         x="115.71429"
-         y="243.79076"
-         style="font-size:11px">Relevante elementen</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-size:8px;font-style:normal;font-weight:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
        x="115.71428"
        y="262.36218"
        id="text7133"
@@ -384,7 +372,7 @@
          id="tspan7135"
          x="115.71428"
          y="262.36218"
-         style="font-size:11px">False Negatives</tspan></text>
+         style="font-size:11px">False Negative</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:8px;font-style:normal;font-weight:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
@@ -396,7 +384,7 @@
          id="tspan7139"
          x="220.71428"
          y="262.36218"
-         style="font-size:11px">True Negatives</tspan></text>
+         style="font-size:11px">True Negative</tspan></text>
     <g
        id="g7154"
        transform="translate(-8.5714285,5)">
@@ -543,24 +531,6 @@
          transform="matrix(0.62238261,0,0,0.3,216.38522,338.91924)"
          sodipodi:start="1.5707963"
          sodipodi:end="4.712389" />
-      <text
-         xml:space="preserve"
-         style="font-size:8px;font-style:normal;font-weight:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
-         x="200.71429"
-         y="442.36218"
-         id="text7346"
-         sodipodi:linespacing="125%"
-         transform="translate(0.07490694,7.6293945e-6)"><tspan
-           sodipodi:role="line"
-           id="tspan7348"
-           x="200.71429"
-           y="442.36218"
-           style="font-size:11px">geselecteerde elementen</tspan></text>
-      <path
-         style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
-         d="m 167.47031,382.9106 28.57143,50"
-         id="path7350"
-         inkscape:connector-curvature="0" />
     </g>
     <text
        xml:space="preserve"

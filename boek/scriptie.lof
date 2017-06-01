@@ -11,7 +11,11 @@
 \contentsline {figure}{\numberline {2.4}{\ignorespaces Weergave van de drie meest populaire activatiefuncties voor classificatie doeleinden \relax }}{14}{figure.caption.10}
 \contentsline {figure}{\numberline {2.5}{\ignorespaces Maximum pooling: uit elk vak in de invoer afbeelding wordt het maximum bepaald en overgenomen in de bijhorende pixel in het uitvoerbeeld.\relax }}{15}{figure.caption.11}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Het basismodel bestaande uit een drielagig CNN voor feature-extractie en een drielagig ANN (met softmax uitvoerlaag) voor classificatie\relax }}{19}{figure.caption.12}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Genormaliseerde confusion matrix van baseline voorspellingen van het basismodel, getraind op alle voorbeelden van alle gebaren \relax }}{23}{figure.caption.14}
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Precision en recall voor de classificatie van gebaar 15 in functie van het aantal gebruikte samples voor bijleren. De streepjeslijn geeft de baseline weer van het model getrained op alle voorbeelden.\relax }}{24}{figure.caption.15}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces De Italiaanse gebaren gebruikt in de ``ChaLearn Looking At People Challenge 2014, Track 3: gesture spotting''\relax }}{18}{figure.caption.12}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces De vier datastromen beschikbaar in de ``ChaLearn Looking At People Challenge 2014, Track 3: gesture spotting'' dataset\relax }}{19}{figure.caption.13}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces De 12 frames gebruikt voor de invoer van het CNN. De frames hebben een resolutie van 64x64 pixels.\relax }}{20}{figure.caption.14}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Het basismodel bestaande uit een drielagig CNN voor feature-extractie en een drielagig ANN (met softmax uitvoerlaag) voor classificatie\relax }}{21}{figure.caption.15}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Visualisatie van de betekenis van precision en recall. Links zijn alle relevante elementen te zien die zouden moeten geselecteerd worden. Het omcirkelde gedeelte zijn de effectief geselecteerde elementen of de voorspellingen van het model\relax }}{24}{figure.caption.18}
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Genormaliseerde confusion matrix van baseline voorspellingen van het basismodel, getraind op alle voorbeelden van alle gebaren \relax }}{25}{figure.caption.19}
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Precision en recall voor de classificatie van gebaar 15 met het softmax20 model in functie van het aantal gebruikte samples voor bijleren. De streepjeslijn geeft de baseline weer van het model getrained op alle voorbeelden.\relax }}{27}{figure.caption.21}
 \addvspace {10\p@ }

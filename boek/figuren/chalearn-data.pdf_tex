@@ -1,6 +1,6 @@
 %% Creator: Inkscape inkscape 0.48.4, www.inkscape.org
 %% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
-%% Accompanies image file 'prec+recall.pdf' (pdf, eps, ps)
+%% Accompanies image file 'chalearn-data.pdf' (pdf, eps, ps)
 %%
 %% To include the image in your LaTeX document, write
 %%   \input{<filename>.pdf_tex}
@@ -36,7 +36,7 @@
   }%
   \providecommand\rotatebox[2]{#2}%
   \ifx\svgwidth\undefined%
-    \setlength{\unitlength}{276.7093689bp}%
+    \setlength{\unitlength}{328.37073894bp}%
     \ifx\svgscale\undefined%
       \relax%
     \else%
@@ -48,15 +48,11 @@
   \global\let\svgwidth\undefined%
   \global\let\svgscale\undefined%
   \makeatother%
-  \begin{picture}(1,0.51162502)%
-    \put(0,0){\includegraphics[width=\unitlength]{prec+recall.pdf}}%
-    \put(0.14868616,0.46670938){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{False Negative}}}%
-    \put(0.45225376,0.46670938){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{True Negative}}}%
-    \put(0.18379264,0.26226596){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{True}}}%
-    \put(0.18585771,0.22509431){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{Positive}}}%
-    \put(0.41023778,0.26328962){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{False}}}%
-    \put(0.41230284,0.22611797){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{Positive}}}%
-    \put(0.82396919,0.39030116){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{= Precision}}}%
-    \put(0.82396919,0.16161125){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{= Recall}}}%
+  \begin{picture}(1,0.21301258)%
+    \put(0,0){\includegraphics[width=\unitlength]{chalearn-data.pdf}}%
+    \put(0.12968407,0.00297691){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{RGB-beeld}}}%
+    \put(0.39757453,0.0055744){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{Dieptebeeld}}}%
+    \put(0.6436368,0.00297692){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{Gebruikersindex}}}%
+    \put(0.88771475,0.00297692){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{Skeletinformatie}}}%
   \end{picture}%
 \endgroup%
