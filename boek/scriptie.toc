@@ -40,14 +40,14 @@
 \contentsline {subsection}{\numberline {3.4.4}Baseline resultaten}{23}{subsection.3.4.4}
 \contentsline {subsubsection}{Precision, recall en confusion}{23}{section*.17}
 \contentsline {section}{\numberline {3.5}Een gebaar bijleren}{24}{section.3.5}
-\contentsline {subsection}{\numberline {3.5.1}Softmax 20}{24}{subsection.3.5.1}
-\contentsline {subsubsection}{Invloed aantal samples}{26}{section*.20}
-\contentsline {subsection}{\numberline {3.5.2}Softmax 19 + 1}{28}{subsection.3.5.2}
-\contentsline {subsubsection}{Invloed aantal samples}{28}{section*.22}
-\contentsline {subsubsection}{Invloed data-augmentatie}{28}{section*.23}
-\contentsline {subsection}{\numberline {3.5.3}Softmax 18 + 2}{28}{subsection.3.5.3}
-\contentsline {chapter}{\numberline {4}Conclusie}{29}{chapter.4}
-\contentsline {section}{\numberline {4.1}Besluit}{29}{section.4.1}
-\contentsline {section}{\numberline {4.2}Verder onderzoek}{29}{section.4.2}
-\contentsline {chapter}{Bibliografie}{30}{appendix*.24}
-\contentsline {chapter}{L"yst van figuren}{33}{appendix*.25}
+\contentsline {subsection}{\numberline {3.5.1}Softmax20 model}{24}{subsection.3.5.1}
+\contentsline {subsection}{\numberline {3.5.2}Softmax19+1 model}{28}{subsection.3.5.2}
+\contentsline {subsubsection}{Invloed van het aantal samples}{28}{section*.22}
+\contentsline {subsubsection}{Invloed van het bijgeleerde gebaar}{30}{section*.23}
+\contentsline {subsubsection}{Invloed van data-augmentatie}{30}{section*.24}
+\contentsline {subsection}{\numberline {3.5.3}Softmax18+1+1 model}{31}{subsection.3.5.3}
+\contentsline {chapter}{\numberline {4}Conclusie}{33}{chapter.4}
+\contentsline {section}{\numberline {4.1}Besluit}{33}{section.4.1}
+\contentsline {section}{\numberline {4.2}Verder onderzoek}{33}{section.4.2}
+\contentsline {chapter}{Bibliografie}{34}{appendix*.26}
+\contentsline {chapter}{L"yst van figuren}{37}{appendix*.27}
