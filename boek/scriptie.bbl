@@ -66,11 +66,44 @@ Guo, X.-L. en Yang, T.-T. (2017).
 \newblock Gesture recognition based on {HMM}-{FNN} model using a {Kinect}.
 \newblock {\em Journal on Multimodal User Interfaces}, 11(1):1--7.
 
-\bibitem[Krizhevsky et~al., 2012]{krizhevsky2012imagenet}
-Krizhevsky, A., Sutskever, I., en Hinton, G.~E. (2012).
+\bibitem[Hubel en Wiesel, 1968]{hubel1968receptive}
+Hubel, D.~H. en Wiesel, T.~N. (1968).
+\newblock Receptive fields and functional architecture of monkey striate
+  cortex.
+\newblock {\em The Journal of physiology}, 195(1):215--243.
+
+\bibitem[Jhuang et~al., 2007]{jhuang2007biologically}
+Jhuang, H., Serre, T., Wolf, L., en Poggio, T. (2007).
+\newblock A biologically inspired system for action recognition.
+\newblock In {\em Computer Vision, 2007. ICCV 2007. IEEE 11th International
+  Conference on}, pages 1--8. Ieee.
+
+\bibitem[Ji et~al., 2013]{cnn-ji}
+Ji, S., Xu, W., Yang, M., en Yu, K. (2013).
+\newblock 3d convolutional neural networks for human action recognition.
+\newblock {\em IEEE transactions on pattern analysis and machine intelligence},
+  35(1):221--231.
+
+\bibitem[Karpathy et~al., 2014]{cnn-karpathy}
+Karpathy, A., Toderici, G., Shetty, S., Leung, T., Sukthankar, R., en Fei-Fei,
+  L. (2014).
+\newblock Large-scale video classification with convolutional neural networks.
+\newblock In {\em Proceedings of the {IEEE} conference on {Computer} {Vision}
+  and {Pattern} {Recognition}}, pages 1725--1732.
+
+\bibitem[Krizhevsky et~al., 2012a]{krizhevsky2012imagenet}
+Krizhevsky, A., Sutskever, I., en Hinton, G.~E. (2012a).
 \newblock Imagenet classification with deep convolutional neural networks.
 \newblock In {\em Advances in neural information processing systems}, pages
   1097--1105.
+
+\bibitem[Krizhevsky et~al., 2012b]{cnn-krizhevsky}
+Krizhevsky, A., Sutskever, I., en Hinton, G.~E. (2012b).
+\newblock {ImageNet} {Classification} with {Deep} {Convolutional} {Neural}
+  {Networks}.
+\newblock In Pereira, F., Burges, C. J.~C., Bottou, L., en Weinberger, K.~Q.,
+  editors, {\em Advances in {Neural} {Information} {Processing} {Systems} 25},
+  pages 1097--1105. Curran Associates, Inc.
 
 \bibitem[Kuehne et~al., 2011]{hmdb-manual-segm}
 Kuehne, H., Jhuang, H., Garrote, E., Poggio, T., en Serre, T. (2011).
@@ -88,6 +121,16 @@ Lake, B.~M., Salakhutdinov, R., Gross, J., en Tenenbaum, J.~B. (2011).
 \newblock One shot learning of simple visual concepts.
 \newblock In {\em CogSci}, volume 172, page~2.
 
+\bibitem[LeCun et~al., 2001]{lecun-01a}
+LeCun, Y., Bottou, L., Bengio, Y., en Haffner, P. (2001).
+\newblock Gradient-based learning applied to document recognition.
+\newblock In {\em Intelligent Signal Processing}, pages 306--351. IEEE Press.
+
+\bibitem[Perronnin et~al., 2010]{perronnin2010improving}
+Perronnin, F., S{\'a}nchez, J., en Mensink, T. (2010).
+\newblock Improving the fisher kernel for large-scale image classification.
+\newblock {\em Computer Vision--ECCV 2010}, pages 143--156.
+
 \bibitem[Pigou, 2014]{lionel}
 Pigou, L. (2014).
 \newblock Gebarentaalherkenning met convolutionele neurale.
@@ -102,6 +145,13 @@ Srivastava, N., Hinton, G.~E., Krizhevsky, A., Sutskever, I., en Salakhutdinov,
 Van~Herreweghe, M. en Vermeerbergen, M. (2009).
 \newblock Flemish {Sign} {Language} standardisation.
 \newblock {\em Current Issues in Language Planning}, 10(3):308--326.
+
+\bibitem[Wan et~al., 2016]{wan_chalearn_2016}
+Wan, J., Zhao, Y., Zhou, S., Guyon, I., Escalera, S., en Li, S.~Z. (2016).
+\newblock Chalearn looking at people rgb-d isolated and continuous datasets for
+  gesture recognition.
+\newblock In {\em Proceedings of the {IEEE} {Conference} on {Computer} {Vision}
+  and {Pattern} {Recognition} {Workshops}}, pages 56--64.
 
 \bibitem[Wu et~al., 2016]{wu_deep_2016}
 Wu, D., Pigou, L., Kindermans, P.-J., Nam, L.~E., Shao, L., Dambre, J., en

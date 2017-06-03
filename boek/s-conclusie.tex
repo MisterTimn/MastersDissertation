@@ -1,3 +1,16 @@
 \chapter{Conclusie}
 \section{Besluit}
+In deze masterproef wordt aangetoond dat het mogelijk is om een gebaar met een beperkt aantal voorbeelden bij te leren aan een convolutioneel neuraal netwerk, met behulp van het dieptebeeld van de Microsoft Kinect en GPU-acceleratie.
+\npar In alle experimenten is te zien dat een groter aantal voorbeelden een positieve invloed heeft op de sensitiviteit of recall van de herkenning van het bijgeleerde gebaar. De stijging in deze waarde is het sterkst tussen het gebruik van 1 tot 10 samples. Voor het ideaal van one-shot learning ligt deze waarde voor 10 van de 20 gebaren boven de 10\%. Wanneer er 10 samples gebruikt worden zijn er 11 gebaren die meer dan 50\% sensitiviteit tonen. Het gebruikte model is relatief eenvoudig gehouden om meer experimenten te kunnen uitvoeren maar behaalt toch behoorlijke resultaten op deze uitdagende taak.
+\npar Zowel precision als recall van het bijleren van een gebaar liggen in lijn met de prestaties van het basismodel waarin alle gebaren uit de trainset samen worden aangeleerd met alle voorbeelden. 
+\npar Door het bijleren van twee nieuwe gebaren na elkaar wordt aangetoond dat het model dynamisch uitbreidbaar is. De sensitiviteit op de twee nieuw bijgeleerde gebaren van het experiment ligt zelfs hoger dan wanneer ze elk afzonderlijk worden bijgeleerd.
+\npar De kloof tussen het herkenningsvermogen na bijleren met een beperkt aantal voorbeelden en het meteen aanleren van alle gebaren is wel nog steeds groot.
 \section{Verder onderzoek}
+
+Er is een eerste aanleiding gegeven tot one-shot learning en het dynamisch uitbreiden van het lexicon van een gebarenherkenningssysteem. Er is veel ruimte voor verbetering en verder onderzoek.
+
+\npar Ten eerste is er weinig voorverwerking gedaan op de gebruikte data. Een extra voorverwerkingsstap kan bijvoorbeeld de achtergrond filteren en betere ruisonderdrukking voorzien. Zo zullen er betere en meer algemene features worden aangeleerd en gedetecteerd. Er kan ook gebruik gemaakt worden van alle frames van het beeld en driedimensionale convoluties om rekening te houden met het tijdsaspect.
+
+\npar Het kan interessant zijn om een meer complex en state-of-the-art netwerk op te stellen en te trainen met een grotere dataset zoals de ``Chalearn Isolated Gesture Recognition (ICPR '16)'' dataset uit \cite{wan_chalearn_2016}. Deze bevat 48000 voorbeelden, bijna vijf keer zo veel als de ChaLearn LAP 2014 dataset die hier gebruikt werd, en beslaat 249 verschillende gebaren. Doordat er zo veel verschillende gebaren in deze dataset zijn kunnen er nog meer algemene features ge\"etraheerd worden. Meer algemene features levert meer potenti\"eel voor het bijleren van een gebaar en de dynamische uitbreiding van het herkenbaar lexicon.
+\npar Er kan enkel met deze nieuwe dataset gewerkt worden op een analoge manier als in deze masterproef of er kan gekozen worden om gebaren bij te leren uit een andere dataset, zoals bijvoorbeeld de LAP 2014 dataset.
+\npar Vanuit intu\"itie moet data-augmentatie veel helpen bij het bijleren vanuit weinig voorbeelden. Een doordachte data-augmentatie techniek die translaties, rotaties, vervorming en ruis toevoegt kan gunstige resultaten brengen op voorwaarde dat het model dat hiervoor wordt gebruikt genoeg parameters heeft om de grotere variatie te beschrijven.

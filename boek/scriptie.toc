@@ -2,7 +2,8 @@
 \select@language {dutch}
 \contentsline {chapter}{Voorwoord}{iii}{chapter*.2}
 \contentsline {chapter}{Overzicht}{iv}{chapter*.3}
-\contentsline {chapter}{Afkortingen}{vii}{chapter*.6}
+\contentsline {chapter}{Extended abstract}{v}{section*.4}
+\contentsline {chapter}{Afkortingen}{ix}{chapter*.6}
 \contentsline {chapter}{\numberline {1}Inleiding}{1}{chapter.1}
 \contentsline {section}{\numberline {1.1}Gebarentaal}{1}{section.1.1}
 \contentsline {section}{\numberline {1.2}Automatische gebarentaalherkenning}{2}{section.1.2}
@@ -23,31 +24,31 @@
 \contentsline {subsection}{\numberline {2.2.1}Inleiding}{12}{subsection.2.2.1}
 \contentsline {subsection}{\numberline {2.2.2}Leren}{15}{subsection.2.2.2}
 \contentsline {section}{\numberline {2.3}Convolutioneel neuraal netwerk}{15}{section.2.3}
-\contentsline {subsection}{\numberline {2.3.1}Tweedimensionale convolutie}{15}{subsection.2.3.1}
-\contentsline {subsection}{\numberline {2.3.2}Maximum pooling}{15}{subsection.2.3.2}
-\contentsline {section}{\numberline {2.4}Hyperparameters}{15}{section.2.4}
-\contentsline {subsection}{\numberline {2.4.1}Momentum}{15}{subsection.2.4.1}
-\contentsline {subsection}{\numberline {2.4.2}Dropout}{15}{subsection.2.4.2}
-\contentsline {subsection}{\numberline {2.4.3}Data-augmentatie}{15}{subsection.2.4.3}
-\contentsline {chapter}{\numberline {3}Uitvoering \& resultaten}{16}{chapter.3}
-\contentsline {section}{\numberline {3.1}Gebruikte technologi\"en}{16}{section.3.1}
-\contentsline {section}{\numberline {3.2}Dataset}{17}{section.3.2}
-\contentsline {section}{\numberline {3.3}Onderzoeksopzet}{19}{section.3.3}
-\contentsline {section}{\numberline {3.4}Basismodel}{20}{section.3.4}
-\contentsline {subsection}{\numberline {3.4.1}Invoer}{20}{subsection.3.4.1}
-\contentsline {subsection}{\numberline {3.4.2}Architectuur}{21}{subsection.3.4.2}
-\contentsline {subsection}{\numberline {3.4.3}Training}{23}{subsection.3.4.3}
-\contentsline {subsection}{\numberline {3.4.4}Baseline resultaten}{23}{subsection.3.4.4}
-\contentsline {subsubsection}{Precision, recall en confusion}{23}{section*.17}
-\contentsline {section}{\numberline {3.5}Een gebaar bijleren}{24}{section.3.5}
-\contentsline {subsection}{\numberline {3.5.1}Softmax20 model}{24}{subsection.3.5.1}
-\contentsline {subsection}{\numberline {3.5.2}Softmax19+1 model}{28}{subsection.3.5.2}
-\contentsline {subsubsection}{Invloed van het aantal samples}{28}{section*.22}
-\contentsline {subsubsection}{Invloed van het bijgeleerde gebaar}{30}{section*.23}
-\contentsline {subsubsection}{Invloed van data-augmentatie}{30}{section*.24}
-\contentsline {subsection}{\numberline {3.5.3}Softmax18+1+1 model}{31}{subsection.3.5.3}
-\contentsline {chapter}{\numberline {4}Conclusie}{33}{chapter.4}
-\contentsline {section}{\numberline {4.1}Besluit}{33}{section.4.1}
-\contentsline {section}{\numberline {4.2}Verder onderzoek}{33}{section.4.2}
-\contentsline {chapter}{Bibliografie}{34}{appendix*.26}
-\contentsline {chapter}{L"yst van figuren}{37}{appendix*.27}
+\contentsline {subsection}{\numberline {2.3.1}Tweedimensionale convolutie}{16}{subsection.2.3.1}
+\contentsline {subsection}{\numberline {2.3.2}Maximum pooling}{17}{subsection.2.3.2}
+\contentsline {section}{\numberline {2.4}Hyperparameters}{18}{section.2.4}
+\contentsline {subsection}{\numberline {2.4.1}Momentum}{18}{subsection.2.4.1}
+\contentsline {subsection}{\numberline {2.4.2}Dropout}{18}{subsection.2.4.2}
+\contentsline {subsection}{\numberline {2.4.3}Data-augmentatie}{18}{subsection.2.4.3}
+\contentsline {chapter}{\numberline {3}Uitvoering \& resultaten}{19}{chapter.3}
+\contentsline {section}{\numberline {3.1}Gebruikte technologi\"en}{19}{section.3.1}
+\contentsline {section}{\numberline {3.2}Dataset}{20}{section.3.2}
+\contentsline {section}{\numberline {3.3}Onderzoeksopzet}{22}{section.3.3}
+\contentsline {section}{\numberline {3.4}Basismodel}{23}{section.3.4}
+\contentsline {subsection}{\numberline {3.4.1}Invoer}{23}{subsection.3.4.1}
+\contentsline {subsection}{\numberline {3.4.2}Architectuur}{24}{subsection.3.4.2}
+\contentsline {subsection}{\numberline {3.4.3}Training}{26}{subsection.3.4.3}
+\contentsline {subsection}{\numberline {3.4.4}Baseline resultaten}{26}{subsection.3.4.4}
+\contentsline {subsubsection}{Precision, recall en confusion}{26}{section*.18}
+\contentsline {section}{\numberline {3.5}Een gebaar bijleren}{27}{section.3.5}
+\contentsline {subsection}{\numberline {3.5.1}Softmax20 model}{27}{subsection.3.5.1}
+\contentsline {subsection}{\numberline {3.5.2}Softmax19+1 model}{31}{subsection.3.5.2}
+\contentsline {subsubsection}{Invloed van het aantal samples}{31}{section*.23}
+\contentsline {subsubsection}{Invloed van het bijgeleerde gebaar}{33}{section*.24}
+\contentsline {subsubsection}{Invloed van data-augmentatie}{33}{section*.25}
+\contentsline {subsection}{\numberline {3.5.3}Softmax18+1+1 model}{34}{subsection.3.5.3}
+\contentsline {chapter}{\numberline {4}Conclusie}{36}{chapter.4}
+\contentsline {section}{\numberline {4.1}Besluit}{36}{section.4.1}
+\contentsline {section}{\numberline {4.2}Verder onderzoek}{37}{section.4.2}
+\contentsline {chapter}{Bibliografie}{38}{appendix*.27}
+\contentsline {chapter}{L"yst van figuren}{42}{appendix*.28}

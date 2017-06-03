@@ -131,17 +131,56 @@ Een neuron wordt vaak vernoemd naar de activatiefunctie die ze gebruikt. In dit 
 %\subsection{Gradient descent}
 
 \section{Convolutioneel neuraal netwerk}
-De vloek van de dimensionaliteit: 
+De machine learning techniek die sinds 2012 in de belangstelling staat is die van het convolutioneel neuraal netwerk. Mede dankzij het recordbrekende resultaat van \cite{cnn-krizhevsky} op de ``ImageNet Large Scale Visual Recognition Challenge'' wordt deze techniek vaak onderzocht en toegepast op beeldherkenningsproblemen zoals in \cite{cnn-ji} en \cite{cnn-karpathy}.
+\npar Traditionele beeldherkenningstechnieken zoals in \cite{perronnin2010improving} en \cite{jhuang2007biologically} leiden het beeld af naar een manueel ontworpen beeldrepresentatie. Deze kenmerken zijn niet meteen zichtbaar maar worden via verschillende bewerkingen blootgelegd. Het is erg moeilijk om te beslissen welk soort kenmerk het best geschikt is voor de gegeven taak. Vaak moet er dan ook veelvuldig ge\"experimenteerd worden met verschillende representaties.
+\npar Convolutionele neurale netwerken hebben als grote troef dat ze deze feature-extractie automatiseren. CNN's zijn biologisch ge\"inspireerde model. Het onderzoek van \cite{hubel1968receptive} gaf een verklaring voor de manier waarop zoogdieren, specifiek de kat en de aap, de wereld rondom zich visueel waarnemen. De neuronen in de visuele cortex hebben een complexe laagsgewijze architectuur. Elke cel reageert op prikkels in een deelgebied van het gezichtsveld. Deze receptieve velden overlappen gedeeltelijk en bedekken zo het volledige zicht.
+\npar Het herkenningsvermogen van de mens is nog altijd ontegensprekelijk veel hoger dan om het even welk artificieel herkenningssysteem. Vandaar dat er geprobeerd wordt de functionaliteit van de visuele cortex na te bootsen met een CNN. 
+\npar CNN's zijn een speciaal soort meerlagig neuraal netwerk. Net zoals een ANN worden ze getraind met behulp van een back-propagation algoritme zoals beschreven in Sectie \ref{sec:leren}. Waar ze verschillen is hun architectuur. Een ANN is volledig verboden met zijn invoer. Als we een afbeelding van 64x64 pixels rechtstreeks als invoer in een ANN willen gebruiken moeten er per knoop 4096 gewichten worden getraind. De artifici\"ele neuronen in een CNN werken net zoals de receptieve velden in de visuele cortex.
+\npar Zoals te zien in Figuur \ref{fig:lokale-connectiviteit} wordt elk mogelijk (overlappend) deelgebied verbonden met een neuron. De parameters van deze verbindingen worden gedeeld tussen alle units. Zo leert het netwerk een bepaalde feature detecteren om het even waar in het beeld en zijn er slechts een beperkt aantal te trainen gewichten.
+\npar In een CNN worden convolutielagen afgewisseld met pooling lagen. Zo worden er meerdere lagen na elkaar geplaatst om een diepe architectuur te verkrijgen. In de eerste lagen zullen kenmerken van laag niveau gedetecteerd worden en naarmate we dieper in het netwerk gaan worden kenmerken van hoger niveau ge\"extraheerd. Zo zullen de eerste lagen features zoals randen detecteren die dan dieper in het netwerk worden samengesteld tot bijvoorbeeld een bepaalde handvorm.
+ 
 \subsection{Tweedimensionale convolutie}
-\subsection{Maximum pooling}
+De receptieve velden delen hun parameters en zoeken dus naar hetzelfde kenmerk in een beeld. Ze filteren het beeld met behulp van een tweedimensionale discrete convolutie die als volgt kan worden beschreven:
+
+\begin{equation}\label{eq:conv}
+(w * x)_{h,b} = \sum_{b'=-\infty}^{+\infty}\sum_{h'=-\infty}^{+\infty} f_{b',h'}x_{b-b',h-h'}
+\end{equation}
+
+\npar met w de filterwaarden en x de invoer. De grootte van het filter en van de invoer is uiteraard begrensd. Met onze filtergrootte $(H_f,B_f)$ en de dimensie van onze invoer $(H_x,B_x)$ kunnen we (\ref{eq:conv}) vereenvoudigen tot:
+
+\begin{equation}
+\sum_{b'=0}^{B_f}\sum_{h'=0}^{H_f} f_{b',h'}x_{b-b',h-h'}
+\end{equation}
 \begin{figure}
 	\centering
-%	\def\svgscale{0.85}
+	%	\def\svgscale{0.85}
+	%	\def\svgwidth{\columnwidth}
+	\input{figuren/convolutie.pdf_tex}
+	\caption{Tweedimensionale convolutie met een 3x3 filter.}
+	\label{fig:conv}
+\end{figure}
+Figuur \ref{fig:conv} geeft een visuele weergave van deze convolutie operatie terug. Op het resultaat van deze operatie wordt een niet-lineaire activatiefunctie toegepast en zo bekomen we een feature-map. Let er op dat we op de randen een probleem hebben: we krijgen te grote of te kleine indices voor de input. Om dit probleem te omzeilen zijn er twee opties: de invoer uitbreiden of enkel de convolutie berekenen wanneer alle invoerwaardes gedefinieerd zijn. Deze tweede vorm heet de \textit{echte convolutie} en wordt hier toegepast. Hierdoor is de dimensie van de uitvoer ($B_{uit},H_{uit}$) kleiner dan die van de invoer:
+\begin{equation}
+\begin{aligned}
+B_{uit}&=B{in}-B_f+1 \\
+H_{uit}&=H{in}-H_f+1
+\end{aligned}
+\end{equation}
+
+\npar Om meerdere features te detecteren per laag worden er meerdere feature-maps gevormd om een filterbank te bekomen. Hoeveel feature-maps er per laag worden berekend is een hyperparameter van het CNN. Hier is de tweedimensionale convolutie beschreven omdat in dit onderzoek enkel met deze convolutie gewerkt wordt. Er zijn ook driedimensionale convoluties die rekening met het tijdsaspect en zo spatio-temporele features extraheren.
+\subsection{Maximum pooling}
+
+\begin{figure}
+	\centering
+	%	\def\svgscale{0.85}
 	%	\def\svgwidth{\columnwidth}
 	\input{figuren/max-pooling.pdf_tex}
 	\caption{Maximum pooling: uit elk vak in de invoer afbeelding wordt het maximum bepaald en overgenomen in de bijhorende pixel in het uitvoerbeeld.}
-	\label{max-poolingl}
+	\label{fig:max-pooling}
 \end{figure}
+Na de convolutielaag volgt er een pooling laag die de feature-maps opsplitst in kleine partities met een zekere pool grootte en de maximum waarde hieruit overhoudt. In Figuur \ref{fig:max-pooling} wordt een max-pooling uitgevoerd met een venster van 80x80 pixels op een invoer van 400x400 pixels. Zo daalt de dimensionaliteit maar blijven de belangrijkste features behouden.
+\npar De pooling operatie zorgt voor translatie-invariantie van het herkenningssysteem. Of een hand nu een paar pixels naar links, rechts, boven of onder verschuift maakt niet uit. De pooling zal al deze activaties samenbrengen tot dezelfde positie voor de volgende featuremap. 
+
 
 \section{Hyperparameters}
 \subsection{Momentum}

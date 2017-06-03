@@ -6,61 +6,60 @@ A level-1 auxiliary file: s-overzicht.aux
 A level-1 auxiliary file: s-inleiding.aux
 A level-1 auxiliary file: s-technische-aspecten.aux
 A level-1 auxiliary file: s-uitvoering.aux
-A level-1 auxiliary file: s-resultaten.aux
 A level-1 auxiliary file: s-conclusie.aux
 Database file #1: bibliodatabase.bib
 Warning--entry type for "tolkuren" isn't style-file defined
---line 55 of file bibliodatabase.bib
-I was expecting a `,' or a `}'---line 61 of file bibliodatabase.bib
+--line 132 of file bibliodatabase.bib
+I was expecting a `,' or a `}'---line 138 of file bibliodatabase.bib
  :  
  :  note={Bezocht op: 29 mei 2017}
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-Repeated entry---line 475 of file bibliodatabase.bib
+Repeated entry---line 552 of file bibliodatabase.bib
  : @inproceedings{wu_deep_2014
  :                            ,
 I'm skipping whatever remains of this entry
 Warning--empty journal in lionel
 Warning--empty journal in wu_deep_2016
-You've used 22 entries,
+You've used 30 entries,
             1935 wiz_defined-function locations,
-            603 strings with 7964 characters,
-and the built_in function-call counts, 10480 in all, are:
-= -- 1018
-> -- 508
-< -- 22
-+ -- 181
-- -- 177
-* -- 864
-:= -- 1757
-add.period$ -- 69
-call.type$ -- 22
-change.case$ -- 195
-chr.to.int$ -- 22
-cite$ -- 24
-duplicate$ -- 419
-empty$ -- 689
-format.name$ -- 207
-if$ -- 2110
-int.to.chr$ -- 1
+            651 strings with 9741 characters,
+and the built_in function-call counts, 14906 in all, are:
+= -- 1463
+> -- 706
+< -- 29
++ -- 252
+- -- 245
+* -- 1221
+:= -- 2457
+add.period$ -- 96
+call.type$ -- 30
+change.case$ -- 267
+chr.to.int$ -- 29
+cite$ -- 32
+duplicate$ -- 603
+empty$ -- 994
+format.name$ -- 285
+if$ -- 3039
+int.to.chr$ -- 2
 int.to.str$ -- 0
-missing$ -- 22
-newline$ -- 112
-num.names$ -- 68
-pop$ -- 215
+missing$ -- 30
+newline$ -- 152
+num.names$ -- 94
+pop$ -- 299
 preamble$ -- 1
-purify$ -- 196
+purify$ -- 268
 quote$ -- 0
-skip$ -- 321
+skip$ -- 465
 stack$ -- 0
-substring$ -- 641
-swap$ -- 101
-text.length$ -- 14
+substring$ -- 969
+swap$ -- 161
+text.length$ -- 20
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 130
+type$ -- 178
 warning$ -- 2
-while$ -- 84
+while$ -- 122
 width$ -- 0
-write$ -- 288
+write$ -- 395
 (There were 2 error messages)
