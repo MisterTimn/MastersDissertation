@@ -9,13 +9,13 @@ A level-1 auxiliary file: s-uitvoering.aux
 A level-1 auxiliary file: s-conclusie.aux
 Database file #1: bibliodatabase.bib
 Warning--entry type for "tolkuren" isn't style-file defined
---line 132 of file bibliodatabase.bib
-I was expecting a `,' or a `}'---line 138 of file bibliodatabase.bib
+--line 143 of file bibliodatabase.bib
+I was expecting a `,' or a `}'---line 149 of file bibliodatabase.bib
  :  
  :  note={Bezocht op: 29 mei 2017}
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-Repeated entry---line 552 of file bibliodatabase.bib
+Repeated entry---line 563 of file bibliodatabase.bib
  : @inproceedings{wu_deep_2014
  :                            ,
 I'm skipping whatever remains of this entry
@@ -23,43 +23,43 @@ Warning--empty journal in lionel
 Warning--empty journal in wu_deep_2016
 You've used 30 entries,
             1935 wiz_defined-function locations,
-            651 strings with 9741 characters,
-and the built_in function-call counts, 14906 in all, are:
-= -- 1463
-> -- 706
-< -- 29
-+ -- 252
-- -- 245
-* -- 1221
-:= -- 2457
+            649 strings with 9790 characters,
+and the built_in function-call counts, 14673 in all, are:
+= -- 1437
+> -- 701
+< -- 28
++ -- 250
+- -- 243
+* -- 1205
+:= -- 2435
 add.period$ -- 96
 call.type$ -- 30
-change.case$ -- 267
+change.case$ -- 266
 chr.to.int$ -- 29
 cite$ -- 32
-duplicate$ -- 603
-empty$ -- 994
-format.name$ -- 285
-if$ -- 3039
+duplicate$ -- 589
+empty$ -- 972
+format.name$ -- 283
+if$ -- 2975
 int.to.chr$ -- 2
 int.to.str$ -- 0
 missing$ -- 30
-newline$ -- 152
+newline$ -- 153
 num.names$ -- 94
-pop$ -- 299
+pop$ -- 294
 preamble$ -- 1
-purify$ -- 268
+purify$ -- 267
 quote$ -- 0
-skip$ -- 465
+skip$ -- 454
 stack$ -- 0
-substring$ -- 969
-swap$ -- 161
-text.length$ -- 20
+substring$ -- 941
+swap$ -- 152
+text.length$ -- 19
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 178
 warning$ -- 2
-while$ -- 122
+while$ -- 120
 width$ -- 0
 write$ -- 395
 (There were 2 error messages)

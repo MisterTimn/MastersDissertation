@@ -6,6 +6,13 @@ Bergstra, J., Breuleux, O., Bastien, F., Lamblin, P., Pascanu, R., Desjardins,
 \newblock Theano: {A} {CPU} and {GPU} math compiler in {Python}.
 \newblock In {\em Proc. 9th {Python} in {Science} {Conf}}, pages 1--7.
 
+\bibitem[Botev et~al., 2016]{botev_nesterovs_2016}
+Botev, A., Lever, G., en Barber, D. (2016).
+\newblock Nesterov's {Accelerated} {Gradient} and {Momentum} as approximations
+  to {Regularised} {Update} {Descent}.
+\newblock {\em arXiv:1607.01981 [cs, stat]}.
+\newblock arXiv: 1607.01981.
+
 \bibitem[Buyens, 2003]{buyens_gebarentaaltolken_2003}
 Buyens, M. (2003).
 \newblock {\em Gebarentaaltolken}.
@@ -120,11 +127,6 @@ K{\"u}hn, T. (2011).
 Lake, B.~M., Salakhutdinov, R., Gross, J., en Tenenbaum, J.~B. (2011).
 \newblock One shot learning of simple visual concepts.
 \newblock In {\em CogSci}, volume 172, page~2.
-
-\bibitem[LeCun et~al., 2001]{lecun-01a}
-LeCun, Y., Bottou, L., Bengio, Y., en Haffner, P. (2001).
-\newblock Gradient-based learning applied to document recognition.
-\newblock In {\em Intelligent Signal Processing}, pages 306--351. IEEE Press.
 
 \bibitem[Perronnin et~al., 2010]{perronnin2010improving}
 Perronnin, F., S{\'a}nchez, J., en Mensink, T. (2010).
