@@ -138,8 +138,8 @@ Om de baseline op te stellen wordt de volledige trainingset gebruikt om de 20 ge
 
 \begin{figure}
 	\centering
-	
-	\includegraphics[width=15cm,keepaspectratio]{conf_alle_klassen.pdf}
+	\def\svgwidth{0.9\columnwidth}
+	\input{figuren/conf_alle_klassen.pdf_tex}
 	\caption{Genormaliseerde confusion matrix van baseline voorspellingen van het basismodel, getraind op alle voorbeelden van alle gebaren }
 	\label{fig:conf-allegebaren}
 	
@@ -207,7 +207,7 @@ De eerste experimenten rond het bijleren van een gebaar worden uitgevoerd op een
 \end{figure}
 
 \npar Eerst en vooral wordt het aantal samples gevari\"eerd. Het model wordt getraind met 200, 100, 50, 25, 10, 5, 4, 3, 2 voorbeelden en ten slotte wordt er 1 voorbeeld gebruikt voor een poging tot one-shot learning.
-\npar Ook wordt het effect van het aantal hertrainde lagen onderzocht. Eerst wordt enkel de laatste laag, de softmax, hertraind. Alle andere parameters van het model blijven dus ongewijzigd. In een tweede experiment worden de softmax en de laatste verborgen laag, deze met 100 units, hertraind (dense100 laag in Figuur \ref{fig:model-1}).
+\npar Ook wordt het effect van het aantal hertrainde lagen onderzocht. Eerst wordt enkel de laatste laag, de softmax, hertraind. Alle andere parameters van het model blijven dus ongewijzigd. In een tweede experiment worden de softmax en de laatste verborgen laag, deze met 100 units, hertraind.
 
 \npar In figuur \ref{fig:naive-model} zijn de resultaten van deze experimenten met het \textit{softmax20} model te zien. Het bijgeleerde gebaar is het gebaar nummer 15: "non ce ne piu". Het basismodel getraind op alle voorbeelden behaalde een 96.88\% precision en 94.90\% recall score op dit gebaar, de hoogste scores van alle gebaren. Enerzijds zou dit gebaar dus gemakkelijk moeten aan te leren zijn aangezien het heel nauwkeurig voorspeld wordt. Anderzijds kan het model zich niet meer beroepen op de features geleerd uit dit gebaar aangezien ze niet in de pretraining is opgenomen.
 
@@ -231,8 +231,9 @@ We willen naar een dynamisch uitbreidbaar systeem toewerken. Het vorige model ga
 	\includegraphics[width=\columnwidth]{19x1-gebaar15.pdf}
 	\caption{Precision en recall voor de classificatie van gebaar 15 met het softmax19+1 model in functie van het aantal gebruikte samples voor bijleren.}\label{fig:19x1-gebaar15}
 	
-		\centering
-		\includegraphics[width=\columnwidth]{19x1-oneshot-vgl.pdf}
+		\vspace{0.5cm}
+		\def\svgwidth{1.1\columnwidth}
+		\input{figuren/19x1-oneshot-vgl.pdf_tex}
 		\caption{Barplots per gebaar van de precision en recall van de baseline en na het hertrainen met respectievelijk 1 en 10 samples. }\label{fig:19x1-all}
 \end{figure}
 

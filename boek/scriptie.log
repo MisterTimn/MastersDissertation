@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.5.1)  5 JUN 2017 15:26
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.5.1)  5 JUN 2017 18:16
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1849,16 +1849,16 @@ File: figuren/prec+recall.pdf Graphic file (type pdf)
 <use figuren/prec+recall.pdf>
 Package pdftex.def Info: figuren/prec+recall.pdf used on input line 52.
 (pdftex.def)             Requested size: 309.85626pt x 158.54422pt.
-)
-<figuren/conf_alle_klassen.pdf, id=919, 625.13548pt x 492.88141pt>
+) (./figuren/conf_alle_klassen.pdf_tex
+<figuren/conf_alle_klassen.pdf, id=919, 507.50284pt x 434.28261pt>
 File: figuren/conf_alle_klassen.pdf Graphic file (type pdf)
 
 <use figuren/conf_alle_klassen.pdf>
-Package pdftex.def Info: figuren/conf_alle_klassen.pdf used on input line 142.
-(pdftex.def)             Requested size: 426.79134pt x 336.50113pt.
+Package pdftex.def Info: figuren/conf_alle_klassen.pdf used on input line 52.
+(pdftex.def)             Requested size: 398.38567pt x 340.90596pt.
+)
 
-
-LaTeX Warning: Float too large for page by 28.9535pt on input line 185.
+LaTeX Warning: Float too large for page by 33.3622pt on input line 185.
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1914,7 +1914,7 @@ Package babel Info: Redefining dutch shorthand "|
 Package babel Info: Redefining dutch shorthand "~
 (babel)             in language  on input line 201.
 [36 <./figuren/conf_alle_klassen.pdf>]
-<figuren/naive-oneshot-lagen-vergelijking.pdf, id=948, 454.57831pt x 312.92911p
+<figuren/naive-oneshot-lagen-vergelijking.pdf, id=951, 454.57831pt x 312.92911p
 t>
 File: figuren/naive-oneshot-lagen-vergelijking.pdf Graphic file (type pdf)
  <use figuren/naive-oneshot-lagen-vergelijking.pdf>
@@ -1965,22 +1965,26 @@ Package babel Info: Redefining dutch shorthand "~
 LaTeX Warning: Reference `fig:19+1model' on page 39 undefined on input line 223
 .
 
-<figuren/19x1-gebaar15.pdf, id=972, 454.57831pt x 312.92911pt>
+<figuren/19x1-gebaar15.pdf, id=975, 454.57831pt x 312.92911pt>
 File: figuren/19x1-gebaar15.pdf Graphic file (type pdf)
 
 <use figuren/19x1-gebaar15.pdf>
 Package pdftex.def Info: figuren/19x1-gebaar15.pdf used on input line 231.
 (pdftex.def)             Requested size: 442.65375pt x 304.72981pt.
-
-<figuren/19x1-oneshot-vgl.pdf, id=973, 537.6888pt x 390.98068pt>
+ (./figuren/19x1-oneshot-vgl.pdf_tex
+<figuren/19x1-oneshot-vgl.pdf, id=976, 545.63847pt x 346.9871pt>
 File: figuren/19x1-oneshot-vgl.pdf Graphic file (type pdf)
 
 <use figuren/19x1-oneshot-vgl.pdf>
-Package pdftex.def Info: figuren/19x1-oneshot-vgl.pdf used on input line 235.
-(pdftex.def)             Requested size: 442.65375pt x 321.88889pt.
+Package pdftex.def Info: figuren/19x1-oneshot-vgl.pdf used on input line 52.
+(pdftex.def)             Requested size: 486.92181pt x 309.65408pt.
+)
+Overfull \hbox (44.26807pt too wide) in paragraph at lines 111--237
+ [][] 
+ []
 
 
-LaTeX Warning: Float too large for page by 65.01842pt on input line 237.
+LaTeX Warning: Float too large for page by 67.00179pt on input line 238.
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1989,13 +1993,13 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 Package babel Info: Redefining dutch shorthand "|
-(babel)             in language  on input line 248.
+(babel)             in language  on input line 249.
 Package babel Info: Redefining dutch shorthand "~
-(babel)             in language  on input line 248.
+(babel)             in language  on input line 249.
 Package babel Info: Redefining dutch shorthand "|
-(babel)             in language  on input line 248.
+(babel)             in language  on input line 249.
 Package babel Info: Redefining dutch shorthand "~
-(babel)             in language  on input line 248.
+(babel)             in language  on input line 249.
 [39]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2004,13 +2008,13 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 Package babel Info: Redefining dutch shorthand "|
-(babel)             in language  on input line 248.
+(babel)             in language  on input line 249.
 Package babel Info: Redefining dutch shorthand "~
-(babel)             in language  on input line 248.
+(babel)             in language  on input line 249.
 Package babel Info: Redefining dutch shorthand "|
-(babel)             in language  on input line 248.
+(babel)             in language  on input line 249.
 Package babel Info: Redefining dutch shorthand "~
-(babel)             in language  on input line 248.
+(babel)             in language  on input line 249.
 [40 <./figuren/19x1-gebaar15.pdf> <./figuren/19x1-oneshot-vgl.pdf
 
 pdfTeX warning: pdflatex (file ./figuren/19x1-oneshot-vgl.pdf): PDF inclusion: 
@@ -2023,31 +2027,31 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 Package babel Info: Redefining dutch shorthand "|
-(babel)             in language  on input line 257.
+(babel)             in language  on input line 258.
 Package babel Info: Redefining dutch shorthand "~
-(babel)             in language  on input line 257.
+(babel)             in language  on input line 258.
 Package babel Info: Redefining dutch shorthand "|
-(babel)             in language  on input line 257.
+(babel)             in language  on input line 258.
 Package babel Info: Redefining dutch shorthand "~
-(babel)             in language  on input line 257.
+(babel)             in language  on input line 258.
 [41]
 Package babel Info: Redefining dutch shorthand "|
-(babel)             in language  on input line 258.
+(babel)             in language  on input line 259.
 Package babel Info: Redefining dutch shorthand "~
-(babel)             in language  on input line 258.
+(babel)             in language  on input line 259.
 
 
-LaTeX Warning: Reference `fig:18x2-arch' on page 42 undefined on input line 260
+LaTeX Warning: Reference `fig:18x2-arch' on page 42 undefined on input line 261
 .
 
-<figuren/18x2.pdf, id=1020, 462.52798pt x 346.89601pt>
+<figuren/18x2.pdf, id=1374, 462.52798pt x 346.89601pt>
 File: figuren/18x2.pdf Graphic file (type pdf)
  <use figuren/18x2.pdf>
-Package pdftex.def Info: figuren/18x2.pdf used on input line 274.
+Package pdftex.def Info: figuren/18x2.pdf used on input line 275.
 (pdftex.def)             Requested size: 398.38567pt x 298.80643pt.
 
 (./figuren/conf-18x2.pdf_tex
-<figuren/conf-18x2.pdf, id=1021, 509.49655pt x 431.86978pt>
+<figuren/conf-18x2.pdf, id=1375, 509.49655pt x 431.86978pt>
 File: figuren/conf-18x2.pdf Graphic file (type pdf)
 
 <use figuren/conf-18x2.pdf>
@@ -2055,7 +2059,7 @@ Package pdftex.def Info: figuren/conf-18x2.pdf used on input line 52.
 (pdftex.def)             Requested size: 309.85626pt x 262.65599pt.
 )
 
-LaTeX Warning: Float too large for page by 42.53214pt on input line 280.
+LaTeX Warning: Float too large for page by 42.53214pt on input line 281.
 
 )
 
@@ -2299,9 +2303,9 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 132.
  ) 
 Here is how much of TeX's memory you used:
- 11783 strings out of 493013
- 174555 string characters out of 6133329
- 279166 words of memory out of 5000000
+ 11787 strings out of 493013
+ 174689 string characters out of 6133329
+ 280166 words of memory out of 5000000
  14849 multiletter control sequences out of 15000+600000
  14027 words of font info for 50 fonts, out of 8000000 for 9000
  1142 hyphenation exceptions out of 8191
@@ -2329,10 +2333,10 @@ e/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/
 016/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2016/texmf-
 dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2016/texmf-dist/fonts
 /type1/urw/times/utmri8a.pfb>
-Output written on scriptie.pdf (60 pages, 16281123 bytes).
+Output written on scriptie.pdf (60 pages, 16421507 bytes).
 PDF statistics:
- 1251 PDF objects out of 1440 (max. 8388607)
- 993 compressed objects within 10 object streams
+ 1605 PDF objects out of 1728 (max. 8388607)
+ 1228 compressed objects within 13 object streams
  183 named destinations out of 1000 (max. 500000)
  550 words of extra memory for PDF output out of 10000 (max. 10000000)
 
