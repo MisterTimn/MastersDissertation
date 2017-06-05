@@ -1,4 +1,6 @@
 \chapter{Inleiding}
+Om de communicatie tussen doven en horenden te verbeteren wordt er reeds onderzoek verricht naar een automatisch gebarentaalherkenningssysteem. Om om te gaan met de veranderlijkheid van een gebarentaal en de vele verschillende gebarentalen die er zijn is het noodzakelijk dat we een herkenningssysteem kunnen uitbreiden. Er kan een online platform worden opgesteld waarop via crowd-sourcing nieuwe gebarenvoorbeelden aan het model worden gegeven. Gebruikers kunnen dan via een webcam een gebaar uitvoeren, aangeven om welk gebaar het gaat en zo het model uitbreiden.
+\npar In het ideale geval kan een systeem vanuit slechts een gegeven voorbeeld een nieuw gebaar leren herkennen, zoals de mens dit ook kan. Dit speciaal geval van leren heet \textit{one-shot learning} en wordt in dit werk onderzocht.
 \section{Gebarentaal}
 
 Gebarentaal is in de eerste plaats een taal. Taal is een begrip dat moeilijk te defini\"eren valt en de meeste pogingen hiertoe beperken zich tot gesproken taal. Een definitie die ook voor gebarentaal kan gebruikt worden is: 
@@ -42,7 +44,7 @@ Eenmaal we weten wanneer een gebaar begint en eindigt kunnen we het gaan identif
 \\Er wordt gebruik gemaakt van twee classificatie methodes: Hidden Markov Modellen (HMM) en Fuzzy Neurale Netwerken (FNN). HMM is een classificatietechniek die rekening houdt met het tijdsaspect. FNN is een combinatie van fuzzy (vage) theorie en artifici\"ele neurale netwerken.
 
 \subsection{Grammaticale samenstelling}
-TODO
+Als alle gebaren uit een continue stroom kunnen herkend worden moeten we deze bouwstenen samenstellen tot een boodschap. Er moet rekening gehouden worden met grammaticale regels om zinnen en deelzinnen te vormen. Ook zijn er vele samengestelde woorden en specifieke gebarenpatronen om bepaalde termen weer te geven. Dit onderdeel zal dus in een hoger niveau werken en via toepassing van taalspecifieke regels de boodschap extraheren.
 %Camera
 %Features
 %
@@ -67,8 +69,19 @@ Het lexicon van een gebarentaal groeit mee met de tijd. Gloednieuwe termen of za
 
 \npar Als we zo een aantal keer het herkenningssysteem willen uitbreiden zullen we veel kostbare tijd en energie verspillen.
 
-\subsection{Bijleren bij mensen}
-TODO
+\begin{figure}[!t]
+	\centering
+	\def\svgscale{0.8}
+	\input{figuren/one-shot-analogie.pdf_tex}
+	\caption{Een persoon die nog nooit een hoverboard heeft gezien kan gemakkelijk na het zien van de rode hoverboard, de andere uit de reeks gelijkaardige objecten halen. }\label{fig:one-shot-analogie}
+\end{figure}
+
+\subsection{Leren uit een voorbeeld}
+Mensen kunnen heel makkelijk en snel visuele concepten leren herkennen vanuit slechts een voorbeeld. Hoe de mens dit precies doet is iets waar de wetenschap het nog niet compleet over eens is.
+
+\npar \cite{recognition-components} bespreekt de ``Recognition by components'' theorie  die deze kwaliteit kan verklaren. Als de mens een nieuw object voor het eerst ziet zal hij deze trachten op te delen in verschillende onderdelen die hij al kent. Stel dat iemand voor het eerst in zijn leven een hoverboard ziet (zie Figuur \ref{fig:one-shot-analogie}) dan kan hij deze na een bezichtiging snel differenti\"eren. We herkennen vormen uit andere objecten die we al kennen en vanuit deze informatie maken we een representatie van het nieuwe object. Als je die persoon achteraf zou vragen het object te beschrijven, kan hij bijvoorbeeld zeggen dat het eruitziet als een segway met kleine wielen en geen stuur of op een lager niveau een plank met twee wielen horizontaal naast elkaar.
+
+\npar In deze gedachtengang zouden we een reeds getraind herkenningsmodel, dat net zoals de mens bepaalde vormen, lijnen, handposities, houdingen of armbewegingen kan detecteren, een nieuw gebaar kunnen bijleren. Voorwaarde is dat het model algemene kenmerken van een gebaar herkent die ook in het nieuwe gebaar voorkomen. Op deze manier kan er geprobeerd worden om uit slechts een voorbeeld bij te leren: one-shot learning. 
 
 \subsection{One-shot learning in de literatuur}
 \npar \cite{oneshot-vis-concepts} stelt een generatief model voor voor het herkennen van handgeschreven karakters. Het vertrekt vanuit de notie dat de mens een teken schrijft in verschillende halen of lijnen en ook zo een nieuw teken leert herkennen. Er wordt een dataset opgebouwd van 1600 karakters die door verschillende gebruikers online geregistreerd worden. Elke lijn die een gebruiker plaatst wordt opgeslaan alsook de volgorde van tekenen. Zo bestaat elk teken uit een opeenvolging van lijnen met verschillende vorm en lengte. De verzameling van al deze lijnen wordt gebruikt als voorafgaande kennis om nieuwe tekens bij te leren met een voorbeeld. Het nieuwe teken wordt door het systeem opgedeeld in lijncomponenten die dan afgetoetst worden tegen het model. Zo ontstaat een nieuwe representatie voor het bijgeleerde gebaar die kan gebruikt worden voor herkenning. Er wordt een nauwkeurigheid van 54.9 \% behaald tegenover 39.6 \% voor een implementatie aan de hand van Deep Boltzman Machines (DBM). Wanneer bij het aanleren van het nieuwe gebaar de lijninformatie van de dataset wordt gebruikt in plaats van die van het systeem zelf wordt een nauwkeurigheid van 63.7 \% waargenomen.
@@ -78,8 +91,23 @@ TODO
 \npar \cite{oneshot-video-segm} stelt een convolutioneel neuraal netwerk (CNN) voor die uit een voorbeeld de voorgrond van de achtergrond onderscheidt in een video. Het CNN wordt vooraf getraind op de ImageNet dataset. Een dataset van 1,2 miljoen afbeeldingen uit meer dan duizend categori\"en. Door deze pre-training op een zeer ruime dataset is het model algemeen en leert het eigenlijk wat 'een object' is. Hierna wordt het model verfijnd voor het volgen van een voorgrondsobject uit een video. Het eerste frame van de video wordt gemaskeerd en hierop stelt het model zich af. Deze architectuur verbetert de state-of-the-art op de Densely Annotated Video Segmentation (DAVIS) dataset met 11.2 \% (79.8\% vs 68.0\%).
 
 \section{Doelstelling}
-%Dit onderzoek gaat na of we effici\"ent gebruik kunnen maken van vooraf opgedane kennis in een convolutioneel neuraal netwerk 
+Dit onderzoek test de uitbreidbaarheid van een gebarenherkenningssysteem met als uiteindelijk doel het bijleren van een gebaar uit een voorbeeld.
+\npar Deze masterproef bouwt verder op het werk van \cite{lionel} die een convolutioneel neuraal netwerk (CNN) opstelde voor de herkenning van 20 Italiaanse gebaren uit de ``ChaLearn Looking at People 2014 Challenge'' dataset. Een CNN is een model uit de deep learning, een aftakking van machine learning en behaalt state-of-the-art op foto-, video- en actieclassificatie.  Hij behaalde een classificatiefout van 4.32 \% en behaalde zo een vijfde plaats op deze wedstrijd. Hier zal een gelijkaardig CNN worden opgesteld waarmee dan experimenten rond bijleren zullen worden uitgevoerd.
+\npar Een CNN leert automatisch vanuit data algemene kenmerken te extraheren om een specifieke taak uit te voeren. Voorwaarde is dat er genoeg data voor handen is. Hier zal nagegaan worden of deze kennis effici\"ent gebruikt kan worden om met weinig voorbeelden een gebaar bij te leren en zo het herkenbare lexicon te vergroten. Er wordt vertrokken vanuit een model getraind op een grote verzameling gebarenvoorbeelden. Dan wordt het model gehertraind op de herkenning van het nieuwe gebaar. Hierbij zal het zijn reeds verworven kennis over gebaren moeten gebruiken. Voor dit bijleren mag het niet de bedoeling zijn om het volledige model te hertrainen.
 
+\npar  Het uiteindelijke doel is one-shot learning: met slechts een gebaar als voorbeeld een nieuw gebaar leren herkennen.  Omdat deze taak erg uitdagend is zal er ook worden nagegaan of we met een weinig aantal voorbeelden het lexicon kunnen uitbreiden. Zo kan er bepaald worden vanaf hoeveel voorbeelden het model goed presteert en kan dit opgenomen worden als uitbreidingsvoorwaarde van bijvoorbeeld een online platform waarop gebruikers datavoorbeelden kunnen insturen.
+
+\npar Er zal ook worden nagegaan of het model meerdere keren kan uitgebreid worden en hoe dit het best gebeurt. Het bijleren van een gebaar lijkt haalbaar maar indien we meerdere gebaren na elkaar bijleren moet het model nog altijd even goed presteren. Er mag zeker en vast geen functionaliteit verloren gaan. Concreet wil dit zeggen dat als er een nieuw gebaar wordt bijgeleerd, dit niet de herkenning van de reeds aangeleerde gebaren mag verstoren. Het model mag dus niet volledig hertraind worden. Niet alleen omdat dan kennis kan verloren gaan maar ook omdat dit veel tijd zal kosten. Een diep neuraal netwerk bestaat uit verschillende lagen. Hoe minder lagen we hertrainen hoe minder rekenwerk er moet verricht worden.
+
+\npar Omdat er met weinig voorbeelden gewerkt wordt lijkt het een goed idee om artificieel data bij te cre\"eren. Dit gebeurt aan de hand van data-augmentatie: beelden worden licht getransformeerd om meerdere vari\"erende beelden uit een echt voorbeeld te krijgen.
+
+\npar Samengevat zal dit onderzoek trachten een gebaar bij te leren aan een CNN en hierbij het volgende onderzoeken:
+\begin{itemize}
+	\item invloed van aantal gebruikte voorbeelden en vanaf hoeveel voorbeelden er aanvaardbare resultaten bekomen worden,
+	\item invloed van aantal hertrainde lagen op het herkenningsvermogen van het nieuwe gebaar,
+	\item invloed van verschillende data-augmentatie technieken,
+	\item de dynamisch uitbreidbaarheid van het systeem: kunnen we gebaren blijven toevoegen zonder verlies van prestatie.
+\end{itemize}
 
 
 

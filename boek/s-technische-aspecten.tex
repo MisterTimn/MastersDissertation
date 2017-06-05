@@ -133,7 +133,7 @@ Alle parameters $\theta$ van het netwerk (gewichten $w$ en biases $b$) worden ps
 L(\theta) = - \frac{1}{N}\sum_{i=1}^{N}\sum_{j=1}^{C}y_{i,j}\log(p_{i,j})
 \end{equation}
 met $N$ het aantal voorbeelden en $C$ het aantal klassen. De probabiliteit uit de softmax wordt hier afgekort tot p. Het ware label y is weergegeven in een one-hot codering: een vector met de grootte van het aantal klassen waarvoor alle waarden $0$ zijn behalve op de index van het correcte klasselabel, daar is ze gelijk aan $1$. Bijgevolg verdwijnt de logterm bij een foute voorspelling en wordt in de kostenfunctie enkel rekening gehouden met de fout op het ware label. Door het gebruik van een negatieve log krijgen waarden dicht bij $0$ een erg hoge fout en is de fout bij $p_{i,j}=1$ gelijk aan $0$. 
-\begin{figure}[t!]
+\begin{figure}[!t]
 	\centering
 	%	\def\svgscale{0.85}
 	\def\svgwidth{0.6\columnwidth}
@@ -154,6 +154,14 @@ met $\alpha$ de leersnelheid of \textit{learning rate}. Deze learning rate is ee
 \end{equation}
 met $L(\theta;x_{i:i+B};y_{i:i+B})$ de kostfunctie van een klein gedeelte of \textit{mini-batch} van de voorbeelden en $B$ de batch-grootte. Zo bekomt men een schatting van de globale kostfunctie en kunnen er sneller stappen worden gezet. De keuze van de batch-grootte $B$ is net als de learning rate $\alpha$ een hyperparameter van het netwerk. 
 \subsection{Momentum-optimalisatie voor gradient descent}
+\begin{figure}[!t]
+	\centering
+	%	\def\svgscale{0.85}
+	\def\svgwidth{0.6\columnwidth}
+	\input{figuren/momentum.pdf_tex}
+	\caption{Klassiek momentum (links) tegenover Nesterov's accelerated gradient (rechts) \cite{sutskever2013importance}}
+	\label{fig:momentum}
+\end{figure}
 Als we de parameterruimte die het gradient descent algoritme afzoekt zouden vergelijken met een helling komt het in de problemen als er veel kleine putten zijn tijdens de afdaling. Het algoritme zal oscilleren tussen deze lichte hellingen, optimalisatiepad zal zigzaggen en de convergentiesnelheid van het algoritme zal sterk dalen. Ook is het meer waarschijnlijk dat het algoritme zal blijven steken in een van deze putten en niet verder afdaalt naar het minimum.
 \npar \cite{botev_nesterovs_2016} beschrijft het gebruik van momentum als optimalisatie voor het gradient descent algoritme. De parameters worden ge\"update in dezelfde richting als de vorige update. Dit kan als volgt beschreven worden:
 \begin{equation}
@@ -169,8 +177,9 @@ v_{t+1} &= \mu v_t - \alpha\nabla_{\theta_t} L(\theta_{t}+\mu_tv_t)\\
 \theta_{t+1} &= \theta_t + v_{t+1}
 \end{aligned}
 \end{equation}
-\npar NAG kijkt eigenlijk een stap vooruit door een afschatting van de volgende beweging te maken voor de gradientsberekening. Hiervoor wordt de huidige momentumwaarde gebruikt: $\theta_{t}+\mu_tv_t$.  In praktijk zien we dat NAG doorgaans dichter tot het lokale minimum komt dan klassiek momentum. Het verschil is doorgaans heel klein maar door het iteratieve proces cumuleren deze kleine verschillen  tot snellere convergentie bij gebruik van NAG.
-\begin{figure}[ht!]
+\npar NAG kijkt eigenlijk een stap vooruit door een afschatting van de volgende beweging te maken voor de gradientsberekening. Hiervoor wordt de huidige momentumwaarde gebruikt: $\theta_{t}+\mu_tv_t$.  In praktijk zien we dat NAG doorgaans dichter tot het lokale minimum komt dan klassiek momentum. Het verschil is doorgaans heel klein maar door het iteratieve proces cumuleren deze kleine verschillen tot een grote tijdswinst bij het gebruik van NAG.
+
+\begin{figure}[!t]
 	\centering
 	\begin{subfigure}{.5\textwidth}
 		\centering
@@ -195,29 +204,31 @@ Tijdens het trainen kan het gebeuren dat neuronen volledig afhankelijk worden va
 \section{Convolutioneel neuraal netwerk}
 De machine learning techniek die sinds 2012 in de belangstelling staat is die van het convolutioneel neuraal netwerk. Mede dankzij het recordbrekende resultaat van \cite{cnn-krizhevsky} op de ``ImageNet Large Scale Visual Recognition Challenge'' wordt deze techniek vaak onderzocht en toegepast op beeldherkenningsproblemen zoals in \cite{cnn-ji} en \cite{cnn-karpathy}.
 \npar Traditionele beeldherkenningstechnieken zoals in \cite{perronnin2010improving} en \cite{jhuang2007biologically} leiden het beeld af naar een manueel ontworpen beeldrepresentatie. Deze kenmerken zijn niet meteen zichtbaar maar worden via verschillende bewerkingen blootgelegd. Het is erg moeilijk om te beslissen welk soort kenmerk het best geschikt is voor de gegeven taak. Vaak moet er dan ook veelvuldig ge\"experimenteerd worden met verschillende representaties.
-\npar Convolutionele neurale netwerken hebben als grote troef dat ze deze feature-extractie automatiseren. CNN's zijn biologisch ge\"inspireerde model. Het onderzoek van \cite{hubel1968receptive} gaf een verklaring voor de manier waarop zoogdieren, specifiek de kat en de aap, de wereld rondom zich visueel waarnemen. De neuronen in de visuele cortex hebben een complexe laagsgewijze architectuur. Elke cel reageert op prikkels in een deelgebied van het gezichtsveld. Deze receptieve velden overlappen gedeeltelijk en bedekken zo het volledige zicht.
-\begin{figure}[t!]
+\begin{figure}[!t]
 	\centering
 	%	\def\svgscale{0.85}
 	\includegraphics[width=4cm,keepaspectratio]{lokale-connectiviteit.pdf}
 	\caption{Lokale connectiviteit van receptieve velden. Voor elk overlappend deelgebied van de invoer is er een neuron verbonden. Alle gewichten van het lokale filter worden gedeeld.}
 	\label{fig:lokale-connectiviteit}
 \end{figure}
+\npar Convolutionele neurale netwerken hebben als grote troef dat ze deze feature-extractie automatiseren. CNN's zijn biologisch ge\"inspireerde model. Het onderzoek van \cite{hubel1968receptive} gaf een verklaring voor de manier waarop zoogdieren, specifiek de kat en de aap, de wereld rondom zich visueel waarnemen. De neuronen in de visuele cortex hebben een complexe laagsgewijze architectuur. Elke cel reageert op prikkels in een deelgebied van het gezichtsveld. Deze receptieve velden overlappen gedeeltelijk en bedekken zo het volledige zicht.
+
 \npar Het herkenningsvermogen van de mens is nog altijd ontegensprekelijk veel hoger dan om het even welk artificieel herkenningssysteem. Vandaar dat er geprobeerd wordt de functionaliteit van de visuele cortex na te bootsen met een CNN. 
 \npar CNN's zijn een speciaal soort meerlagig neuraal netwerk. Net zoals een ANN worden ze getraind met behulp van een back-propagation algoritme zoals beschreven in Sectie \ref{sec:leren}. Waar ze verschillen is hun architectuur. Een ANN is volledig verboden met zijn invoer. Als we een afbeelding van 64x64 pixels rechtstreeks als invoer in een ANN willen gebruiken moeten er per knoop 4096 gewichten worden getraind. De artifici\"ele neuronen in een CNN werken net zoals de receptieve velden in de visuele cortex.
 
 \npar Zoals te zien in Figuur \ref{fig:lokale-connectiviteit} wordt elk mogelijk (overlappend) deelgebied verbonden met een neuron. De parameters van deze verbindingen worden gedeeld tussen alle units. Zo leert het netwerk een bepaalde feature detecteren om het even waar in het beeld en zijn er slechts een beperkt aantal te trainen gewichten.
+ \begin{figure}[!t]
+ 	\centering
+ 	%	\def\svgscale{0.85}
+ 	\def\svgwidth{0.55\columnwidth}
+ 	\input{figuren/convolutie.pdf_tex}
+ 	\caption{Tweedimensionale convolutie met een 3x3 filter.}
+ 	\label{fig:conv}
+ \end{figure}
 \npar In een CNN worden convolutielagen afgewisseld met pooling lagen. Zo worden er meerdere lagen na elkaar geplaatst om een diepe architectuur te verkrijgen. In de eerste lagen zullen kenmerken van laag niveau gedetecteerd worden en naarmate we dieper in het netwerk gaan worden kenmerken van hoger niveau ge\"extraheerd. Zo zullen de eerste lagen features zoals randen detecteren die dan dieper in het netwerk worden samengesteld tot bijvoorbeeld een bepaalde handvorm.
- 
+
 \subsection{Tweedimensionale convolutie}
-\begin{figure}[t!]
-	\centering
-	%	\def\svgscale{0.85}
-	\def\svgwidth{0.55\columnwidth}
-	\input{figuren/convolutie.pdf_tex}
-	\caption{Tweedimensionale convolutie met een 3x3 filter.}
-	\label{fig:conv}
-\end{figure}
+
 De receptieve velden delen hun parameters en zoeken dus naar hetzelfde kenmerk in een beeld. Ze filteren het beeld met behulp van een tweedimensionale discrete convolutie die als volgt kan worden beschreven:
 
 \begin{equation}\label{eq:conv}
@@ -239,9 +250,8 @@ H_{uit}&=H{in}-H_f+1
 \end{equation}
 
 \npar Om meerdere features te detecteren per laag worden er meerdere feature-maps gevormd om een filterbank te bekomen. Hoeveel feature-maps er per laag worden berekend is een hyperparameter van het CNN. Hier is de tweedimensionale convolutie beschreven omdat in dit onderzoek enkel met deze convolutie gewerkt wordt. Er zijn ook driedimensionale convoluties die rekening met het tijdsaspect en zo spatio-temporele features extraheren.
-\subsection{Maximum pooling}
 
-\begin{figure}[t!]
+\begin{figure}[b!]
 	\centering
 	%	\def\svgscale{0.85}
 	%	\def\svgwidth{\columnwidth}
@@ -249,9 +259,12 @@ H_{uit}&=H{in}-H_f+1
 	\caption{Maximum pooling: uit elk vak in de invoer afbeelding wordt het maximum bepaald en overgenomen in de bijhorende pixel in het uitvoerbeeld.}
 	\label{fig:max-pooling}
 \end{figure}
+\subsection{Maximum pooling}
+
+
 Na de convolutielaag volgt er een pooling laag die de feature-maps opsplitst in kleine partities met een zekere pool grootte en de maximum waarde hieruit overhoudt. In Figuur \ref{fig:max-pooling} wordt een max-pooling uitgevoerd met een venster van 80x80 pixels op een invoer van 400x400 pixels. Zo daalt de dimensionaliteit maar blijven de belangrijkste features behouden.
 \npar De pooling operatie zorgt voor translatie-invariantie van het herkenningssysteem. Of een hand nu een paar pixels naar links, rechts, boven of onder verschuift maakt niet uit. De pooling zal al deze activaties samenbrengen tot dezelfde positie voor de volgende featuremap. 
 
 \section{Data-augmentatie}\label{sec:data-augm}
 Hoe meer data we hebben om uit te leren, hoe beter we het model kunnen generaliseren. Deze data is niet altijd beschikbaar maar kan wel artificieel gecre\"eerd worden door data-augmentatie. Door bewerkingen uit te voeren op ware voorbeelden kunnen we nieuwe beelden maken die licht vari\"eren.
-\npar Wanneer de gebruikte voorbeelden afbeeldingen zijn kunnen er beeldtransformaties worden uitgevoerd zoals translaties, rotaties, cropping en zooming. Er kan ook ruis toegevoegd worden en het beeld kan vervormd worden. De keuze van gebruikte augmentatie technieken en hun parameters zijn afhankelijk van de uit te voeren taak. 
+\npar Zeker in het geval van one-shot learning en leren uit een minimum aantal ware voorbeelden kan data-augmentatie een grote hulp zijn. Wanneer de gebruikte voorbeelden afbeeldingen zijn kunnen er beeldtransformaties worden uitgevoerd zoals translaties, rotaties, cropping en zooming. Er kan ook ruis toegevoegd worden en het beeld kan vervormd worden. De keuzes van gebruikte augmentatietechnieken en hun parameters zijn afhankelijk van de uit te voeren taak. 

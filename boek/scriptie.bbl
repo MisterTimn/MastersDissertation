@@ -6,6 +6,12 @@ Bergstra, J., Breuleux, O., Bastien, F., Lamblin, P., Pascanu, R., Desjardins,
 \newblock Theano: {A} {CPU} and {GPU} math compiler in {Python}.
 \newblock In {\em Proc. 9th {Python} in {Science} {Conf}}, pages 1--7.
 
+\bibitem[Biederman, 1987]{recognition-components}
+Biederman, I. (1987).
+\newblock Recognition-by-{Components}: {A} {Theory} of {Human} {Image}
+  {Understanding}.
+\newblock {\em Psychological Review}, 94(2):115--147.
+
 \bibitem[Botev et~al., 2016]{botev_nesterovs_2016}
 Botev, A., Lever, G., en Barber, D. (2016).
 \newblock Nesterov's {Accelerated} {Gradient} and {Momentum} as approximations
@@ -142,6 +148,12 @@ Srivastava, N., Hinton, G.~E., Krizhevsky, A., Sutskever, I., en Salakhutdinov,
   R. (2014).
 \newblock Dropout: a simple way to prevent neural networks from overfitting.
 \newblock {\em Journal of Machine Learning Research}, 15(1):1929--1958.
+
+\bibitem[Sutskever et~al., 2013]{sutskever2013importance}
+Sutskever, I., Martens, J., Dahl, G., en Hinton, G. (2013).
+\newblock On the importance of initialization and momentum in deep learning.
+\newblock In {\em International conference on machine learning}, pages
+  1139--1147.
 
 \bibitem[Van~Herreweghe en Vermeerbergen, 2009]{VGT-standard}
 Van~Herreweghe, M. en Vermeerbergen, M. (2009).
