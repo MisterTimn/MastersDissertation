@@ -3,7 +3,7 @@
 \contentsline {chapter}{Voorwoord}{iii}{chapter*.2}
 \contentsline {chapter}{Overzicht}{iv}{chapter*.3}
 \contentsline {chapter}{Extended abstract}{v}{section*.4}
-\contentsline {chapter}{Afkortingen}{ix}{chapter*.6}
+\contentsline {chapter}{Afkortingen}{viii}{chapter*.6}
 \contentsline {chapter}{\numberline {1}Inleiding}{1}{chapter.1}
 \contentsline {section}{\numberline {1.1}Gebarentaal}{1}{section.1.1}
 \contentsline {section}{\numberline {1.2}Automatische gebarentaalherkenning}{3}{section.1.2}
@@ -12,7 +12,7 @@
 \contentsline {subsection}{\numberline {1.2.3}Grammaticale samenstelling}{5}{subsection.1.2.3}
 \contentsline {section}{\numberline {1.3}One-shot learning}{5}{section.1.3}
 \contentsline {subsection}{\numberline {1.3.1}Uitbreidbaarheid herkenningssysteem}{5}{subsection.1.3.1}
-\contentsline {subsection}{\numberline {1.3.2}Leren uit een voorbeeld}{6}{subsection.1.3.2}
+\contentsline {subsection}{\numberline {1.3.2}Leren uit \'e\'en voorbeeld}{6}{subsection.1.3.2}
 \contentsline {subsection}{\numberline {1.3.3}One-shot learning in de literatuur}{7}{subsection.1.3.3}
 \contentsline {section}{\numberline {1.4}Doelstelling}{8}{section.1.4}
 \contentsline {chapter}{\numberline {2}Technische aspecten}{11}{chapter.2}
@@ -32,9 +32,9 @@
 \contentsline {section}{\numberline {2.4}Data-augmentatie}{26}{section.2.4}
 \contentsline {chapter}{\numberline {3}Uitvoering \& resultaten}{27}{chapter.3}
 \contentsline {section}{\numberline {3.1}Gebruikte technologi\"en}{27}{section.3.1}
-\contentsline {section}{\numberline {3.2}Dataset}{28}{section.3.2}
+\contentsline {section}{\numberline {3.2}ChaLearn dataset}{28}{section.3.2}
 \contentsline {section}{\numberline {3.3}Onderzoeksopzet}{30}{section.3.3}
-\contentsline {section}{\numberline {3.4}Basismodel}{31}{section.3.4}
+\contentsline {section}{\numberline {3.4}Ontwerp en optimalisatie van het basismodel}{31}{section.3.4}
 \contentsline {subsection}{\numberline {3.4.1}Invoer}{31}{subsection.3.4.1}
 \contentsline {subsection}{\numberline {3.4.2}Architectuur}{32}{subsection.3.4.2}
 \contentsline {subsection}{\numberline {3.4.3}Training}{34}{subsection.3.4.3}
@@ -43,12 +43,12 @@
 \contentsline {section}{\numberline {3.5}Een gebaar bijleren}{35}{section.3.5}
 \contentsline {subsection}{\numberline {3.5.1}Softmax20 model}{35}{subsection.3.5.1}
 \contentsline {subsection}{\numberline {3.5.2}Softmax19+1 model}{39}{subsection.3.5.2}
-\contentsline {subsubsection}{Invloed van het aantal samples}{39}{section*.28}
-\contentsline {subsubsection}{Invloed van het bijgeleerde gebaar}{41}{section*.29}
-\contentsline {subsubsection}{Invloed van data-augmentatie}{41}{section*.30}
+\contentsline {subsubsection}{Invloed van het aantal samples}{39}{section*.29}
+\contentsline {subsubsection}{Invloed van het bijgeleerde gebaar}{40}{section*.30}
+\contentsline {subsubsection}{Invloed van data-augmentatie}{42}{section*.31}
 \contentsline {subsection}{\numberline {3.5.3}Softmax18+1+1 model}{42}{subsection.3.5.3}
-\contentsline {chapter}{\numberline {4}Conclusie}{44}{chapter.4}
-\contentsline {section}{\numberline {4.1}Besluit}{44}{section.4.1}
-\contentsline {section}{\numberline {4.2}Verder onderzoek}{45}{section.4.2}
-\contentsline {chapter}{Bibliografie}{46}{appendix*.32}
-\contentsline {chapter}{L"yst van figuren}{50}{appendix*.33}
+\contentsline {chapter}{\numberline {4}Conclusie}{45}{chapter.4}
+\contentsline {section}{\numberline {4.1}Besluit}{45}{section.4.1}
+\contentsline {section}{\numberline {4.2}Verder onderzoek}{46}{section.4.2}
+\contentsline {chapter}{Bibliografie}{47}{appendix*.33}
+\contentsline {chapter}{L"yst van figuren}{51}{appendix*.34}

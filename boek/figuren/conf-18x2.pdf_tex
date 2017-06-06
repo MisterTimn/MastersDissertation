@@ -50,7 +50,7 @@
   \makeatother%
   \begin{picture}(1,0.84764026)%
     \put(0,0){\includegraphics[width=\unitlength]{conf-18x2.pdf}}%
-    \put(0.01317185,0.4400915){\color[rgb]{0,0,0}\rotatebox{90}{\makebox(0,0)[b]{\smash{Precision}}}}%
-    \put(0.47150379,0.00024549){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{Recall}}}%
+    \put(0.01317185,0.4400915){\color[rgb]{0,0,0}\rotatebox{90}{\makebox(0,0)[b]{\smash{Ware label}}}}%
+    \put(0.47150379,0.00024549){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{Voorspelde label}}}%
   \end{picture}%
 \endgroup%

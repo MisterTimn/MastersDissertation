@@ -50,7 +50,7 @@
   \makeatother%
   \begin{picture}(1,0.85572447)%
     \put(0,0){\includegraphics[width=\unitlength]{conf_alle_klassen.pdf}}%
-    \put(0.45682303,0.00362034){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{Voorspeld label}}}%
-    \put(0.01322359,0.46495185){\color[rgb]{0,0,0}\rotatebox{90}{\makebox(0,0)[b]{\smash{Echt label}}}}%
+    \put(0.45682303,0.00362034){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{Voorspelde label}}}%
+    \put(0.01322359,0.46495185){\color[rgb]{0,0,0}\rotatebox{90}{\makebox(0,0)[b]{\smash{Ware label}}}}%
   \end{picture}%
 \endgroup%

@@ -76,7 +76,7 @@ Stel dat een student kunstwetenschappen voor zijn examen het werk van verschille
 		\caption{Artificieel neuraal netwerk}
 		\label{fig:ANN}
 	\end{subfigure}
-	\caption{Een ANN met een invoerlaag, twee verborgen lagen en een softmax uitvoerlaag samen met zijn bouwsteen, het artificieel neuron.}
+	\caption{Een ANN met een invoerlaag, twee verborgen lagen en een softmax uitvoerlaag samen met zijn bouwsteen, het artificieel neuron. Het rood omkaderde gedeelte kan meerdere malen herhaald worden om een dieper en complexer netwerk te maken.}
 	\label{fig:test}
 \end{figure}
 Een lange rekensom uitwerken is iets wat de mens liever overlaat aan een rekenmachine of computer. Alle bits van een rekensom zijn even belangrijk en bepalend voor zijn uitkomst. Op dit vlak is een computer veel effici\"enter en betrouwbaarder dan ons brein. Onze hersenen zijn veel bedrevener in andere taken zoals het indelen van objecten volgens gelijkenis of het herkennen van een persoon.
@@ -125,10 +125,10 @@ softmax(x) &= \{p(y = 1 | x), p(y = 2 | x), ... , p(y = C | x)\}
 
 \npar De uitvoer van de softmaxlaag is een vector wiens som gelijk is aan 1. Om een voorspelling uit deze softmaxlaag te kiezen wordt het maximum genomen uit deze uitvoervector, de klasse met de hoogste probabiliteit. 
 
-\subsection{Training van een neuraal netwerk}
+\subsection{Training van een neuraal netwerk}\label{sec:leren}
 Alle parameters $\theta$ van het netwerk (gewichten $w$ en biases $b$) worden pseudo-willekeurig gekozen. Tijdens het trainen worden deze dan iteratief aangepast om de prestatie van het predictief model te verbeteren. Dit gebeurt aan de hand van een \textit{back-propagation} algoritme. De data of het signaal van de invoer gaat eerst voorwaarts door het netwerk waarna we een voorspelling krijgen. Vervolgens wordt deze voorspelling ge\"evalueerd en zal de fout op de voorspelling vanuit het einde van het netwerk terug naar het begin propageren. Op basis van deze fout worden de gewichten aangepast en zo leert het model uit ervaring.
 
-\npar Om de prestatie van het model te maximaliseren wordt een kostfunctie geminimaliseerd. Deze geeft een indicatie van de gemaakte voorspellingsfout door aan slechte voorspellingen een hogere kost toe te kennen. Welke kostenfunctie gebruikt wordt hangt af van de uit te voeren taak. Voor multinomiale classificatie met behulp van een softmax is \textit{categorical cross-entropy} het meest geschikt:
+\npar Om de prestatie van het model te maximaliseren wordt een kostenfunctie geminimaliseerd. Deze geeft een indicatie van de gemaakte voorspellingsfout door aan slechte voorspellingen een hogere kost toe te kennen. Welke kostenfunctie gebruikt wordt hangt af van de uit te voeren taak. Voor multinomiale classificatie met behulp van een softmax is \textit{categorical cross-entropy} het meest geschikt:
 \begin{equation}
 L(\theta) = - \frac{1}{N}\sum_{i=1}^{N}\sum_{j=1}^{C}y_{i,j}\log(p_{i,j})
 \end{equation}
@@ -142,7 +142,7 @@ met $N$ het aantal voorbeelden en $C$ het aantal klassen. De probabiliteit uit d
 	\label{fig:gradient-descent}
 \end{figure}
 \subsection{Gradient descent}
-\npar Nu moeten de parameters $\theta$ gevonden worden die de kostenfunctie minimaliseren. Het minimum van deze kostenfunctie komt immers overeen met het optimale predictief model. Om dit minimum te vinden wordt gradient descent toegepast. In Figuur \ref{fig:gradient-descent} wordt deze techniek weergegeven in een tweedimensionale parameterruimte. Het algoritme zal de parameters iteratief bijstellen door het volgen van de stijlste helling, gegeven door de gradi\"ent van de kostfunctie:
+\npar Nu moeten de parameters $\theta$ gevonden worden die de kostenfunctie minimaliseren. Het minimum van deze kostenfunctie komt immers overeen met het optimale predictief model. Om dit minimum te vinden, wordt gradient descent toegepast. In Figuur \ref{fig:gradient-descent} wordt deze techniek weergegeven in een tweedimensionale parameterruimte. Het algoritme zal de parameters iteratief bijstellen door het volgen van de stijlste helling, gegeven door de gradi\"ent van de kostfunctie:
 \begin{equation}\label{eq:grad-desc}
 \theta = \theta - \alpha \nabla_\theta L(\theta)
 \end{equation}
@@ -162,7 +162,7 @@ met $L(\theta;x_{i:i+B};y_{i:i+B})$ de kostfunctie van een klein gedeelte of \te
 	\caption{Klassiek momentum (links) tegenover Nesterov's accelerated gradient (rechts) \cite{sutskever2013importance}}
 	\label{fig:momentum}
 \end{figure}
-Als we de parameterruimte die het gradient descent algoritme afzoekt zouden vergelijken met een helling komt het in de problemen als er veel kleine putten zijn tijdens de afdaling. Het algoritme zal oscilleren tussen deze lichte hellingen, optimalisatiepad zal zigzaggen en de convergentiesnelheid van het algoritme zal sterk dalen. Ook is het meer waarschijnlijk dat het algoritme zal blijven steken in een van deze putten en niet verder afdaalt naar het minimum.
+De parameterruimte die het trainingsalgoritme afzoekt kan vergeleken worden met een berglandschap. Gradient descent gaat op zoek naar het diepste punt in dit landschap en zal in de problemen komen wanneer het tijdens deze afdaling vele kleine putten tegenkomt. Het algoritme zal oscilleren tussen deze lichte hellingen, het optimalisatiepad zal zigzaggen en de convergentiesnelheid van het algoritme zal sterk dalen. Ook is het meer waarschijnlijk dat het algoritme zal blijven steken in een van deze putten en niet verder afdaalt naar het minimum.
 \npar \cite{botev_nesterovs_2016} beschrijft het gebruik van momentum als optimalisatie voor het gradient descent algoritme. De parameters worden ge\"update in dezelfde richting als de vorige update. Dit kan als volgt beschreven worden:
 \begin{equation}
 \begin{aligned}
@@ -197,8 +197,8 @@ v_{t+1} &= \mu v_t - \alpha\nabla_{\theta_t} L(\theta_{t}+\mu_tv_t)\\
 	\label{fig:test}
 \end{figure}
 \subsection{Dropout}
-Tijdens het trainen kan het gebeuren dat neuronen volledig afhankelijk worden van de output van een enkel neuron uit de vorige laag (of een kleine groep neuronen). Deze units worden eigenlijk lui en dragen weinig tot niets bij aan het herkenningsvermogen. Dit fenomeen heet co-adaptatie. Om de units te verplichten zelf bij te dragen tot de herkenning van bepaalde patronen wordt dropout toegepast.
-\npar Tijdens elke iteratiestap van het trainingsalgoritme worden een aantal units uitgeschakeld (vandaar de benaming dropout). Of een unit al dan niet wegvalt wordt bepaald door een probabiliteit \textit{Bernoulli(p)}. Deze $p$ is een hyperparameter van het netwerk en wordt doorgaans ingesteld op 0.5 waardoor getraind wordt met de helft van de units. Elke iteratiestap wordt er dus getraind met een andere deelverzameling neuronen, in essentie een andere netwerk. Het uitschakelen van units gebeurt enkel tijdens training, daarom worden de gewichten herschaald tijdens het trainen met een factor $1/(1-p)$. De niet geschaalde gewichten zijn bruikbaar in de testfase wanneer alle neuronen worden benut.
+Tijdens het trainen kan het gebeuren dat neuronen volledig afhankelijk worden van de output van een enkel neuron uit de vorige laag (of een kleine groep neuronen). Deze units worden lui en dragen weinig tot niets bij aan het herkenningsvermogen. Dit fenomeen heet co-adaptatie. Om de units te verplichten zelf bij te dragen tot de herkenning van bepaalde patronen wordt dropout toegepast.
+\npar Tijdens elke iteratiestap van het trainingsalgoritme worden een aantal units uitgeschakeld (vandaar de benaming dropout). Of een unit al dan niet wegvalt wordt bepaald door een probabiliteit \textit{Bernoulli(p)}. Deze $p$ is een hyperparameter van het netwerk en wordt doorgaans ingesteld op 0.5 waardoor getraind wordt met de helft van de units. Elke iteratiestap wordt een andere deelverzameling neuronen getraind, in essentie een ander netwerk. Het uitschakelen van units gebeurt enkel tijdens training, daarom worden de gewichten herschaald tijdens het trainen met een factor $1/(1-p)$. De niet geschaalde gewichten zijn bruikbaar in de testfase wanneer alle neuronen worden benut.
 \npar Dropout is een regularisatiemethode die ondanks zijn simpliciteit erg effici\"ent blijkt. \cite{dropout} geeft een uitvoerige analyse en vergelijkende studie van het gebruik van dropout bij het uitvoeren van taken zoals gensplitsing, spraak-, tekst- en beeldherkenning. In elke van deze experimenen zorgt dropout voor een hogere regularisatie. Zo wordt aangetoond dat dropout overfitting kan tegengaan in om het even welk toepassingsgebied.
 
 \section{Convolutioneel neuraal netwerk}
@@ -211,10 +211,10 @@ De machine learning techniek die sinds 2012 in de belangstelling staat is die va
 	\caption{Lokale connectiviteit van receptieve velden. Voor elk overlappend deelgebied van de invoer is er een neuron verbonden. Alle gewichten van het lokale filter worden gedeeld.}
 	\label{fig:lokale-connectiviteit}
 \end{figure}
-\npar Convolutionele neurale netwerken hebben als grote troef dat ze deze feature-extractie automatiseren. CNN's zijn biologisch ge\"inspireerde model. Het onderzoek van \cite{hubel1968receptive} gaf een verklaring voor de manier waarop zoogdieren, specifiek de kat en de aap, de wereld rondom zich visueel waarnemen. De neuronen in de visuele cortex hebben een complexe laagsgewijze architectuur. Elke cel reageert op prikkels in een deelgebied van het gezichtsveld. Deze receptieve velden overlappen gedeeltelijk en bedekken zo het volledige zicht.
+\npar Convolutionele neurale netwerken hebben als grote troef dat ze deze feature-extractie automatiseren. Een CNN is een biologisch ge\"inspireerd model. Het onderzoek van \cite{hubel1968receptive} gaf een verklaring voor de manier waarop zoogdieren, specifiek de kat en de aap, de wereld rondom zich visueel waarnemen. De neuronen in de visuele cortex hebben een complexe laagsgewijze architectuur. Elke cel reageert op prikkels in een deelgebied van het gezichtsveld. Deze receptieve velden overlappen gedeeltelijk en bedekken zo het volledige zicht.
 
 \npar Het herkenningsvermogen van de mens is nog altijd ontegensprekelijk veel hoger dan om het even welk artificieel herkenningssysteem. Vandaar dat er geprobeerd wordt de functionaliteit van de visuele cortex na te bootsen met een CNN. 
-\npar CNN's zijn een speciaal soort meerlagig neuraal netwerk. Net zoals een ANN worden ze getraind met behulp van een back-propagation algoritme zoals beschreven in Sectie \ref{sec:leren}. Waar ze verschillen is hun architectuur. Een ANN is volledig verboden met zijn invoer. Als we een afbeelding van 64x64 pixels rechtstreeks als invoer in een ANN willen gebruiken moeten er per knoop 4096 gewichten worden getraind. De artifici\"ele neuronen in een CNN werken net zoals de receptieve velden in de visuele cortex.
+\npar CNN's zijn een speciaal soort meerlagig neuraal netwerk. Net zoals een ANN worden ze getraind met behulp van een back-propagation algoritme zoals beschreven in Sectie \ref{sec:leren}. Waarin een CNN verschilt is zijn architectuur. Een ANN is volledig verbonden met zijn invoer. Als we een afbeelding van 64x64 pixels rechtstreeks als invoer in een ANN willen gebruiken moeten er per knoop 4096 gewichten worden getraind. De artifici\"ele neuronen in een CNN werken net zoals de receptieve velden in de visuele cortex.
 
 \npar Zoals te zien in Figuur \ref{fig:lokale-connectiviteit} wordt elk mogelijk (overlappend) deelgebied verbonden met een neuron. De parameters van deze verbindingen worden gedeeld tussen alle units. Zo leert het netwerk een bepaalde feature detecteren om het even waar in het beeld en zijn er slechts een beperkt aantal te trainen gewichten.
  \begin{figure}[!t]
@@ -249,7 +249,7 @@ H_{uit}&=H{in}-H_f+1
 \end{aligned}
 \end{equation}
 
-\npar Om meerdere features te detecteren per laag worden er meerdere feature-maps gevormd om een filterbank te bekomen. Hoeveel feature-maps er per laag worden berekend is een hyperparameter van het CNN. Hier is de tweedimensionale convolutie beschreven omdat in dit onderzoek enkel met deze convolutie gewerkt wordt. Er zijn ook driedimensionale convoluties die rekening met het tijdsaspect en zo spatio-temporele features extraheren.
+\npar Om meerdere features te detecteren per laag worden er meerdere feature-maps gevormd om een filterbank te bekomen. Hoeveel feature-maps er per laag worden berekend is een hyperparameter van het CNN. Hier is de tweedimensionale convolutie beschreven omdat in dit onderzoek enkel met deze convolutie gewerkt wordt. Er zijn ook driedimensionale convoluties die rekening houden met het tijdsaspect en zo spatio-temporele features extraheren.
 
 \begin{figure}[b!]
 	\centering
@@ -258,11 +258,11 @@ H_{uit}&=H{in}-H_f+1
 	\input{figuren/max-pooling.pdf_tex}
 	\caption{Maximum pooling: uit elk vak in de invoer afbeelding wordt het maximum bepaald en overgenomen in de bijhorende pixel in het uitvoerbeeld.}
 	\label{fig:max-pooling}
-\end{figure}
+\end{figure}\textsl{\textsl{}}
 \subsection{Maximum pooling}
 
 
-Na de convolutielaag volgt er een pooling laag die de feature-maps opsplitst in kleine partities met een zekere pool grootte en de maximum waarde hieruit overhoudt. In Figuur \ref{fig:max-pooling} wordt een max-pooling uitgevoerd met een venster van 80x80 pixels op een invoer van 400x400 pixels. Zo daalt de dimensionaliteit maar blijven de belangrijkste features behouden.
+Na de convolutielaag volgt er een pooling laag die de feature-maps opsplitst in kleine partities met een zekere pool grootte. Het maximum uit deze vensters wordt overgenomen in de uitvoer. In Figuur \ref{fig:max-pooling} wordt een max-pooling uitgevoerd met een venster van 80x80 pixels op een invoer van 400x400 pixels. Zo daalt de dimensionaliteit maar blijven de belangrijkste features behouden.
 \npar De pooling operatie zorgt voor translatie-invariantie van het herkenningssysteem. Of een hand nu een paar pixels naar links, rechts, boven of onder verschuift maakt niet uit. De pooling zal al deze activaties samenbrengen tot dezelfde positie voor de volgende featuremap. 
 
 \section{Data-augmentatie}\label{sec:data-augm}

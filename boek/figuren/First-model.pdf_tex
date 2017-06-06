@@ -36,7 +36,7 @@
   }%
   \providecommand\rotatebox[2]{#2}%
   \ifx\svgwidth\undefined%
-    \setlength{\unitlength}{828.40313971bp}%
+    \setlength{\unitlength}{857.82908397bp}%
     \ifx\svgscale\undefined%
       \relax%
     \else%
@@ -48,26 +48,32 @@
   \global\let\svgwidth\undefined%
   \global\let\svgscale\undefined%
   \makeatother%
-  \begin{picture}(1,0.25098274)%
+  \begin{picture}(1,0.24288197)%
     \put(0,0){\includegraphics[width=\unitlength]{First-model.pdf}}%
-    \put(0.32280017,0.21964825){\makebox(0,0)[lb]{\smash{CNN}}}%
-    \put(0.38277454,0.21964796){\makebox(0,0)[lb]{\smash{\tiny feature extractie}}}%
-    \put(0.7218732,0.21964844){\makebox(0,0)[lb]{\smash{ANN}}}%
-    \put(0.78147742,0.21964806){\makebox(0,0)[lb]{\smash{\tiny classificatie}}}%
-    \put(0.05507679,0.23777585){\makebox(0,0)[b]{\smash{\tiny Invoer}}}%
-    \put(0.05580783,0.21964797){\makebox(0,0)[b]{\smash{\tiny 12x64x64}}}%
-    \put(0.33097291,0.02056579){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{\tiny Max-pooling}}}%
-    \put(0.33102478,0.00220964){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{\tiny 2x2}}}%
-    \put(0.96500125,0.15430305){\color[rgb]{0,0,0}\rotatebox{-49.851721}{\makebox(0,0)[b]{\smash{\tiny 0,1,...,18,19}}}}%
-    \put(0.16667331,0.02056579){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{\tiny Convolutie}}}%
-    \put(0.4536092,0.02056579){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{\tiny Convolutie}}}%
-    \put(0.66013688,0.02056579){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{\tiny Convolutie}}}%
-    \put(0.56620422,0.02056579){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{\tiny Max-pooling}}}%
-    \put(0.74603933,0.02056579){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{\tiny Max-pooling}}}%
-    \put(0.16685744,0.00220964){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{\tiny 8x(5x5)}}}%
-    \put(0.45379333,0.00220964){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{\tiny 16(5x5)}}}%
-    \put(0.66015503,0.00220964){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{\tiny 32x(4x4)}}}%
-    \put(0.56625609,0.00220964){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{\tiny 2x2}}}%
-    \put(0.7460912,0.00220964){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{\tiny 2x2}}}%
+    \put(0.31172722,0.21262234){\makebox(0,0)[lb]{\smash{CNN}}}%
+    \put(0.3696443,0.21262206){\makebox(0,0)[lb]{\smash{\tiny feature extractie}}}%
+    \put(0.69711093,0.21262253){\makebox(0,0)[lb]{\smash{ANN}}}%
+    \put(0.75467055,0.21262215){\makebox(0,0)[lb]{\smash{\tiny classificatie}}}%
+    \put(0.0531875,0.23012812){\makebox(0,0)[b]{\smash{\tiny Input}}}%
+    \put(0.05389347,0.21262207){\makebox(0,0)[b]{\smash{\tiny 12x64x64}}}%
+    \put(0.31961961,0.02036897){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{\tiny Max-pooling}}}%
+    \put(0.3196697,0.00264248){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{\tiny 2x2}}}%
+    \put(0.92816867,0.15324905){\color[rgb]{0,0,0}\rotatebox{-49.8517211}{\makebox(0,0)[b]{\smash{\tiny 0,1,...,18,19}}}}%
+    \put(0.16095594,0.02036897){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{\tiny Convolutie}}}%
+    \put(0.43804913,0.02036897){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{\tiny Convolutie}}}%
+    \put(0.63749233,0.02036897){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{\tiny Convolutie}}}%
+    \put(0.54678182,0.02036897){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{\tiny Max-pooling}}}%
+    \put(0.72044809,0.02036897){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{\tiny Max-pooling}}}%
+    \put(0.16113376,0.00264248){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{\tiny 8x(5x5)}}}%
+    \put(0.43822695,0.00264248){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{\tiny 16(5x5)}}}%
+    \put(0.63750986,0.00264248){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{\tiny 32x(4x4)}}}%
+    \put(0.54683191,0.00264248){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{\tiny 2x2}}}%
+    \put(0.72049818,0.00264248){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{\tiny 2x2}}}%
+    \put(0.85603011,0.01933134){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{\tiny Verborgen laag}}}%
+    \put(0.85701728,0.00213384){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{\tiny 800 units}}}%
+    \put(0.87965431,0.06551248){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\tiny Verborgen laag}}}%
+    \put(0.88017912,0.04958696){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\tiny 100 units}}}%
+    \put(0.93155187,0.09992091){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\tiny Softmax}}}%
+    \put(0.93206063,0.08414864){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\tiny 20 units}}}%
   \end{picture}%
 \endgroup%

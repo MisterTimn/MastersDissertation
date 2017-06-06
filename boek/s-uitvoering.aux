@@ -8,7 +8,7 @@
 \@writefile{toc}{\contentsline {section}{\numberline {3.1}Gebruikte technologi\"en}{27}{section.3.1}}
 \citation{escalera_chalearn_2014}
 \citation{lionel}
-\@writefile{toc}{\contentsline {section}{\numberline {3.2}Dataset}{28}{section.3.2}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.2}ChaLearn dataset}{28}{section.3.2}}
 \@writefile{lof}{\contentsline {figure}{\numberline {3.1}{\ignorespaces De Italiaanse gebaren gebruikt in de ``ChaLearn Looking At People Challenge 2014, Track 3: gesture spotting''\relax }}{29}{figure.caption.18}}
 \newlabel{fig:gebaren}{{3.1}{29}{De Italiaanse gebaren gebruikt in de ``ChaLearn Looking At People Challenge 2014, Track 3: gesture spotting''\relax }{figure.caption.18}{}}
 \@writefile{lof}{\contentsline {figure}{\numberline {3.2}{\ignorespaces De vier datastromen beschikbaar in de ``ChaLearn Looking At People Challenge 2014, Track 3: gesture spotting'' dataset\relax }}{30}{figure.caption.19}}
@@ -16,8 +16,8 @@
 \@writefile{toc}{\contentsline {section}{\numberline {3.3}Onderzoeksopzet}{30}{section.3.3}}
 \citation{lionel}
 \citation{wu_deep_2014}
-\@writefile{toc}{\contentsline {section}{\numberline {3.4}Basismodel}{31}{section.3.4}}
-\newlabel{sec:basismodel}{{3.4}{31}{Basismodel}{section.3.4}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.4}Ontwerp en optimalisatie van het basismodel}{31}{section.3.4}}
+\newlabel{sec:basismodel}{{3.4}{31}{Ontwerp en optimalisatie van het basismodel}{section.3.4}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {3.4.1}Invoer}{31}{subsection.3.4.1}}
 \@writefile{lof}{\contentsline {figure}{\numberline {3.3}{\ignorespaces De 12 frames gebruikt voor de invoer van het CNN. De frames hebben een resolutie van 64x64 pixels.\relax }}{31}{figure.caption.20}}
 \newlabel{fig:dataset-input}{{3.3}{31}{De 12 frames gebruikt voor de invoer van het CNN. De frames hebben een resolutie van 64x64 pixels.\relax }{figure.caption.20}{}}
@@ -45,20 +45,22 @@
 \newlabel{fig:naive-model}{{3.7}{38}{Precision en recall voor de classificatie van gebaar 15 met het softmax20 model in functie van het aantal gebruikte samples voor bijleren. De streepjeslijnen geven de baseline weer van het model getrained op alle voorbeelden.\relax }{figure.caption.26}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {3.5.2}Softmax19+1 model}{39}{subsection.3.5.2}}
 \newlabel{sec:softmax19x1}{{3.5.2}{39}{Softmax19+1 model}{subsection.3.5.2}{}}
-\@writefile{toc}{\contentsline {subsubsection}{Invloed van het aantal samples}{39}{section*.28}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.8}{\ignorespaces Precision en recall voor de classificatie van gebaar 15 met het softmax19+1 model in functie van het aantal gebruikte samples voor bijleren.\relax }}{40}{figure.caption.27}}
-\newlabel{fig:19x1-gebaar15}{{3.8}{40}{Precision en recall voor de classificatie van gebaar 15 met het softmax19+1 model in functie van het aantal gebruikte samples voor bijleren.\relax }{figure.caption.27}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.9}{\ignorespaces Barplots per gebaar van de precision en recall van de baseline en na het hertrainen met respectievelijk 1 en 10 samples. \relax }}{40}{figure.caption.27}}
-\newlabel{fig:19x1-all}{{3.9}{40}{Barplots per gebaar van de precision en recall van de baseline en na het hertrainen met respectievelijk 1 en 10 samples. \relax }{figure.caption.27}{}}
-\@writefile{toc}{\contentsline {subsubsection}{Invloed van het bijgeleerde gebaar}{41}{section*.29}}
-\@writefile{toc}{\contentsline {subsubsection}{Invloed van data-augmentatie}{41}{section*.30}}
+\@writefile{toc}{\contentsline {subsubsection}{Invloed van het aantal samples}{39}{section*.29}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.8}{\ignorespaces Schematische weergave van het softmax19+1 model. De blauwe lagen zijn voorgetraind en worden niet gewijzigd. Er wordt 1 unit toegevoegd voor het nieuwe gebaar (aangeduid in het geel). De uitvoer van deze twee parallelle lagen worden samengebracht in een softmax met 20 units. Vandaar de benaming softmax19+1. \relax }}{40}{figure.caption.27}}
+\newlabel{fig:19x1-all}{{3.8}{40}{Schematische weergave van het softmax19+1 model. De blauwe lagen zijn voorgetraind en worden niet gewijzigd. Er wordt 1 unit toegevoegd voor het nieuwe gebaar (aangeduid in het geel). De uitvoer van deze twee parallelle lagen worden samengebracht in een softmax met 20 units. Vandaar de benaming softmax19+1. \relax }{figure.caption.27}{}}
+\@writefile{toc}{\contentsline {subsubsection}{Invloed van het bijgeleerde gebaar}{40}{section*.30}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.9}{\ignorespaces Precision en recall voor de classificatie van gebaar 15 met het softmax19+1 model in functie van het aantal gebruikte samples voor bijleren.\relax }}{41}{figure.caption.28}}
+\newlabel{fig:19x1-gebaar15}{{3.9}{41}{Precision en recall voor de classificatie van gebaar 15 met het softmax19+1 model in functie van het aantal gebruikte samples voor bijleren.\relax }{figure.caption.28}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.10}{\ignorespaces Barplots per gebaar van de precision en recall van de baseline en na het hertrainen met respectievelijk 1 en 10 samples. \relax }}{41}{figure.caption.28}}
+\newlabel{fig:19x1-all}{{3.10}{41}{Barplots per gebaar van de precision en recall van de baseline en na het hertrainen met respectievelijk 1 en 10 samples. \relax }{figure.caption.28}{}}
+\@writefile{toc}{\contentsline {subsubsection}{Invloed van data-augmentatie}{42}{section*.31}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {3.5.3}Softmax18+1+1 model}{42}{subsection.3.5.3}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.10}{\ignorespaces Precision en recall na het bijleren van gebaar 13 en gebaar 18 in het \textit  {softmax18+1+1} model. Ter vergelijking is het resultaat van het \textit  {softmax19+1} model ook uitgetekend.\relax }}{43}{figure.caption.31}}
-\newlabel{fig:18x2}{{3.10}{43}{Precision en recall na het bijleren van gebaar 13 en gebaar 18 in het \textit {softmax18+1+1} model. Ter vergelijking is het resultaat van het \textit {softmax19+1} model ook uitgetekend.\relax }{figure.caption.31}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.11}{\ignorespaces Genormaliseerde confusion matrix van het \textit  {softmax18+1+1} model na leren van gebaar 13 en gebaar 18 met een voorbeeld.\relax }}{43}{figure.caption.31}}
-\newlabel{fig:conf-18x2}{{3.11}{43}{Genormaliseerde confusion matrix van het \textit {softmax18+1+1} model na leren van gebaar 13 en gebaar 18 met een voorbeeld.\relax }{figure.caption.31}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.11}{\ignorespaces Precision en recall na het bijleren van gebaar 13 en gebaar 18 in het \textit  {softmax18+1+1} model. Ter vergelijking is het resultaat van het \textit  {softmax19+1} model ook uitgetekend.\relax }}{44}{figure.caption.32}}
+\newlabel{fig:18x2}{{3.11}{44}{Precision en recall na het bijleren van gebaar 13 en gebaar 18 in het \textit {softmax18+1+1} model. Ter vergelijking is het resultaat van het \textit {softmax19+1} model ook uitgetekend.\relax }{figure.caption.32}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.12}{\ignorespaces Genormaliseerde confusion matrix van het \textit  {softmax18+1+1} model na leren van gebaar 13 en gebaar 18 met een voorbeeld.\relax }}{44}{figure.caption.32}}
+\newlabel{fig:conf-18x2}{{3.12}{44}{Genormaliseerde confusion matrix van het \textit {softmax18+1+1} model na leren van gebaar 13 en gebaar 18 met een voorbeeld.\relax }{figure.caption.32}{}}
 \@setckpt{s-uitvoering}{
-\setcounter{page}{44}
+\setcounter{page}{45}
 \setcounter{equation}{0}
 \setcounter{enumi}{0}
 \setcounter{enumii}{0}
@@ -73,7 +75,7 @@
 \setcounter{subsubsection}{0}
 \setcounter{paragraph}{0}
 \setcounter{subparagraph}{0}
-\setcounter{figure}{11}
+\setcounter{figure}{12}
 \setcounter{table}{2}
 \setcounter{parentequation}{0}
 \setcounter{float@type}{8}

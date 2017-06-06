@@ -55,8 +55,8 @@
     \put(0.11165509,0.0058277){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{$g(\theta_t)$}}}%
     \put(0.27496957,0.08616791){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{$v_{t+1}$}}}%
     \put(0.23018981,0.1665081){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{$\mu v_t$}}}%
-    \put(0.45013756,0.16123988){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{$\theta_{t+1}$}}}%
-    \put(0.71487117,0.08232881){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{$\theta_{t+1}$}}}%
+    \put(0.45935692,0.17045925){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{$\theta_{t+1}$}}}%
+    \put(0.7333099,0.08101177){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{$\theta_{t+1}$}}}%
     \put(0.5521437,0.14159613){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{$\mu v_t$}}}%
     \put(0.56604424,0.05203658){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{$v_{t+1}$}}}%
     \put(0.71065416,0.14027913){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{$g(\theta_t + \mu v_t)$}}}%

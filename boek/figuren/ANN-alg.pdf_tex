@@ -1,4 +1,4 @@
-%% Creator: Inkscape inkscape 0.92.1, www.inkscape.org
+%% Creator: Inkscape inkscape 0.48.4, www.inkscape.org
 %% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
 %% Accompanies image file 'ANN-alg.pdf' (pdf, eps, ps)
 %%
@@ -36,7 +36,7 @@
   }%
   \providecommand\rotatebox[2]{#2}%
   \ifx\svgwidth\undefined%
-    \setlength{\unitlength}{352.43418209bp}%
+    \setlength{\unitlength}{285.74170038bp}%
     \ifx\svgscale\undefined%
       \relax%
     \else%
@@ -48,40 +48,29 @@
   \global\let\svgwidth\undefined%
   \global\let\svgscale\undefined%
   \makeatother%
-  \begin{picture}(1,0.44467419)%
-    \put(0,0){\includegraphics[width=\unitlength,page=1]{ANN-alg.pdf}}%
-    \put(0.29490737,0.25695486){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{$x_{1}$}}}%
-    \put(0,0){\includegraphics[width=\unitlength,page=2]{ANN-alg.pdf}}%
-    \put(0.29490737,0.11686413){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{$x_{D}$}}}%
-    \put(0,0){\includegraphics[width=\unitlength,page=3]{ANN-alg.pdf}}%
-    \put(0.43686164,0.33589947){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{$h^{(1)}_{1}$}}}%
-    \put(0,0){\includegraphics[width=\unitlength,page=4]{ANN-alg.pdf}}%
-    \put(0.44436952,0.02414668){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{$h^{(1)}_{M_{1}}$}}}%
-    \put(0,0){\includegraphics[width=\unitlength,page=5]{ANN-alg.pdf}}%
-    \put(0.72077022,0.25695486){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{$y_{1}$}}}%
-    \put(0,0){\includegraphics[width=\unitlength,page=6]{ANN-alg.pdf}}%
-    \put(0.72077022,0.11686413){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{$y_{C}$}}}%
-    \put(0,0){\includegraphics[width=\unitlength,page=7]{ANN-alg.pdf}}%
-    \put(0.58038777,0.33589947){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{$h^{(2)}_{1}$}}}%
-    \put(0,0){\includegraphics[width=\unitlength,page=8]{ANN-alg.pdf}}%
-    \put(0.58885714,0.02274193){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{$h^{(2)}_{M_{2}}$}}}%
-    \put(0,0){\includegraphics[width=\unitlength,page=9]{ANN-alg.pdf}}%
-    \put(0.78040656,0.24778561){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.00078591\unitlength}\centering  \end{minipage}}}%
-    \put(0,0){\includegraphics[width=\unitlength,page=10]{ANN-alg.pdf}}%
-    \put(0.82746825,0.25932413){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{$p(y = 1 | x)$}}}%
-    \put(0.82632506,0.11657666){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{$p(y = C | x)$}}}%
-    \put(0.3598735,0.29766886){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{$w^{(1)}$}}}%
-    \put(0.50791052,0.30235398){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{$w^{(2)}$}}}%
-    \put(0.65406513,0.28846096){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{$w^{(3)}$}}}%
-    \put(0.29314364,0.38243774){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{\tiny Invoer}}}%
-    \put(0.43539296,0.38243774){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{\tiny Verborgen}}}%
-    \put(0.57764231,0.38243774){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{\tiny Verborgen}}}%
-    \put(0.71910575,0.38243774){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{\tiny Uitvoer}}}%
-    \put(0.71910575,0.36065927){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{\tiny Softmax}}}%
-    \put(0,0){\includegraphics[width=\unitlength,page=11]{ANN-alg.pdf}}%
-    \put(0.33626092,0.02507447){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{$b^{(1)}}}}%
-    \put(0.47794822,0.02376979){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{$b^{(2)}}}}%
-    \put(0.66693536,0.02398492){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{$b^{(3)}}}}%
-    \put(0,0){\includegraphics[width=\unitlength,page=12]{ANN-alg.pdf}}%
+  \begin{picture}(1,0.52132794)%
+    \put(0,0){\includegraphics[width=\unitlength]{ANN-alg.pdf}}%
+    \put(0.07236036,0.33808754){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{$x_{1}$}}}%
+    \put(0.07236036,0.15378025){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{$x_{D}$}}}%
+    \put(0.25911937,0.44194928){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{$h^{(1)}_{1}$}}}%
+    \put(0.26339749,0.03179857){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{$h^{(1)}_{M_{1}}$}}}%
+    \put(0.63263747,0.33808754){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{$y_{1}$}}}%
+    \put(0.63263747,0.15378025){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{$y_{C}$}}}%
+    \put(0.44794638,0.44194928){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{$h^{(2)}_{1}$}}}%
+    \put(0.45348946,0.02995044){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{$h^{(2)}_{M_{2}}$}}}%
+    \put(0.71109671,0.32602422){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.00103392\unitlength}\centering  \end{minipage}}}%
+    \put(0.7730124,0.34120461){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{$p(y = 1 | x)$}}}%
+    \put(0.77150838,0.15340205){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{$p(y = C | x)$}}}%
+    \put(0.15783162,0.39165203){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{$w^{(1)}$}}}%
+    \put(0.35259328,0.39781589){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{$w^{(2)}$}}}%
+    \put(0.54487838,0.37953786){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{$w^{(3)}$}}}%
+    \put(0.07003995,0.50317634){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{\tiny Invoer}}}%
+    \put(0.25718714,0.50317634){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{\tiny Verborgen}}}%
+    \put(0.44433438,0.50317634){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{\tiny Verborgen}}}%
+    \put(0.63044765,0.50317634){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{\tiny Uitvoer}}}%
+    \put(0.63044765,0.47452397){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{\tiny Softmax}}}%
+    \put(0.10697392,0.0315714){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{$b^{(1)}$}}}%
+    \put(0.3394131,0.03093388){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{$b^{(2)}$}}}%
+    \put(0.55265095,0.02995045){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{$b^{(3)}$}}}%
   \end{picture}%
 \endgroup%

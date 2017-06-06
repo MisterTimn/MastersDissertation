@@ -10,7 +10,7 @@ Alle programmatie wordt uitgevoerd in Python, een dynamische \textit{high-level}
 	\item Scikit-image: is een verzameling beeldverwerkingsalgoritmes. Deze bibliotheek wordt gebruikt voor de data-augmentatie.
 	
 \end{itemize}
-\section{Dataset}
+\section{ChaLearn dataset}
 De gebruikte dataset is die van de ``ChaLearn Looking at People Challenge 2014'' zoals beschreven in \cite{escalera_chalearn_2014}. Uit deze set wordt de derde track gebruikt: ``gesture recognition''. Deze bevat meer dan 14000 gebaren uit een vocabularium van 20 Italiaanse gebaren. Merk op dat het hier niet gaat om een gebarentaal maar om afzonderlijke gebaren uit de Italiaanse cultuur. De verschillende gebaren en hun benamingen zijn te zien in \ref{fig:gebaren}.
 \begin{figure}
 	\centering
@@ -29,9 +29,9 @@ De gebruikte dataset is die van de ``ChaLearn Looking at People Challenge 2014''
 	\caption{De vier datastromen beschikbaar in de ``ChaLearn Looking At People Challenge 2014, Track 3: gesture spotting'' dataset}
 	\label{fig:chalearn-data}
 \end{figure}
-\npar Deze dataset werd ook gebruikt in \cite{lionel} waar deze een aantal voorverwerkingsstappen onderging. Deze voorverwerkte dataset is ter beschikking gesteld van dit onderzoek. De voorverwerking probeert de dataset te optimaliseren voor gebarenherkenning. Eerst en vooral worden er vier nieuwe datastromen gecre\"eerd door het uitsnijden van de linker en rechterhand uit zowel diepte- als RGB-beeld. Ook wordt het bovenlichaam ge\"isoleerd om een deel van de achtergrond weg te werken. In totaal zijn er zo zes datastromen beschikbaar. De dataset bestaat uit 10000 ge\"isoleerde gebaren samen met hun correcte klasselabel. Elk beeld bestaat uit 32 frames en heeft een resolutie van 64x64 pixels.
+\npar Deze dataset werd ook gebruikt in \cite{lionel} waar deze een aantal voorverwerkingsstappen onderging. Deze voorverwerkte dataset is ter beschikking gesteld van dit onderzoek. De voorverwerking probeert de dataset te optimaliseren voor gebarenherkenning. De dataset bestaat uit 10000 ge\"isoleerde gebaren samen met hun correcte klasselabel. Er worden 32 frames geselecteerd rond het midden van elk gebaar. Vervolgens worden er vier nieuwe datastromen gecre\"eerd door het uitsnijden van de linker en rechterhand uit zowel diepte- als RGB-beeld. Ook wordt het bovenlichaam ge\"isoleerd om een deel van de achtergrond weg te werken. In totaal zijn er zo zes datastromen beschikbaar. Elk beeld, origineel 640x480 pixels groot, wordt gedownscaled en gecropt tot een grootte van 64x64 pixels. 
 
-\npar In dit onderzoek wordt de dataset opgedeeld in 60\% training-, 20\% validatie- en 20\% testset.
+\npar In dit onderzoek wordt de dataset opgedeeld in 60\% training-, 20\% validatie- en 20\% testset. Deze opdeling is sequentieel gebeurd: het eerste deel voor training, het tweede deel voor validatie en het laatste voor test.
 
 
 \section{Onderzoeksopzet}
@@ -42,10 +42,10 @@ De experimenten worden uitgevoerd op computers van het Reservoir Lab aan van de 
 
 \npar In de volgende stap zal een model, qua architectuur en hyperparameters gelijkend op het basismodel, getraind worden op een deelverzameling van de gebaren. Na deze pre-training kan het model een gebaar bijgeleerd worden en wordt er ge\"experimenteerd met het aantal verschillende samples van het nieuwe gebaar, het aantal lagen dat hertraind worden en met het gebruik van data-augmentatie. De bespreking van deze experimenten gebeurt in sectie \ref{sec:experimenten}.
 
-\section{Basismodel}\label{sec:basismodel}
+\section{Ontwerp en optimalisatie van het basismodel}\label{sec:basismodel}
 Alle keuzes omtrent hyperparameters en architectuur zijn experimenteel, op basis van gelijkaardige onderzoeken en naar advies van de begeleiding bepaald. Er zijn vele mogelijke combinaties qua hyperparameters en het is zeer tijdrovend om hierin de meest optimale keuze te maken. Dit is ook niet de essentie van dit onderzoek. Er dient een voldoende goed model opgesteld te worden om vergelijkingen te maken tussen het leren van alle gebaren (basismodel) en het bijleren van een gebaar. 
 \subsection{Invoer}
-Het beeld van elk gebaar is 64x64 pixels groot en bestaat uit 32 frames. Hieruit worden er 4 frames met volgende indices geselecteerd: 7,13,18 en 25. Er is gekozen om niet van alle input gebruik te maken om een snellere trainingstijd te bekomen zodat er meer experimenten kunenn worden uitgevoerd. In een latere fase of bij verder onderzoek kan het model steeds uitgebreid worden om meer gebruik te maken van spatio-temporele data.
+Uit het beeld van elk gebaar worden 4 frames gesampled per datastroom. Er is gekozen om niet van alle input gebruik te maken om een snellere trainingstijd te bekomen zodat er meer experimenten kunnen worden uitgevoerd. In een latere fase of bij verder onderzoek kan het model steeds uitgebreid worden om meer gebruik te maken van spatio-temporele data.
 \npar Er wordt enkel gebruik gemaakt van het dieptebeeld, volgens \cite{lionel} en \cite{wu_deep_2014} ligt hierin de nuttigste informatie voor een CNN. Het gebruik van RGB-beeld in combinatie met grijswaardenbeeld voegt meestal weinig toe. Hierin kan dus ook weer rekentijd worden gespaard.
 \begin{figure}
 	\centering
@@ -107,7 +107,7 @@ Het CNN bestaat uit drie convolutionele en max-pooling lagen. Alle max-pooling g
 	\end{tabular}	
 	\caption{Hyperparameters van het basismodel}\label{tab:hyperparam}
 \end{table}
-\npar Een samenvatting van alle hyperparameters en gekozen architectuur is te vinden in Tabel \ref{tab:hyperparam}. Voor de regularisatie wordt er gebruik gemaakt van dropout. De gewichten worden ge\"initiaseerd met Glorot gewichten gesampled uit een uniforme verdeling. Deze gewichtsinitialisatie beschreven in \cite{glorot-1} is ontwikkeld voor deep learning methodes en zorgt ervoor dat het signaal tot diep in het netwerk kan reiken. Het is de standaard initialisatie methode van het Lasagne framework.
+\npar Een samenvatting van alle hyperparameters en gekozen architectuur is te vinden in Tabel \ref{tab:hyperparam}. Voor de regularisatie wordt er gebruik gemaakt van dropout. De gewichten worden ge\"initiaseerd met Glorot gewichten gesampled uit een uniforme verdeling. Deze gewichtsinitialisatie beschreven in \cite{glorot-1} is ontwikkeld voor deep learning methodes en de standaard initialisatiemethode van het Lasagne framework. Het zorgt ervoor dat de aangelegde invoer zich kan propageren tot diep in het netwerk. Zonder goede intitialisatie van de gewichten is er een risico dat het signaal fel afzwakt waardoor de laatste lagen geen input krijgen.
 \npar Er wordt ook aan data-augmentatie gedaan om de prestatie van het predictief model te verbeteren. De parameters van deze augmentatie staan beschreven in Tabel \ref{tab:hyperparam}. Deze parameters bleken later nogal conservatief gekozen, in Sectie \ref{sec:softmax19x1} wordt hierover uitgebreid.
 %De gebruikte data-augmentatie bleek bij nader inzien geen zo'n grote impact te hebben door conservatief gekozen parameters zoals weergegeven onderaan Tabel \ref{tab:hyperparam}. De parameters voor translatie en rotatie zijn eigenlijk te klein en voegen weinig variatie toe aan de beelden. In Sectie \ref{sec:model-19x1} wordt hierover verder uitgebreid.
 \subsection{Training}
@@ -222,7 +222,12 @@ De eerste experimenten rond het bijleren van een gebaar worden uitgevoerd op een
 \subsection{Softmax19+1 model}\label{sec:softmax19x1}
 We willen naar een dynamisch uitbreidbaar systeem toewerken. Het vorige model gaat uit van slechts een bij te leren gebaar en is hier dus niet bruikbaar voor. Om aan deze uitbreidbaarheid te voldoen en om verder onderzoek te voeren wordt het \textit{Softmax19+1} model opgesteld, te zien in Figuur \ref{fig:19+1model}.
 
-%FIGUUR
+\begin{figure}
+	\centering
+	\def\svgwidth{0.7\columnwidth}
+	\input{figuren/softmax19+1.pdf_tex}
+	\caption{Schematische weergave van het softmax19+1 model. De blauwe lagen zijn voorgetraind en worden niet gewijzigd. Er wordt 1 unit toegevoegd voor het nieuwe gebaar (aangeduid in het geel). De uitvoer van deze twee parallelle lagen worden samengebracht in een softmax met 20 units. Vandaar de benaming softmax19+1. }\label{fig:19x1-all}
+\end{figure}
 
 \npar Hier wordt eerst een model met 19 softmax units getraind voor de classificatie van 19 gebaren. Behalve het verschil in aantal softmax units is de architectuur volledig gelijk aan die van het basismodel. Daarna wordt het model uitgebreid met een extra unit voor de classificatie van het nieuwe gebaar. De softmax activatiefunctie van de laag met 19 eenheden wordt vervangen door een lineaire activatie ($a(x)=x$). De signalen van deze units worden samengebracht met het signaal van de nieuwe unit, ook met een lineaire activatiefunctie, in een \textit{ConcatLayer}.  Op deze laatste laag, die nu 20 eenheden telt, wordt dan de softmax uitgevoerd voor classificatie.
 
@@ -258,7 +263,7 @@ Ten slotte wordt ook nog een experiment opgezet om de invloed van data-augmentat
 
 \subsection{Softmax18+1+1 model}
 
-Om de uitbreidbaarheid verder te onderzoeken wordt analoog aan het principe van het softmax19+1 model een architectuur gemaakt dat twee gebaren na elkaar bijleert (Figuur \ref{fig:18x2-arch}). Eerst wordt een model met 18 softmax units getraind. Na deze pretraining wordt er een unit voor het bij te leren gebaar toegevoegd en net zoals het vorige model worden de uitgangen van de 18 units en de nieuwe unit samengevoegd met een ConcatLayer.
+Om de uitbreidbaarheid verder te onderzoeken wordt analoog aan het principe van het softmax19+1 model een architectuur gemaakt dat twee gebaren na elkaar bijleert. Eerst wordt een model met 18 softmax units getraind. Na deze pretraining wordt er een unit voor het bij te leren gebaar toegevoegd en net zoals het vorige model worden de uitgangen van de 18 units en de nieuwe unit samengevoegd met een ConcatLayer.
 \npar Het model leert een gebaar bij door de training van het nieuw toegevoegde unit en wordt daarna opnieuw uitgebreid met nog een extra unit voor het tweede gebaar. Ook deze unit wordt geconcateneerd zodat er uiteindelijk een softmax van 20 units is (18+1+1).
 
 \npar Door op deze manier te werk te gaan is het theoretisch mogelijk om gebaren te blijven toevoegen. Na het toevoegen van een aantal gebaren kunnen de units effectief samengevoegd worden tot een laag waarna het proces opnieuw kan beginnen.

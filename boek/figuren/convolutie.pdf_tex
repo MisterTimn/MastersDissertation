@@ -50,6 +50,31 @@
   \makeatother%
   \begin{picture}(1,0.4449466)%
     \put(0,0){\includegraphics[width=\unitlength]{convolutie.pdf}}%
+    \put(0.04498232,0.0987429){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{0}}}%
+    \put(0.11900486,0.09872718){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{1}}}%
+    \put(0.19187413,0.09851554){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{2}}}%
+    \put(0.26553647,0.09851554){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{2}}}%
+    \put(0.33928254,0.09851554){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{2}}}%
+    \put(0.04498232,0.02949934){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{0}}}%
+    \put(0.11929491,0.02949934){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{0}}}%
+    \put(0.19187413,0.02927202){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{2}}}%
+    \put(0.26553647,0.02927202){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{2}}}%
+    \put(0.33928254,0.02927202){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{2}}}%
+    \put(0.04498232,0.31699746){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{0}}}%
+    \put(0.11929491,0.31699746){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{0}}}%
+    \put(0.26511319,0.31699746){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{0}}}%
+    \put(0.33885926,0.31699746){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{0}}}%
+    \put(0.19116082,0.3169818){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{1}}}%
+    \put(0.04498232,0.24858365){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{0}}}%
+    \put(0.11900486,0.24856798){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{1}}}%
+    \put(0.19187413,0.24835633){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{2}}}%
+    \put(0.26553647,0.24835633){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{2}}}%
+    \put(0.33928254,0.24835633){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{2}}}%
+    \put(0.04498232,0.17376641){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{0}}}%
+    \put(0.11900486,0.17375073){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{1}}}%
+    \put(0.19187413,0.17353908){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{2}}}%
+    \put(0.26553647,0.17353908){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{2}}}%
+    \put(0.33928254,0.17353908){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{2}}}%
     \put(0.49889741,0.2401596){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{-4}}}%
     \put(0.57347367,0.24017528){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{0}}}%
     \put(0.64772065,0.24017528){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{0}}}%
