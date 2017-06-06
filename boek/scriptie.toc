@@ -31,23 +31,23 @@
 \contentsline {subsection}{\numberline {2.3.2}Maximum pooling}{25}{subsection.2.3.2}
 \contentsline {section}{\numberline {2.4}Data-augmentatie}{26}{section.2.4}
 \contentsline {chapter}{\numberline {3}Uitvoering \& resultaten}{27}{chapter.3}
-\contentsline {section}{\numberline {3.1}Gebruikte technologi\"en}{27}{section.3.1}
+\contentsline {section}{\numberline {3.1}Gebruikte technologie\"en}{27}{section.3.1}
 \contentsline {section}{\numberline {3.2}ChaLearn dataset}{28}{section.3.2}
 \contentsline {section}{\numberline {3.3}Onderzoeksopzet}{30}{section.3.3}
 \contentsline {section}{\numberline {3.4}Ontwerp en optimalisatie van het basismodel}{31}{section.3.4}
 \contentsline {subsection}{\numberline {3.4.1}Invoer}{31}{subsection.3.4.1}
-\contentsline {subsection}{\numberline {3.4.2}Architectuur}{32}{subsection.3.4.2}
-\contentsline {subsection}{\numberline {3.4.3}Training}{34}{subsection.3.4.3}
-\contentsline {subsection}{\numberline {3.4.4}Baseline resultaten met behulp van precision, recall en confusion matrix}{34}{subsection.3.4.4}
-\contentsline {section}{\numberline {3.5}Een gebaar bijleren}{36}{section.3.5}
-\contentsline {subsection}{\numberline {3.5.1}Softmax20 model}{36}{subsection.3.5.1}
-\contentsline {subsection}{\numberline {3.5.2}Softmax19+1 model}{39}{subsection.3.5.2}
-\contentsline {subsubsection}{Invloed van het aantal samples}{40}{section*.28}
-\contentsline {subsubsection}{Invloed van het bijgeleerde gebaar}{42}{section*.29}
-\contentsline {subsubsection}{Invloed van data-augmentatie}{42}{section*.30}
-\contentsline {subsection}{\numberline {3.5.3}Softmax18+1+1 model}{43}{subsection.3.5.3}
-\contentsline {chapter}{\numberline {4}Conclusie}{46}{chapter.4}
-\contentsline {section}{\numberline {4.1}Besluit}{46}{section.4.1}
-\contentsline {section}{\numberline {4.2}Verder onderzoek}{47}{section.4.2}
-\contentsline {chapter}{Bibliografie}{48}{appendix*.32}
-\contentsline {chapter}{L"yst van figuren}{52}{appendix*.33}
+\contentsline {subsection}{\numberline {3.4.2}Architectuur}{31}{subsection.3.4.2}
+\contentsline {subsection}{\numberline {3.4.3}Training}{33}{subsection.3.4.3}
+\contentsline {subsection}{\numberline {3.4.4}Baseline resultaten met behulp van precision, recall en confusion matrix}{35}{subsection.3.4.4}
+\contentsline {section}{\numberline {3.5}Een gebaar bijleren}{38}{section.3.5}
+\contentsline {subsection}{\numberline {3.5.1}Softmax20 model}{38}{subsection.3.5.1}
+\contentsline {subsection}{\numberline {3.5.2}Softmax19+1 model}{40}{subsection.3.5.2}
+\contentsline {subsubsection}{Invloed van het aantal samples}{41}{section*.29}
+\contentsline {subsubsection}{Invloed van het bijgeleerde gebaar}{43}{section*.30}
+\contentsline {subsubsection}{Invloed van data-augmentatie}{43}{section*.31}
+\contentsline {subsection}{\numberline {3.5.3}Softmax18+1+1 model}{44}{subsection.3.5.3}
+\contentsline {chapter}{\numberline {4}Conclusie}{47}{chapter.4}
+\contentsline {section}{\numberline {4.1}Besluit}{47}{section.4.1}
+\contentsline {section}{\numberline {4.2}Verder onderzoek}{48}{section.4.2}
+\contentsline {chapter}{Bibliografie}{49}{appendix*.33}
+\contentsline {chapter}{L"yst van figuren}{53}{appendix*.34}

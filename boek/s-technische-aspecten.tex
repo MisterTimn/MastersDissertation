@@ -88,9 +88,9 @@ met $n$ de uitvoer van het neuron, $a$ de \textit{activatiefunctie}, $b$ de bias
 
 
 
-\npar Deze artifici\"ele neuronen worden gegroepeerd in lagen om een ANN te vormen zoals afgebeeld in figuur \ref{fig:ANN}. Alle lagen worden onderling volledig verbonden, elk neuron krijgt invoer van alle neuronen uit de voorgaande laag en geeft zijn uitvoer door aan alle neuronen van de volgende laag. Deze lagen worden dan ook vaak \textit{dense layers} genoemd vanwege hun verbindingsdichtheid.
+\npar Deze artifici\"ele neuronen worden gegroepeerd in lagen om een ANN te vormen zoals afgebeeld in Figuur \ref{fig:ANN}. Alle lagen worden onderling volledig verbonden, elk neuron krijgt invoer van alle neuronen uit de voorgaande laag en geeft zijn uitvoer door aan alle neuronen van de volgende laag. Deze lagen worden dan ook vaak \textit{dense layers} genoemd vanwege hun verbindingsdichtheid.
 \npar Hier beschouwen we enkel \textit{feedforward neurale netwerken}. Aan het begin van het netwerk hebben we de invoerlaag met evenveel knopen als de dimensie van de featurevectoren. De invoer propageert zich van links naar rechts door het netwerk tot het bij de uitvoerlaag komt. Omdat de uitvoer van de binnenste lagen niet meteen zichtbaar is worden deze de verborgen lagen genoemd.
-\npar De uitvoer van de verschillende lagen uit het ANN in figuur \ref{fig:ANN} kunnen we als volgt beschrijven:
+\npar De uitvoer van de verschillende lagen uit het ANN in Figuur \ref{fig:ANN} kunnen we als volgt beschrijven:
 \begin{equation}
 \begin{aligned}
 h^{(1)}_j\quad=&\quad a\bigg(b^{(1)}+\sum_{i=1}^{D}w^{(1)}_{i,j}x_i\bigg),\quad j=1,...,M_1\\
@@ -99,7 +99,7 @@ y_j\quad=&\quad a\bigg(b^{(3)}+\sum_{i=1}^{M_2}w^{(3)}_{i,j}h^{(2)}_i\bigg),\qua
 \end{aligned}
 \end{equation}
 met $D$ het aantal invoerparameters, $M_1$ het aantal verborgen knopen in de eerste laag, $M_2$ het aantal verborgen knopen in de tweede laag en $C$ het aantal te voorspellen klassen. $M_1$ en $M_2$ zijn hyperparameters van het model die geoptimaliseerd worden door de evaluatie van het model tegenover de validatieset.
-\npar Het is mogelijk en wenselijk om nog meer verborgen lagen toe te voegen. Het omkaderde gedeelte in figuur \ref{fig:ANN} kan een aantal keer herhaald worden om zo het model toe te laten een complexere structuur te modelleren.
+\npar Het is mogelijk en wenselijk om nog meer verborgen lagen toe te voegen. Het omkaderde gedeelte in Figuur \ref{fig:ANN} kan een aantal keer herhaald worden om zo het model toe te laten een complexere structuur te modelleren.
 \begin{figure}[ht]
 	\begin{center}
 		\includegraphics[width=8cm,keepaspectratio]{figuren/activatiefuncties.pdf}

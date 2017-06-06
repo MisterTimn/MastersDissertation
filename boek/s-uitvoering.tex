@@ -1,5 +1,5 @@
 \chapter{Uitvoering \& resultaten}
-\section{Gebruikte technologi\"en}
+\section{Gebruikte technologie\"en}
 Alle programmatie wordt uitgevoerd in Python, een dynamische \textit{high-level} programmeertaal. Python is ontwikkeld met het oog op leesbare en kernachtige code. Het is een van de meest gebruikte talen voor het uitvoeren van wetenschappelijke experimenten, mede dankzij de vele krachtige bibliotheken die beschikbaar zijn. In dit onderzoek worden de volgende Python-bibliotheken gebruikt:
 
 \begin{itemize}
@@ -11,7 +11,7 @@ Alle programmatie wordt uitgevoerd in Python, een dynamische \textit{high-level}
 	
 \end{itemize}
 \section{ChaLearn dataset}
-De gebruikte dataset is die van de ``ChaLearn Looking at People Challenge 2014'' zoals beschreven in \cite{escalera_chalearn_2014}. Uit deze set wordt de derde track gebruikt: ``gesture recognition''. Deze bevat meer dan 14000 gebaren uit een vocabularium van 20 Italiaanse gebaren. Merk op dat het hier niet gaat om een gebarentaal maar om afzonderlijke gebaren uit de Italiaanse cultuur. De verschillende gebaren en hun benamingen zijn te zien in \ref{fig:gebaren}.
+De gebruikte dataset is die van de ``ChaLearn Looking at People Challenge 2014'' zoals beschreven in \cite{escalera_chalearn_2014}. Uit deze set wordt de derde track gebruikt: ``gesture recognition''. Deze bevat meer dan 14000 gebaren uit een vocabularium van 20 Italiaanse gebaren. Merk op dat het hier niet gaat om een gebarentaal maar om afzonderlijke gebaren uit de Italiaanse cultuur. De verschillende gebaren en hun benamingen zijn te zien in Figuur \ref{fig:gebaren}.
 \begin{figure}
 	\centering
 	%	\def\svgscale{0.85}
@@ -31,17 +31,20 @@ De gebruikte dataset is die van de ``ChaLearn Looking at People Challenge 2014''
 \end{figure}
 \npar Deze dataset werd ook gebruikt in \cite{lionel} waar deze een aantal voorverwerkingsstappen onderging. Deze voorverwerkte dataset is ter beschikking gesteld van dit onderzoek. De voorverwerking probeert de dataset te optimaliseren voor gebarenherkenning. De dataset bestaat uit 10000 ge\"isoleerde gebaren samen met hun correcte klasselabel. Er worden 32 frames geselecteerd rond het midden van elk gebaar. Vervolgens worden er vier nieuwe datastromen gecre\"eerd door het uitsnijden van de linker en rechterhand uit zowel diepte- als RGB-beeld. Ook wordt het bovenlichaam ge\"isoleerd om een deel van de achtergrond weg te werken. In totaal zijn er zo zes datastromen beschikbaar. Elk beeld, origineel 640x480 pixels groot, wordt gedownscaled en gecropt tot een grootte van 64x64 pixels. 
 
-\npar In dit onderzoek wordt de dataset opgedeeld in 60\% training-, 20\% validatie- en 20\% testset. Deze opdeling is sequentieel gebeurd: het eerste deel voor training, het tweede deel voor validatie en het laatste voor test.
+\npar In dit onderzoek wordt de dataset opgedeeld in 60\% training-, 20\% validatie- en 20\% testset. Deze opdeling is sequentieel gebeurd: het eerste deel voor training, het tweede deel voor validatie en het laatste voor test. De dataset is gesorteerd per gebruiker waardoor er andere gebruikers voorkomen in de gesplitste datasets.
 
 
 \section{Onderzoeksopzet}
 
 De experimenten worden uitgevoerd op computers van het Reservoir Lab aan van de vakgroep Elektronica- en Informatiesystemen (ELIS) van de Universiteit Gent. De gebruikte computers hebben een hexacore processor (Intel Core i7-3930K) met kloksnelheid van 3.2 GHz en een NVIDIA Tesla K40c grafische kaart.
 
-\npar In een eerste fase moet er een convolutioneel neuraal netwerk worden opgezet die een aanvaardbare nauwkeurigheid behaald op de gebruikte dataset. Dit model wordt besproken in sectie \ref{sec:basismodel}. De nauwkeurigheden van dit predictief model getraind op alle klassen met alle voorbeelden wordt vervolgens gebruikt als vergelijkingspunt of \textit{baseline} voor de one-shot learning experimenten.
+\npar In een eerste fase moet er een convolutioneel neuraal netwerk worden opgezet die een aanvaardbare nauwkeurigheid behaald op de gebruikte dataset. Dit model wordt besproken in Sectie \ref{sec:basismodel}. De nauwkeurigheden van dit predictief model getraind op alle klassen met alle voorbeelden wordt vervolgens gebruikt als vergelijkingspunt of \textit{baseline} voor de one-shot learning experimenten.
 
-\npar In de volgende stap zal een model, qua architectuur en hyperparameters gelijkend op het basismodel, getraind worden op een deelverzameling van de gebaren. Na deze pre-training kan het model een gebaar bijgeleerd worden en wordt er ge\"experimenteerd met het aantal verschillende samples van het nieuwe gebaar, het aantal lagen dat hertraind worden en met het gebruik van data-augmentatie. De bespreking van deze experimenten gebeurt in sectie \ref{sec:experimenten}.
-
+\npar In de volgende stap zal een model, qua architectuur en hyperparameters gelijkend op het basismodel, getraind worden op een deelverzameling van de gebaren. Na deze pre-training kan het model een gebaar bijgeleerd worden en wordt er ge\"experimenteerd met het aantal verschillende samples van het nieuwe gebaar, het aantal lagen dat hertraind worden en met het gebruik van data-augmentatie. De bespreking van deze experimenten gebeurt in Sectie \ref{sec:experimenten}.
+\begin{figure}
+	\centering
+	\input{figuren/schema-opzet.pdf_tex}
+\end{figure}
 \section{Ontwerp en optimalisatie van het basismodel}\label{sec:basismodel}
 Alle keuzes omtrent hyperparameters en architectuur zijn experimenteel, op basis van gelijkaardige onderzoeken en naar advies van de begeleiding bepaald. Er zijn vele mogelijke combinaties qua hyperparameters en het is zeer tijdrovend om hierin de meest optimale keuze te maken. Dit is ook niet de essentie van dit onderzoek. Er dient een voldoende goed model opgesteld te worden om vergelijkingen te maken tussen het leren van alle gebaren (basismodel) en het bijleren van een gebaar. 
 \subsection{Invoer}
@@ -66,7 +69,7 @@ Uit het beeld van elk gebaar worden 4 frames gesampled per datastroom. Er is gek
 	\caption{Het basismodel bestaande uit een drielagig CNN voor feature-extractie en een drielagig ANN (met softmax uitvoerlaag) voor classificatie}
 	\label{fig:model-1}
 \end{figure}
-Het opgestelde basismodel is weergegeven in figuur \ref{fig:model-1}
+Het opgestelde basismodel is weergegeven in Figuur \ref{fig:model-1}
 Het CNN bestaat uit drie convolutionele en max-pooling lagen. Alle max-pooling gebeurt met vensters van 2x2 zodat het beeld telkens gehalveerd wordt in grootte. De eerste convolutionele laag bevat 8 5x5 filters, de tweede 16 5x5 filters en de laatste 32 4x4 filters.
 \npar De output van dit CNN wordt gebruikt als featurevector in een ANN voor classificatie. Het ANN bevat ook drie lagen, de twee verborgen lagen hebben respectievelijk 800 en 100 knopen. Alle verborgen knopen zijn ReLU's en aan de uitgangslaag wordt een softmax gebruikt met 20 units voor de classificatie van de verschillende gebaren.
 \begin{table}
@@ -142,13 +145,13 @@ Recall = \frac{TP}{TP+FN}
 \end{equation}
 Precision geeft aan hoeveel van de geselecteerde elementen relevant zijn terwijl recall aangeeft hoeveel van de relevante elementen werden geselecteerd. Een goed classificatiemodel heeft zowel een hoge precision als een hoge recall.
 
-\npar Om naast de precision en recall waardes een globaal beeld te krijgen van de prestatie van een model wordt ook gebruik gemaakt van de \textit{confusion matrix}In Figuur \ref{fig:conf-allegebaren} is de genormaliseerde confusion matrix van het basismodel te zien. Op de verticale as staan de ware labels en op de horizontale as de voorspelling van het model. Hierdoor staan alle True Positives op de diagonaal van de matrix. Hoe hoger de waardes op de diagonaal, hoe beter het model presteert. Op een confusion matrix is het heel gemakkelijk om te zien welke klassen het vaakst worden verward.
+\npar Om naast de precision en recall waardes een globaal beeld te krijgen van de prestatie van een model wordt ook gebruik gemaakt van de \textit{confusion matrix}. In Figuur \ref{fig:conf-allegebaren} is de genormaliseerde confusion matrix van het basismodel te zien. Op de verticale as staan de ware labels en op de horizontale as de voorspelling van het model. Hierdoor staan alle True Positives op de diagonaal van de matrix. Hoe hoger de waardes op de diagonaal, hoe beter het model presteert. Op een confusion matrix is het heel gemakkelijk om te zien welke klassen het vaakst worden verward.
 
 \npar In het geval van het basismodel (Figuur \ref{fig:conf-allegebaren}) liggen de waarden op de diagonaal relatief hoog. In het algemeen ligt de verwarring van het model dus laag. Klassen waarmee moet opgelet worden omdat die vaker worden verward zijn bijvoorbeeld klasse 3 en 9 ($\sim$15 \% van klasse 3 en $\sim$20 \% van klasse 9). Ook klasse 13 en 14 worden ondanks hun relatief hoge ware voorspellingswaarde ook vaak verward ($\sim$7 \% van klasse 13 en $\sim$13 \% van klasse 14). 
 
 \begin{figure}
 	\centering
-	\def\svgwidth{0.9\columnwidth}
+	\def\svgwidth{0.8\columnwidth}
 	\input{figuren/conf_alle_klassen.pdf_tex}
 	\caption{Genormaliseerde confusion matrix van baseline voorspellingen van het basismodel, getraind op alle voorbeelden van alle gebaren }
 	\label{fig:conf-allegebaren}
@@ -219,14 +222,13 @@ De eerste experimenten rond het bijleren van een gebaar worden uitgevoerd op een
 \npar Eerst en vooral wordt het aantal samples gevari\"eerd. Het model wordt getraind met 200, 100, 50, 25, 10, 5, 4, 3, 2 voorbeelden en ten slotte wordt er 1 voorbeeld gebruikt voor een poging tot one-shot learning.
 \npar Ook wordt het effect van het aantal hertrainde lagen onderzocht. Eerst wordt enkel de laatste laag, de softmax, hertraind. Alle andere parameters van het model blijven dus ongewijzigd. In een tweede experiment worden de softmax en de laatste verborgen laag, deze met 100 units, hertraind.
 
-\npar In figuur \ref{fig:naive-model} zijn de resultaten van deze experimenten met het \textit{softmax20} model te zien. Het bijgeleerde gebaar is het gebaar nummer 15: "non ce ne piu". Het basismodel getraind op alle voorbeelden behaalde een 96.88\% precision en 94.90\% recall score op dit gebaar, de hoogste scores van alle gebaren. Enerzijds zou dit gebaar dus gemakkelijk moeten aan te leren zijn aangezien het heel nauwkeurig voorspeld wordt. Anderzijds kan het model zich niet meer beroepen op de features geleerd uit dit gebaar aangezien ze niet in de pretraining is opgenomen.
+\npar In Figuur \ref{fig:naive-model} zijn de resultaten van deze experimenten met het \textit{softmax20} model te zien. Het bijgeleerde gebaar is het gebaar nummer 15: "non ce ne piu". Het basismodel getraind op alle voorbeelden behaalde een 96.88\% precision en 94.90\% recall score op dit gebaar, de hoogste scores van alle gebaren. Enerzijds zou dit gebaar dus gemakkelijk moeten aan te leren zijn aangezien het heel nauwkeurig voorspeld wordt. Anderzijds kan het model zich niet meer beroepen op de features geleerd uit dit gebaar aangezien ze niet in de pretraining is opgenomen.
 
 \npar Het is opvallend dat de precision scores voor beide experimenten heel dicht liggen bij de baseline. Het model is dus redelijk zeker dat het om het nieuwe gebaar gaat als het dit gebaar herkent. Bij het hertrainen van de twee laatste lagen met twee voorbeelden gaat de precisie zelfs boven die van de baseline.
 
 \npar De recall score volgt niet dezelfde lijn als die van de precision. Hier zien we duidelijk dat de recall bij gebruik van weinig samples heel laag ligt. De stijlste klimming bij het model waar enkel de softmax wordt hertraind zien we tot aan het gebruik van 5 samples. Bij het hertrainen van twee lagen loopt deze stijging door tot 10 samples. Dit kan verklaard worden doordat er meer parameters geoptimaliseerd moeten worden bij het het hertrainen van de twee lagen. Meer parameters vragen om meer voorbeelden, bij gebruik van meer dan 10 samples scoort dit model dan  ook beter.
 
-\npar Het voorgetrainde model, GARBAGE CLASS
-
+\npar Omdat er 20 softmax units gebruikt worden voor het classificeren van 19 gebaren wordt er ten slotte nagegaan of het model tijdens de pretraining geen zogenaamde \textit{garbage class} traint. Dit is een klasse waarin het model voorbeelden indeelt die hij niet herkent. Bij wijze van test wordt het voorgetrainde model (zonder hertraining op het uitgesloten gebaar) ge\"evalueerd met de testset. Uit deze test blijkt dat 0\% van alle voorbeelden in deze klasse wordt ingedeeld, er is dus geen garbage class getraind. 
 %\npar Het opzet van dit onderzoek is zo weinig mogelijk samples te gebruiken, voor verdere experimenten werd er dus gekozen om enkel de softmax te hertrainen van het nieuwe gebaar
 
 \subsection{Softmax19+1 model}\label{sec:softmax19x1}
@@ -287,10 +289,10 @@ Om de uitbreidbaarheid verder te onderzoeken wordt analoog aan het principe van 
 
 \begin{figure}
 	\centering
-	\includegraphics[width=0.90\columnwidth]{18x2.pdf}
+	\includegraphics[width=0.8\columnwidth]{18x2.pdf}
 	\caption{Precision en recall na het bijleren van gebaar 13 en gebaar 18 in het \textit{softmax18+1+1} model. Ter vergelijking is het resultaat van het \textit{softmax19+1} model ook uitgetekend.}\label{fig:18x2}
 	\vspace{1.5cm}
-	\def\svgwidth{0.7\columnwidth}
+	\def\svgwidth{0.8\columnwidth}
 	\input{figuren/conf-18x2.pdf_tex}
 	\caption{Genormaliseerde confusion matrix van het \textit{softmax18+1+1} model na leren van gebaar 13 en gebaar 18 met een voorbeeld.}\label{fig:conf-18x2}
 \end{figure}
