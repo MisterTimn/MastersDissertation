@@ -121,11 +121,10 @@ Het CNN bestaat uit drie convolutionele en max-pooling lagen. Alle max-pooling g
 \end{itemize}
 Na 250 iteraties, die we verder een epoch zullen noemen, wordt het model ge\"evalueerd met de validatieset. Het minimum van de validatiefout wordt bijgehouden en telkens we een lagere waarde bereiken worden de modelparameters opgeslaan. De training stopt wanneer er na een aantal epochs geen verbetering meer te zien is in de validatiefout.
 
-\subsection{Baseline resultaten}
+\subsection{Baseline resultaten met behulp van precision, recall en confusion matrix}
 Om de baseline op te stellen wordt de volledige trainingset gebruikt om de 20 gebaren van de dataset te leren classificeren. Het voorgestelde model convergeert na ongeveer 250 epochs en behaalt een totale nauwkeurigheid van 81,20 \%.
 
-\subsubsection{Precision, recall en confusion}\label{sec:pr-conf}
-\begin{figure}
+\begin{figure}[!t]
 	\centering
 	%	\def\svgscale{0.85}
 	\def\svgwidth{0.7\columnwidth}
@@ -133,8 +132,19 @@ Om de baseline op te stellen wordt de volledige trainingset gebruikt om de 20 ge
 	\caption{Visualisatie van de betekenis van precision en recall. Links zijn alle relevante elementen te zien die zouden moeten geselecteerd worden. Het omcirkelde gedeelte zijn de effectief geselecteerde elementen of de voorspellingen van het model}
 	\label{fig:prec+recall}
 \end{figure}
+Om een evaluatie te maken van de prestatie van het model wordt gebruik gemaakt van de precision en recall scores. Figuur \ref{fig:prec+recall} geeft een schematische weergave van de betekenis van deze twee termen. Hier krijgt het model de taak om grijze bollen te selecteren. De grijze bollen noemen we de relevante elementen. De relevante elementen binnen de selectie zijn de echt positieven of \textit{True Positives} (TP). De niet-relevante elementen binnen de selectie noemen we de vals positieven of \textit{False Positives} (FP). De positieve voorspellende waarde of precision wordt als volgt beschreven:
+\begin{equation}
+Precision = \frac{TP}{TP+FP}
+\end{equation}
+Alle relevante elementen die niet zijn geselecteerd worden de vals negatieven of \textit{False Negatives} (FN) genoemd. De sensitiviteit of recall wordt als volgt gedefinieerd:
+\begin{equation}
+Recall = \frac{TP}{TP+FN}
+\end{equation}
+Precision geeft aan hoeveel van de geselecteerde elementen relevant zijn terwijl recall aangeeft hoeveel van de relevante elementen werden geselecteerd. Een goed classificatiemodel heeft zowel een hoge precision als een hoge recall.
 
-\npar In Figuur \ref{fig:conf-allegebaren} is de genormaliseerde confusion matrix van het basismodel te zien. De mate van verwarring valt best mee, voor alle klassen ligt de waarde op de diagonaal relatief hoog. Een aantal klassen worden wel vaak verward zoals bijvoorbeeld klasse 3 en 9 ($\sim$15 \% van klasse 3 en $\sim$20 \% van klasse 9). Ook klasse 13 en 14 worden ondanks hun relatief hoge ware voorspellingswaarde ook vaak verward ($\sim$7 \% van klasse 13 en $\sim$13 \% van klasse 14)
+\npar Om naast de precision en recall waardes een globaal beeld te krijgen van de prestatie van een model wordt ook gebruik gemaakt van de \textit{confusion matrix}In Figuur \ref{fig:conf-allegebaren} is de genormaliseerde confusion matrix van het basismodel te zien. Op de verticale as staan de ware labels en op de horizontale as de voorspelling van het model. Hierdoor staan alle True Positives op de diagonaal van de matrix. Hoe hoger de waardes op de diagonaal, hoe beter het model presteert. Op een confusion matrix is het heel gemakkelijk om te zien welke klassen het vaakst worden verward.
+
+\npar In het geval van het basismodel (Figuur \ref{fig:conf-allegebaren}) liggen de waarden op de diagonaal relatief hoog. In het algemeen ligt de verwarring van het model dus laag. Klassen waarmee moet opgelet worden omdat die vaker worden verward zijn bijvoorbeeld klasse 3 en 9 ($\sim$15 \% van klasse 3 en $\sim$20 \% van klasse 9). Ook klasse 13 en 14 worden ondanks hun relatief hoge ware voorspellingswaarde ook vaak verward ($\sim$7 \% van klasse 13 en $\sim$13 \% van klasse 14). 
 
 \begin{figure}
 	\centering
@@ -220,13 +230,13 @@ De eerste experimenten rond het bijleren van een gebaar worden uitgevoerd op een
 %\npar Het opzet van dit onderzoek is zo weinig mogelijk samples te gebruiken, voor verdere experimenten werd er dus gekozen om enkel de softmax te hertrainen van het nieuwe gebaar
 
 \subsection{Softmax19+1 model}\label{sec:softmax19x1}
-We willen naar een dynamisch uitbreidbaar systeem toewerken. Het vorige model gaat uit van slechts een bij te leren gebaar en is hier dus niet bruikbaar voor. Om aan deze uitbreidbaarheid te voldoen en om verder onderzoek te voeren wordt het \textit{Softmax19+1} model opgesteld, te zien in Figuur \ref{fig:19+1model}.
+We willen naar een dynamisch uitbreidbaar systeem toewerken. Het vorige model gaat uit van slechts \'e\'en bij te leren gebaar en is hier dus niet bruikbaar voor. Om aan deze uitbreidbaarheid te voldoen en om verder onderzoek te voeren wordt het \textit{Softmax19+1} model opgesteld, te zien in Figuur \ref{fig:19+1}.
 
 \begin{figure}
 	\centering
 	\def\svgwidth{0.7\columnwidth}
 	\input{figuren/softmax19+1.pdf_tex}
-	\caption{Schematische weergave van het softmax19+1 model. De blauwe lagen zijn voorgetraind en worden niet gewijzigd. Er wordt 1 unit toegevoegd voor het nieuwe gebaar (aangeduid in het geel). De uitvoer van deze twee parallelle lagen worden samengebracht in een softmax met 20 units. Vandaar de benaming softmax19+1. }\label{fig:19x1-all}
+	\caption{Schematische weergave van het softmax19+1 model. De blauwe lagen zijn voorgetraind en worden niet gewijzigd. Er wordt 1 unit toegevoegd voor het nieuwe gebaar (aangeduid in het geel). De uitvoer van deze twee parallelle lagen worden samengebracht in een softmax met 20 units. Vandaar de benaming softmax19+1. }\label{fig:19+1}
 \end{figure}
 
 \npar Hier wordt eerst een model met 19 softmax units getraind voor de classificatie van 19 gebaren. Behalve het verschil in aantal softmax units is de architectuur volledig gelijk aan die van het basismodel. Daarna wordt het model uitgebreid met een extra unit voor de classificatie van het nieuwe gebaar. De softmax activatiefunctie van de laag met 19 eenheden wordt vervangen door een lineaire activatie ($a(x)=x$). De signalen van deze units worden samengebracht met het signaal van de nieuwe unit, ook met een lineaire activatiefunctie, in een \textit{ConcatLayer}.  Op deze laatste laag, die nu 20 eenheden telt, wordt dan de softmax uitgevoerd voor classificatie.

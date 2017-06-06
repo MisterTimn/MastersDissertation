@@ -21,45 +21,45 @@ Repeated entry---line 584 of file bibliodatabase.bib
 I'm skipping whatever remains of this entry
 Warning--empty journal in lionel
 Warning--empty journal in wu_deep_2016
-You've used 32 entries,
+You've used 31 entries,
             1935 wiz_defined-function locations,
-            661 strings with 10153 characters,
-and the built_in function-call counts, 15652 in all, are:
-= -- 1539
-> -- 731
-< -- 30
-+ -- 260
-- -- 253
-* -- 1281
-:= -- 2587
-add.period$ -- 102
-call.type$ -- 32
-change.case$ -- 281
+            658 strings with 10019 characters,
+and the built_in function-call counts, 15067 in all, are:
+= -- 1477
+> -- 713
+< -- 29
++ -- 253
+- -- 247
+* -- 1240
+:= -- 2503
+add.period$ -- 99
+call.type$ -- 31
+change.case$ -- 273
 chr.to.int$ -- 31
-cite$ -- 34
-duplicate$ -- 632
-empty$ -- 1047
-format.name$ -- 295
-if$ -- 3181
-int.to.chr$ -- 2
+cite$ -- 33
+duplicate$ -- 603
+empty$ -- 1002
+format.name$ -- 288
+if$ -- 3051
+int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 32
-newline$ -- 163
-num.names$ -- 100
-pop$ -- 310
+missing$ -- 31
+newline$ -- 158
+num.names$ -- 97
+pop$ -- 298
 preamble$ -- 1
-purify$ -- 282
+purify$ -- 274
 quote$ -- 0
-skip$ -- 489
+skip$ -- 466
 stack$ -- 0
-substring$ -- 1030
-swap$ -- 165
-text.length$ -- 20
+substring$ -- 978
+swap$ -- 153
+text.length$ -- 19
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 190
+type$ -- 184
 warning$ -- 2
-while$ -- 129
+while$ -- 124
 width$ -- 0
-write$ -- 421
+write$ -- 408
 (There were 2 error messages)

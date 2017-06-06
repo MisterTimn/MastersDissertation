@@ -104,14 +104,8 @@ Karpathy, A., Toderici, G., Shetty, S., Leung, T., Sukthankar, R., en Fei-Fei,
 \newblock In {\em Proceedings of the {IEEE} conference on {Computer} {Vision}
   and {Pattern} {Recognition}}, pages 1725--1732.
 
-\bibitem[Krizhevsky et~al., 2012a]{krizhevsky2012imagenet}
-Krizhevsky, A., Sutskever, I., en Hinton, G.~E. (2012a).
-\newblock Imagenet classification with deep convolutional neural networks.
-\newblock In {\em Advances in neural information processing systems}, pages
-  1097--1105.
-
-\bibitem[Krizhevsky et~al., 2012b]{cnn-krizhevsky}
-Krizhevsky, A., Sutskever, I., en Hinton, G.~E. (2012b).
+\bibitem[Krizhevsky et~al., 2012]{cnn-krizhevsky}
+Krizhevsky, A., Sutskever, I., en Hinton, G.~E. (2012).
 \newblock {ImageNet} {Classification} with {Deep} {Convolutional} {Neural}
   {Networks}.
 \newblock In Pereira, F., Burges, C. J.~C., Bottou, L., en Weinberger, K.~Q.,

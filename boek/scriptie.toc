@@ -38,17 +38,16 @@
 \contentsline {subsection}{\numberline {3.4.1}Invoer}{31}{subsection.3.4.1}
 \contentsline {subsection}{\numberline {3.4.2}Architectuur}{32}{subsection.3.4.2}
 \contentsline {subsection}{\numberline {3.4.3}Training}{34}{subsection.3.4.3}
-\contentsline {subsection}{\numberline {3.4.4}Baseline resultaten}{34}{subsection.3.4.4}
-\contentsline {subsubsection}{Precision, recall en confusion}{34}{section*.23}
-\contentsline {section}{\numberline {3.5}Een gebaar bijleren}{35}{section.3.5}
-\contentsline {subsection}{\numberline {3.5.1}Softmax20 model}{35}{subsection.3.5.1}
+\contentsline {subsection}{\numberline {3.4.4}Baseline resultaten met behulp van precision, recall en confusion matrix}{34}{subsection.3.4.4}
+\contentsline {section}{\numberline {3.5}Een gebaar bijleren}{36}{section.3.5}
+\contentsline {subsection}{\numberline {3.5.1}Softmax20 model}{36}{subsection.3.5.1}
 \contentsline {subsection}{\numberline {3.5.2}Softmax19+1 model}{39}{subsection.3.5.2}
-\contentsline {subsubsection}{Invloed van het aantal samples}{39}{section*.29}
-\contentsline {subsubsection}{Invloed van het bijgeleerde gebaar}{40}{section*.30}
-\contentsline {subsubsection}{Invloed van data-augmentatie}{42}{section*.31}
-\contentsline {subsection}{\numberline {3.5.3}Softmax18+1+1 model}{42}{subsection.3.5.3}
-\contentsline {chapter}{\numberline {4}Conclusie}{45}{chapter.4}
-\contentsline {section}{\numberline {4.1}Besluit}{45}{section.4.1}
-\contentsline {section}{\numberline {4.2}Verder onderzoek}{46}{section.4.2}
-\contentsline {chapter}{Bibliografie}{47}{appendix*.33}
-\contentsline {chapter}{L"yst van figuren}{51}{appendix*.34}
+\contentsline {subsubsection}{Invloed van het aantal samples}{40}{section*.28}
+\contentsline {subsubsection}{Invloed van het bijgeleerde gebaar}{42}{section*.29}
+\contentsline {subsubsection}{Invloed van data-augmentatie}{42}{section*.30}
+\contentsline {subsection}{\numberline {3.5.3}Softmax18+1+1 model}{43}{subsection.3.5.3}
+\contentsline {chapter}{\numberline {4}Conclusie}{46}{chapter.4}
+\contentsline {section}{\numberline {4.1}Besluit}{46}{section.4.1}
+\contentsline {section}{\numberline {4.2}Verder onderzoek}{47}{section.4.2}
+\contentsline {chapter}{Bibliografie}{48}{appendix*.32}
+\contentsline {chapter}{L"yst van figuren}{52}{appendix*.33}
