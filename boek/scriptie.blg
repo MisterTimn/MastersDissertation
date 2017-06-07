@@ -9,57 +9,57 @@ A level-1 auxiliary file: s-uitvoering.aux
 A level-1 auxiliary file: s-conclusie.aux
 Database file #1: bibliodatabase.bib
 Warning--entry type for "tolkuren" isn't style-file defined
---line 164 of file bibliodatabase.bib
-I was expecting a `,' or a `}'---line 170 of file bibliodatabase.bib
+--line 173 of file bibliodatabase.bib
+I was expecting a `,' or a `}'---line 179 of file bibliodatabase.bib
  :  
  :  note={Bezocht op: 29 mei 2017}
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-Repeated entry---line 584 of file bibliodatabase.bib
+Repeated entry---line 593 of file bibliodatabase.bib
  : @inproceedings{wu_deep_2014
  :                            ,
 I'm skipping whatever remains of this entry
 Warning--empty journal in lionel
 Warning--empty journal in wu_deep_2016
-You've used 31 entries,
+You've used 32 entries,
             1935 wiz_defined-function locations,
-            658 strings with 10019 characters,
-and the built_in function-call counts, 15067 in all, are:
-= -- 1477
-> -- 713
-< -- 29
-+ -- 253
-- -- 247
-* -- 1240
-:= -- 2503
-add.period$ -- 99
-call.type$ -- 31
-change.case$ -- 273
-chr.to.int$ -- 31
-cite$ -- 33
-duplicate$ -- 603
-empty$ -- 1002
-format.name$ -- 288
-if$ -- 3051
+            661 strings with 10078 characters,
+and the built_in function-call counts, 15303 in all, are:
+= -- 1501
+> -- 720
+< -- 30
++ -- 255
+- -- 249
+* -- 1255
+:= -- 2550
+add.period$ -- 101
+call.type$ -- 32
+change.case$ -- 279
+chr.to.int$ -- 32
+cite$ -- 34
+duplicate$ -- 613
+empty$ -- 1017
+format.name$ -- 291
+if$ -- 3094
 int.to.chr$ -- 1
 int.to.str$ -- 0
 missing$ -- 31
-newline$ -- 158
-num.names$ -- 97
-pop$ -- 298
+newline$ -- 162
+num.names$ -- 100
+pop$ -- 302
 preamble$ -- 1
-purify$ -- 274
+purify$ -- 280
 quote$ -- 0
-skip$ -- 466
+skip$ -- 475
 stack$ -- 0
-substring$ -- 978
+substring$ -- 990
 swap$ -- 153
 text.length$ -- 19
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 184
+type$ -- 190
 warning$ -- 2
-while$ -- 124
+while$ -- 126
 width$ -- 0
-write$ -- 408
+write$ -- 418
 (There were 2 error messages)

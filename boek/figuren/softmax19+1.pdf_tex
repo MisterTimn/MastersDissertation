@@ -36,7 +36,7 @@
   }%
   \providecommand\rotatebox[2]{#2}%
   \ifx\svgwidth\undefined%
-    \setlength{\unitlength}{530.65784663bp}%
+    \setlength{\unitlength}{449.86571462bp}%
     \ifx\svgscale\undefined%
       \relax%
     \else%
@@ -48,13 +48,15 @@
   \global\let\svgwidth\undefined%
   \global\let\svgscale\undefined%
   \makeatother%
-  \begin{picture}(1,0.48502498)%
+  \begin{picture}(1,0.60821018)%
     \put(0,0){\includegraphics[width=\unitlength]{softmax19+1.pdf}}%
-    \put(0.11117539,0.23022494){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{\Large \textbf{CNN}}}}%
-    \put(0.86052322,0.26601682){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{softmax}}}%
-    \put(0.85876352,0.22818673){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{$19+1$ units}}}%
-    \put(0.67186659,0.44077743){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{18 units}}}%
-    \put(0.67562023,0.03899328){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{1 unit}}}%
-    \put(0.6755838,0.00344943){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{nieuw gebaar}}}%
+    \put(0.13114156,0.27157141){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{\Large \textbf{CNN}}}}%
+    \put(0.87153111,0.31125078){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{softmax}}}%
+    \put(0.86945539,0.26662672){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{$20$ units}}}%
+    \put(0.79252823,0.51993739){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{19 units}}}%
+    \put(0.79695599,0.04599615){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{1 unit}}}%
+    \put(0.79691301,0.00406892){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{nieuw gebaar}}}%
+    \put(0.42507431,0.5933481){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{800 units}}}%
+    \put(0.61009969,0.5106793){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{100 units}}}%
   \end{picture}%
 \endgroup%
