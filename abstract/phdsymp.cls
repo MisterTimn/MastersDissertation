@@ -516,7 +516,7 @@ page \thepage \space undefined}}%
     \else
       \vskip0.2em{\Huge\@title\par}\vskip1.0em%
       \if@draftversion\vfil\fi%
-      {\lineskip .5em\large\@author\par \vskip .5em Supervisor(s): \@supervisor\par}
+      {\lineskip .5em\large\@author. Promotor: prof. dr. ir. Joni Dambre. Supervisor: \@supervisor.\par}
     \fi
     \end{center}\par\vskip 1.4em}
 

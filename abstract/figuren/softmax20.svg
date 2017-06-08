@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 210 297"
+   version="1.1"
+   id="svg8"
+   inkscape:version="0.92.1 r15371"
+   sodipodi:docname="softmax20.svg">
+  <defs
+     id="defs2" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.98994949"
+     inkscape:cx="428.22067"
+     inkscape:cy="880.88268"
+     inkscape:document-units="mm"
+     inkscape:current-layer="g6614"
+     showgrid="false"
+     showguides="true"
+     inkscape:guide-bbox="true"
+     inkscape:window-width="1360"
+     inkscape:window-height="715"
+     inkscape:window-x="1358"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1">
+    <sodipodi:guide
+       position="149.30059,186.62575"
+       orientation="0,1"
+       id="guide6616"
+       inkscape:locked="false" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <g
+       id="g5045"
+       transform="translate(-0.37797619,11.014882)">
+      <rect
+         y="22.96726"
+         x="21.166666"
+         height="40"
+         width="40"
+         id="rect5036"
+         style="fill:#0000ff;fill-opacity:0.13846154;stroke:#000000;stroke-width:0.5291667;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal" />
+      <text
+         id="text5040"
+         y="43.976242"
+         x="41.251934"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.88055563px;line-height:1.25;font-family:serif;-inkscape-font-specification:serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         xml:space="preserve"><tspan
+           style="font-size:3.88055563px;stroke-width:0.26458332"
+           y="43.976242"
+           x="41.251934"
+           id="tspan5038"
+           sodipodi:role="line">\Large CNN</tspan></text>
+    </g>
+    <rect
+       style="fill:#0000ff;fill-opacity:0.77464789;stroke:#000000;stroke-width:0.52916664;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal"
+       id="rect5047"
+       width="6"
+       height="90"
+       x="83.906746"
+       y="8.9821424" />
+    <rect
+       style="fill:#0000ff;fill-opacity:0.7764706;stroke:#000000;stroke-width:0.52916664;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal"
+       id="rect5047-1"
+       width="6"
+       height="50"
+       x="113.0248"
+       y="28.982143" />
+    <rect
+       style="fill:#ff0000;fill-opacity:0.97183096;stroke:#000000;stroke-width:0.52916664;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal"
+       id="rect5047-1-0"
+       width="6"
+       height="35"
+       x="142.14285"
+       y="36.482143" />
+    <path
+       style="fill:#000000;fill-opacity:0.15962441;stroke:#000000;stroke-width:0.5291667;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.97435895"
+       d="M 60.788689,33.982141 83.906745,8.9821424 V 98.982142 L 60.788689,73.982143 Z"
+       id="path5079"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:#000000;stroke:#000000;stroke-width:0.52916667;stroke-linecap:butt;stroke-linejoin:bevel;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none;fill-opacity:0.17370892"
+       d="M 89.906744,8.9821424 113.0248,28.982143 v 50 L 89.906744,98.982142 Z"
+       id="path6548"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.52916667;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
+       d="m 119.0248,28.982143 23.11805,7.500001 v 34.999998 l -23.11805,7.500001 z"
+       id="path6550"
+       inkscape:connector-curvature="0" />
+    <g
+       id="g6594">
+      <text
+         id="text6554"
+         y="103.85416"
+         x="86.970222"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.58333302px;line-height:1.25;font-family:serif;-inkscape-font-specification:serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         xml:space="preserve"><tspan
+           style="font-size:3.88055563px;stroke-width:0.26458332"
+           y="103.85416"
+           x="86.970222"
+           id="tspan6552"
+           sodipodi:role="line">verborgen laag</tspan></text>
+      <text
+         id="text6558"
+         y="110.27975"
+         x="86.877373"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.58333302px;line-height:1.25;font-family:serif;-inkscape-font-specification:serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         xml:space="preserve"><tspan
+           style="font-size:3.88055563px;stroke-width:0.26458332"
+           y="110.27975"
+           x="86.877373"
+           id="tspan6556"
+           sodipodi:role="line">800 units</tspan></text>
+    </g>
+    <g
+       id="g6588"
+       transform="translate(0,0.2542038)">
+      <text
+         id="text6554-0"
+         y="103.59995"
+         x="116.40459"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.58333302px;line-height:1.25;font-family:serif;-inkscape-font-specification:serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         xml:space="preserve"><tspan
+           style="font-size:3.88055563px;stroke-width:0.26458332"
+           y="103.59995"
+           x="116.40459"
+           id="tspan6552-7"
+           sodipodi:role="line">verborgen laag</tspan></text>
+      <text
+         id="text6558-0"
+         y="110.02554"
+         x="116.31174"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.58333302px;line-height:1.25;font-family:serif;-inkscape-font-specification:serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         xml:space="preserve"><tspan
+           style="font-size:3.88055563px;stroke-width:0.26458332"
+           y="110.02554"
+           x="116.31174"
+           id="tspan6556-7"
+           sodipodi:role="line">800 units</tspan></text>
+    </g>
+    <g
+       id="g6608"
+       transform="translate(0,-0.26458359)">
+      <g
+         id="g6614">
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.58333302px;line-height:1.25;font-family:serif;-inkscape-font-specification:serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+           x="145.52083"
+           y="104.11874"
+           id="text6598"><tspan
+             sodipodi:role="line"
+             id="tspan6596"
+             x="145.52083"
+             y="104.11874"
+             style="font-size:3.88055563px;stroke-width:0.26458332">softmax</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.58333302px;line-height:1.25;font-family:serif;-inkscape-font-specification:serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+           x="145.59778"
+           y="110.48795"
+           id="text6602"><tspan
+             sodipodi:role="line"
+             id="tspan6600"
+             x="145.59778"
+             y="110.48795"
+             style="font-size:3.88055563px;stroke-width:0.26458332">20 units</tspan></text>
+      </g>
+    </g>
+  </g>
+</svg>

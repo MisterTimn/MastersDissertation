@@ -3,7 +3,7 @@
 \contentsline {chapter}{Voorwoord}{iii}{chapter*.2}
 \contentsline {chapter}{Overzicht}{iv}{chapter*.3}
 \contentsline {chapter}{Extended abstract}{v}{section*.4}
-\contentsline {chapter}{Afkortingen}{viii}{chapter*.6}
+\contentsline {chapter}{Afkortingen}{xi}{chapter*.6}
 \contentsline {chapter}{\numberline {1}Inleiding}{1}{chapter.1}
 \contentsline {section}{\numberline {1.1}Gebarentaal}{2}{section.1.1}
 \contentsline {section}{\numberline {1.2}Automatische gebarentaalherkenning}{3}{section.1.2}
@@ -35,15 +35,15 @@
 \contentsline {section}{\numberline {3.2}ChaLearn dataset}{28}{section.3.2}
 \contentsline {section}{\numberline {3.3}Onderzoeksopzet}{30}{section.3.3}
 \contentsline {section}{\numberline {3.4}Ontwerp en optimalisatie van het basismodel}{31}{section.3.4}
-\contentsline {subsection}{\numberline {3.4.1}Invoer}{31}{subsection.3.4.1}
+\contentsline {subsection}{\numberline {3.4.1}Invoer}{32}{subsection.3.4.1}
 \contentsline {subsection}{\numberline {3.4.2}Architectuur}{32}{subsection.3.4.2}
-\contentsline {subsection}{\numberline {3.4.3}Training}{34}{subsection.3.4.3}
+\contentsline {subsection}{\numberline {3.4.3}Training}{33}{subsection.3.4.3}
 \contentsline {subsection}{\numberline {3.4.4}Baseline resultaten met behulp van precision, recall en confusion matrix}{35}{subsection.3.4.4}
 \contentsline {section}{\numberline {3.5}Een gebaar bijleren}{38}{section.3.5}
 \contentsline {subsection}{\numberline {3.5.1}Softmax20 model}{38}{subsection.3.5.1}
 \contentsline {subsection}{\numberline {3.5.2}Softmax19+1 model}{41}{subsection.3.5.2}
 \contentsline {subsubsection}{Invloed van het aantal samples}{42}{section*.29}
-\contentsline {subsubsection}{Invloed van het bijgeleerde gebaar}{42}{section*.30}
+\contentsline {subsubsection}{Invloed van het bijgeleerde gebaar}{44}{section*.30}
 \contentsline {subsubsection}{Invloed van data-augmentatie}{44}{section*.31}
 \contentsline {subsection}{\numberline {3.5.3}Softmax18+1+1 model}{45}{subsection.3.5.3}
 \contentsline {chapter}{\numberline {4}Conclusie}{48}{chapter.4}

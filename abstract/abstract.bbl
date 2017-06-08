@@ -1,0 +1,148 @@
+\begin{thebibliography}{10}
+
+\bibitem{buyens_gebarentaaltolken_2003}
+Maurice Buyens,
+\newblock {\em Gebarentaaltolken},
+\newblock Garant, 2003.
+
+\bibitem{wu_deep_2014}
+Di~Wu and Ling Shao,
+\newblock ``Deep dynamic neural networks for gesture segmentation and
+  recognition,''
+\newblock in {\em Workshop at the {European} {Conference} on {Computer}
+  {Vision}}. 2014, pp. 552--571, Springer.
+
+\bibitem{cnn-ji}
+Shuiwang Ji, Wei Xu, Ming Yang, and Kai Yu,
+\newblock ``3d convolutional neural networks for human action recognition,''
+\newblock {\em IEEE transactions on pattern analysis and machine intelligence},
+  vol. 35, no. 1, pp. 221--231, 2013.
+
+\bibitem{lionel}
+Lionel Pigou,
+\newblock ``Gebarentaalherkenning met convolutionele neurale,''
+\newblock 2014.
+
+\bibitem{escalera_chalearn_2014}
+Sergio Escalera, Xavier Baro, Jordi Gonzalez, Miguel~A. Bautista, Meysam
+  Madadi, Miguel Reyes, Victor Ponce-Lopez, Hugo~J. Escalante, Jamie Shotton,
+  and Isabelle Guyon,
+\newblock ``{ChaLearn} {Looking} at {People} {Challenge} 2014: {Dataset} and
+  {Results},''
+\newblock in {\em Computer {Vision} - {ECCV} 2014 {Workshops}}. Sept. 2014, pp.
+  459--473, Springer, Cham.
+
+\bibitem{kuhn2011kinect}
+Thomas K{\"u}hn,
+\newblock ``The kinect sensor platform,''
+\newblock {\em Proc. Advances in Media Technology}, pp. 1--4, 2011.
+
+\bibitem{hubel1968receptive}
+David~H Hubel and Torsten~N Wiesel,
+\newblock ``Receptive fields and functional architecture of monkey striate
+  cortex,''
+\newblock {\em The Journal of physiology}, vol. 195, no. 1, pp. 215--243, 1968.
+
+\bibitem{krizhevsky2012imagenet}
+Alex Krizhevsky, Ilya Sutskever, and Geoffrey~E Hinton,
+\newblock ``Imagenet classification with deep convolutional neural networks,''
+\newblock in {\em Advances in neural information processing systems}, 2012, pp.
+  1097--1105.
+
+\bibitem{ReLU}
+Xavier Glorot, Antoine Bordes, and Yoshua Bengio,
+\newblock ``Deep {Sparse} {Rectifier} {Neural} {Networks}.,''
+\newblock in {\em Aistats}, 2011, vol.~15, p. 275.
+
+\bibitem{wu_deep_2016}
+Di~Wu, Lionel Pigou, Pieter-Jan Kindermans, L.~E. Nam, Ling Shao, Joni Dambre,
+  and Jean-Marc Odobez,
+\newblock ``Deep {Dynamic} {Neural} {Networks} for {Multimodal} {Gesture}
+  {Segmentation} and {Recognition},''
+\newblock 2016.
+
+\bibitem{dropout}
+Nitish Srivastava, Geoffrey~E. Hinton, Alex Krizhevsky, Ilya Sutskever, and
+  Ruslan Salakhutdinov,
+\newblock ``Dropout: a simple way to prevent neural networks from
+  overfitting.,''
+\newblock {\em Journal of Machine Learning Research}, vol. 15, no. 1, pp.
+  1929--1958, 2014.
+
+\bibitem{sutskever2013importance}
+Ilya Sutskever, James Martens, George Dahl, and Geoffrey Hinton,
+\newblock ``On the importance of initialization and momentum in deep
+  learning,''
+\newblock in {\em International conference on machine learning}, 2013, pp.
+  1139--1147.
+
+\bibitem{glorot-1}
+Xavier Glorot and Yoshua Bengio,
+\newblock ``Understanding the difficulty of training deep feedforward neural
+  networks.,''
+\newblock in {\em Aistats}, 2010, vol.~9, pp. 249--256.
+
+\bibitem{theano}
+James Bergstra, Olivier Breuleux, Frédéric Bastien, Pascal Lamblin, Razvan
+  Pascanu, Guillaume Desjardins, Joseph Turian, David Warde-Farley, and Yoshua
+  Bengio,
+\newblock ``Theano: {A} {CPU} and {GPU} math compiler in {Python},''
+\newblock in {\em Proc. 9th {Python} in {Science} {Conf}}, 2010, pp. 1--7.
+
+\bibitem{lasagne}
+Sander Dieleman, Jan Schl{\"u}ter, Colin Raffel, Eben Olson, S{\o}ren~Kaae
+  S{\o}nderby, Daniel Nouri, Daniel Maturana, Martin Thoma, Eric Battenberg,
+  Jack Kelly, et~al.,
+\newblock ``Lasagne: First release,''
+\newblock {\em Zenodo: Geneva, Switzerland}, 2015.
+
+\bibitem{botev_nesterovs_2016}
+Aleksandar Botev, Guy Lever, and David Barber,
+\newblock ``Nesterov's {Accelerated} {Gradient} and {Momentum} as
+  approximations to {Regularised} {Update} {Descent},''
+\newblock {\em arXiv:1607.01981 [cs, stat]}, July 2016,
+\newblock arXiv: 1607.01981.
+
+\bibitem{cnn-karpathy}
+Andrej Karpathy, George Toderici, Sanketh Shetty, Thomas Leung, Rahul
+  Sukthankar, and Li~Fei-Fei,
+\newblock ``Large-scale video classification with convolutional neural
+  networks,''
+\newblock in {\em Proceedings of the {IEEE} conference on {Computer} {Vision}
+  and {Pattern} {Recognition}}, 2014, pp. 1725--1732.
+
+\bibitem{cnn-krizhevsky}
+Alex Krizhevsky, Ilya Sutskever, and Geoffrey~E Hinton,
+\newblock ``{ImageNet} {Classification} with {Deep} {Convolutional} {Neural}
+  {Networks},''
+\newblock in {\em Advances in {Neural} {Information} {Processing} {Systems}
+  25}, F.~Pereira, C.~J.~C. Burges, L.~Bottou, and K.~Q. Weinberger, Eds., pp.
+  1097--1105. Curran Associates, Inc., 2012.
+
+\bibitem{wan_chalearn_2016}
+Jun Wan, Yibing Zhao, Shuai Zhou, Isabelle Guyon, Sergio Escalera, and Stan~Z.
+  Li,
+\newblock ``Chalearn looking at people rgb-d isolated and continuous datasets
+  for gesture recognition,''
+\newblock in {\em Proceedings of the {IEEE} {Conference} on {Computer} {Vision}
+  and {Pattern} {Recognition} {Workshops}}, 2016, pp. 56--64.
+
+\bibitem{gesture-FNN-HMM}
+Xiao-Li Guo and Ting-Ting Yang,
+\newblock ``Gesture recognition based on {HMM}-{FNN} model using a {Kinect},''
+\newblock {\em Journal on Multimodal User Interfaces}, vol. 11, no. 1, pp.
+  1--7, Mar. 2017.
+
+\bibitem{oneshot-vis-concepts}
+Brenden~M Lake, Ruslan Salakhutdinov, Jason Gross, and Joshua~B Tenenbaum,
+\newblock ``One shot learning of simple visual concepts.,''
+\newblock in {\em CogSci}, 2011, vol. 172, p.~2.
+
+\bibitem{oneshot-video-segm}
+Sergi Caelles, Kevis-Kokitsi Maninis, Jordi Pont-Tuset, Laura Leal-Taixé,
+  Daniel Cremers, and Luc Van~Gool,
+\newblock ``One-{Shot} {Video} {Object} {Segmentation},''
+\newblock {\em arXiv:1611.05198 [cs]}, Nov. 2016,
+\newblock arXiv: 1611.05198.
+
+\end{thebibliography}

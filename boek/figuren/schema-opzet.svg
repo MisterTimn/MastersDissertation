@@ -16,9 +16,35 @@
    version="1.1"
    id="svg4491"
    inkscape:version="0.48.4 r9939"
-   sodipodi:docname="schema-opzet.pdf">
+   sodipodi:docname="schema-opzet.svg">
   <defs
      id="defs4485">
+    <marker
+       inkscape:stockid="Arrow2Mend"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="Arrow2Mend"
+       style="overflow:visible;">
+      <path
+         id="path4177"
+         style="fill-rule:evenodd;stroke-width:0.62500000;stroke-linejoin:round;"
+         d="M 8.7185878,4.0337352 L -2.2072895,0.016013256 L 8.7185884,-4.0017078 C 6.9730900,-1.6296469 6.9831476,1.6157441 8.7185878,4.0337352 z "
+         transform="scale(0.6) rotate(180) translate(0,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow2Mstart"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="Arrow2Mstart"
+       style="overflow:visible">
+      <path
+         id="path4174"
+         style="fill-rule:evenodd;stroke-width:0.62500000;stroke-linejoin:round"
+         d="M 8.7185878,4.0337352 L -2.2072895,0.016013256 L 8.7185884,-4.0017078 C 6.9730900,-1.6296469 6.9831476,1.6157441 8.7185878,4.0337352 z "
+         transform="scale(0.6) translate(0,0)" />
+    </marker>
     <marker
        inkscape:stockid="Arrow1Lend"
        orient="auto"
@@ -242,8 +268,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.98994949"
-     inkscape:cx="485.80711"
-     inkscape:cy="823.87241"
+     inkscape:cx="236.169"
+     inkscape:cy="872.69137"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -268,7 +294,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -296,14 +322,14 @@
            y="15.785713"
            x="37.054859"
            id="tspan7349"
-           sodipodi:role="line">trainingset + $G_i$ </tspan></text>
+           sodipodi:role="line">trainingset - $G_i$ </tspan></text>
     </g>
     <path
        sodipodi:nodetypes="ccc"
        inkscape:connector-curvature="0"
        id="path8053"
-       d="m 121.74131,60.73975 0.0886,48.56056 10.40023,-1.4e-4"
-       style="fill:none;stroke:#000000;stroke-width:1.32291662999999993;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-end:url(#Arrow1Send);marker-start:none" />
+       d="m 121.74131,63.02045 0.0886,27.464085 25.06668,-0.250641"
+       style="fill:none;stroke:#000000;stroke-width:1.32291663;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-start:none;marker-end:url(#Arrow1Send)" />
     <rect
        style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4.69999980999999956;stroke-opacity:0.36073058000000002;stroke-dasharray:4, 4;stroke-dashoffset:0.40000000000000002"
        id="rect3988"
@@ -322,13 +348,14 @@
        transform="matrix(0.70710678,-0.70710678,0.70710678,0.70710678,0,0)" />
     <path
        style="fill:none;stroke:#000000;stroke-width:1.12888896;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4.69999981;stroke-opacity:0.36073058;stroke-dasharray:1.12888891, 1.12888891;stroke-dashoffset:0.11288889"
-       d="m 121.70834,76.362693 0,27.617467"
+       d="m 121.70834,76.362693 -0.20159,14.111111 13.80873,-0.201581"
        id="path3152"
-       inkscape:connector-curvature="0" />
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccc" />
     <rect
        style="fill:#ffffff;fill-opacity:1;stroke:none"
        id="rect3988-8"
-       width="6.5570126"
+       width="9.2784414"
        height="6.5570145"
        x="118.02624"
        y="87.31813" />
@@ -345,13 +372,13 @@
     <text
        xml:space="preserve"
        style="font-size:3.88055563px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:1.25;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:serif;-inkscape-font-specification:serif"
-       x="121.44219"
-       y="89.741852"
+       x="121.54298"
+       y="89.338676"
        id="text7755-1"><tspan
          sodipodi:role="line"
          id="tspan7753-3"
-         x="121.44219"
-         y="89.741852">inclusief</tspan></text>
+         x="121.54298"
+         y="89.338676">inclusief</tspan></text>
     <path
        style="fill:none;stroke:#000000;stroke-width:0.56444446;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-end:url(#Arrow1Mend-7)"
        d="m 90.425987,79.201936 0,7.386797"
@@ -398,7 +425,7 @@
          sodipodi:role="line">architectuur</tspan></text>
     <g
        id="g10042"
-       transform="translate(-0.85526251,37.415235)">
+       transform="translate(-1.1346195,39.695935)">
       <rect
          y="17.675594"
          x="112.48065"
@@ -449,14 +476,14 @@
     </g>
     <text
        id="text9933"
-       y="110.62309"
-       x="135.40517"
+       y="91.587418"
+       x="150.56473"
        style="font-size:3.88055563px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:1.25;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:serif;-inkscape-font-specification:serif"
        xml:space="preserve"><tspan
-         y="110.62309"
-         x="135.40517"
+         y="91.587418"
+         x="150.56473"
          id="tspan9931"
-         sodipodi:role="line">Evaluatie</tspan></text>
+         sodipodi:role="line">evaluatie</tspan></text>
     <path
        style="fill:#fdfd8a;fill-opacity:1;stroke:#000000;stroke-width:0.52916675999999996;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
        d="m 110.02115,89.960555 -2.8105,2.094509 v -1.154891 l -5.05564,2.305013 -25.869774,0.01414 0.09392,-3.078161 -0.0271,-2.99054 h 25.992154 l 4.91368,2.031622 V 87.98347 z"
@@ -626,13 +653,12 @@
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cccccccccc" />
     <rect
-       style="fill:#ffffff;fill-opacity:0;stroke:#000000;stroke-width:0.99999999;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:7.99999995,7.99999995;stroke-dashoffset:0"
+       style="fill:#ffffff;fill-opacity:0;stroke:#000000;stroke-width:0.37433267;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:2.9946612, 2.9946612;stroke-dashoffset:0"
        id="rect4694"
-       width="256.57874"
-       height="177.78685"
-       x="48.487324"
-       y="4.8339901"
-       transform="matrix(0.28222223,0,0,0.28222223,-1.3919578e-6,0)" />
+       width="127.62709"
+       height="50.08329"
+       x="13.730254"
+       y="1.4103147" />
     <text
        xml:space="preserve"
        style="font-size:3.88055563px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:1.25;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:serif;-inkscape-font-specification:serif"
@@ -642,7 +668,7 @@
          sodipodi:role="line"
          id="tspan7355-2"
          x="35.778812"
-         y="37.177097">pretraining</tspan></text>
+         y="37.177097">training</tspan></text>
     <path
        style="fill:none;stroke:#000000;stroke-width:0.26458332;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-end:url(#Arrow1Mend)"
        d="m 36.803405,13.907146 -0.09449,18.647753"
@@ -732,5 +758,23 @@
        inkscape:connector-curvature="0"
        transform="matrix(0.28222223,0,0,0.28222223,-1.3919578e-6,0)"
        sodipodi:nodetypes="ccc" />
+    <text
+       xml:space="preserve"
+       style="font-size:3.1044445px;font-style:normal;font-weight:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="94.215668"
+       y="36.715111"
+       id="text3104"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3106"
+         x="94.215668"
+         y="36.715111">baseline resultaten</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1.99999999;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:11.99999992,1.99999999;marker-start:url(#Arrow2Mstart);marker-end:url(#Arrow2Mend);stroke-dashoffset:0"
+       d="m 456.58895,126.0523 c 70.7782,9.12219 109.35534,65.30748 110.10663,176.77669"
+       id="path3108"
+       inkscape:connector-curvature="0"
+       transform="matrix(0.28222223,0,0,0.28222223,-1.3919578e-6,0)"
+       sodipodi:nodetypes="cc" />
   </g>
 </svg>

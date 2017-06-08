@@ -36,7 +36,7 @@
   }%
   \providecommand\rotatebox[2]{#2}%
   \ifx\svgwidth\undefined%
-    \setlength{\unitlength}{397.29968643bp}%
+    \setlength{\unitlength}{438.78997944bp}%
     \ifx\svgscale\undefined%
       \relax%
     \else%
@@ -48,27 +48,28 @@
   \global\let\svgwidth\undefined%
   \global\let\svgscale\undefined%
   \makeatother%
-  \begin{picture}(1,0.80417238)%
+  \begin{picture}(1,0.72817914)%
     \put(0,0){\includegraphics[width=\unitlength]{schema-opzet.pdf}}%
-    \put(0.15721647,0.30404443){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{trainingset + $G_i$ }}}%
-    \put(0.77123706,0.14566284){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{model}}}%
-    \put(0.76981078,0.17263061){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{inclusief}}}%
-    \put(0.43502582,0.05470148){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{aanpasssen}}}%
-    \put(0.43390399,0.01960246){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{architectuur}}}%
-    \put(0.76951667,0.43199351){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{testset}}}%
-    \put(0.54844264,0.30404445){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{trainingset + (N x $G_i$) }}}%
-    \put(0.86943352,0.02364757){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Evaluatie}}}%
-    \put(0.36694024,0.17263059){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{exclusief}}}%
-    \put(0.36836652,0.14566285){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{model}}}%
-    \put(0.1499806,0.16235749){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{pretraining}}}%
-    \put(0.55341519,0.15914675){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{hertrainen}}}%
-    \put(0.3666175,0.55644708){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{basis}}}%
-    \put(0.36804378,0.52947933){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{model}}}%
-    \put(0.16585736,0.76989923){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{volledige trainingset}}}%
-    \put(0.15862146,0.54766854){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{pretraining}}}%
-    \put(0.27439136,0.40816015){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{overnemen}}}%
-    \put(0.27339636,0.3866732){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{architectuur}}}%
-    \put(0.27342338,0.36646244){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{+ parameters}}}%
-    \put(0.41233608,0.76701441){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{testset}}}%
+    \put(0.14245027,0.27529515){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{trainingset - $G_i$ }}}%
+    \put(0.69841143,0.13188952){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{model}}}%
+    \put(0.6977711,0.1589119){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{inclusief}}}%
+    \put(0.39399104,0.04952912){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{aanpasssen}}}%
+    \put(0.39297528,0.01774893){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{architectuur}}}%
+    \put(0.69504904,0.37641222){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{testset}}}%
+    \put(0.4966836,0.27529518){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{trainingset + (N x $G_i$) }}}%
+    \put(0.88525574,0.14438471){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{evaluatie}}}%
+    \put(0.33234337,0.15630731){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{exclusief}}}%
+    \put(0.33363479,0.13188953){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{model}}}%
+    \put(0.1358986,0.14700559){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{pretraining}}}%
+    \put(0.50118597,0.14409845){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{hertrainen}}}%
+    \put(0.33205115,0.50383158){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{basis}}}%
+    \put(0.33334256,0.4794138){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{model}}}%
+    \put(0.15027411,0.69710052){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{volledige trainingset}}}%
+    \put(0.14372241,0.49588311){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{training}}}%
+    \put(0.24854555,0.36956609){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{overnemen}}}%
+    \put(0.24764464,0.35011087){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{architectuur}}}%
+    \put(0.24766911,0.33181116){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{+ parameters}}}%
+    \put(0.37344676,0.69448847){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{testset}}}%
+    \put(0.5212328,0.49886761){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{baseline resultaten}}}%
   \end{picture}%
 \endgroup%

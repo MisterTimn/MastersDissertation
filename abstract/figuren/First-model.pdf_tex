@@ -1,0 +1,79 @@
+%% Creator: Inkscape inkscape 0.48.4, www.inkscape.org
+%% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
+%% Accompanies image file 'First-model.pdf' (pdf, eps, ps)
+%%
+%% To include the image in your LaTeX document, write
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics{<filename>.pdf}
+%% To scale the image, write
+%%   \def\svgwidth{<desired width>}
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics[width=<desired width>]{<filename>.pdf}
+%%
+%% Images with a different path to the parent latex file can
+%% be accessed with the `import' package (which may need to be
+%% installed) using
+%%   \usepackage{import}
+%% in the preamble, and then including the image with
+%%   \import{<path to file>}{<filename>.pdf_tex}
+%% Alternatively, one can specify
+%%   \graphicspath{{<path to file>/}}
+%% 
+%% For more information, please see info/svg-inkscape on CTAN:
+%%   http://tug.ctan.org/tex-archive/info/svg-inkscape
+%%
+\begingroup%
+  \makeatletter%
+  \providecommand\color[2][]{%
+    \errmessage{(Inkscape) Color is used for the text in Inkscape, but the package 'color.sty' is not loaded}%
+    \renewcommand\color[2][]{}%
+  }%
+  \providecommand\transparent[1]{%
+    \errmessage{(Inkscape) Transparency is used (non-zero) for the text in Inkscape, but the package 'transparent.sty' is not loaded}%
+    \renewcommand\transparent[1]{}%
+  }%
+  \providecommand\rotatebox[2]{#2}%
+  \ifx\svgwidth\undefined%
+    \setlength{\unitlength}{857.82908397bp}%
+    \ifx\svgscale\undefined%
+      \relax%
+    \else%
+      \setlength{\unitlength}{\unitlength * \real{\svgscale}}%
+    \fi%
+  \else%
+    \setlength{\unitlength}{\svgwidth}%
+  \fi%
+  \global\let\svgwidth\undefined%
+  \global\let\svgscale\undefined%
+  \makeatother%
+  \begin{picture}(1,0.24288197)%
+    \put(0,0){\includegraphics[width=\unitlength]{First-model.pdf}}%
+    \put(0.31172722,0.21262234){\makebox(0,0)[lb]{\smash{\textbf{CNN}}}}%
+    \put(0.3696443,0.21262206){\makebox(0,0)[lb]{\smash{\scalebox{.8}{feature extraction}}}}%
+    \put(0.69711093,0.21262253){\makebox(0,0)[lb]{\smash{\textbf{ANN}}}}%
+    \put(0.75467055,0.21262215){\makebox(0,0)[lb]{\smash{\scalebox{.8}{classification}}}}%
+    \put(0.0531875,0.23012812){\makebox(0,0)[b]{\smash{\textbf{Input}}}}%
+    \put(0.05389347,0.21262207){\makebox(0,0)[b]{\smash{\scalebox{.8}{12x64x64}}}}%
+    \put(0.31961961,0.02036897){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{\scalebox{.8}{Max-pooling}}}}%
+    \put(0.3196697,0.00264248){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{\scalebox{.8}{2x2}}}}%
+    \put(0.92816867,0.15324905){\color[rgb]{0,0,0}\rotatebox{-49.8517211}{\makebox(0,0)[b]{\smash{\scalebox{.8}{0,1,...,18,19}}}}}%
+    \put(0.16095594,0.02036897){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{\scalebox{.8}{Conv.}}}}%
+    \put(0.43804913,0.02036897){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{\scalebox{.8}{Conv.}}}}%
+    \put(0.63749233,0.02036897){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{\scalebox{.8}{Conv.}}}}%
+    \put(0.54678182,0.02036897){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{\scalebox{.8}{Max-pooling}}}}%
+    \put(0.72044809,0.02036897){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{\scalebox{.8}{Max-pooling}}}}%
+    \put(0.16113376,0.00264248){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{\scalebox{.8}{8x(5x5)}}}}%
+    \put(0.43822695,0.00264248){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{\scalebox{.8}{16(5x5)}}}}%
+    \put(0.63750986,0.00264248){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{\scalebox{.8}{32x(4x4)}}}}%
+    \put(0.54683191,0.00264248){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{\scalebox{.8}{2x2}}}}%
+    \put(0.72049818,0.00264248){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{\scalebox{.8}{2x2}}}}%
+    \put(0.85603011,0.01933134){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{\scalebox{.8}{Dense layer}}}}%
+    \put(0.85701728,0.00213384){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{\scalebox{.8}{800 units}}}}%
+    \put(0.87965431,0.06551248){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\scalebox{.8}{Dense layer}}}}%
+    \put(0.88017912,0.04958696){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\scalebox{.8}{100 units}}}}%
+    \put(0.93155187,0.09992091){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\scalebox{.8}{Softmax}}}}%
+    \put(0.93206063,0.08414864){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\scalebox{.8}{20 units}}}}%
+  \end{picture}%
+\endgroup%

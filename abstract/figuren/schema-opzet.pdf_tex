@@ -1,0 +1,74 @@
+%% Creator: Inkscape inkscape 0.48.4, www.inkscape.org
+%% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
+%% Accompanies image file 'schema-opzet.pdf' (pdf, eps, ps)
+%%
+%% To include the image in your LaTeX document, write
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics{<filename>.pdf}
+%% To scale the image, write
+%%   \def\svgwidth{<desired width>}
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics[width=<desired width>]{<filename>.pdf}
+%%
+%% Images with a different path to the parent latex file can
+%% be accessed with the `import' package (which may need to be
+%% installed) using
+%%   \usepackage{import}
+%% in the preamble, and then including the image with
+%%   \import{<path to file>}{<filename>.pdf_tex}
+%% Alternatively, one can specify
+%%   \graphicspath{{<path to file>/}}
+%% 
+%% For more information, please see info/svg-inkscape on CTAN:
+%%   http://tug.ctan.org/tex-archive/info/svg-inkscape
+%%
+\begingroup%
+  \makeatletter%
+  \providecommand\color[2][]{%
+    \errmessage{(Inkscape) Color is used for the text in Inkscape, but the package 'color.sty' is not loaded}%
+    \renewcommand\color[2][]{}%
+  }%
+  \providecommand\transparent[1]{%
+    \errmessage{(Inkscape) Transparency is used (non-zero) for the text in Inkscape, but the package 'transparent.sty' is not loaded}%
+    \renewcommand\transparent[1]{}%
+  }%
+  \providecommand\rotatebox[2]{#2}%
+  \ifx\svgwidth\undefined%
+    \setlength{\unitlength}{397.29968643bp}%
+    \ifx\svgscale\undefined%
+      \relax%
+    \else%
+      \setlength{\unitlength}{\unitlength * \real{\svgscale}}%
+    \fi%
+  \else%
+    \setlength{\unitlength}{\svgwidth}%
+  \fi%
+  \global\let\svgwidth\undefined%
+  \global\let\svgscale\undefined%
+  \makeatother%
+  \begin{picture}(1,0.80417238)%
+    \put(0,0){\includegraphics[width=\unitlength]{schema-opzet.pdf}}%
+    \put(0.15721647,0.30404443){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{trainingset + $G_i$ }}}%
+    \put(0.77123706,0.14566284){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{model}}}%
+    \put(0.76981078,0.17263061){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{inclusief}}}%
+    \put(0.43502582,0.05470148){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{aanpasssen}}}%
+    \put(0.43390399,0.01960246){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{architectuur}}}%
+    \put(0.76951667,0.43199351){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{testset}}}%
+    \put(0.54844264,0.30404445){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{trainingset + (N x $G_i$) }}}%
+    \put(0.86943352,0.02364757){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Evaluatie}}}%
+    \put(0.36694024,0.17263059){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{exclusief}}}%
+    \put(0.36836652,0.14566285){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{model}}}%
+    \put(0.1499806,0.16235749){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{pretraining}}}%
+    \put(0.55341519,0.15914675){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{hertrainen}}}%
+    \put(0.3666175,0.55644708){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{basis}}}%
+    \put(0.36804378,0.52947933){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{model}}}%
+    \put(0.16585736,0.76989923){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{volledige trainingset}}}%
+    \put(0.15862146,0.54766854){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{pretraining}}}%
+    \put(0.27439136,0.40816015){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{overnemen}}}%
+    \put(0.27339636,0.3866732){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{architectuur}}}%
+    \put(0.27342338,0.36646244){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{+ parameters}}}%
+    \put(0.41233608,0.76701441){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{testset}}}%
+  \end{picture}%
+\endgroup%
