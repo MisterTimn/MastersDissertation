@@ -1,9 +1,9 @@
 \select@language {english}
 \select@language {dutch}
-\contentsline {chapter}{Voorwoord}{iii}{chapter*.2}
-\contentsline {chapter}{Overzicht}{iv}{chapter*.3}
-\contentsline {chapter}{Extended abstract}{v}{section*.4}
-\contentsline {chapter}{Afkortingen}{xi}{chapter*.6}
+\contentsline {chapter}{Voorwoord}{v}{chapter*.2}
+\contentsline {chapter}{Overzicht}{vi}{chapter*.3}
+\contentsline {chapter}{Extended abstract}{vii}{section*.4}
+\contentsline {chapter}{Afkortingen}{xiii}{chapter*.6}
 \contentsline {chapter}{\numberline {1}Inleiding}{1}{chapter.1}
 \contentsline {section}{\numberline {1.1}Gebarentaal}{2}{section.1.1}
 \contentsline {section}{\numberline {1.2}Automatische gebarentaalherkenning}{3}{section.1.2}

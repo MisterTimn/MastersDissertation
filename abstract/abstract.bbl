@@ -117,16 +117,4 @@ Sander Dieleman, Jan Schl{\"u}ter, Colin Raffel, Eben Olson, S{\o}ren~Kaae
 \newblock ``Lasagne: First release,''
 \newblock {\em Zenodo: Geneva, Switzerland}, 2015.
 
-\bibitem{oneshot-vis-concepts}
-Brenden~M Lake, Ruslan Salakhutdinov, Jason Gross, and Joshua~B Tenenbaum,
-\newblock ``One shot learning of simple visual concepts.,''
-\newblock in {\em CogSci}, 2011, vol. 172, p.~2.
-
-\bibitem{oneshot-video-segm}
-Sergi Caelles, Kevis-Kokitsi Maninis, Jordi Pont-Tuset, Laura Leal-Taixé,
-  Daniel Cremers, and Luc Van~Gool,
-\newblock ``One-{Shot} {Video} {Object} {Segmentation},''
-\newblock {\em arXiv:1611.05198 [cs]}, Nov. 2016,
-\newblock arXiv: 1611.05198.
-
 \end{thebibliography}

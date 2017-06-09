@@ -5,45 +5,45 @@ The style file: phdsymp.bst
 Database file #1: bibliodatabase.bib
 Warning--empty journal in lionel
 Warning--empty journal in wu_deep_2016
-You've used 20 entries,
+You've used 18 entries,
             1838 wiz_defined-function locations,
-            568 strings with 7412 characters,
-and the built_in function-call counts, 5830 in all, are:
-= -- 504
-> -- 295
-< -- 13
-+ -- 106
-- -- 86
-* -- 445
-:= -- 876
-add.period$ -- 22
-call.type$ -- 20
-change.case$ -- 19
+            558 strings with 7035 characters,
+and the built_in function-call counts, 5364 in all, are:
+= -- 473
+> -- 261
+< -- 11
++ -- 94
+- -- 76
+* -- 405
+:= -- 797
+add.period$ -- 20
+call.type$ -- 18
+change.case$ -- 17
 chr.to.int$ -- 0
-cite$ -- 22
-duplicate$ -- 273
-empty$ -- 532
-format.name$ -- 86
-if$ -- 1335
+cite$ -- 20
+duplicate$ -- 251
+empty$ -- 491
+format.name$ -- 76
+if$ -- 1232
 int.to.chr$ -- 0
-int.to.str$ -- 20
-missing$ -- 21
-newline$ -- 105
-num.names$ -- 20
-pop$ -- 76
+int.to.str$ -- 18
+missing$ -- 19
+newline$ -- 94
+num.names$ -- 18
+pop$ -- 69
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 167
+skip$ -- 157
 stack$ -- 0
-substring$ -- 362
-swap$ -- 110
-text.length$ -- 13
+substring$ -- 360
+swap$ -- 103
+text.length$ -- 11
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 2
-while$ -- 54
-width$ -- 22
-write$ -- 223
+while$ -- 51
+width$ -- 20
+write$ -- 199
 (There were 2 warnings)
