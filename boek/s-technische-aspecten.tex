@@ -4,7 +4,7 @@
 \npar Leren is een veelzijdig fenomeen dat bestaat uit  verschillende processen: het verkrijgen van declaratieve kennis, het ontwikkelen van motorische en cognitieve vaardigheden door instructie en ervaring, het organiseren van nieuwe kennis in algemene representaties en het ontdekken van nieuwe feiten via observatie en experimentatie.
 \npar Sinds het begin van het computertijdperk proberen onderzoekers het menselijk leren na te bootsen en deze processen te vertalen naar de informatietheorie. Het machinaal leren is nog steeds een erg uitdagend doel in de kunstmatige intelligentie (KI).
 
-\npar Deze vorm van KI is dus volledig data gedreven tegenover traditionele methoden die zich beroepen op handgemaakte regels. Het computerprogramma wordt niet expliciet geprogrammeerd om een taak uit te voeren maar vertrekt vanuit een algemeen model. Het model leert eerst uit voorbeelden en kan daarna voorspellingen maken op nieuwe invoer.
+\npar Machine Learning (ML) is volledig datagedreven tegenover traditionele methoden die zich beroepen op handgemaakte regels. Het computerprogramma wordt niet expliciet geprogrammeerd om een taak uit te voeren maar vertrekt vanuit een algemeen model. Het model leert eerst uit voorbeelden en kan daarna voorspellingen maken op nieuwe invoer.
 
 \npar We kunnen zeggen dat een computerprogramma of machine leert als het zijn performantie op een bepaalde taak verbetert met ervaring \cite{machine_overview}.  Het leren gebeurt door de optimalisatie van de parameters van het predictief model door middel van een algoritme uit de machine learning. Het model wordt een aantal voorbeelden gegeven om uit te leren: de trainset. De uitvoer van het model wordt ge\"evalueerd aan de hand van een prestatiemaat. Deze prestatiemaat vertelt hoe correct de voorspelling is en bepaalt de mate waarin het model verder gecorrigeerd dient te worden.
 
@@ -14,7 +14,7 @@
 
 \npar Bij gesuperviseerde methodes wordt een trainset gebruikt die zowel de invoervector als de te voorspellen waarde bevat. Problemen die vaak via gesuperviseerd leren worden aangepakt zijn classificatie en regressie. Classificatie tracht ingevoerde voorbeelden in te delen in discrete categori\"en om bijvoorbeeld objecten te herkennen zoals in \cite{cnn-krizhevsky}. Bij regressie is de uitvoer van het model een continue variabele zoals bijvoorbeeld de prijs van een appartement gegeven zijn oppervlakte.
 
-\npar Semi-gesuperviseerde methodes zijn e+9en mengvorm van de voorgaande twee. De dataset is een mengeling van gelabelde en ongelabelde voorbeelden. Hierbij is er een gewenste indeling, weergegeven door de gelabelde data, maar het model moet zelf de indeling zien te maken.
+\npar Semi-gesuperviseerde methodes zijn een mengvorm van de voorgaande twee. De dataset is een mengeling van gelabelde en ongelabelde voorbeelden. Hierbij is er een gewenste indeling, weergegeven door de gelabelde data, maar het model moet zelf de indeling zien te maken.
 
 
 \subsection{Gesuperviseerde classificatie}
@@ -32,7 +32,7 @@ zodat we na deze schatting vanuit $f$ en $\theta$ voorspellingen kunnen maken op
 
 \npar Figuur \ref{fig:alg-class-model} geeft een schematische weergave van de opbouw van een classificatiemodel. Het schatten van $f$ en $\theta$ wordt uitgevoerd door een techniek uit de machine learning en geeft ons het uiteindelijke predictief model $f(x,\theta) = y$. De samples worden meestal verwerkt voor ze als input worden doorgegeven aan het model. In het geval van classificatie van video en afbeeldingen worden er technieken uit de beeldverwerking gebruikt om relevante informatie uit het beeld te halen. Welke specifieke techniek er gebruikt wordt is een keuze die erg bewust moet gemaakt worden en een grote invloed heeft op de performantie van het classificatiemodel. Deze informatie wordt gebundeld in een featurevector $x$ en aan het ML algoritme gegeven. Vanuit de verkregen featurevectoren en de kennis van het correcte klasselabel wordt het predictief model dan geoptimaliseerd.
 \npar Eenmaal het model voldoende geleerd heeft kan het predictief model gebruikt worden in een productieomgeving om nieuwe voorbeelden, al dan niet correct, te classificeren.
-\npar Het model dat in dit onderzoek gebruikt wordt, is dat van het artificieel neuraal netwerk, een veel gebruikt predictief model voor classificatie. In Sectie \ref{sec:ann} wordt deze techniek dan ook verder besproken.
+\npar Het model dat in dit onderzoek gebruikt wordt, is dat van het artificieel neuraal netwerk, een veelgebruikt predictief model voor classificatie. In Sectie \ref{sec:ann} wordt deze techniek dan ook verder besproken.
 \begin{figure}[t]
 	\centering
 	\def\svgscale{0.85}
@@ -42,7 +42,7 @@ zodat we na deze schatting vanuit $f$ en $\theta$ voorspellingen kunnen maken op
 \end{figure}
 
 \subsection{Overfitting}
-Stel dat een student kunstwetenschappen voor zijn examen het werk van verschillende kunstenaars moet herkennen. Hij krijgt een boek met daarin foto's van verschillende schilderijen samen met de naam van de uitvoerder. Indien de student al deze voorbeelden met hun antwoord vanbuiten leert en op het examen net dezelfde schilderijen als in het boek zou voorgeschoteld krijgen, dan zal hij erg hoog scoren. Krijgt hij echter ongeziene werken van dezelfde schilders, dan zal zijn score veel lager liggen. Hij heeft geen onderliggende eigenschappen uit de beelden gehaald die terugkomen in ander werk maar memoriseerde gewoon werk en uitvoerder dus heeft hij veel moeite met het categoriseren van de nieuwe voorbeelden. Dit is een informeel voorbeeld van overfitting.
+Stel dat een student kunstwetenschappen voor zijn examen het werk van verschillende kunstenaars moet herkennen. Hij krijgt een boek met daarin foto's van verschillende schilderijen samen met de naam van de uitvoerder. Indien de student al deze voorbeelden met hun antwoord vanbuiten leert en op het examen net dezelfde schilderijen als in het boek zou voorgeschoteld krijgen, dan zal hij erg hoog scoren. Krijgt hij echter ongeziene werken van dezelfde schilders, dan zal zijn score veel lager liggen. Hij heeft geen onderliggende eigenschappen uit de beelden gehaald die terugkomen in ander werk maar memoriseerde gewoon werk en uitvoerder, hierdoor heeft hij veel moeite met het categoriseren van de nieuwe voorbeelden. Dit is een informeel voorbeeld van overfitting.
 
 \npar Bij overfitting beschrijft het predictief model de ruis en fouten in het signaal in plaats van de gewenste onderliggende patronen en kenmerken van de gegeven taak. Het komt voor wanneer het model complex is en vele parameters heeft in vergelijking met het aantal trainingsvoorbeelden. Een model dat ``overfit'' is heeft een laag voorspellend vermogen op ongeziene data. Het model is niet algemeen of gegeneraliseerd en  memoriseert de data. 
 
@@ -56,7 +56,7 @@ Stel dat een student kunstwetenschappen voor zijn examen het werk van verschille
 \end{figure}
 
 \npar Het risico op overfitten komt voort uit het feit dat de prestatiemaat voor de training van het model niet correct de effectiviteit van het model weergeeft en er daardoor te laat gestopt wordt met trainen. De training van een model gebeurt via optimalisatie van zijn prestatie op een training set. De werkelijke performantie wordt echter gegeven door prestatie op ongeziene data. Net om deze reden wordt de dataset opgesplitst in drie delen: training-, validatie- en testset.
-\npar Om een zo goed mogelijk predictief model te maken wordt een evaluatiescore op de validatieset geoptimaliseerd. Deze data is nog onbekend voor het model en geeft dus een betere aanduiding van zijn performantie. Figuur \ref{fig:overfitting} geeft de validatie- en trainingsfout weer tijdens het trainen van een predictief model. Wanneer de trainingsfout blijft dalen maar de validatiefout stagneert of stijgt is er sprake van overfitting. Nu kan er gekozen worden om de training vroegtijdig te stoppen teneinde geen generalisatie te verliezen. Deze techniek wordt \textit{early stopping} genoemd.
+\npar Om een zo goed mogelijk predictief model te maken wordt een evaluatiescore op de validatieset geoptimaliseerd. Deze data is nog onbekend voor het model en geeft dus een betere aanduiding van zijn performantie. Figuur \ref{fig:overfitting} geeft de validatie- en trainingsfout weer tijdens het trainen van een predictief model. Wanneer de trainingsfout blijft dalen maar de validatiefout stagneert of stijgt, is er sprake van overfitting. Nu kan er gekozen worden om de training vroegtijdig te stoppen teneinde geen generalisatie te verliezen. Deze techniek wordt \textit{early stopping} genoemd.
 
 \npar Om na afloop een finale evaluatie van het model te maken wordt zijn prestatie op de testset gemeten. Het model heeft de voorbeelden uit deze set nog nooit eerder gezien waardoor de testscore representatief is voor het voorspellingsvermogen van het model. De testset mag nooit gebruikt worden om aanpassingen aan het model te maken, hiervoor dient de validatieset.
 
@@ -138,11 +138,11 @@ met $N$ het aantal voorbeelden en $C$ het aantal klassen. De probabiliteit uit d
 	%	\def\svgscale{0.85}
 	\def\svgwidth{0.6\columnwidth}
 	\input{figuren/gradiend-descent.pdf_tex}
-	\caption{Visualisatie uit \cite{andrew_ng} van gradient descent algoritme in een tweedimensionale parameterruimte . De zwarte lijn geeft de verschillende iteratieve stappen van het algoritme weer. Door het volgen van de steilste helling wordt een lokaal minimum van de kostfunctie gevonden.}
+	\caption{Visualisatie uit \cite{andrew_ng} van het gradient descent algoritme in een tweedimensionale parameterruimte . De zwarte lijn geeft de verschillende iteratieve stappen van het algoritme weer. Door het volgen van de steilste helling wordt een lokaal minimum van de kostfunctie gevonden.}
 	\label{fig:gradient-descent}
 \end{figure}
 \subsection{Gradient descent}
-\npar Nu moeten de parameters $\theta$ gevonden worden die de kostenfunctie minimaliseren. Het minimum van deze kostenfunctie komt immers overeen met het optimale predictief model. Om dit minimum te vinden, wordt \textit{gradient descent} toegepast. In Figuur \ref{fig:gradient-descent} wordt deze techniek weergegeven in een tweedimensionale parameterruimte. Het algoritme zal de parameters iteratief bijstellen door het volgen van de stijlste helling, gegeven door de gradi\"ent van de kostfunctie:
+\npar Nu moeten de parameters $\theta$ gevonden worden die de kostenfunctie minimaliseren. Het minimum van deze kostenfunctie komt immers overeen met het optimaal predictief model. Om dit minimum te vinden, wordt \textit{gradient descent} toegepast. In Figuur \ref{fig:gradient-descent} wordt deze techniek weergegeven in een tweedimensionale parameterruimte. Het algoritme zal de parameters iteratief bijstellen door het volgen van de stijlste helling, gegeven door de gradi\"ent van de kostfunctie:
 \begin{equation}\label{eq:grad-desc}
 \theta = \theta - \alpha \nabla_\theta L(\theta)
 \end{equation}
@@ -159,7 +159,7 @@ met $L(\theta;x_{i:i+B};y_{i:i+B})$ de kostfunctie van een klein gedeelte of \te
 	%	\def\svgscale{0.85}
 	\def\svgwidth{0.6\columnwidth}
 	\input{figuren/momentum.pdf_tex}
-	\caption{Klassiek momentum (links) tegenover Nesterov's accelerated gradient (rechts) \cite{sutskever2013importance}}
+	\caption{Klassiek momentum (links) tegenover Nesterov's accelerated gradient (rechts) \cite{sutskever2013importance}. De gradientsberekening van de kostenfunctie wordt afgekort door $g$.}
 	\label{fig:momentum}
 \end{figure}
 De parameterruimte die het trainingsalgoritme afzoekt kan vergeleken worden met een berglandschap. Gradient descent gaat op zoek naar het diepste punt in dit landschap en zal in de problemen komen wanneer het tijdens deze afdaling vele kleine putten (lokale minima) tegenkomt. Het algoritme zal oscilleren tussen deze lichte hellingen, het optimalisatiepad zal zigzaggen en de convergentiesnelheid van het algoritme zal sterk dalen. Ook is het meer waarschijnlijk dat het algoritme zal blijven steken in een van deze lokale minima en niet verder afdaalt naar het globaal minimum.
@@ -202,8 +202,6 @@ Tijdens het trainen kan het gebeuren dat neuronen volledig afhankelijk worden va
 \npar Dropout is een regularisatiemethode die ondanks zijn simpliciteit erg effici\"ent blijkt. \cite{dropout} geeft een uitvoerige analyse en vergelijkende studie van het gebruik van dropout bij het uitvoeren van taken zoals gensplitsing, spraak-, tekst- en beeldherkenning. In elke van deze experimenten zorgt dropout voor een hogere regularisatie. Zo wordt aangetoond dat dropout overfitting kan tegengaan in om het even welk toepassingsgebied.
 
 \section{Convolutioneel neuraal netwerk}
-De machine learning techniek die sinds 2012 in de belangstelling staat is die van het convolutioneel neuraal netwerk. Mede dankzij het recordbrekende resultaat van \cite{cnn-krizhevsky} op de ``ImageNet Large Scale Visual Recognition Challenge'' wordt deze techniek vaak onderzocht en toegepast op beeldherkenningsproblemen zoals in \cite{cnn-ji} en \cite{cnn-karpathy}.
-\npar Traditionele beeldherkenningstechnieken zoals in \cite{perronnin2010improving} en \cite{jhuang2007biologically} leiden het beeld af naar een manueel ontworpen beeldrepresentatie. Deze kenmerken zijn niet meteen zichtbaar maar worden via verschillende bewerkingen blootgelegd. Het is erg moeilijk om te beslissen welk soort kenmerk het best geschikt is voor de gegeven taak. Vaak moet er dan ook veelvuldig ge\"experimenteerd worden met verschillende representaties.
 \begin{figure}[!t]
 	\centering
 	%	\def\svgscale{0.85}
@@ -211,12 +209,18 @@ De machine learning techniek die sinds 2012 in de belangstelling staat is die va
 	\caption{Lokale connectiviteit van receptieve velden. Voor elk overlappend deelgebied van de invoer is er een neuron verbonden. Alle gewichten van het lokale filter worden gedeeld.}
 	\label{fig:lokale-connectiviteit}
 \end{figure}
+De machine learning techniek die sinds 2012 in de belangstelling staat is die van het convolutioneel neuraal netwerk. Mede dankzij het recordbrekende resultaat van \cite{cnn-krizhevsky} op de ``ImageNet Large Scale Visual Recognition Challenge'' wordt deze techniek vaak onderzocht en toegepast op beeldherkenningsproblemen zoals in \cite{cnn-ji} en \cite{cnn-karpathy}.
+\npar Traditionele beeldherkenningstechnieken zoals in \cite{perronnin2010improving} en \cite{jhuang2007biologically} leiden het beeld af naar een manueel ontworpen beeldrepresentatie. De kenmerken in deze representaties zijn niet meteen zichtbaar maar worden via verschillende bewerkingen blootgelegd. Het is erg moeilijk om te beslissen welk soort kenmerk het best geschikt is voor de gegeven taak. Vaak moet er dan ook veelvuldig ge\"experimenteerd worden met verschillende representaties.
+
 \npar Convolutionele neurale netwerken hebben als grote troef dat ze deze feature-extractie automatiseren. Een CNN is een biologisch ge\"inspireerd model. Het onderzoek van \cite{hubel1968receptive} gaf een verklaring voor de manier waarop zoogdieren, specifiek de kat en de aap, de wereld rondom zich visueel waarnemen. De neuronen in de visuele cortex hebben een complexe laagsgewijze architectuur. Elke cel reageert op prikkels in een deelgebied van het gezichtsveld. Deze receptieve velden overlappen gedeeltelijk en bedekken zo het volledige zicht.
 
 \npar Het herkenningsvermogen van de mens is nog altijd ontegensprekelijk veel hoger dan om het even welk artificieel herkenningssysteem. Vandaar dat er geprobeerd wordt de functionaliteit van de visuele cortex na te bootsen met een CNN. 
-\npar CNN's zijn een speciaal soort meerlagig neuraal netwerk. Net zoals een ANN worden ze getraind met behulp van een back-propagation algoritme zoals beschreven in Sectie \ref{sec:leren}. Waarin een CNN verschilt is zijn architectuur. Een ANN is volledig verbonden met zijn invoer. Als we een afbeelding van 64x64 pixels rechtstreeks als invoer in een ANN willen gebruiken moeten er per knoop 4096 gewichten worden getraind. De artifici\"ele neuronen in een CNN werken net zoals de receptieve velden in de visuele cortex.
+\npar CNN's zijn een speciaal soort meerlagig neuraal netwerk. Net zoals een ANN worden ze getraind met behulp van een back-propagation algoritme zoals beschreven in Sectie \ref{sec:leren}. Waarin een CNN verschilt is zijn architectuur. Een ANN is volledig verbonden met zijn invoer. Als we een afbeelding van 64x64 pixels rechtstreeks als invoer in een ANN willen gebruiken moeten er per knoop 4096 gewichten worden getraind. 
+\npar De artifici\"ele neuronen in een CNN werken net zoals de receptieve velden in de visuele cortex. Zoals te zien in Figuur \ref{fig:lokale-connectiviteit} wordt elk (mogelijk overlappend) deelgebied verbonden met een neuron. De parameters van deze verbindingen worden gedeeld tussen alle units. Zo leert het netwerk een bepaalde feature detecteren om het even waar in het beeld en zijn er slechts een beperkt aantal te trainen gewichten.
 
-\npar Zoals te zien in Figuur \ref{fig:lokale-connectiviteit} wordt elk (mogelijk overlappend) deelgebied verbonden met een neuron. De parameters van deze verbindingen worden gedeeld tussen alle units. Zo leert het netwerk een bepaalde feature detecteren om het even waar in het beeld en zijn er slechts een beperkt aantal te trainen gewichten.
+\npar In een CNN worden convolutielagen afgewisseld met pooling lagen. Zo worden er meerdere lagen na elkaar geplaatst om een diepe architectuur te verkrijgen. In de eerste lagen zullen basiskenmerken van laag niveau gedetecteerd worden en naarmate we dieper in het netwerk gaan worden geavanceerdere kenmerken van hoger niveau ge\"extraheerd. Zo zullen de eerste lagen features zoals randen detecteren die dan dieper in het netwerk worden samengesteld tot bijvoorbeeld een bepaalde handvorm.
+
+\subsection{Tweedimensionale convolutie}
  \begin{figure}[!t]
  	\centering
  	%	\def\svgscale{0.85}
@@ -225,10 +229,6 @@ De machine learning techniek die sinds 2012 in de belangstelling staat is die va
  	\caption{Tweedimensionale convolutie met een 3x3 filter.}
  	\label{fig:conv}
  \end{figure}
-\npar In een CNN worden convolutielagen afgewisseld met pooling lagen. Zo worden er meerdere lagen na elkaar geplaatst om een diepe architectuur te verkrijgen. In de eerste lagen zullen basiskenmerken van laag niveau gedetecteerd worden en naarmate we dieper in het netwerk gaan worden geavanceerdere kenmerken van hoger niveau ge\"extraheerd. Zo zullen de eerste lagen features zoals randen detecteren die dan dieper in het netwerk worden samengesteld tot bijvoorbeeld een bepaalde handvorm.
-
-\subsection{Tweedimensionale convolutie}
-
 De receptieve velden delen hun parameters en zoeken dus naar hetzelfde kenmerk in een beeld. Ze filteren het beeld met behulp van een tweedimensionale discrete convolutie die als volgt kan worden beschreven:
 
 \begin{equation}\label{eq:conv}
@@ -249,9 +249,10 @@ H_{uit}&=H_{in}-H_f+1
 \end{aligned}
 \end{equation}
 
-\npar met $(B_f, H_f)$ de dimensie van de convolutiefilter. Om meerdere features te detecteren per laag worden er meerdere feature-maps gevormd om een filterbank te bekomen. Hoeveel feature-maps er per laag worden berekend is een hyperparameter van het CNN. Hier is de tweedimensionale convolutie beschreven omdat in dit onderzoek enkel met deze convolutie gewerkt wordt. Er bestaan ook driedimensionale convoluties die rekening houden met het tijdsaspect en zo spatio-temporele features extraheren.
+\npar met $(B_f, H_f)$ de dimensie van de convolutiefilter. Om meerdere features te detecteren per laag worden er meerdere feature-maps gevormd om een filterbank te bekomen. Hoeveel feature-maps er per laag worden berekend is een hyperparameter van het CNN.
+\npar Hier is de tweedimensionale convolutie beschreven omdat in dit onderzoek enkel met deze convolutie gewerkt wordt. Er bestaan ook driedimensionale convoluties die rekening houden met het tijdsaspect en zo spatio-temporele features extraheren.
 
-\begin{figure}[b!]
+\begin{figure}[t!]
 	\centering
 	%	\def\svgscale{0.85}
 	%	\def\svgwidth{\columnwidth}

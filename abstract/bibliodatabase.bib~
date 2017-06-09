@@ -1,24 +1,13 @@
-@misc{andrew_ng,
-	title = {Machine {Learning} {\textbar} {Coursera}},
-	urldate = {2017-06-07},
-	year={2017},
-	author = {Ng, Andrew},
-	file = {Machine Learning | Coursera:/home/jasper/.mozilla/firefox/luuth0e7.default/zotero/storage/WXJ85ZKN/machine-learning.html:text/html}
+@book{buyens_gebarentaaltolken_2003,
+	title = {Gebarentaaltolken},
+	isbn = {978-90-441-1292-4},
+	language = {nl},
+	publisher = {Garant},
+	author = {Buyens, Maurice},
+	year = {2003},
+	pages = {15}
 }
 
-@article{recognition-components,
-	title = {Recognition-by-{Components}: {A} {Theory} of {Human} {Image} {Understanding}},
-	volume = {94},
-	issn = {0033-295X},
-	shorttitle = {Recognition-by-{Components}},
-	language = {English.},
-	number = {2},
-	journal = {Psychological Review},
-	author = {Biederman, Irving},
-	month = apr,
-	year = {1987},
-	pages = {115--147}
-}
 @inproceedings{sutskever2013importance,
 	title={On the importance of initialization and momentum in deep learning},
 	author={Sutskever, Ilya and Martens, James and Dahl, George and Hinton, Geoffrey},
@@ -27,6 +16,22 @@
 	year={2013}
 }
 
+@article{VGT-standard,
+	title = {Flemish {Sign} {Language} standardisation},
+	volume = {10},
+	issn = {1466-4208, 1747-7506},
+	url = {http://www.tandfonline.com/doi/abs/10.1080/14664200903154874},
+	doi = {10.1080/14664200903154874},
+	language = {en},
+	number = {3},
+	urldate = {2017-05-12},
+	journal = {Current Issues in Language Planning},
+	author = {Van Herreweghe, Mieke and Vermeerbergen, Myriam},
+	month = aug,
+	year = {2009},
+	pages = {308--326},
+	file = {published.pdf:/home/jasper/.mozilla/firefox/luuth0e7.default/zotero/storage/WP8BMZVQ/published.pdf:application/pdf}
+}
 
 @article{botev_nesterovs_2016,
 	title = {Nesterov's {Accelerated} {Gradient} and {Momentum} as approximations to {Regularised} {Update} {Descent}},
@@ -49,24 +54,7 @@
 	publisher={Wiley Online Library}
 }
 
-@article{perronnin2010improving,
-	title={Improving the fisher kernel for large-scale image classification},
-	author={Perronnin, Florent and S{\'a}nchez, Jorge and Mensink, Thomas},
-	journal={Computer Vision--ECCV 2010},
-	pages={143--156},
-	year={2010},
-	publisher={Springer}
-}
 
-
-@inproceedings{jhuang2007biologically,
-	title={A biologically inspired system for action recognition},
-	author={Jhuang, Hueihan and Serre, Thomas and Wolf, Lior and Poggio, Tomaso},
-	booktitle={Computer Vision, 2007. ICCV 2007. IEEE 11th International Conference on},
-	pages={1--8},
-	year={2007},
-	organization={Ieee}
-}
 
 @inproceedings{cnn-karpathy,
 	title = {Large-scale video classification with convolutional neural networks},
@@ -162,13 +150,6 @@
 	file = {theano_scipy2010.pdf:/home/jasper/.mozilla/firefox/luuth0e7.default/zotero/storage/5D9RVDA8/theano_scipy2010.pdf:application/pdf}
 }
 
-@online{tolkuren,
-	title = {Welzijn en werk in het {Nederlands}},
-	author = {CAB-Vlaanderen},
-	year={2017},
-	note={Bezocht op: 29 mei 2017},
-	file = {Welzijn en werk in het Nederlands:/home/jasper/.mozilla/firefox/luuth0e7.default/zotero/storage/AV3V4X64/f_main.html:text/html}
-}
 
 @inproceedings{glorot-1,
 	title = {Understanding the difficulty of training deep feedforward neural networks.},
@@ -218,26 +199,7 @@
 	year={2012}
 }
 
-@inproceedings { lecun-01a,
-	original =      "orig/lecun-01a.ps.gz",
-	author = 	"LeCun, Y. and Bottou, L. and Bengio, Y. and Haffner, P.",
-	title = 	"Gradient-Based Learning Applied to Document Recognition",
-	booktitle =     "Intelligent Signal Processing",
-	editors =       "Haykin, S. and Kosko, B.",
-	pages =         "306-351",
-	publisher =     "IEEE Press",
-	year =		2001
-}
 
-@book{buyens_gebarentaaltolken_2003,
-	title = {Gebarentaaltolken},
-	isbn = {978-90-441-1292-4},
-	language = {nl},
-	publisher = {Garant},
-	author = {Buyens, Maurice},
-	year = {2003},
-	pages = {15}
-}
 
 @article{gesture-FNN-HMM,
 	title = {Gesture recognition based on {HMM}-{FNN} model using a {Kinect}},
@@ -254,18 +216,6 @@
 	pages = {1--7},
 }
 
-@article{movement-epenthesis,
-	title = {Handling {Movement} {Epenthesis} and {Hand} {Segmentation} {Ambiguities} in {Continuous} {Sign} {Language} {Recognition} {Using} {Nested} {Dynamic} {Programming}},
-	volume = {32},
-	issn = {0162-8828},
-	doi = {10.1109/TPAMI.2009.26},
-	number = {3},
-	journal = {IEEE Transactions on Pattern Analysis and Machine Intelligence},
-	author = {Yang, R. and Sarkar, S. and Loeding, B.},
-	month = mar,
-	year = {2010},
-	pages = {462--477},
-}
 
 @article{kuhn2011kinect,
 	title={The Kinect sensor platform},
@@ -275,14 +225,6 @@
 	year={2011}
 }
 
-@inproceedings{hmdb-manual-segm,
-	title={HMDB: a large video database for human motion recognition},
-	author={Kuehne, Hildegard and Jhuang, Hueihan and Garrote, Est{\'\i}baliz and Poggio, Tomaso and Serre, Thomas},
-	booktitle={Computer Vision (ICCV), 2011 IEEE International Conference on},
-	pages={2556--2563},
-	year={2011},
-	organization={IEEE}
-}
 
 @inproceedings{oneshot-vis-concepts,
   title={One shot learning of simple visual concepts.},
@@ -291,116 +233,6 @@
   volume={172},
   pages={2},
   year={2011}
-}
-
-@article{active-oneshot,
-	title = {Active {One}-shot {Learning}},
-	abstract = {Recent advances in one-shot learning have produced models that can learn from a handful of labeled examples, for passive classification and regression tasks. This paper combines reinforcement learning with one-shot learning, allowing the model to decide, during classification, which examples are worth labeling. We introduce a classification task in which a stream of images are presented and, on each time step, a decision must be made to either predict a label or pay to receive the correct label. We present a recurrent neural network based action-value function, and demonstrate its ability to learn how and when to request labels. Through the choice of reward function, the model can achieve a higher prediction accuracy than a similar model on a purely supervised task, or trade prediction accuracy for fewer label requests.},
-	urldate = {2017-05-22},
-	journal = {arXiv:1702.06559 [cs]},
-	author = {Woodward, Mark and Finn, Chelsea},
-	month = feb,
-	year = {2017},
-	note = {arXiv: 1702.06559},
-	keywords = {Computer Science - Learning},
-}
-
-@article{VGT-standard,
-	title = {Flemish {Sign} {Language} standardisation},
-	volume = {10},
-	issn = {1466-4208, 1747-7506},
-	doi = {10.1080/14664200903154874},
-	language = {en},
-	number = {3},
-	urldate = {2017-05-12},
-	journal = {Current Issues in Language Planning},
-	author = {Van Herreweghe, Mieke and Vermeerbergen, Myriam},
-	month = aug,
-	year = {2009},
-	pages = {308--326},
-	file = {published.pdf:/home/jasper/.mozilla/firefox/luuth0e7.default/zotero/storage/WP8BMZVQ/published.pdf:application/pdf}
-}
-
-@article{recog-components,
-	title = {Recognition-by-{Components}: {A} {Theory} of {Human} {Image} {Understanding}},
-	volume = {94},
-	issn = {0033-295X},
-	shorttitle = {Recognition-by-{Components}},
-	language = {English.},
-	number = {2},
-	journal = {Psychological Review},
-	author = {Biederman, Irving},
-	month = apr,
-	year = {1987},
-	pages = {115--147}
-}
-
-@article{oneshot-object-cat,
-	title = {One-shot learning of object categories},
-	volume = {28},
-	issn = {0162-8828},
-	doi = {10.1109/TPAMI.2006.79},
-	abstract = {Learning visual models of object categories notoriously requires hundreds or thousands of training examples. We show that it is possible to learn much information about a category from just one, or a handful, of images. The key insight is that, rather than learning from scratch, one can take advantage of knowledge coming from previously learned categories, no matter how different these categories might be. We explore a Bayesian implementation of this idea. Object categories are represented by probabilistic models. Prior knowledge is represented as a probability density function on the parameters of these models. The posterior model for an object category is obtained by updating the prior in the light of one or more observations. We test a simple implementation of our algorithm on a database of 101 diverse object categories. We compare category models learned by an implementation of our Bayesian approach to models learned from by maximum likelihood (ML) and maximum a posteriori (MAP) methods. We find that on a database of more than 100 categories, the Bayesian approach produces informative models when the number of training examples is too small for other methods to operate successfully.},
-	number = {4},
-	journal = {IEEE Transactions on Pattern Analysis and Machine Intelligence},
-	author = {Fei-Fei, Li and Fergus, R. and Perona, P.},
-	month = apr,
-	year = {2006},
-	pages = {594--611},
-	file = {IEEE Xplore Abstract Record:/home/jasper/.mozilla/firefox/luuth0e7.default/zotero/storage/RBFSWGCR/1597116.html:text/html;IEEE Xplore Full Text PDF:/home/jasper/.mozilla/firefox/luuth0e7.default/zotero/storage/P5Q87VJZ/Fei-Fei et al. - 2006 - One-shot learning of object categories.pdf:application/pdf}
-}
-
-@article{zaki_sign_2011,
-	title = {Sign language recognition using a combination of new vision based features},
-	volume = {32},
-	issn = {01678655},
-	doi = {10.1016/j.patrec.2010.11.013},
-	language = {en},
-	number = {4},
-	urldate = {2017-01-07},
-	journal = {Pattern Recognition Letters},
-	author = {Zaki, Mahmoud M. and Shaheen, Samir I.},
-	month = mar,
-	year = {2011},
-	pages = {572--577},
-	file = {Sign language recognition using a combination of new vision based features.pdf:/home/jasper/.mozilla/firefox/luuth0e7.default/zotero/storage/J9BJ3GEP/Sign language recognition using a combination of new vision based features.pdf:application/pdf}
-}
-
-@article{ba_predicting_2015,
-	title = {Predicting {Deep} {Zero}-{Shot} {Convolutional} {Neural} {Networks} using {Textual} {Descriptions}},
-	abstract = {One of the main challenges in Zero-Shot Learning of visual categories is gathering semantic attributes to accompany images. Recent work has shown that learning from textual descriptions, such as Wikipedia articles, avoids the problem of having to explicitly define these attributes. We present a new model that can classify unseen categories from their textual description. Specifically, we use text features to predict the output weights of both the convolutional and the fully connected layers in a deep convolutional neural network (CNN). We take advantage of the architecture of CNNs and learn features at different layers, rather than just learning an embedding space for both modalities, as is common with existing approaches. The proposed model also allows us to automatically generate a list of pseudo- attributes for each visual category consisting of words from Wikipedia articles. We train our models end-to-end us- ing the Caltech-UCSD bird and flower datasets and evaluate both ROC and Precision-Recall curves. Our empirical results show that the proposed model significantly outperforms previous methods.},
-	urldate = {2017-04-24},
-	journal = {arXiv:1506.00511 [cs]},
-	author = {Ba, Jimmy and Swersky, Kevin and Fidler, Sanja and Salakhutdinov, Ruslan},
-	month = jun,
-	year = {2015},
-	note = {arXiv: 1506.00511},
-	keywords = {Computer Science - Computer Vision and Pattern Recognition, Computer Science - Learning, Computer Science - Neural and Evolutionary Computing},
-	annote = {Comment: Correct the typos in table 1 regarding [5]. To appear in ICCV 2015},
-	file = {arXiv\:1506.00511 PDF:/home/jasper/.mozilla/firefox/luuth0e7.default/zotero/storage/6RHIEGWB/Ba e.a. - 2015 - Predicting Deep Zero-Shot Convolutional Neural Net.pdf:application/pdf;arXiv.org Snapshot:/home/jasper/.mozilla/firefox/luuth0e7.default/zotero/storage/PTX6VAIA/1506.html:text/html}
-}
-
-@inproceedings{kadrev_expansion_2016,
-	title = {Expansion of a {CNN}-based image classifier's scope using transfer learning and k-{NN}. {Technical} report},
-	doi = {10.1109/IS.2016.7737399},
-	abstract = {The purpose of this work is to evaluate possible minimisation of the time needed for expansion of the scope of a CNN (convolutional neural network) classifier without the need to fully re-train it. We investigate the effects of applying k-NN (k-Nearest Neighbours) based classification and transfer learning (via fine-tuning) for the purpose of adding new classes to an existing deep convolutional neural network without the need to re-train it with the whole set of the existing plus the newly added classes. Our main contribution is the thorough comparison of the overall and per-class classification accuracy in the different scenarios. We use our own selection of ImageNet images for the CIFAR-10 classes plus four more purposefully selected classes. The motivation behind this investigation is the challenge for significant time reduction that would be possible in case the hypothesis that adding new classes to an existing classifier, using transfer learning and k-NN classification does not significantly underperform training with the whole expanded set of classes is true. Though this hypothesis is proved wrong it still sets the foundation for us and/or other researchers to go further into looking for strategies on how to do partial re-training.},
-	booktitle = {2016 {IEEE} 8th {International} {Conference} on {Intelligent} {Systems} ({IS})},
-	author = {Kadrev, G. and Kostadinov, G. and Ruskov, P.},
-	month = sep,
-	year = {2016},
-	keywords = {Airplanes, caffe, Cats, CIFAR-10 class, cnn, CNN-based image classifier scope, CNN training, Computers, convolutional neural networks, deep convolutional neural network, digits, Dogs, Feature extraction, features, fine tuning, fine-tuning, image classification, ImageNet images, k-nearest neighbours based classification, k-nn, k-NN classification, learning (artificial intelligence), machine learning, Marine vehicles, neural nets, similarity search, time minimisation, time reduction, Training, transfer learning},
-	pages = {764--770},
-	annote = {Scope van CNN vergroten --{\textgreater} klassen toevoegen
-Op drie manieren: hertrainen van alles met nieuwe data, similarity search based classification kNN, transfer learning via fine tuning
- },
-	file = {IEEE Xplore Abstract Record:/home/jasper/.mozilla/firefox/luuth0e7.default/zotero/storage/RSAD3K9B/7737399.html:text/html;IEEE Xplore Full Text PDF:/home/jasper/.mozilla/firefox/luuth0e7.default/zotero/storage/XTJAGGPR/Kadrev e.a. - 2016 - Expansion of a CNN-based image classifier's scope .pdf:application/pdf}
-}
-
-@article{pigou_gebarentaalherkenning_nodate,
-	title = {Gebarentaalherkenning met convolutionele neurale},
-	urldate = {2017-01-08},
-	author = {Pigou, Lionel},
-	file = {RUG01-002153465_2014_0001_AC.pdf:/home/jasper/.mozilla/firefox/luuth0e7.default/zotero/storage/99SX6SZM/RUG01-002153465_2014_0001_AC.pdf:application/pdf}
 }
 
 @article{oneshot-video-segm,
@@ -416,225 +248,4 @@ Op drie manieren: hertrainen van alles met nieuwe data, similarity search based 
 	file = {arXiv\:1611.05198 PDF:/home/jasper/.mozilla/firefox/luuth0e7.default/zotero/storage/34X5BQKJ/Caelles e.a. - 2016 - One-Shot Video Object Segmentation.pdf:application/pdf;arXiv.org Snapshot:/home/jasper/.mozilla/firefox/luuth0e7.default/zotero/storage/FQPM9D9I/1611.html:text/html}
 }
 
-@inproceedings{karpathy_large-scale_2014,
-	title = {Large-scale video classification with convolutional neural networks},
-	urldate = {2017-01-07},
-	booktitle = {Proceedings of the {IEEE} conference on {Computer} {Vision} and {Pattern} {Recognition}},
-	author = {Karpathy, Andrej and Toderici, George and Shetty, Sanketh and Leung, Thomas and Sukthankar, Rahul and Fei-Fei, Li},
-	year = {2014},
-	pages = {1725--1732},
-	file = {Large-scale Video Classification with Convolutional Neural Networks.pdf:/home/jasper/.mozilla/firefox/luuth0e7.default/zotero/storage/QN3V8RSR/Large-scale Video Classification with Convolutional Neural Networks.pdf:application/pdf}
-}
 
-@inproceedings{zeiler_visualizing_2014,
-	series = {Lecture {Notes} in {Computer} {Science}},
-	title = {Visualizing and {Understanding} {Convolutional} {Networks}},
-	copyright = {©2014 Springer International Publishing Switzerland},
-	isbn = {978-3-319-10589-5 978-3-319-10590-1},
-/chapter/10.1007/978-3-319-10590-1_53},
-	abstract = {Large Convolutional Network models have recently demonstrated impressive classification performance on the ImageNet benchmark Krizhevsky et al. [18]. However there is no clear understanding of why they perform so well, or how they might be improved. In this paper we explore both issues. We introduce a novel visualization technique that gives insight into the function of intermediate feature layers and the operation of the classifier. Used in a diagnostic role, these visualizations allow us to find model architectures that outperform Krizhevsky et al on the ImageNet classification benchmark. We also perform an ablation study to discover the performance contribution from different model layers. We show our ImageNet model generalizes well to other datasets: when the softmax classifier is retrained, it convincingly beats the current state-of-the-art results on Caltech-101 and Caltech-256 datasets.},
-	language = {en},
-	urldate = {2017-01-07},
-	booktitle = {Computer {Vision} - {ECCV} 2014},
-	publisher = {Springer International Publishing},
-	author = {Zeiler, Matthew D. and Fergus, Rob},
-	editor = {Fleet, David and Pajdla, Tomas and Schiele, Bernt and Tuytelaars, Tinne},
-	month = sep,
-	year = {2014},
-	note = {DOI: 10.1007/978-3-319-10590-1\_53},
-	keywords = {Artificial Intelligence (incl. Robotics), Computer Graphics, Image Processing and Computer Vision, Pattern Recognition},
-	pages = {818--833},
-	file = {1311.2901.pdf:/home/jasper/.mozilla/firefox/luuth0e7.default/zotero/storage/EE58KH8P/1311.2901.pdf:application/pdf;Snapshot:/home/jasper/.mozilla/firefox/luuth0e7.default/zotero/storage/NAGSCMW8/978-3-319-10590-1_53.html:text/html}
-}
-
-@article{memory-augmented-oneshot,
-	title = {One-shot {Learning} with {Memory}-{Augmented} {Neural} {Networks}},
-	urldate = {2017-01-07},
-	journal = {arXiv preprint arXiv:1605.06065},
-	author = {Santoro, Adam and Bartunov, Sergey and Botvinick, Matthew and Wierstra, Daan and Lillicrap, Timothy},
-	year = {2016},
-	file = {One-shot Learning with Memory-Augmented Neural Networks - 1605.06065.pdf:/home/jasper/.mozilla/firefox/luuth0e7.default/zotero/storage/MFWCGE5E/1605.06065.pdf:application/pdf}
-}
-
-@inproceedings{oneshot-gesture-rgbd,
-	title = {One shot learning gesture recognition from {RGBD} images},
-	doi = {10.1109/CVPRW.2012.6239179},
-	abstract = {We present a system to classify the gesture from only one learning example. The inputs are duo-modality, i.e. RGB and depth sensor from Kinect. Our system performs morphological denoising on depth images and automatically segments the temporal boundaries. Features are extracted based on Extended-Motion-History-Image (Extended-MHI) and the Multi-view Spectral Embedding (MSE) algorithm is used to fuse duo modalities in a physically meaningful manner. Our approach achieves less than 0.3 in Levenshtein distance in CHALEARN Gesture Challenge validation batches [1].},
-	booktitle = {2012 {IEEE} {Computer} {Society} {Conference} on {Computer} {Vision} and {Pattern} {Recognition} {Workshops}},
-	author = {Wu, D. and Zhu, F. and Shao, L.},
-	month = jun,
-	year = {2012},
-	keywords = {automatic temporal boundary segmentation, Cameras, CHALEARN gesture challenge validation batch, depth image denoising, duo-modality, extended-MHI algorithm, extended-motion-history-image algorithm, Feature extraction, gesture classification, gesture recognition, image classification, image colour analysis, image denoising, image segmentation, Kinect depth sensor, Kinect RGB sensor, learning (artificial intelligence), Levenshtein distance, morphological denoising, Motion segmentation, MSE algorithm, multiview spectral embedding algorithm, Noise, Noise reduction, one shot learning gesture recognition, RGBD images, spatial variables measurement, Training, Vectors},
-	pages = {7--12},
-	file = {IEEE Xplore Abstract Record:/home/jasper/.mozilla/firefox/luuth0e7.default/zotero/storage/W8F6ZG4D/6239179.html:text/html;IEEE Xplore Full Text PDF:/home/jasper/.mozilla/firefox/luuth0e7.default/zotero/storage/J8HG9KCU/Wu e.a. - 2012 - One shot learning gesture recognition from RGBD im.pdf:application/pdf}
-}
-
-@article{lake_human-level_2015,
-	title = {Human-level concept learning through probabilistic program induction},
-	volume = {350},
-	number = {6266},
-	urldate = {2017-01-07},
-	journal = {Science},
-	author = {Lake, Brenden M. and Salakhutdinov, Ruslan and Tenenbaum, Joshua B.},
-	year = {2015},
-	pages = {1332--1338},
-	file = {1332 1332..1338 - lake2015.pdf:/home/jasper/.mozilla/firefox/luuth0e7.default/zotero/storage/Z7SIG7XJ/lake2015.pdf:application/pdf}
-}
-
-@inproceedings{oquab_learning_2014,
-	title = {Learning and transferring mid-level image representations using convolutional neural networks},
-	urldate = {2017-01-08},
-	booktitle = {Proceedings of the {IEEE} conference on computer vision and pattern recognition},
-	author = {Oquab, Maxime and Bottou, Leon and Laptev, Ivan and Sivic, Josef},
-	year = {2014},
-	pages = {1717--1724},
-	file = {Learning and Transferring Mid-Level Image Representations using Convolutional Neural Networks - Oquab_Learning_and_Transferring_2014_CVPR_paper.pdf:/home/jasper/.mozilla/firefox/luuth0e7.default/zotero/storage/3UZQTFF6/Oquab_Learning_and_Transferring_2014_CVPR_paper.pdf:application/pdf}
-}
-
-
-
-@article{pan_survey_2010,
-	title = {A {Survey} on {Transfer} {Learning}},
-	volume = {22},
-	issn = {1041-4347},
-	doi = {10.1109/TKDE.2009.191},
-	number = {10},
-	urldate = {2017-01-07},
-	journal = {IEEE Transactions on Knowledge and Data Engineering},
-	author = {Pan, Sinno Jialin and Yang, Qiang},
-	month = oct,
-	year = {2010},
-	pages = {1345--1359},
-	file = {untitled - tkde_transfer_learning.pdf:/home/jasper/.mozilla/firefox/luuth0e7.default/zotero/storage/7S7NB5J7/tkde_transfer_learning.pdf:application/pdf}
-}
-
-@article{cooper_sign_2012,
-	title = {Sign language recognition using sub-units},
-	volume = {13},
-	number = {Jul},
-	urldate = {2017-01-07},
-	journal = {Journal of Machine Learning Research},
-	author = {Cooper, Helen and Ong, Eng-Jon and Pugeault, Nicolas and Bowden, Richard},
-	year = {2012},
-	pages = {2205--2231},
-	file = {Sign Language Recognition using Sub-Units.pdf:/home/jasper/.mozilla/firefox/luuth0e7.default/zotero/storage/VFN5KPV9/Sign Language Recognition using Sub-Units.pdf:application/pdf}
-}
-
-@article{hoffman_one-shot_2013,
-	title = {One-{Shot} {Adaptation} of {Supervised} {Deep} {Convolutional} {Models}},
-	abstract = {Dataset bias remains a significant barrier towards solving real world computer vision tasks. Though deep convolutional networks have proven to be a competitive approach for image classification, a question remains: have these models have solved the dataset bias problem? In general, training or fine-tuning a state-of-the-art deep model on a new domain requires a significant amount of data, which for many applications is simply not available. Transfer of models directly to new domains without adaptation has historically led to poor recognition performance. In this paper, we pose the following question: is a single image dataset, much larger than previously explored for adaptation, comprehensive enough to learn general deep models that may be effectively applied to new image domains? In other words, are deep CNNs trained on large amounts of labeled data as susceptible to dataset bias as previous methods have been shown to be? We show that a generic supervised deep CNN model trained on a large dataset reduces, but does not remove, dataset bias. Furthermore, we propose several methods for adaptation with deep models that are able to operate with little (one example per category) or no labeled domain specific data. Our experiments show that adaptation of deep models on benchmark visual domain adaptation datasets can provide a significant performance boost.},
-	urldate = {2017-01-07},
-	journal = {arXiv:1312.6204 [cs]},
-	author = {Hoffman, Judy and Tzeng, Eric and Donahue, Jeff and Jia, Yangqing and Saenko, Kate and Darrell, Trevor},
-	month = dec,
-	year = {2013},
-	note = {arXiv: 1312.6204},
-	keywords = {Computer Science - Computer Vision and Pattern Recognition, Computer Science - Learning, Computer Science - Neural and Evolutionary Computing},
-	file = {arXiv\:1312.6204 PDF:/home/jasper/.mozilla/firefox/luuth0e7.default/zotero/storage/NUMSRNFR/Hoffman e.a. - 2013 - One-Shot Adaptation of Supervised Deep Convolution.pdf:application/pdf;arXiv.org Snapshot:/home/jasper/.mozilla/firefox/luuth0e7.default/zotero/storage/N2C2U8WU/1312.html:text/html}
-}
-
-@article{ji_3d_2013,
-	title = {3D convolutional neural networks for human action recognition},
-	volume = {35},
-	number = {1},
-	urldate = {2017-01-07},
-	journal = {IEEE transactions on pattern analysis and machine intelligence},
-	author = {Ji, Shuiwang and Xu, Wei and Yang, Ming and Yu, Kai},
-	year = {2013},
-	pages = {221--231},
-	file = {3D Convolutional Neural Networks for Human Action Recognition.pdf:/home/jasper/.mozilla/firefox/luuth0e7.default/zotero/storage/TGWH8NZE/3D Convolutional Neural Networks for Human Action Recognition.pdf:application/pdf}
-}
-
-@article{lima_learning_2017,
-	title = {Learning and {Transferring} {Convolutional} {Neural} {Network} {Knowledge} to {Ocean} {Front} {Recognition}},
-	volume = {14},
-	issn = {1545-598X},
-	doi = {10.1109/LGRS.2016.2643000},
-	abstract = {In this letter, we investigated how to apply a deep learning method, in particular convolutional neural networks (CNNs), to an ocean front recognition task. Exploring deep CNNs knowledge to ocean front recognition is a challenging task, because the training data is very scarce. This letter overcomes this challenge using a sequence of transfer learning steps via fine-tuning. The core idea is to extract deep knowledge of the CNN model from a large data set and then transfer the knowledge to our ocean front recognition task on limited remote sensing (RS) images. We conducted experiments on two different RS image data sets, with different visual properties, i.e., colorful and gray-level data, which were both downloaded from the National Oceanic and Atmospheric Administration (NOAA). The proposed method was compared with the conventional handcraft descriptor with bag-of-visual-words, original CNN model, and last-layer fine-tuned CNN model. Our method showed a significantly higher accuracy than other methods in both datasets.},
-	number = {3},
-	journal = {IEEE Geoscience and Remote Sensing Letters},
-	author = {Lima, E. and Sun, X. and Dong, J. and Wang, H. and Yang, Y. and Liu, L.},
-	month = mar,
-	year = {2017},
-	keywords = {bag-of-visual-words, colorful data, Computer architecture, convolutional neural network knowledge, Convolutional neural networks (CNNs), Data mining, deep learning method, Feature extraction, fine-tuning, geophysical image processing, gray-level data, handcraft descriptor, image recognition, knowledge acquisition, knowledge learning, knowledge transferring, last-layer fine-tuned CNN model, learning (artificial intelligence), limited remote sensing images, machine learning, neural nets, Neural networks, NOAA, ocean front recognition, oceanographic techniques, Oceans, remote sensing, Training data, transfer learning},
-	pages = {354--358},
-	file = {IEEE Xplore Abstract Record:/home/jasper/.mozilla/firefox/luuth0e7.default/zotero/storage/VVCF65XX/7829262.html:text/html;IEEE Xplore Full Text PDF:/home/jasper/.mozilla/firefox/luuth0e7.default/zotero/storage/AUTGKM6C/Lima e.a. - 2017 - Learning and Transferring Convolutional Neural Net.pdf:application/pdf}
-}
-
-
-@article{braun_motor_2009,
-	title = {Motor {Task} {Variation} {Induces} {Structural} {Learning}},
-	volume = {19},
-	issn = {0960-9822},
-	doi = {10.1016/j.cub.2009.01.036},
-	abstract = {When we have learned a motor skill, such as cycling or ice-skating, we can rapidly generalize to novel tasks, such as motorcycling or rollerblading  [1–8] . Such facilitation of learning could arise through two distinct mechanisms by which the motor system might adjust its control parameters. First, fast learning could simply be a consequence of the proximity of the original and final settings of the control parameters. Second, by structural learning  [9–14] , the motor system could constrain the parameter adjustments to conform to the control parameters' covariance structure. Thus, facilitation of learning would rely on the novel task parameters' lying on the structure of a lower-dimensional subspace that can be explored more efficiently. To test between these two hypotheses, we exposed subjects to randomly varying visuomotor tasks of fixed structure. Although such randomly varying tasks are thought to prevent learning, we show that when subsequently presented with novel tasks, subjects exhibit three key features of structural learning: facilitated learning of tasks with the same structure, strong reduction in interference normally observed when switching between tasks that require opposite control strategies, and preferential exploration along the learned structure. These results suggest that skill generalization relies on task variation and structural learning.},
-	language = {English},
-	number = {4},
-	urldate = {2017-01-07},
-	journal = {Current Biology},
-	author = {Braun, Daniel A. and Aertsen, Ad and Wolpert, Daniel M. and Mehring, Carsten},
-	month = feb,
-	year = {2009},
-	pmid = {19217296},
-	keywords = {SYSNEURO},
-	pages = {352--357},
-	file = {Full Text PDF:/home/jasper/.mozilla/firefox/luuth0e7.default/zotero/storage/77PC3HK7/Braun e.a. - 2009 - Motor Task Variation Induces Structural Learning.pdf:application/pdf;Snapshot:/home/jasper/.mozilla/firefox/luuth0e7.default/zotero/storage/GCPMHGPV/S0960-9822(09)00608-3.html:text/html}
-}
-
-@inproceedings{ciresan_transfer_2012,
-	title = {Transfer learning for {Latin} and {Chinese} characters with deep neural networks},
-	urldate = {2017-01-07},
-	booktitle = {The 2012 {International} {Joint} {Conference} on {Neural} {Networks} ({IJCNN})},
-	publisher = {IEEE},
-	author = {Ciresan, Dan C. and Meier, Ueli and Schmidhuber, J\"urgen},
-	year = {2012},
-	pages = {1--6},
-	file = {Transfer Learning Characters DNN.pdf:/home/jasper/.mozilla/firefox/luuth0e7.default/zotero/storage/R9ESVR8X/Transfer Learning Characters DNN.pdf:application/pdf}
-}
-
-@incollection{machine_overview,
-	series = {Symbolic {Computation}},
-	title = {An {Overview} of {Machine} {Learning}},
-	copyright = {©1983 Springer-Verlag Berlin Heidelberg},
-	isbn = {978-3-662-12407-9 978-3-662-12405-5},
-	abstract = {Learning is a many-faceted phenomenon. Learning processes include the acquisition of new declarative knowledge, the development of motor and cognitive skills through instruction or practice, the organization of new knowledge into general, effective representations, and the discovery of new facts and theories through observation and experimentation. Since the inception of the computer era, researchers have been striving to implant such capabilities in computers. Solving this problem has been, and remains, a most challenging and fascinating long-range goal in artificial intelligence (AI). The study and computer modeling of learning processes in their multiple manifestations constitutes the subject matter of machine learning.},
-	language = {en},
-	urldate = {2017-05-09},
-	booktitle = {Machine {Learning}},
-	publisher = {Springer Berlin Heidelberg},
-	author = {Carbonell, Jaime G. and Michalski, Ryszard S. and Mitchell, Tom M.},
-	editor = {Michalski, Ryszard S. and Carbonell, Jaime G. and Mitchell, Tom M.},
-	year = {1983},
-	note = {DOI: 10.1007/978-3-662-12405-5\_1},
-	keywords = {Artificial Intelligence (incl. Robotics), Machinery and Machine Elements},
-	pages = {3--23},
-	file = {Snapshot:/home/jasper/.mozilla/firefox/luuth0e7.default/zotero/storage/NPGUNEXN/978-3-662-12405-5_1.html:text/html}
-}
-
-@article{samuel_studies_1959,
-	title = {Some {Studies} in {Machine} {Learning} {Using} the {Game} of {Checkers}},
-	volume = {3},
-	issn = {0018-8646},
-	doi = {10.1147/rd.33.0210},
-	abstract = {Two machine-learning procedures have been investigated in some detail using the game of checkers. Enough work has been done to verify the fact that a computer can be programmed so that it will learn to play a better game of checkers than can be played by the person who wrote the program. Furthermore, it can learn to do this in a remarkably short period of time (8 or 10 hours of machine-playing time) when given only the rules of the game, a sense of direction, and a redundant and incomplete list of parameters which are thought to have something to do with the game, but whose correct signs and relative weights are unknown and unspecified. The principles of machine learning verified by these experiments are, of course, applicable to many other situations.},
-	number = {3},
-	journal = {IBM Journal of Research and Development},
-	author = {Samuel, A. L.},
-	month = jul,
-	year = {1959},
-	pages = {210--229},
-	file = {IEEE Xplore Abstract Record:/home/jasper/.mozilla/firefox/luuth0e7.default/zotero/storage/S23SVHA2/5392560.html:text/html;IEEE Xplore Full Text PDF:/home/jasper/.mozilla/firefox/luuth0e7.default/zotero/storage/WBXAKHN5/Samuel - 1959 - Some Studies in Machine Learning Using the Game of.pdf:application/pdf}
-}
-
-@book{ml_ai_approach,
-	title = {Machine {Learning}: {An} {Artificial} {Intelligence} {Approach}},
-	isbn = {978-3-662-12405-5},
-	shorttitle = {Machine {Learning}},
-	abstract = {The ability to learn is one of the most fundamental attributes of intelligent behavior. Consequently, progress in the theory and computer modeling of learn ing processes is of great significance to fields concerned with understanding in telligence. Such fields include cognitive science, artificial intelligence, infor mation science, pattern recognition, psychology, education, epistemology, philosophy, and related disciplines. The recent observance of the silver anniversary of artificial intelligence has been heralded by a surge of interest in machine learning-both in building models of human learning and in understanding how machines might be endowed with the ability to learn. This renewed interest has spawned many new research projects and resulted in an increase in related scientific activities. In the summer of 1980, the First Machine Learning Workshop was held at Carnegie-Mellon University in Pittsburgh. In the same year, three consecutive issues of the Inter national Journal of Policy Analysis and Information Systems were specially devoted to machine learning (No. 2, 3 and 4, 1980). In the spring of 1981, a special issue of the SIGART Newsletter No. 76 reviewed current research projects in the field. . This book contains tutorial overviews and research papers representative of contemporary trends in the area of machine learning as viewed from an artificial intelligence perspective. As the first available text on this subject, it is intended to fulfill several needs.},
-	language = {en},
-	publisher = {Springer Science \& Business Media},
-	author = {Michalski, R. S. and Carbonell, J. G. and Mitchell, T. M.},
-	month = apr,
-	year = {2013},
-	keywords = {Computers / Intelligence (AI) \& Semantics, Computers / Software Development \& Engineering / General, Technology \& Engineering / Machinery, Technology \& Engineering / Power Resources / General}
-}

@@ -53,7 +53,7 @@
     \put(0.14245027,0.27529515){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{trainingset - $G_i$ }}}%
     \put(0.69841143,0.13188952){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{model}}}%
     \put(0.6977711,0.1589119){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{inclusief}}}%
-    \put(0.39399104,0.04952912){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{aanpasssen}}}%
+    \put(0.39531676,0.04952912){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{aanpasssen}}}%
     \put(0.39297528,0.01774893){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{architectuur}}}%
     \put(0.69504904,0.37641222){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{testset}}}%
     \put(0.4966836,0.27529518){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{trainingset + (N x $G_i$) }}}%

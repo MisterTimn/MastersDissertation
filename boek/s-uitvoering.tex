@@ -11,7 +11,7 @@ Alle programmatie wordt uitgevoerd in Python, een dynamische \textit{high-level}
 	
 \end{itemize}
 \section{ChaLearn dataset}
-De gebruikte dataset is die van de ``ChaLearn Looking at People Challenge 2014'' zoals beschreven in \cite{escalera_chalearn_2014}. Uit deze set wordt de derde track gebruikt: ``gesture recognition''. Deze bevat meer dan 14000 gebaren uit een vocabularium van 20 Italiaanse gebaren. Merk op dat het hier niet gaat om een gebarentaal maar om afzonderlijke gebaren uit de Italiaanse cultuur. De verschillende gebaren en hun benamingen zijn te zien in Figuur \ref{fig:gebaren}.
+De gebruikte dataset is die van de ``ChaLearn Looking at People Challenge 2014'' zoals beschreven in \cite{escalera_chalearn_2014}. Uit deze set wordt de derde track gebruikt: ``gesture recognition''. Deze bevat meer dan 14000 gebaren uit een vocabularium van twintig Italiaanse gebaren. Merk op dat het hier niet gaat om een gebarentaal maar om afzonderlijke gebaren uit de Italiaanse cultuur. De verschillende gebaren en hun benamingen zijn te zien in Figuur \ref{fig:gebaren}.
 \begin{figure}
 	\centering
 	%	\def\svgscale{0.85}
@@ -20,7 +20,7 @@ De gebruikte dataset is die van de ``ChaLearn Looking at People Challenge 2014''
 	\caption{De Italiaanse gebaren gebruikt in de ``ChaLearn Looking At People Challenge 2014, Track 3: gesture spotting''}
 	\label{fig:gebaren}
 \end{figure}
-\npar De gebaren worden uitgevoerd door 27 gebruikers tegen verschillende achtergronden. Er is variatie op vlak van kleding, lichaamsbouw, belichting, gebaaruitvoering. De beelden zijn opgenomen met behulp van een Kinect camera waardoor er vier datastromen zijn: RGB-beeld, dieptebeeld, gebruikersindex en skeletinformatie (Figuur \ref{fig:chalearn-data}).
+\npar De gebaren worden uitgevoerd door 27 gebruikers tegen verschillende achtergronden. Er is variatie op vlak van kleding, lichaamsbouw, belichting en gebaaruitvoering. De beelden zijn opgenomen met behulp van een Kinect camera waardoor er vier datastromen zijn: RGB-beeld, dieptebeeld, gebruikersindex en skeletinformatie (Figuur \ref{fig:chalearn-data}).
 \begin{figure}
 	\centering
 	%	\def\svgscale{0.85}
@@ -29,7 +29,7 @@ De gebruikte dataset is die van de ``ChaLearn Looking at People Challenge 2014''
 	\caption{De vier datastromen beschikbaar in de ``ChaLearn Looking At People Challenge 2014, Track 3: gesture spotting'' dataset}
 	\label{fig:chalearn-data}
 \end{figure}
-\npar Deze dataset werd ook gebruikt in \cite{lionel} waar deze een aantal voorverwerkingsstappen onderging. Deze voorverwerkte dataset is ter beschikking gesteld van dit onderzoek. De voorverwerking probeert de dataset te optimaliseren voor gebarenherkenning. De dataset bestaat uit 10000 ge\"isoleerde gebaren samen met hun correcte klasselabel. Er worden 32 frames geselecteerd rond het midden van elk gebaar. Vervolgens worden er vier nieuwe datastromen gecre\"eerd door het uitsnijden van de linker en rechterhand uit zowel diepte- als RGB-beeld. Ook wordt het bovenlichaam ge\"isoleerd om een deel van de achtergrond weg te werken. In totaal zijn er zo zes datastromen beschikbaar. Elk beeld, origineel 640x480 pixels groot, wordt gedownscaled en gecropt tot een grootte van 64x64 pixels. 
+\npar Deze dataset werd ook gebruikt in \cite{lionel} waar deze een aantal voorverwerkingsstappen onderging. Deze voorverwerkte dataset is ter beschikking gesteld van dit onderzoek. De voorverwerking probeert de dataset te optimaliseren voor gebarenherkenning. De dataset bestaat uit tienduizend ge\"isoleerde gebaren samen met hun correcte klasselabel. Er worden 32 frames geselecteerd rond het midden van elk gebaar. Vervolgens worden er vier nieuwe datastromen gecre\"eerd door het uitsnijden van de linker en rechterhand uit zowel diepte- als RGB-beeld. Ook wordt het bovenlichaam ge\"isoleerd om een deel van de achtergrond weg te werken. In totaal zijn er zo zes datastromen beschikbaar. Elk beeld, origineel 640x480 pixels groot, wordt gedownscaled en gecropt tot een grootte van 64x64 pixels. 
 
 \npar In dit onderzoek wordt de dataset opgedeeld in 60\% training-, 20\% validatie- en 20\% testset. Deze opdeling is sequentieel gebeurd: het eerste deel voor training, het tweede deel voor validatie en het laatste voor test. De dataset is gesorteerd per gebruiker waardoor er andere gebruikers voorkomen in de gesplitste datasets.
 
@@ -126,7 +126,7 @@ Het CNN bestaat uit drie convolutionele en max-pooling lagen. Alle max-pooling g
 \end{itemize}
 Na 250 iteraties, die we verder een \textit{epoch} zullen noemen, wordt het model ge\"evalueerd met de validatieset. Het minimum van de validatiefout wordt bijgehouden en telkens we een lagere waarde bereiken worden de modelparameters opgeslaan. De training stopt wanneer er na 25 epochs geen verbetering meer te zien is in de validatiefout.
 
-\subsection{Baseline resultaten met behulp van precision, recall en confusion matrix}
+\subsection{Baseline resultaten met behulp van precision, recall en confusion matrix}\label{sec:pr-conf}
 Om de baseline op te stellen wordt de volledige trainingset gebruikt om de 20 gebaren van de dataset te leren classificeren. Het voorgestelde model convergeert na ongeveer 250 epochs en behaalt een totale nauwkeurigheid van 81,20 \%.
 
 \begin{figure}[!t]
@@ -137,7 +137,7 @@ Om de baseline op te stellen wordt de volledige trainingset gebruikt om de 20 ge
 	\caption{Visualisatie van de betekenis van precision en recall. Links zijn alle relevante elementen te zien die zouden moeten geselecteerd worden. Het omcirkelde gedeelte zijn de effectief geselecteerde elementen of de voorspellingen van het model}
 	\label{fig:prec+recall}
 \end{figure}
-\npar Om een evaluatie te maken van de prestatie van het model wordt gebruik gemaakt van de precision en recall scores. Figuur \ref{fig:prec+recall} geeft een schematische weergave van de betekenis van deze twee termen. Hhet model in dit schema krijgt de taak om alle grijze bollen te selecteren. De grijze bollen noemen we de \textit{relevante elementen}. De relevante elementen binnen de selectie zijn de echt positieven of \textit{True Positives} (TP). De niet-relevante elementen binnen de selectie noemen we de vals positieven of \textit{False Positives} (FP). De positieve voorspellende waarde of precision wordt als volgt beschreven:
+\npar Om een evaluatie te maken van de prestatie van het model wordt gebruik gemaakt van de precision en recall scores. Figuur \ref{fig:prec+recall} geeft een schematische weergave van de betekenis van deze twee termen. Het model in dit schema krijgt de taak om alle grijze bollen te selecteren. De grijze bollen noemen we de \textit{relevante elementen}. De relevante elementen binnen de selectie zijn de echt positieven of \textit{True Positives} (TP). De niet-relevante elementen binnen de selectie noemen we de vals positieven of \textit{False Positives} (FP). De positieve voorspellende waarde of precision wordt als volgt beschreven:
 \begin{equation}
 Precision = \frac{TP}{TP+FP}
 \end{equation}
@@ -205,14 +205,14 @@ Precision geeft aan hoeveel van de geselecteerde elementen relevant zijn terwijl
 
 \section{Een gebaar bijleren}\label{sec:experimenten}
 
-De architectuur en parameters van het basismodel worden overgenomen voor de experimenten rond het bijleren van een gebaar. Voor een eerste test wordt een model identiek aan het basismodel voorgetraind op 19 gebaren en een nieuw gebaar bijgeleerd. Dit is het \textit{softmax20} model en wordt besproken in Sectie \ref{sec:softmax20}.
-\npar Om een dynamisch uitbreidbaar systeem te bekomen wordt de architectuur van het basismodel aangepast, zodat er per nieuw gebaar en nieuwe te trainen unit kan toegevoegd worden. Hier zijn er twee experimenten rond opgebouwd: het bijleren van een gebaar in het \textit{softmax19+1} model (Sectie \ref{sec:softmax19x1}) en het bijleren van twee gebaren na elkaar met het \textit{softmax18+1+1} model (Sectie \ref{sec:softmax18x2})
+De architectuur en parameters van het basismodel worden overgenomen voor de experimenten rond het bijleren van een gebaar. Voor een eerste test wordt een model identiek aan het basismodel voorgetraind op negentien gebaren en een nieuw gebaar bijgeleerd. Dit is het \textit{softmax20} model en wordt besproken in Sectie \ref{sec:softmax20}.
+\npar Om een dynamisch uitbreidbaar systeem te bekomen wordt de architectuur van het basismodel aangepast, zodat er per nieuw gebaar een nieuw te trainen unit kan toegevoegd worden. Hier zijn er twee experimenten rond opgebouwd: het bijleren van \'e\'en gebaar in het \textit{softmax19+1} model (Sectie \ref{sec:softmax19x1}) en het bijleren van twee gebaren na elkaar met het \textit{softmax18+1+1} model (Sectie \ref{sec:softmax18x2})
 
 \subsection{Softmax20 model}\label{sec:softmax20}
 
 De eerste experimenten rond het bijleren van een gebaar worden uitgevoerd op een model volledig gelijk aan het basismodel (zoals afgebeeld in Figuur \ref{fig:model-1}). Eerst wordt het model getraind met een trainingset van negentien gebaren. Als het model geconvergeerd en genoeg geregulariseerd is, zou het een aantal algemene features van een nieuw gebaar moeten herkennen.
 
-\npar Er wordt met negentien van de twintig gebaren getraind om zo veel mogelijk verschillende features te kunnen leren aan het model. Hoe meer verschillende gebaren er vooraf kunnen aangeleerd worden, hoe beter het model zou moeten presteren op de classificatie van een nieuw gebaar. Het zal verplicht worden om meer algemene features te detecteren en er zullen er ook meer worden aangeleerd. Omdat de gebruikte dataset beperkt wordt hij hier dus ten volle benut.
+\npar Er wordt met negentien van de twintig gebaren getraind om zo veel mogelijk verschillende features te kunnen leren aan het model. Hoe meer verschillende gebaren er vooraf kunnen aangeleerd worden, hoe beter het model zou moeten presteren op de classificatie van een nieuw gebaar. Het zal verplicht worden om meer algemene features te detecteren en er zullen er ook meer worden aangeleerd. Omdat de gebruikte dataset eerder beperkt is wordt hij hier maximaal benut.
 
 \npar De pretraining gebeurt op een softmax van twintig units, \'e\'en unit wordt dus niet gebruikt. Deze opstelling is niet bruikbaar om een dynamisch uitbreidbaar herkenningssysteem te maken, omdat ze ervan uit gaat dat er slechts \'e\'en gebaar zal worden toegevoegd. Eenmaal het model getraind is op het nieuwe gebaar zijn alle softmax units gebruikt. Het is wel een goede eerste test van het potenti\"eel van het model.
 
@@ -233,9 +233,9 @@ De eerste experimenten rond het bijleren van een gebaar worden uitgevoerd op een
 
 \npar Het is opvallend dat de precision scores voor beide experimenten heel dicht liggen bij de baseline. Het model is dus redelijk zeker dat het om het nieuwe gebaar gaat als het dit gebaar herkent. Bij het hertrainen van de twee laatste lagen met twee voorbeelden gaat de precisie zelfs boven die van de baseline.
 
-\npar De recall score volgt niet dezelfde lijn als die van de precision. Hier zien we duidelijk dat de recall bij gebruik van weinig samples heel laag ligt. De stijlste klimming bij het model waar enkel de softmax wordt hertraind zien we tot aan het gebruik van 5 samples. Bij het hertrainen van twee lagen loopt deze stijging door tot 10 samples. Dit kan verklaard worden doordat er meer parameters geoptimaliseerd moeten worden bij het het hertrainen van de twee lagen. Meer parameters vragen om meer voorbeelden, bij gebruik van meer dan 10 samples scoort dit model dan  ook beter.
+\npar De recall score volgt niet dezelfde lijn als die van de precision. Hier zien we duidelijk dat de recall bij gebruik van weinig samples heel laag ligt. De stijlste klimming bij het model waar enkel de softmax wordt hertraind zien we tot aan het gebruik van vijf samples. Bij het hertrainen van twee lagen loopt deze stijging door tot tien samples. Dit kan verklaard worden doordat er meer parameters geoptimaliseerd moeten worden bij het het hertrainen van de twee lagen. Meer parameters vragen om meer voorbeelden, bij gebruik van meer dan tien samples scoort dit model dan  ook beter.
 
-\npar Omdat er 20 softmax units gebruikt worden voor het classificeren van 19 gebaren wordt er ten slotte nagegaan of het model tijdens de pretraining geen zogenaamde \textit{garbage class} traint. Dit is een klasse waarin het model voorbeelden indeelt die hij niet herkent. Bij wijze van test wordt het voorgetrainde model (zonder hertraining op het uitgesloten gebaar) ge\"evalueerd met de testset. Uit deze test blijkt dat 0\% van alle voorbeelden in deze klasse wordt ingedeeld, er is dus geen garbage class getraind. 
+\npar Omdat er twintig softmax units gebruikt worden voor het classificeren van negentien gebaren wordt er ten slotte nagegaan of het model tijdens de pretraining geen zogenaamde \textit{garbage class} traint. Dit is een klasse waarin het model voorbeelden indeelt die hij niet herkent. Bij wijze van test wordt het voorgetrainde model (zonder hertraining op het uitgesloten gebaar) ge\"evalueerd met de testset. Uit deze test blijkt dat 0\% van alle voorbeelden in deze klasse wordt ingedeeld, er is dus geen garbage class getraind. 
 %\npar Het opzet van dit onderzoek is zo weinig mogelijk samples te gebruiken, voor verdere experimenten werd er dus gekozen om enkel de softmax te hertrainen van het nieuwe gebaar
 
 \subsection{Softmax19+1 model}\label{sec:softmax19x1}
@@ -245,7 +245,7 @@ We willen naar een dynamisch uitbreidbaar systeem toewerken. Het vorige model ga
 	\centering
 	\def\svgwidth{0.7\columnwidth}
 	\input{figuren/softmax19+1.pdf_tex}
-	\caption{Schematische weergave van het softmax19+1 model. De blauwe lagen zijn voorgetraind en worden niet gewijzigd. Er wordt 1 unit voor het nieuwe gebaar toegevoegd (aangeduid in het geel) en zijn gewichten worden getraind. De uitvoer van deze twee parallelle lagen worden samengebracht in een softmax met 20 units. Vandaar de benaming softmax19+1.}\label{fig:19+1}
+	\caption{Schematische weergave van het softmax19+1 model. De blauwe lagen zijn voorgetraind en worden niet gewijzigd. Er wordt \'e\'e unit voor het nieuwe gebaar toegevoegd (aangeduid in het geel) en zijn gewichten worden getraind. De uitvoer van deze twee parallelle lagen wordt samengebracht in een softmax met twintig units. Vandaar de benaming softmax19+1.}\label{fig:19+1}
 \end{figure}
 
 \npar Hier wordt eerst een model met negentien softmax units getraind voor de classificatie van negentien gebaren. Behalve het verschil in aantal softmax units is de architectuur volledig gelijk aan die van het basismodel. Daarna wordt het model uitgebreid met een extra unit voor de classificatie van het nieuwe gebaar. Het nieuwe neuron wordt volledig verbonden met de laatste dense layer van honderd units en enkel de gewichten van deze verbindingen worden getraind. Vervolgens wordt er een softmax activatie uitgevoerd op alle twintig units samen, zodat er twintig gebaren kunnen geclassificeerd worden.
@@ -258,7 +258,7 @@ We willen naar een dynamisch uitbreidbaar systeem toewerken. Het vorige model ga
 		\vspace{0.5cm}
 		\def\svgwidth{1.1\columnwidth}
 		\input{figuren/19x1-oneshot-vgl.pdf_tex}
-		\caption{Barplots per gebaar van de precision en recall van de baseline en na het hertrainen met respectievelijk 1 en 10 samples. }\label{fig:19x1-all}
+		\caption{Barplots per gebaar van de precision en recall van de baseline en na het hertrainen met respectievelijk \'e\'en en tien samples. }\label{fig:19x1-all}
 \end{figure}
 
 \npar Het leren gebeurt enkel op de gewichten van de unit van het nieuwe gebaar. Aan de verborgen laag van de negentien al geleerde gebaren wordt niet geraakt zodat het herkenningsvermogen op deze gebaren gelijk blijft. Dit zal ook een vereiste zijn van een uitbreidbaar herkenningssysteem, het bijleren van een nieuw gebaar mag geen negatief effect hebben op de huidige prestatie van het model.
@@ -267,7 +267,7 @@ We willen naar een dynamisch uitbreidbaar systeem toewerken. Het vorige model ga
 
 \subsubsection{Invloed van het aantal samples}
 
-Het softmax19+1 model wordt getoetst tegen de prestatie van het softmax20 model. In Figuur \ref{fig:19x1-gebaar15} is de precision en recall van de classificatie van gebaar 15 te zien in functie van het aantal samples dat gebruikt wordt in de trainingset. Ook de prestatie van het softmax20 model bij hertrainen van enkel de softmax laag is geplot in streepjeslijnen. De waarden liggen niet zo heel ver uiteen. De precision van het softmax19+1 model ligt iets lager bij gebruik van minder dan 10 samples. Wel ligt de recall score globaal hoger dan die van het softmax20 model. Bij het trainen op een voorbeeld is dit 25,51 \% tegenover 10,20\%. De recall curve volgt dezelfde stijle klim tot aan het gebruik van 5 samples, tot 73,47\% waarna het nog licht stijgt bij 25 samples en dan rond de 78\% blijft.
+Het softmax19+1 model wordt getoetst tegen de prestatie van het softmax20 model. In Figuur \ref{fig:19x1-gebaar15} is de precision en recall van de classificatie van gebaar 15 te zien in functie van het aantal samples dat gebruikt wordt in de trainingset. Ook de prestatie van het softmax20 model bij hertrainen van enkel de softmax laag is geplot in streepjeslijnen. De waarden liggen niet zo heel ver uiteen. De precision van het softmax19+1 model ligt iets lager bij gebruik van minder dan tien samples. Wel ligt de recall score globaal hoger dan die van het softmax20 model. Bij het trainen op een voorbeeld is dit 25,51 \% tegenover 10,20\%. De recall curve volgt dezelfde stijle klim tot aan het gebruik van vijf samples, tot 73,47\% waarna het nog licht stijgt bij 25 samples en dan rond de 78\% blijft.
 
 \subsubsection{Invloed van het bijgeleerde gebaar}
 
@@ -275,7 +275,7 @@ De prestatie van het softmax19+1 model volgt dus dezelfde trend als die van het 
 
 \npar Om een beeld te scheppen van de invloed van het bij te leren gebaar werd voor elk gebaar eerst een model getraind exclusief dit gebaar, waarna het werd bijgeleerd met \'e\'en sample en met tien samples. Op Figuur \ref{fig:19x1-all} zijn de resultaten van dit experiment te zien. Bovenaan is de precision uitgeplot van alle gebaren, onderaan de recall.
 
-\npar De recall score na bijleren met \'e\'en sample en met tien samples volgt dezelfde lijn als die van de baseline. Gebaren die een lagere recall score hebben na trainen op alle voorbeelden van alle gebaren scoren ook lager als we ze bijleren, zie bijvoorbeeld klasse 3 en 9. Hetzelfde geldt voor gebaren die hoog scoren. Zeker bij vergelijking van het gebruik van 10 samples is dit opmerkelijk.
+\npar De recall score na bijleren met \'e\'en sample en met tien samples volgt dezelfde lijn als die van de baseline. Gebaren die een lagere recall score hebben na trainen op alle voorbeelden van alle gebaren scoren ook lager als we ze bijleren, zie bijvoorbeeld klasse 3 en 9. Hetzelfde geldt voor gebaren die hoog scoren. Zeker bij vergelijking van het gebruik van tien samples is dit opmerkelijk.
 
 \npar De precision volgt ook dezelfde trend maar de verschillen zijn veel kleiner. De bevindingen uit het eerste experiment op gebaar 15 zijn dus door te trekken naar de andere gebaren.
 
@@ -284,8 +284,8 @@ Ten slotte wordt ook nog een experiment opgezet om de invloed van data-augmentat
 \npar Dit is uitgetest met een model met het dubbele aantal filterbanken in de convolutielagen en twee maal 512 units in de verborgen lagen van het ANN. Na analyse blijkt het model te underfitten: het is nog niet complex genoeg om de geaugmenteerde data te beschrijven. Om deze opstelling te optimaliseren dient er opnieuw een iteratief proces van hyperparameteroptimalisatie aangevat te worden. Hier is niet verder op ingegaan, het is wel vrij zeker dat data-augmentatie een positief effect zal hebben aangezien het bij toepassingen zoals  \cite{cnn-krizhevsky} en \cite{cnn-karpathy} de prestaties verbetert. Bij one-shot learning en het bijleren uit weinig gebaren is het grootste probleem het tekort aan datavoorbeelden en dit is nu net wat data-augmentatie aanpakt. Deze techniek kan dus zeker verder onderzocht worden in toekomstig werk.
 
 \subsection{Softmax18+1+1 model}\label{sec:softmax18x2}
-Het is dus mogelijk om \'e\'en gebaar toe te voegen door het toevoegen van een nieuw neuron. Om aan te tonen dat we het model dynamisch kunnen blijven uitbreiden wordt analoog aan het principe van het softmax19+1 model een architectuur gemaakt dat twee gebaren na elkaar bijleert. Eerst wordt een model met 18 softmax units getraind. Na deze pretraining wordt er een unit voor het bij te leren gebaar toegevoegd en net zoals het vorige model worden de uitgangen van de 18 units en de nieuwe unit samengevoegd in een softmaxactivatie van 19 units.
-\npar Het model leert een gebaar bij door de training van het nieuw toegevoegde unit en wordt daarna opnieuw uitgebreid met nog een extra unit voor het tweede gebaar. Ook deze unit wordt geconcateneerd zodat er uiteindelijk een softmaxlaag van 20 units is (18+1+1).
+Het is dus mogelijk om \'e\'en gebaar toe te voegen door het toevoegen van een nieuw neuron. Om aan te tonen dat we het model dynamisch kunnen blijven uitbreiden wordt analoog aan het principe van het softmax19+1 model een architectuur gemaakt dat twee gebaren na elkaar bijleert. Eerst wordt een model met achttien softmax units getraind. Na deze pretraining wordt er een unit voor het bij te leren gebaar toegevoegd en net zoals het vorige model worden de uitgangen van de achttien units en de nieuwe unit samengevoegd in een softmaxactivatie van negentien units.
+\npar Het model leert een gebaar bij door de training van het nieuw toegevoegde unit en wordt daarna opnieuw uitgebreid met nog een extra unit voor het tweede gebaar. Ook deze unit wordt geconcateneerd zodat er uiteindelijk een softmaxlaag van twintig units is (18+1+1).
 
 \npar Door op deze manier te werk te gaan is het theoretisch mogelijk om gebaren te blijven toevoegen. Na het toevoegen van een aantal gebaren kunnen de units effectief samengevoegd worden tot een laag waarna het proces opnieuw kan beginnen.
 
